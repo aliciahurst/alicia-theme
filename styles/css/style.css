@@ -1030,4 +1030,13 @@ body {
   body p.author {
     font-family: "Roboto Slab", serif; }
 
+.wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 /*# sourceMappingURL=style.css.map */
