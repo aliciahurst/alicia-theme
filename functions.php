@@ -200,3 +200,48 @@ function default_attachment_display_settings() {
 
 //add featured image
 add_theme_support( 'post-thumbnails' ); 
+
+// Add Work custom post type
+
+add_action( 'init', 'register_cpt_work' );
+
+function register_cpt_work() {
+
+    $labels = array( 
+        'name' => _x( 'Work', 'work' ),
+        'singular_name' => _x( 'Work', 'work' ),
+        'add_new' => _x( 'Add New', 'work' ),
+        'add_new_item' => _x( 'Add New Work', 'work' ),
+        'edit_item' => _x( 'Edit Work', 'work' ),
+        'new_item' => _x( 'New Work', 'work' ),
+        'view_item' => _x( 'View Work', 'work' ),
+        'search_items' => _x( 'Search Work', 'work' ),
+        'not_found' => _x( 'No work found', 'work' ),
+        'not_found_in_trash' => _x( 'No work found in Trash', 'work' ),
+        'parent_item_colon' => _x( 'Parent Work:', 'work' ),
+        'menu_name' => _x( 'Work', 'work' ),
+    );
+
+    $args = array( 
+        'labels' => $labels,
+        'hierarchical' => false,
+        
+        'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
+        'taxonomies' => array( 'category', 'post_tag' ),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 20,
+        
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'post'
+    );
+
+    register_post_type( 'work', $args );
+}
