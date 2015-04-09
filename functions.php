@@ -120,19 +120,83 @@ add_action( 'wp_enqueue_scripts', 'alicia_theme_scripts' );
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+//require get_template_directory() . '/inc/template-tags.php';
 
 /**
  * Custom functions that act independently of the theme templates.
  */
-require get_template_directory() . '/inc/extras.php';
+//require get_template_directory() . '/inc/extras.php';
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+// require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+//require get_template_directory() . '/inc/jetpack.php';
+
+// Remove admin  bar
+add_filter('show_admin_bar', '__return_false');
+
+// Clean up versioning of scripts and styles
+function ewp_remove_script_version( $src ){
+  return remove_query_arg( 'ver', $src );
+}
+add_filter( 'script_loader_src', 'ewp_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', 'ewp_remove_script_version', 15, 1 );
+add_filter( 'edit_post_link', '__return_false' );
+
+// Use latest jQuery verison
+if( !is_admin() ){
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '');
+	wp_enqueue_script('jquery');
+}
+
+// Disable jpeg compression
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+
+// Remove menu wrappers
+	function my_wp_nav_menu_args( $args = '' ) {
+	$args['container'] = false;
+	return $args;
+	}
+	add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+
+// Remove edit posts link
+add_filter( 'edit_post_link', '__return_false' );
+
+// relative paths for images
+function yoursite_get_relative_attachment_path($path)
+{
+    $paths = (object)parse_url($path);
+    return $paths->path;
+}
+
+// img unautop
+function img_unautop($pee) {
+    $pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="content-img">$1</div>', $pee);
+    return $pee;
+}
+add_filter( 'the_content', 'img_unautop', 30 );
+
+// remove empty p tags
+add_filter('the_content', 'remove_empty_p', 20, 1);
+function remove_empty_p($content){
+    $content = force_balance_tags($content);
+    return preg_replace('#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content);
+}
+
+// change default image attachment settings
+add_action( 'after_setup_theme', 'default_attachment_display_settings' );
+
+function default_attachment_display_settings() {
+	update_option( 'image_default_align', 'none' );
+	update_option( 'image_default_link_type', 'none' );
+	update_option( 'image_default_size', 'full' );
+}
+
+//add featured image
+add_theme_support( 'post-thumbnails' ); 
