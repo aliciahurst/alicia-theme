@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300");
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700");
 html {
   box-sizing: border-box; }
 
@@ -932,5 +934,100 @@ object {
 
 .gallery-caption {
   display: block; }
+
+body {
+  text-align: left; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+  body h1, body h2, body h3, body p {
+    margin: 0; }
+  body hr {
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 1.5em 0; }
+  body p {
+    color: #333;
+    line-height: 1.5; }
+  body a {
+    color: #477dca;
+    text-decoration: none; }
+  body .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-bottom: 2em;
+    padding: 0.1em 0;
+    text-align: left;
+    text-transform: uppercase; }
+  body h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 0.6em; }
+    @media screen and (min-width: 40em) {
+      body h1 {
+        font-size: 2.4em; } }
+  body h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 1.2em; }
+    @media screen and (min-width: 40em) {
+      body h2 {
+        font-size: 1.3em; } }
+  body code {
+    background: #F7F7F7;
+    border-radius: 4.5px;
+    border: 1px solid #E0E0E0;
+    font-size: 0.8em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap; }
+  body h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase; }
+  body p.date {
+    color: rgba(51, 51, 51, 0.4);
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+    margin-bottom: 0.5em; }
+  body p, body ul, body footer {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    letter-spacing: 1;
+    margin-bottom: 1.5em; }
+    body p span, body ul span, body footer span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.8em;
+      font-weight: 600;
+      text-transform: uppercase; }
+  body a.read-more {
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 0.2em;
+    position: relative;
+    text-transform: uppercase; }
+    body a.read-more span {
+      font-size: 1.8em;
+      position: absolute;
+      right: -12px;
+      top: -2px; }
+  body hr {
+    width: 3em; }
+  body p.author {
+    font-family: "Roboto Slab", serif; }
 
 /*# sourceMappingURL=style.css.map */
