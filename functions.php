@@ -245,3 +245,35 @@ function register_cpt_work() {
 
     register_post_type( 'work', $args );
 }
+
+// Remove slug from custom post type
+
+function custom_remove_cpt_slug( $post_link, $post, $leavename ) {
+
+    if ( 'work' != $post->post_type || 'publish' != $post->post_status ) {
+        return $post_link;
+    }
+
+    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
+
+    return $post_link;
+}
+add_filter( 'post_type_link', 'custom_remove_cpt_slug', 10, 3 );
+
+function custom_parse_request_tricksy( $query ) {
+
+    // Only noop the main query
+    if ( ! $query->is_main_query() )
+        return;
+
+    // Only noop our very specific rewrite rule match
+    if ( 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
+        return;
+    }
+
+    // 'name' will be set if post permalinks are just post_name, otherwise the page rule will match
+    if ( ! empty( $query->query['name'] ) ) {
+        $query->set( 'post_type', array( 'post', 'work', 'page' ) );
+    }
+}
+add_action( 'pre_get_posts', 'custom_parse_request_tricksy' );
