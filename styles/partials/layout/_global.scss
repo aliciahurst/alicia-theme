@@ -1,3 +1,7 @@
 .wrapper {
 	@include outer-container;
 }
+
+#masthead, #colophon {
+	background: #f0f0f0;
+}

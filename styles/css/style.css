@@ -1039,4 +1039,7 @@ body {
     content: "";
     display: table; }
 
+#masthead, #colophon {
+  background: #f0f0f0; }
+
 /*# sourceMappingURL=style.css.map */
