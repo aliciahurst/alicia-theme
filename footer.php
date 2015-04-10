@@ -13,9 +13,19 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrapper">
 			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'alicia-theme' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'alicia-theme' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'alicia-theme' ), 'alicia-theme', '<a href="http://aliciahurst.com" rel="designer">Alicia Hurst</a>' ); ?>
+				<div class="copyright">
+					<p>Alicia Hurst</p>
+					<p>Web Design &amp; Development</p>
+					<p><a href="mailto:alicia@aliciahurst.com">alicia@aliciahurst.com</a></p>
+					<p>&copy; <?php echo date('Y'); ?> Alicia Hurst LLC. All rights reserved.</p>
+				</div>
+				
+				<nav id="footer-navigation" class="secondary-navigation" role="navigation">
+					<ul>
+						<li><a href="/terms">Terms &amp; Privacy</a></li>
+						<li><a href="/credits">Credits</a></li>
+					</ul>
+				</nav>
 			</div><!-- .site-info -->
 		</div>
 	</footer><!-- #colophon -->
