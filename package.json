@@ -1,7 +1,7 @@
 {
   "name": "alicia-theme",
   "version": "1.0.0",
-  "description": "The all-new aliciahurst.com",
+  "description": "The all-new aliciahurst.com.",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "theme",
-    "wordpress",
+    "wordpress"
   ],
   "author": "Alicia Hurst",
   "license": "WTFPL",
