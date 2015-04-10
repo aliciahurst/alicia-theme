@@ -102,7 +102,7 @@ add_action( 'widgets_init', 'alicia_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function alicia_theme_scripts() {
-	wp_enqueue_style( 'alicia-theme-style', get_template_directory_uri() . '/styles/css/style.css' );
+	wp_enqueue_style( 'alicia-theme-style', get_template_directory_uri() . '/assets/css/main.css' );
 
 	wp_enqueue_script( 'alicia-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
