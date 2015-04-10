@@ -1,0 +1,27 @@
+{
+  "name": "alicia-theme",
+  "version": "1.0.0",
+  "description": "The all-new aliciahurst.com",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "alicia-theme.git"
+  },
+  "keywords": [
+    "theme",
+    "wordpress",
+  ],
+  "author": "Alicia Hurst",
+  "license": "WTFPL",
+  "devDependencies": {
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-svgmin": "~2.0.1"
+  }
+}
