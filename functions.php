@@ -68,13 +68,14 @@ function alicia_theme_setup() {
 	add_theme_support( 'post-formats', array(
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
-	*/
+	
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'alicia_theme_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+	*/
 }
 endif; // alicia_theme_setup
 add_action( 'after_setup_theme', 'alicia_theme_setup' );
