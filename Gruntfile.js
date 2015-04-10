@@ -34,6 +34,17 @@ module.exports = function(grunt) {
           }
         },
 
+        imagemin: {
+            dynamic: {                         // Dynamic target
+              files: [{
+                expand: true,                  // Enable dynamic expansion
+                cwd: 'img/raw/',               // Src matches are relative to this path
+                src: ['*.{png,jpg,gif}'],       // Actual patterns to match
+                dest: 'img/min/'               // Destination path prefix
+              }]
+            }
+        },
+
         svgmin: {
             options: {
                 plugins: [
@@ -70,6 +81,13 @@ module.exports = function(grunt) {
                     spawn: false,
                 }
             },
+            images: {
+              files: ['img/**/*.{png,jpg,gif}'],
+              tasks: ['imagemin'],
+              options: {
+                    spawn: false,
+                }
+            }
 
             livereload: {
 		        // Browser live reloading
@@ -88,6 +106,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-svgmin');
@@ -97,6 +116,7 @@ module.exports = function(grunt) {
         'sass',
         'concat',
         'jshint',
+        'imgagemin',
         'svgmin'
       ]);
 
