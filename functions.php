@@ -246,7 +246,7 @@ function register_cpt_work() {
     register_post_type( 'work', $args );
 }
 
-// Remove slug from custom post type
+// Remove slug from Work custom post type
 
 function custom_remove_cpt_slug( $post_link, $post, $leavename ) {
 
@@ -277,3 +277,13 @@ function custom_parse_request_tricksy( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'custom_parse_request_tricksy' );
+
+// Add ACF options page
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+	acf_add_options_sub_page('General');
+	
+}
