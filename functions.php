@@ -104,14 +104,23 @@ add_action( 'widgets_init', 'alicia_theme_widgets_init' );
 function alicia_theme_scripts() {
 	wp_enqueue_style( 'alicia-theme-style', get_template_directory_uri() . '/assets/css/main.css' );
 
-	wp_enqueue_script( 'alicia-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	//wp_enqueue_script( 'alicia-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'alicia-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	//wp_enqueue_script( 'alicia-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	// Use jQuery from CDN, enqueue in footer
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js', array(), null, true);
+	wp_enqueue_script('jquery');
+
+	// Add our JS
+	wp_enqueue_script( 'alicia-theme-js', get_template_directory_uri() . '/assets/js/build/scripts.js', array('jquery'), '1.0.0', true );
+
+	//if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	//	wp_enqueue_script( 'comment-reply' );
+	//}
 }
+
 add_action( 'wp_enqueue_scripts', 'alicia_theme_scripts' );
 
 /**
@@ -149,13 +158,6 @@ function ewp_remove_script_version( $src ){
 add_filter( 'script_loader_src', 'ewp_remove_script_version', 15, 1 );
 add_filter( 'style_loader_src', 'ewp_remove_script_version', 15, 1 );
 add_filter( 'edit_post_link', '__return_false' );
-
-// Use latest jQuery verison
-if( !is_admin() ){
-	wp_deregister_script('jquery');
-	wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '');
-	wp_enqueue_script('jquery');
-}
 
 // Disable jpeg compression
 add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
