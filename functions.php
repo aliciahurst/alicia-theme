@@ -113,12 +113,17 @@ function alicia_theme_scripts() {
 	wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js', array(), null, true);
 	wp_enqueue_script('jquery');
 
-	// Add our JS
+	// Add JS
 	wp_enqueue_script( 'alicia-theme-js', get_template_directory_uri() . '/assets/js/build/scripts.js', array('jquery'), '1.0.0', true );
 
 	//if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	//	wp_enqueue_script( 'comment-reply' );
 	//}
+
+	// Browser Reload Grunt
+	if ( is_admin() ) {
+		wp_enqueue_script( 'browser-reload', '//localhost:35729/livereload.js', array(), null , true );
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'alicia_theme_scripts' );
