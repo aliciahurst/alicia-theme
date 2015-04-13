@@ -82,13 +82,12 @@ module.exports = function(grunt) {
                 }
             },
             images: {
-              files: ['img/**/*.{png,jpg,gif}'],
+              files: ['img/raw/*.{png,jpg,gif}'],
               tasks: ['imagemin'],
               options: {
                     spawn: false,
                 }
-            }
-
+            },
             livereload: {
 		        // Browser live reloading
 		        // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
@@ -101,7 +100,6 @@ module.exports = function(grunt) {
 		        ]
 		    }
         }
-        
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
