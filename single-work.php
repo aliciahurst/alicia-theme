@@ -11,8 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
+			<div class="wrapper">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			
 				<header class="entry-header">
 					<div class="work-info">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -20,6 +21,7 @@ get_header(); ?>
 					</div>
 					<div class="work-roles">
 							<?php if( have_rows('work_roles') ): ?>
+								<h3>Roles</h3>
 									<ul>
 									<?php while( have_rows('work_roles') ): the_row(); 
 										// vars
@@ -32,7 +34,7 @@ get_header(); ?>
 
 						<?php if( get_field('client_url') ): ?>
 									<?php $url = get_field('client_url'); ?>
-										<a href="$url"><?php the_title(); ?></a>
+										Client: <a href="$url"><?php the_title(); ?></a>
 							<?php endif; ?>
 					</div>
 				</header><!-- .entry-header -->
@@ -44,7 +46,7 @@ get_header(); ?>
 										$name = get_sub_field('image_name');
 										$size = get_sub_field('image_size');
 										?>
-										<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>.jpg" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>" class="$size">
+										<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>.jpg" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>" class="<?php echo $size; ?>">
 									<?php endwhile; ?>
 							<?php endif; ?>
 				</div><!-- .entry-content -->
@@ -55,7 +57,7 @@ get_header(); ?>
 			</article><!-- #post-## -->
 
 			<?php the_post_navigation(); ?>
-
+			</div>
 
 		<?php endwhile; // end of the loop. ?>
 
