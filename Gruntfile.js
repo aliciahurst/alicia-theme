@@ -114,7 +114,7 @@ module.exports = function(grunt) {
         'sass',
         'concat',
         'jshint',
-        'imgagemin',
+        'imagemin',
         'svgmin'
       ]);
 
