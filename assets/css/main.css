@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300");
-@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700");
 html {
   box-sizing: border-box;
 }
@@ -1125,7 +1123,7 @@ body a {
 body .type {
   border-bottom: 1px solid;
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-size: 0.7em;
   font-weight: 600;
   margin-bottom: 2em;
@@ -1134,7 +1132,7 @@ body .type {
   text-transform: uppercase;
 }
 body h1 {
-  font-family: "Roboto Slab", serif;
+  font-family: "ff-tisa-web-pro", serif;
   font-size: 1.6em;
   font-weight: 400;
   margin-bottom: 0.6em;
@@ -1145,7 +1143,7 @@ body h1 {
   }
 }
 body h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-size: 1.1em;
   font-weight: 400;
   line-height: 1.5em;
@@ -1166,7 +1164,7 @@ body code {
   white-space: nowrap;
 }
 body h3 {
-  font-family: "Roboto Slab", serif;
+  font-family: "ff-tisa-web-pro", serif;
   font-size: 1em;
   font-weight: 600;
   line-height: 1.4em;
@@ -1175,25 +1173,25 @@ body h3 {
 }
 body p.date {
   color: rgba(51, 51, 51, 0.4);
-  font-family: "Roboto Slab", serif;
+  font-family: "ff-tisa-web-pro", serif;
   font-size: 0.8em;
   margin-bottom: 0.5em;
 }
 body p, body ul, body footer {
-  font-family: "Roboto Slab", serif;
+  font-family: "ff-tisa-web-pro", serif;
   font-weight: 300;
   letter-spacing: 1;
   margin-bottom: 1.5em;
 }
 body p span, body ul span, body footer span {
-  font-family: "Open Sans", sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-size: 0.8em;
   font-weight: 600;
   text-transform: uppercase;
 }
 body a.read-more {
   display: inline-block;
-  font-family: "Roboto Slab", serif;
+  font-family: "ff-tisa-web-pro", serif;
   font-size: 0.8em;
   font-weight: 700;
   margin-left: 0.2em;
@@ -1210,7 +1208,7 @@ body hr {
   width: 3em;
 }
 body p.author {
-  font-family: "Roboto Slab", serif;
+  font-family: "ff-tisa-web-pro", serif;
 }
 
 .wrapper {

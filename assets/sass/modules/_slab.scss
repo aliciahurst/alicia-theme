@@ -1,9 +1,6 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300');
-@import url('http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700');
-
 body {
   $base-border-radius: 3px !default;
-  $base-line-height: 1.5em !default;
+  $base-line-height: 1.5 !default;
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
   $base-link-color: $action-color !default;
@@ -11,8 +8,8 @@ body {
   $light-gray: #DDD !default;
   $medium-screen: em(640) !default;
   $base-font-color: $dark-gray !default;
-  $sans-serif: 'Open Sans', sans-serif;
-  $serif: 'Roboto Slab', serif;
+  $sans-serif: "ff-tisa-sans-web-pro",sans-serif;
+  $serif: "ff-tisa-web-pro",serif;
 
   @include clearfix;
   text-align: left;
