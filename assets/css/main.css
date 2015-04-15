@@ -956,11 +956,6 @@ a:active {
   margin: 0 0 1.5em;
 }
 
-.byline,
-.updated:not(.published) {
-  display: none;
-}
-
 .single .byline,
 .group-blog .byline {
   display: inline;
@@ -1231,6 +1226,10 @@ body p.author {
 
 #masthead, #colophon {
   background: #f0f0f0;
+}
+
+#comments {
+  display: none;
 }
 
 .tooltip-item {

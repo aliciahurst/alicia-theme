@@ -10,7 +10,8 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php alicia_theme_posted_on(); ?>
+			<p> <span>Posted <span class="post_date date updated"><?php the_date(); ?></span> &nbsp; // </span>
+			<span>Tagged</span> <?php the_tags( '',', ' ); ?></p>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -32,7 +33,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<!-- <footer class="entry-footer">
 		<?php alicia_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer> -->
 </article><!-- #post-## -->

@@ -9,7 +9,8 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php alicia_theme_posted_on(); ?>
+			<p> <span>Posted <span class="post_date date updated"><?php the_date(); ?></span> &nbsp; // </span>
+			<span>Tagged</span> <?php the_tags( '',', ' ); ?></p>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
