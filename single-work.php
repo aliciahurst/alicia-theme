@@ -11,10 +11,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class="wrapper">
+			
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
-				<header class="entry-header">
+				<header class="entry-header wrapper">
 					<div class="work-info">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 						<?php the_field('work_description'); ?>
@@ -39,7 +39,7 @@ get_header(); ?>
 					</div>
 				</header><!-- .entry-header -->
 
-				<div class="entry-content">
+				<div class="entry-content wrapper">
 					<?php if( have_rows('work_images') ): ?>
 					<?php while( have_rows('work_images') ): the_row(); 
 										// vars
@@ -51,13 +51,18 @@ get_header(); ?>
 							<?php endif; ?>
 				</div><!-- .entry-content -->
 
+				<div class="entry-nav wrapper">
+					<p><a href="/work">Portfolio</a></p>
+					<p><?php next_post_link( '%link', 'Next project'); ?></p>
+				</div>
+
 				<footer class="entry-footer">
-					<?php alicia_theme_entry_footer(); ?>
+					<div class="wrapper">
+						<h2>How can I help with your project?</h2>
+						<p><a href="/contact">Let's Get Started</a></p>
+					</div>
 				</footer><!-- .entry-footer -->
 			</article><!-- #post-## -->
-
-			<?php the_post_navigation(); ?>
-			</div>
 
 		<?php endwhile; // end of the loop. ?>
 
