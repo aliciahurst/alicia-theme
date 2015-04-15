@@ -53,7 +53,7 @@ get_header(); ?>
 
 				<div class="entry-nav wrapper">
 					<p><a href="/work">Portfolio</a></p>
-					<p><?php next_post_link( '%link', 'Next project'); ?></p>
+					<p><?php previous_post_link( '%link', 'Next project'); ?></p>
 				</div>
 
 				<footer class="entry-footer">
