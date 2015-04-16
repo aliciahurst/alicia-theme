@@ -1,0 +1,18 @@
+#masthead .wrapper {
+	 @include display(flex);
+	 @include flex-direction(row);
+	 @include justify-content(space-between);
+	 .site-title, .main-navigation {
+	 	 @include flex(1);
+	 }
+}
+
+.main-navigation {
+	width: auto;
+	float: none;
+	text-align: right;
+	li {
+		float: none;
+		display: inline-block;
+	}
+}
