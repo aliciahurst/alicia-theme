@@ -3,12 +3,26 @@
 	 @include flex-direction(row);
 	 @include justify-content(space-between);
 	 @include align-items(center);
-	 .site-title, .main-navigation {
+	 .site-name, .main-navigation {
 	 	 @include flex(1);
 	 }
 	 h1, p {
 	 	margin: 0;
 	 } 
+}
+
+.site-name {
+	font-family: $serif;
+	h1, p {
+		font-size: 1rem;
+		text-transform: uppercase;
+		a {
+			color: $black;
+		}
+	}
+	p {
+		//font-size: 1rem;
+	}
 }
 
 .main-navigation {
@@ -17,7 +31,10 @@
 	text-align: right;
 	li {
 		display: inline-block;
-		padding-right: 10px;
+		//padding-right: 10px;
+		margin: 0;
+		line-height: 1;
+		font-size: 1rem;
 		&:last-of-type {
 			padding-right: 0;
 		}
@@ -27,9 +44,11 @@
 			}
 		}
 		a {
-			padding: 5px 15px 7px;
+			padding: 5px 25px 7px;
 			text-transform: uppercase;
 			font-style: italic;
+			font-family: $serif;
+			color: $base-font-color;
 		}
 	}
 }

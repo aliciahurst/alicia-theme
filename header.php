@@ -24,14 +24,17 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="wrapper">
-				<div class="site-title"><h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<p>Web Designer &amp; Front-End Developer</p>
+				<div class="site-name">
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<p>Web Designer &amp; Developer</p>
 				</div>
-				<div class="site-logo"><h1 class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">AH</a></h1></div>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'alicia-theme' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav><!-- #site-navigation -->
+				<div class="site-logo">
+					<h1 class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">AH</a></h1>
+				</div>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'alicia-theme' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav>
 		</div>
 	</header><!-- #masthead -->
 

@@ -1,8 +1,9 @@
 @import "modules/reset";
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
-@import "vendor/base/base";
-@import "modules/slab";
+//@import "vendor/base/base";
+//@import "modules/slab";
 @import "partials/layout/variables";
+@import "partials/layout/typography";
 @import "partials/layout/global";
 @import "partials/layout/header";

@@ -10,7 +10,9 @@
   $base-font-color: $dark-gray !default;
   $sans-serif: "ff-tisa-sans-web-pro",sans-serif;
   $serif: "ff-tisa-web-pro",serif;
+
 body {
+  
   @include clearfix;
   text-align: left;
   
