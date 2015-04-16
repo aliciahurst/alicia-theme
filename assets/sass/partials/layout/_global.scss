@@ -2,10 +2,15 @@
 	@include outer-container;
 }
 
-#masthead, #colophon {
-	background: #f0f0f0;
-}
 
 #comments {
 	display: none;
+}
+
+.page .entry-header .entry-title {
+	display: none;
+}
+
+body {
+	background: #FFF3EA;
 }

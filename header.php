@@ -25,7 +25,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="wrapper">
 				<div class="site-title"><h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<p>Web Designer & Front-End Developer</p>
+				<p>Web Designer &amp; Front-End Developer</p>
 				</div>
 				<div class="site-logo"><h1 class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">AH</a></h1></div>
 			<nav id="site-navigation" class="main-navigation" role="navigation">

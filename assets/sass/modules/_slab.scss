@@ -1,4 +1,4 @@
-body {
+
   $base-border-radius: 3px !default;
   $base-line-height: 1.5 !default;
   $base-spacing: 1.5em !default;
@@ -10,7 +10,7 @@ body {
   $base-font-color: $dark-gray !default;
   $sans-serif: "ff-tisa-sans-web-pro",sans-serif;
   $serif: "ff-tisa-web-pro",serif;
-
+body {
   @include clearfix;
   text-align: left;
   

@@ -2,9 +2,13 @@
 	 @include display(flex);
 	 @include flex-direction(row);
 	 @include justify-content(space-between);
+	 @include align-items(center);
 	 .site-title, .main-navigation {
 	 	 @include flex(1);
 	 }
+	 h1, p {
+	 	margin: 0;
+	 } 
 }
 
 .main-navigation {
@@ -12,7 +16,24 @@
 	float: none;
 	text-align: right;
 	li {
-		float: none;
 		display: inline-block;
+		padding-right: 10px;
+		&:last-of-type {
+			padding-right: 0;
+		}
+		&.current_page_parent, &.current_page_item {
+			a {
+				background: $white;
+			}
+		}
+		a {
+			padding: 5px 15px 7px;
+			text-transform: uppercase;
+			font-style: italic;
+		}
 	}
+}
+
+#masthead {
+	background: #f1f1f1;
 }
