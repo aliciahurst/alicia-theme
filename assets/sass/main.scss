@@ -1,13 +1,21 @@
+// Rest
 @import "modules/reset";
+
+// Bourbon and Neat
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
-//@import "vendor/base/base";
-//@import "modules/slab";
-@import "partials/layout/variables";
-@import "partials/layout/typography";
-@import "partials/layout/global";
-@import "partials/layout/header";
-@import "partials/layout/footer";
-@import "partials/layout/work";
-@import "partials/layout/blog";
-@import "partials/layout/home";
+
+// Required stuff
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/global";
+
+// Header and footer
+@import "partials/header";
+@import "partials/footer";
+
+// Pages
+@import "pages/home";
+@import "pages/work";
+@import "pages/blog";
+@import "pages/contact";
