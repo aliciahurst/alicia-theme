@@ -14,7 +14,12 @@ p, li {
 
 h1 {
 	font-size: 3rem;
+	letter-spacing: 0.25px;
+	font-weight: normal;
 	font-family: $serif;
+	a {
+		color: $robin;
+	}
 }
 
 h2 {

@@ -687,7 +687,12 @@ p, li {
 
 h1 {
   font-size: 3rem;
+  letter-spacing: 0.25px;
+  font-weight: normal;
   font-family: "Playfair Display", serif;
+}
+h1 a {
+  color: #A3C4BC;
 }
 
 h2 {
@@ -724,16 +729,20 @@ a:hover, a:active {
   display: table;
 }
 
-.wrapper-min {
+.wrapper-min, .blog .entry-header, .blog .entry-content > p, .single-post .entry-header, .single-post .entry-content > p {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
   margin-left: 17.05961%;
+}
+.wrapper-min:last-child, .blog .entry-header:last-child, .blog .entry-content > p:last-child, .single-post .entry-header:last-child, .single-post .entry-content > p:last-child {
   margin-right: 0;
 }
-.wrapper-min:last-child {
-  margin-right: 0;
+.wrapper-min::after, .blog .entry-header::after, .blog .entry-content > p::after, .single-post .entry-header::after, .single-post .entry-content > p::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 #comments {
@@ -945,6 +954,16 @@ body {
   line-height: 1;
   display: inline-block;
   fill: currentColor;
+}
+
+.blog .entry-header, .single-post .entry-header {
+  text-align: center;
+}
+.blog .entry-meta p, .single-post .entry-meta p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */
