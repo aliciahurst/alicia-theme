@@ -938,6 +938,9 @@ body {
   border-bottom: 8px solid rgba(0, 0, 0, 0.76);
   background: #FFFCF2;
 }
+#colophon .wrapper {
+  padding: 4em 0;
+}
 
 .post-type-archive-work .work-item {
   float: left;

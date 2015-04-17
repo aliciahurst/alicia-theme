@@ -18,6 +18,7 @@
 
 				<?php if( have_rows('social_media', 'option') ): ?>
 					<nav id="social-navigation-footer" class="social-navigation" role="navigation">
+						<h2>Keep in Touch</h2>
 						<ul>
 						<?php while( have_rows('social_media', 'option') ): the_row(); 
 

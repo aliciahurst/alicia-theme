@@ -47,4 +47,7 @@
 #colophon {
 	border-bottom: 8px solid $dark-gray;
 	background: $nude;
+	.wrapper {
+		padding: 4em 0;
+	}
 }
