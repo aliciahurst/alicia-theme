@@ -294,3 +294,9 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 	
 }
+
+// Custom the_excerpt truncation echo
+function custom_excerpt_more( $more ) {
+	return '...';
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );
