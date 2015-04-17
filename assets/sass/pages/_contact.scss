@@ -1,0 +1,37 @@
+.contact .entry-content ul {
+	list-style-type: none;
+	[class^="icon-"], [class*=" icon-"] {
+	    height: 28px;
+	    width: 28px;
+	    display: block; 
+	    fill: $white; 
+	}
+}
+
+.contact-form {
+	background: $navy;
+	color: $white;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	input:not([type=submit]), select {
+		width: 100%;
+		font-family: $sans;
+	}
+	li:not(#field_1_9) {
+		@include span-columns(4 of 8);
+		@include omega(2n);
+	}
+	#field_1_9 {
+		@include span-columns(8 of 8);
+	}
+	input[type=submit] {
+		display: block;
+		margin: 0 auto;
+	}
+	label {
+		color: lighten($navy,60);
+	}
+}

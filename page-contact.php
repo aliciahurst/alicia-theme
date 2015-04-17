@@ -21,12 +21,9 @@ get_header(); ?>
 
 						<div class="entry-content">
 							<div class="wrapper">
-								<?php the_content(); ?>
-							</div>
-						</div>
+								<?php the_content(); ?>			
 
-						<nav id="social-navigation-footer" class="social-navigation" role="navigation">
-						<h2>Keep in Touch</h2>
+						<h2>Networks</h2>
 						<ul>
 						<?php while( have_rows('social_media', 'option') ): the_row(); 
 
@@ -35,14 +32,19 @@ get_header(); ?>
 							$account = get_sub_field('social_media_account');
 
 							?>
-							<li><a href="http://<?php echo $network; ?>.com/<?php echo $account; ?>"><svg class="icon-<?php echo $network; ?>"><use xlink:href="#icon-<?php echo $network; ?>"></use></svg></a></li>
+							<li><a href="http://<?php echo $network; ?>.com/<?php echo $account; ?>"><?php echo $network; ?></a></li>
 						<?php endwhile; ?>
 						</ul>
-					</nav>
+
+						</div>
+					</div>
 
 						<div class="contact-form">
 							<div class="wrapper">
+								<div class="wrapper-min">
+								<h2>New Project Inquiries</h2>
 								<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
+								</div>
 							</div>
 						</div>
 

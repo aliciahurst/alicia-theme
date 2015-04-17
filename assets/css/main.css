@@ -1077,4 +1077,59 @@ body {
   font-weight: 700;
 }
 
+.contact .entry-content ul {
+  list-style-type: none;
+}
+.contact .entry-content ul [class^="icon-"], .contact .entry-content ul [class*=" icon-"] {
+  height: 28px;
+  width: 28px;
+  display: block;
+  fill: #ffffff;
+}
+
+.contact-form {
+  background: #413C58;
+  color: #ffffff;
+}
+.contact-form ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-form input:not([type=submit]), .contact-form select {
+  width: 100%;
+  font-family: "roboto", sans-serif;
+}
+.contact-form li:not(#field_1_9) {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 48.21067%;
+}
+.contact-form li:not(#field_1_9):last-child {
+  margin-right: 0;
+}
+.contact-form li:not(#field_1_9):nth-child(2n) {
+  margin-right: 0;
+}
+.contact-form li:not(#field_1_9):nth-child(2n+1) {
+  clear: left;
+}
+.contact-form #field_1_9 {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 100%;
+}
+.contact-form #field_1_9:last-child {
+  margin-right: 0;
+}
+.contact-form input[type=submit] {
+  display: block;
+  margin: 0 auto;
+}
+.contact-form label {
+  color: #e0dee8;
+}
+
 /*# sourceMappingURL=main.css.map */
