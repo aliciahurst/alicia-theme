@@ -1,11 +1,16 @@
 .social-navigation {
+	@include span-columns(4);
 	text-align: center;
 	li {
-		padding: 0 10px;
+		@include span-columns(2 of 4);
+		@include omega (2n);
+		&:last-of-type, &:nth-last-of-type(2) {
+			margin-bottom: 0;
+		}
 		a {
-			padding: 14px;
 			display: block;
-			border-radius: 50%;
+			padding: 4px 0;
+			border-radius: 4px;
 			background: $dark-gray;
 		}
 	}
@@ -17,13 +22,13 @@
 	    width: 28px;
 	    display: block; 
 	    fill: $white; 
+	    margin: 0 auto;
 	}
 }
 
 .copyright {
-	padding: 5% 0 0.5rem 0;
+	@include span-columns(8);
 	p {
-		text-align: center;
 		letter-spacing: 0.5px;
 		font-family: $sans;
 		font-size: 0.875rem;
@@ -40,6 +45,6 @@
 }
 
 #colophon {
-	border-bottom: 5px solid $dark-gray;
+	border-bottom: 8px solid $dark-gray;
 	background: $nude;
 }

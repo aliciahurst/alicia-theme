@@ -11,8 +11,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="wrapper">
-				
+		<div class="wrapper">		
+				<div class="copyright">
+					<p><span class="copy">&copy; <?php echo date('Y'); ?> <a href="/">Alicia Hurst</a>. All rights reserved.</span> <span class="spacer">|</span> <a href="/terms">Terms &amp; Privacy</a> <span class="spacer">|</span> <a href="/credits">Credits</a>
+				</div>
 
 				<?php if( have_rows('social_media', 'option') ): ?>
 					<nav id="social-navigation-footer" class="social-navigation" role="navigation">
@@ -28,11 +30,7 @@
 						<?php endwhile; ?>
 						</ul>
 					</nav>
-				<?php endif; ?>
-
-				<div class="copyright">
-					<p><span class="copy">&copy; <?php echo date('Y'); ?> <a href="/">Alicia Hurst</a>. All rights reserved.</span> <span class="spacer">|</span> <a href="/terms">Terms &amp; Privacy</a> <span class="spacer">|</span> <a href="/credits">Credits</a>
-				</div>
+				<?php endif; ?>	
 
 		</div>
 	</footer><!-- #colophon -->
