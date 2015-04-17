@@ -34,7 +34,7 @@ get_header(); ?>
 
 						<?php if( get_field('client_url') ): ?>
 									<?php $url = get_field('client_url'); ?>
-										Client: <a href="$url"><?php the_title(); ?></a>
+										<a href="$url">Launch live website</a>
 							<?php endif; ?>
 					</div>
 				</header><!-- .entry-header -->
