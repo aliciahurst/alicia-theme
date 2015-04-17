@@ -8,14 +8,18 @@ p, li {
 	margin-bottom: 1rem;
 	font-size: 1.125rem;
 	color: $base-font-color;
+	font-family: $serif;
 }
 
 h1 {
-	font-size: 2.6rem;
+	font-size: 3rem;
+	font-family: $serif;
 }
 
 h2 {
-
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1rem;
 }
 
 h3 {
@@ -35,7 +39,14 @@ h6 {
 }
 
 ul {
-
+	header &, footer & {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+		}
+	}
 }
 
 a {

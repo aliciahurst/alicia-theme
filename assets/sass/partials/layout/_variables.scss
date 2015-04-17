@@ -1,12 +1,6 @@
-
-
-
-
-
-
 // Typography
-$sans: "ff-tisa-sans-web-pro",sans-serif; // Need more stack here
-$serif: "ff-tisa-web-pro",serif;
+$sans: "roboto",sans-serif; // Need more stack here
+$serif: "Playfair Display",serif;
 
 // Font Sizes
 $base: 1.6rem;
@@ -28,6 +22,13 @@ $blue: #477dca;
 $dark-gray: rgba(0,0,0,0.76);
 $medium-gray: #999;
 $light-gray: #ddd;
+
+$navy: #413C58;
+$robin: #A3C4BC;
+$seafoam: #BFD7B5;
+$cucumber: #E7EFC5;
+$nude: #FFFCF2;
+$gray: #F8F8F8;
 
 // Font Colors
 $base-background-color: #fff;

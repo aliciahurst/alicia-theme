@@ -13,8 +13,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script src="//use.typekit.net/nht0rlx.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<script src="https://fontastic.s3.amazonaws.com/hWzFcuyKpTpmn2DL4SVLTT/icons.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,700' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 
@@ -29,7 +29,7 @@
 					<p>Web Designer &amp; Developer</p>
 				</div>
 				<div class="site-logo">
-					<h1 class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">AH</a></h1>
+					<h1 class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/svg-min/ah.min.svg" width="80px"></a></h1>
 				</div>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'alicia-theme' ); ?></button>
