@@ -11,11 +11,13 @@
 	}
 }
 
-[class^="icon-"], [class*=" icon-"] {
-    height: 28px;
-    width: 28px;
-    display: block; 
-    fill: $white; 
+#colophon {
+	[class^="icon-"], [class*=" icon-"] {
+	    height: 28px;
+	    width: 28px;
+	    display: block; 
+	    fill: $white; 
+	}
 }
 
 .copyright {
@@ -39,4 +41,5 @@
 
 #colophon {
 	border-bottom: 5px solid $dark-gray;
+	background: $nude;
 }

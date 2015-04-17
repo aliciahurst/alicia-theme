@@ -1,0 +1,29 @@
+.single-work .entry-header div {
+	@include span-columns(6);
+}
+
+.work-roles {
+	ul {
+		li {
+			display: block;
+		}
+	}
+}
+
+.entry-nav {
+	p {
+		@include span-columns(6);
+		vertical-align: middle;
+		&:nth-of-type(2) {
+			text-align: right;
+		}
+	}
+	[class^="icon-"], [class*=" icon-"] {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block; 
+    fill: currentColor; 
+	}
+}

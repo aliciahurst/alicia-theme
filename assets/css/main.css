@@ -679,9 +679,10 @@ body {
 p, li {
   line-height: 1.5;
   margin-bottom: 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.76);
-  font-family: "Playfair Display", serif;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 0.25px;
 }
 
 h1 {
@@ -715,11 +716,24 @@ a:hover, a:active {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  padding: 2rem 0;
 }
 .wrapper::after {
   clear: both;
   content: "";
   display: table;
+}
+
+.wrapper-min {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  margin-right: 0;
+}
+.wrapper-min:last-child {
+  margin-right: 0;
 }
 
 #comments {
@@ -736,6 +750,15 @@ body {
 
 .site-logo {
   display: none;
+}
+
+.footer-go {
+  background: #ffffff;
+  text-align: center;
+}
+.footer-go p {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
 }
 
 #masthead .wrapper {
@@ -838,7 +861,7 @@ body {
   background: rgba(0, 0, 0, 0.76);
 }
 
-[class^="icon-"], [class*=" icon-"] {
+#colophon [class^="icon-"], #colophon [class*=" icon-"] {
   height: 28px;
   width: 28px;
   display: block;
@@ -866,6 +889,43 @@ body {
 
 #colophon {
   border-bottom: 5px solid rgba(0, 0, 0, 0.76);
+  background: #FFFCF2;
+}
+
+.single-work .entry-header div {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.single-work .entry-header div:last-child {
+  margin-right: 0;
+}
+
+.work-roles ul li {
+  display: block;
+}
+
+.entry-nav p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  vertical-align: middle;
+}
+.entry-nav p:last-child {
+  margin-right: 0;
+}
+.entry-nav p:nth-of-type(2) {
+  text-align: right;
+}
+.entry-nav [class^="icon-"], .entry-nav [class*=" icon-"] {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+  line-height: 1;
+  display: inline-block;
+  fill: currentColor;
 }
 
 /*# sourceMappingURL=main.css.map */

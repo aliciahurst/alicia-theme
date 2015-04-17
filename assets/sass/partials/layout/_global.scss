@@ -1,7 +1,13 @@
 .wrapper {
 	@include outer-container;
+	padding: 2rem 0;
 }
 
+.wrapper-min {
+	@include span-columns(8);
+	@include shift(2);
+	@include omega;
+}
 
 #comments {
 	display: none;
@@ -17,4 +23,13 @@ body {
 
 .site-logo {
 	display: none;
+}
+
+.footer-go {
+	background: $white;
+	text-align: center;
+	p {
+		font-family: $serif;
+		font-size: 2rem;
+	}
 }

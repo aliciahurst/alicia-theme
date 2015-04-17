@@ -6,9 +6,10 @@ body {
 p, li {
 	line-height: 1.5;
 	margin-bottom: 1rem;
-	font-size: 1.125rem;
+	font-size: 1rem;
 	color: $base-font-color;
-	font-family: $serif;
+	font-family: $sans;
+	letter-spacing: 0.25px;
 }
 
 h1 {

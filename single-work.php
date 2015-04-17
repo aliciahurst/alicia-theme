@@ -15,8 +15,8 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 				<header class="entry-header wrapper">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					<div class="work-info">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 						<?php the_field('work_description'); ?>
 					</div>
 					<div class="work-roles">
@@ -52,14 +52,14 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 
 				<div class="entry-nav wrapper">
-					<p><a href="/work">Portfolio</a></p>
-					<p><?php previous_post_link( '%link', 'Next project'); ?></p>
+					<p><a href="/work"><svg class="icon-portfolio"><use xlink:href="#icon-portfolio"></use></svg> Portfolio</a></p>
+					<p><?php previous_post_link( '%link', 'Next project <svg class="icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>'); ?></p>
 				</div>
 
-				<footer class="entry-footer">
+				<footer class="entry-footer footer-go">
 					<div class="wrapper">
 						<h2>How can I help with your project?</h2>
-						<p><a href="/contact">Let's Get Started</a></p>
+						<p><a href="/contact">Get Started</a></p>
 					</div>
 				</footer><!-- .entry-footer -->
 			</article><!-- #post-## -->
