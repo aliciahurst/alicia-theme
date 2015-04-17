@@ -25,35 +25,40 @@ get_header(); ?>
 							</div>
 						</div>
 
-						<div class="latest">
-							<div class="wrapper">
-								<div class="latest-blog">
-									<h2>Latest Blog Post</h2>
-									<a href="/blog">See More</a>
-									<?php $args = array( 'numberposts' => 1 ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
-									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> 
-									<?php the_excerpt(); ?> 
-									<a href="<?php the_permalink(); ?>">Continue reading</a>
-								<?php endforeach; ?>
-
-								</div>
-								<div class="latest-work">
-										<h2>Latest Work</h2>
-									<a href="/work">See More</a>
-									<?php $args = array( 'numberposts' => 1, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
-										<img src="/wordpress/wp-content/themes/alicia-theme/asets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
-										<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> 
-								<?php endforeach; ?>
-								</div>
-							</div>
-						</div>
-
 						<footer class="entry-footer footer-go">
 							<div class="wrapper">
 								<h2>How can I help with your project?</h2>
 								<p><a href="/contact">Get Started</a></p>
 							</div>
 						</footer><!-- .entry-footer -->
+
+						<div class="latest">
+							<div class="wrapper">
+								<div class="latest-work">
+								<header>
+										<h2>Latest Work</h2>
+										<p><a href="/work">See More</a></p>
+								</header>
+									<?php $args = array( 'numberposts' => 1, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+										<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1> 
+										<img src="/wordpress/wp-content/themes/alicia-theme/asets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
+								<?php endforeach; ?>
+								</div>
+
+								<div class="latest-blog">
+								<header>
+									<h2>Latest Blog Post</h2>
+									<p><a href="/blog">See More</a></p>
+								</header>
+									<?php $args = array( 'numberposts' => 1 ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+										<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1> 
+										<?php the_excerpt(); ?> 
+										<p><a href="<?php the_permalink(); ?>">Continue reading</a></p>
+								<?php endforeach; ?>
+								</div>					
+							</div>
+						</div>
+
 					</article><!-- #post-## -->
 
 

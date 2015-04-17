@@ -1,0 +1,22 @@
+.latest {
+	background: lighten($robin,22);
+	.wrapper {
+		header {
+			@include display(flex);
+			 @include flex-direction(row);
+			 @include justify-content(space-between);
+			 @include align-items(center);
+			 .p, h1 {
+			 	 @include flex(1);
+			 }
+		}
+		.latest-blog {
+			@include span-columns(4);
+			@include shift(1);
+		}
+		.latest-work {
+			@include shift(1.5);
+			@include span-columns(4);
+		}
+	}
+}
