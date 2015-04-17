@@ -52,7 +52,7 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 
 				<div class="entry-nav wrapper">
-					<p><a href="/work"><svg class="icon-portfolio"><use xlink:href="#icon-portfolio"></use></svg> Portfolio</a></p>
+					<p><a href="/work"><svg class="icon-portfolio"><use xlink:href="#icon-portfolio"></use></svg> Back to portfolio</a></p>
 					<p><?php previous_post_link( '%link', 'Next project <svg class="icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>'); ?></p>
 				</div>
 

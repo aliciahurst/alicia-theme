@@ -1,7 +1,7 @@
 ///////////////
 //// ARCHIVE
 ///////////////
-.post-type-archive-work {
+.post-type-archive-work .content-area {
 	.work-item {
 		@include span-columns(4);
 		@include omega(3n);
@@ -42,5 +42,12 @@
     line-height: 1;
     display: inline-block; 
     fill: currentColor; 
+	}
+}
+
+.single-work .entry-content {
+	text-align: center;
+	img {
+		padding: $gutter * 0.5 0;
 	}
 }
