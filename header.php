@@ -25,8 +25,8 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="wrapper">
 				<div class="site-name">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p>Web Designer &amp; Developer</p>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> <span class="spacer">/</span></h1>
+					<h2 class="site-description">Web Designer &amp; Developer</h2>
 				</div>
 				<div class="site-logo">
 					<h1 class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/svg-min/ah.min.svg" width="80px"></a></h1>
