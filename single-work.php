@@ -46,7 +46,7 @@ get_header(); ?>
 										$name = get_sub_field('image_name');
 										$size = get_sub_field('image_size');
 										?>
-										<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>.jpg" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>" class="<?php echo $size; ?>">
+										<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>" class="<?php echo $size; ?>">
 									<?php endwhile; ?>
 							<?php endif; ?>
 				</div><!-- .entry-content -->

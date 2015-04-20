@@ -42,7 +42,7 @@
 		display: inline-block;
 		margin: 0;
 		line-height: 1;
-		font-size: 1rem;
+		font-size: rem(15);
 		&:last-of-type {
 			padding-right: 0;
 		}
@@ -54,9 +54,6 @@
 		a {
 			padding: 5px 25px 7px;
 			text-transform: uppercase;
-			//font-style: italic;
-			//font-weight: bold;
-			font-size: 0.875rem;
 			letter-spacing: 1px;
 			font-family: $serif;
 			color: $base-font-color;
