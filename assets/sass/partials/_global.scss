@@ -1,6 +1,7 @@
 .wrapper {
 	@include outer-container;
 	padding: 2rem 0;
+	overflow: auto;
 }
 
 .wrapper-min {
