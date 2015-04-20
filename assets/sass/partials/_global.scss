@@ -29,8 +29,59 @@ body {
 .footer-go {
 	background: $white;
 	text-align: center;
+	.wrapper {
+		padding: 3rem 0;
+	}
+	h2 {
+		color: darken($white, 50);
+	}
 	p {
 		font-family: $serif;
-		font-size: 2rem;
+		font-size: 3rem;
+		margin: 0;
+		a {
+			color: $robin;
+			position: relative;
+			z-index: 999;
+			@include transition(all 0.2s ease-in-out);
+			&:before {
+				content: "";
+				position: absolute;
+				height: 5px;
+				bottom: 8px;
+				width: 100%;
+				background: lighten($robin,20);
+				z-index: -1;
+				@include transition(all 0.2s ease-in-out);
+			}
+			&:after {
+				content: "\2192";
+				position: absolute;
+				top: 0;
+				right: -60px;
+				color: lighten($robin,20);
+				opacity: 0;
+				@include transition(opacity 0.3s ease-in-out);
+			}
+			&:hover {
+				color: darken($robin, 10);
+				&:before {
+					height: 30%;
+				}
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
 	}
+}
+
+%line {
+	@include linear-gradient(to right, transparent 0%,  darken($gray,13) 40%, darken($gray,13) 60%, transparent 100%);
+	background-color: transparent;
+	border-radius: 1px;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	left: 0;
 }

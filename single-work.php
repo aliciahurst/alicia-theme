@@ -17,11 +17,12 @@ get_header(); ?>
 				<header class="entry-header wrapper">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					<div class="work-info">
+						<h3>Overview</h3>
 						<?php the_field('work_description'); ?>
 					</div>
 					<div class="work-roles">
 							<?php if( have_rows('work_roles') ): ?>
-								<h3>Roles</h3>
+								<h3>Key Roles</h3>
 									<ul>
 									<?php while( have_rows('work_roles') ): the_row(); 
 										// vars

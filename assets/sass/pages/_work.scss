@@ -15,14 +15,18 @@
 //// SINGLE
 ///////////////
 
-.single-work .entry-header div {
+.work-info {
 	@include span-columns(6);
 }
 
 .work-roles {
+	@include span-columns(4);
+	@include shift(1);
+	@include omega;
 	ul {
 		li {
 			display: block;
+			font-family: $serif;
 		}
 	}
 }
@@ -47,7 +51,16 @@
 
 .single-work .entry-content {
 	text-align: center;
+	position: relative;
 	img {
 		padding: $gutter * 0.5 0;
+	}
+	&:before {
+		@extend %line;
+		top: 0;
+	}
+	&:after {
+		@extend %line;
+		bottom: 0;
 	}
 }
