@@ -61,19 +61,17 @@
 	}
 }
 
-.single-work { // because the work post type seems broken
+.single-work, .post-type-archive-work { // because the work post type seems broken
 	.main-navigation {
-		li {
-			&.current_page_parent {
+			#menu-item-24 {
 				a {
 					background: none;
 				}
 			}
-			&.menu-item-27 {
+			#menu-item-27 {
 				a {
 					background: $white;
 				}
 			}
-		}
 	}
 }

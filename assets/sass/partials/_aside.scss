@@ -1,0 +1,74 @@
+/////////////////////////////////
+// Post Blockquotes and Asides
+/////////////////////////////////
+
+blockquote.post-credits {
+
+}
+
+aside.image-caption {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  p {
+    margin-top: 0;
+  }
+  @media all and (min-width:600px) {
+  	  text-align: right;
+  }
+}
+
+.entry-content aside {
+
+}
+
+$papercolor: saturate(lighten($navy,65),10);
+
+blockquote.note {
+  	//margin: 3rem 8%;
+  	//z-index: -1;
+  	margin: 1rem 0.4rem 3rem;
+    padding: 29px 30px 10px 60px;
+    position: relative;
+    color: $base-font-color;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from($papercolor), color-stop(4%, #fff)) 0 4px;
+    background: -webkit-linear-gradient(top, $papercolor 0%, #fff 8%) 0 4px;
+    background: -moz-linear-gradient(top, $papercolor 0%, #fff 8%) 0 4px;
+    background: -ms-linear-gradient(top, $papercolor 0%, #fff 8%) 0 4px;
+    background: -o-linear-gradient(top, $papercolor 0%, #fff 8%) 0 4px;
+    background: linear-gradient(top, $papercolor 0%, #fff 8%) 0 4px;
+    -webkit-background-size: 100% 24px;
+    -moz-background-size: 100% 24px;
+    -ms-background-size: 100% 24px;
+    -o-background-size: 100% 24px;
+    background-size: 100% 24px;
+   // -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+   // -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+   // box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+	&:before {
+	    content: '';
+	    position: absolute;
+	    width: 4px;
+	    top: 0;
+	    left: 30px;
+	    bottom: 0;
+	    border: 1px solid;
+	    border-color: transparent $nude;
+	}
+	p, ul li {
+		  font-size: rem(18);
+		  line-height: 24px;
+		  margin: 0 0 24px 0;
+		  &:before {
+		  	line-height: 24px;
+		  }
+	}
+	ul {
+		margin-bottom: 24px;
+		li {
+			margin-bottom: 0;
+			//z-index: 1;
+		}
+	}
+}

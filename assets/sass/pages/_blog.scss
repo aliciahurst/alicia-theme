@@ -1,11 +1,12 @@
 .blog, .single-post {
-	.entry-content {
-		> *:not(img) {
+	.entry-content > {
+		p, ul, blockquote, aside {
 			@extend .wrapper-min;
 			clear: both;
 		}
-		img {
-			@extend .wrapper;
+		p > img {
+			@include shift(0);
+			@include span-columns(12);
 		}
 	}
 	.entry-meta p {

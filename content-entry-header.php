@@ -17,7 +17,7 @@
 		<?php if (is_page('Contact')): ?>
 			<?php the_content(); ?>
 		<?php elseif (is_singular('post')): ?>
-			<p class="post_date date updated"><?php the_date(); ?></p>
+			<h2 class="post_date date updated"><?php the_date(); ?></p>
 		<?php else : ?>
 			<h3>Overview</h3>
 			<?php the_field('work_description'); ?>

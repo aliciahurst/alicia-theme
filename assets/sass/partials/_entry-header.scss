@@ -45,9 +45,7 @@
 		@include shift(2);
 		@include span-columns(4);
 		.post_date {
-			@extend .outbound-link;
-			color: $robin;
-			margin: 3rem 0 0 0;
+			margin: 3rem 0 0 0; 
 		}
 	}
 }
