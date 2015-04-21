@@ -690,6 +690,8 @@ h1 {
   letter-spacing: 0.25px;
   font-weight: normal;
   font-family: "Playfair Display", serif;
+  line-height: 1;
+  margin: 2rem 0;
 }
 h1 a {
   color: #A3C4BC;
@@ -1139,6 +1141,15 @@ body {
   font-size: 1.5rem;
 }
 
+.single-work .entry-title {
+  text-align: right;
+  color: #ffffff;
+  margin-bottom: -3rem;
+  margin-right: 3rem;
+  z-index: 999;
+  font-size: 8rem;
+}
+
 .work-info {
   float: left;
   display: block;
@@ -1147,6 +1158,25 @@ body {
 }
 .work-info:last-child {
   margin-right: 0;
+}
+
+.work-live {
+  font-family: "Playfair Display", serif;
+  margin: 2rem 0;
+}
+.work-live a {
+  color: #A3C4BC;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.5px;
+}
+.work-live [class^="icon-"], .work-live [class*=" icon-"] {
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  fill: currentColor;
+  margin-left: 5px;
 }
 
 .work-roles {
@@ -1160,9 +1190,19 @@ body {
 .work-roles:last-child {
   margin-right: 0;
 }
+.work-roles ul {
+  margin-top: 0;
+}
 .work-roles ul li {
   display: block;
-  font-family: "Playfair Display", serif;
+  margin: 0;
+  line-height: 1.7;
+  font-size: 0.9375rem;
+  color: #787878;
+}
+.work-roles ul li:before {
+  content: "\203A";
+  padding-right: 10px;
 }
 
 .entry-nav p {
@@ -1177,6 +1217,18 @@ body {
 }
 .entry-nav p:nth-of-type(2) {
   text-align: right;
+}
+.entry-nav p span {
+  padding: 0 10px;
+}
+.entry-nav a {
+  color: #c5c5c5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+}
+.entry-nav a:hover {
+  color: #787878;
 }
 .entry-nav [class^="icon-"], .entry-nav [class*=" icon-"] {
   height: 32px;

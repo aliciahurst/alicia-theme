@@ -35,7 +35,7 @@ get_header(); ?>
 
 						<?php if( get_field('client_url') ): ?>
 									<?php $url = get_field('client_url'); ?>
-										<a href="$url">Launch live website</a>
+										<p class="work-live"><a href="<?php echo $url; ?>">Launch live website <svg class="icon-external-link"><use xlink:href="#icon-external-link"></use></svg></a></p>
 							<?php endif; ?>
 					</div>
 				</header><!-- .entry-header -->
@@ -53,8 +53,8 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 
 				<div class="entry-nav wrapper">
-					<p><a href="/work"><svg class="icon-portfolio"><use xlink:href="#icon-portfolio"></use></svg> Back to portfolio</a></p>
-					<p><?php previous_post_link( '%link', 'Next project <svg class="icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>'); ?></p>
+					<p><a href="/work"><svg class="icon-portfolio"><use xlink:href="#icon-portfolio"></use></svg><span>Back to portfolio</span></a></p>
+					<p><?php previous_post_link( '%link', '<span>Next project</span> <svg class="icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>'); ?></p>
 				</div>
 
 				<footer class="entry-footer footer-go">
