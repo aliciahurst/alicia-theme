@@ -1117,7 +1117,7 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact-form input[t
 }
 
 .single-post .entry-title {
-  color: #e7f0ee;
+  color: #ffffff;
   font-size: 6rem;
   margin-bottom: -2.7rem;
   float: left;
@@ -1139,7 +1139,7 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact-form input[t
   margin-right: 0;
 }
 .single-post .entry-left .post_date {
-  color: #ffffff;
+  color: #A3C4BC;
   margin: 3rem 0 0 0;
 }
 

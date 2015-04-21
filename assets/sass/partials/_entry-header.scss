@@ -36,7 +36,7 @@
 
 .single-post {
 	.entry-title {
-		color: $robinlight;
+		color: $white;
 		font-size: 6rem;
 		margin-bottom: -2.7rem;
 		@include span-columns(10);
@@ -46,7 +46,7 @@
 		@include span-columns(4);
 		.post_date {
 			@extend .outbound-link;
-			color: $white;
+			color: $robin;
 			margin: 3rem 0 0 0;
 		}
 	}
