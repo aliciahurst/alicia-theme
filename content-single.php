@@ -19,7 +19,4 @@
 
 	</div><!-- .entry-content -->
 
-	<!-- <footer class="entry-footer">
-		<?php alicia_theme_entry_footer(); ?>
-	</footer> -->
 </article><!-- #post-## -->

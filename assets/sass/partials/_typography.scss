@@ -10,6 +10,9 @@ p, li {
 	color: $base-font-color;
 	font-family: $sans;
 	letter-spacing: 0.25px;
+	.blog &, .single & {
+		letter-spacing: 0.1px;
+	}
 }
 
 h1 {
@@ -22,6 +25,11 @@ h1 {
 	a {
 		color: $robin;
 	}
+	&.entry-title {
+		@extend %growlink;
+		line-height: 1.4;
+		position: relative;
+	}
 }
 
 h2 {
@@ -30,7 +38,7 @@ h2 {
 	font-size: rem(14);
 }
 
-h3 {
+h3:not(.blog, .single-format-standard) {
 	text-transform: uppercase;
 	font-size: rem(13);
 	font-weight: 300;
@@ -77,7 +85,15 @@ ul {
 
 a {
 	text-decoration: none;
+	color: $navgrayhover;
 	&:hover, &:active {
 		color: $black;
 	}
+	.blog .entry-content &, .single-post .entry-content & {
+		border-bottom: 2px dotted rgba($navgrayhover, 0.1);
+	}
+}
+
+strong {
+	font-weight: 600;
 }

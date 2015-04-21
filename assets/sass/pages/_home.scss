@@ -19,4 +19,7 @@
 			@include span-columns(4);
 		}
 	}
+	header p a {
+		font-size: rem(14);
+	}
 }

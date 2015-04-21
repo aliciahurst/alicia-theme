@@ -31,8 +31,6 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
-
 		<?php else : ?>
 
 			<?php get_template_part( 'content', 'none' ); ?>
@@ -40,6 +38,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		<?php the_posts_navigation(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
