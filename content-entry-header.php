@@ -6,7 +6,7 @@
  */
 ?>
 
-<header class="entry-header">
+<header class="entry-header special">
 	<?php if (is_page('Contact')): ?>
 		<h1 class="entry-title">Get in touch</h1>
 	<?php else : ?>
@@ -16,6 +16,9 @@
 	<div class="entry-left">
 		<?php if (is_page('Contact')): ?>
 			<?php the_content(); ?>
+		<?php elseif (is_singular('post')): ?>
+			<h3>Posted</h3>
+			<p><span class="post_date date updated"><?php the_date(); ?></span></p>
 		<?php else : ?>
 			<h3>Overview</h3>
 			<?php the_field('work_description'); ?>
@@ -25,6 +28,8 @@
 	<div class="entry-right">
 		<?php if (is_page('Contact')): ?>
 			<h3>Networks</h3>
+		<?php elseif (is_singular('post')): ?>
+			<h3>Tagged</h3>
 		<?php else : ?>
 			<h3>Key Roles</h3>
 		<?php endif; ?>
@@ -39,6 +44,8 @@
 					<li><a href="http://<?php echo $network; ?>.com/<?php echo $account; ?>"><?php echo $network; ?></a></li>
 				<?php endwhile; ?>
 				<?php endif; ?>
+			<?php elseif (is_singular('post')): ?>
+				<?php the_tags( '<li>', '</li><li>', '</li>' ); ?>
 			<?php else : ?>
 				<?php if( have_rows('work_roles') ): ?>
 						<?php while( have_rows('work_roles') ): the_row(); 

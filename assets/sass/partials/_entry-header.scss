@@ -1,5 +1,6 @@
-.entry-header {
+.special {
 	@extend .wrapper;
+	padding-top: 0;
 	.entry-title {
 		text-align: right;
 		color: $white;
@@ -32,6 +33,12 @@
 	}
 }
 
+.single-post {
+	.entry-left {
+		@include shift(2);
+		@include span-columns(4);
+	}
+}
 .outbound-link {
 	font-family: $serif;
 	margin: 2rem 0;

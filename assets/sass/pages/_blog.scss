@@ -1,9 +1,4 @@
 .blog, .single-post {
-	.entry-header {
-		text-align: center;
-		@extend .wrapper-min;
-		clear: both;
-	}
 	.entry-content {
 		> *:not(img) {
 			@extend .wrapper-min;
@@ -55,6 +50,7 @@
 .single-post, .blog {
 	main {
 		padding-bottom: 4rem;
+		padding-top: 0;
 	}
 }
 
