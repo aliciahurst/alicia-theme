@@ -678,7 +678,8 @@ body {
 
 p, li {
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.76);
   font-family: "roboto", sans-serif;
@@ -1108,12 +1109,25 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact-form input[t
   line-height: 1.7;
   font-size: 0.9375rem;
   color: #787878;
+  text-transform: capitalize;
 }
 .special .entry-right ul li:before {
   content: "\203A";
   padding-right: 10px;
 }
 
+.single-post .entry-title {
+  color: #e7f0ee;
+  font-size: 6rem;
+  margin-bottom: -2.7rem;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+.single-post .entry-title:last-child {
+  margin-right: 0;
+}
 .single-post .entry-left {
   margin-left: 17.05961%;
   float: left;
@@ -1124,18 +1138,22 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact-form input[t
 .single-post .entry-left:last-child {
   margin-right: 0;
 }
-
-.outbound-link {
-  font-family: "Playfair Display", serif;
-  margin: 2rem 0;
+.single-post .entry-left .post_date {
+  color: #ffffff;
+  margin: 3rem 0 0 0;
 }
-.outbound-link a {
-  color: #A3C4BC;
+
+.outbound-link, .single-post .entry-left .post_date {
+  font-family: "Playfair Display", serif;
   font-size: 1.2rem;
   line-height: 1.6rem;
   letter-spacing: 0.5px;
 }
-.outbound-link [class^="icon-"], .outbound-link [class*=" icon-"] {
+.outbound-link a, .single-post .entry-left .post_date a {
+  color: #A3C4BC;
+  margin: 2rem 0;
+}
+.outbound-link [class^="icon-"], .single-post .entry-left .post_date [class^="icon-"], .outbound-link [class*=" icon-"], .single-post .entry-left .post_date [class*=" icon-"] {
   height: 14px;
   width: 14px;
   vertical-align: middle;

@@ -24,6 +24,7 @@
 				line-height: 1.7;
 				font-size: rem(15);
 				color: $navgrayhover;
+				text-transform: capitalize;
 				&:before {
 					content: "\203A";
 					padding-right: 10px;
@@ -34,19 +35,31 @@
 }
 
 .single-post {
+	.entry-title {
+		color: $robinlight;
+		font-size: 6rem;
+		margin-bottom: -2.7rem;
+		@include span-columns(10);
+	}
 	.entry-left {
 		@include shift(2);
 		@include span-columns(4);
+		.post_date {
+			@extend .outbound-link;
+			color: $white;
+			margin: 3rem 0 0 0;
+		}
 	}
 }
+
 .outbound-link {
 	font-family: $serif;
-	margin: 2rem 0;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	letter-spacing: 0.5px;
 	a {
 		color: $robin;
-		font-size: 1.2rem;
-		line-height: 1.6rem;
-		letter-spacing: 0.5px;
+		margin: 2rem 0;
 	}
 	[class^="icon-"], [class*=" icon-"] {
 	    height: 14px;

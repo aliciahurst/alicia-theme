@@ -17,8 +17,7 @@
 		<?php if (is_page('Contact')): ?>
 			<?php the_content(); ?>
 		<?php elseif (is_singular('post')): ?>
-			<h3>Posted</h3>
-			<p><span class="post_date date updated"><?php the_date(); ?></span></p>
+			<p class="post_date date updated"><?php the_date(); ?></p>
 		<?php else : ?>
 			<h3>Overview</h3>
 			<?php the_field('work_description'); ?>
@@ -29,7 +28,7 @@
 		<?php if (is_page('Contact')): ?>
 			<h3>Networks</h3>
 		<?php elseif (is_singular('post')): ?>
-			<h3>Tagged</h3>
+			<h3>Tags</h3>
 		<?php else : ?>
 			<h3>Key Roles</h3>
 		<?php endif; ?>
@@ -45,7 +44,7 @@
 				<?php endwhile; ?>
 				<?php endif; ?>
 			<?php elseif (is_singular('post')): ?>
-				<?php the_tags( '<li>', '</li><li>', '</li>' ); ?>
+				<?php the_tags( '',', ' ); ?>
 			<?php else : ?>
 				<?php if( have_rows('work_roles') ): ?>
 						<?php while( have_rows('work_roles') ): the_row(); 
