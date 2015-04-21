@@ -699,7 +699,7 @@ h1 {
 h1 a {
   color: #A3C4BC;
 }
-h1.entry-title {
+h1.entry-title a {
   line-height: 1.4;
   position: relative;
 }
@@ -710,7 +710,7 @@ h2 {
   font-size: 0.875rem;
 }
 
-h3:not(.blog, .single-format-standard) {
+h3 {
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: 300;
@@ -720,7 +720,7 @@ h3:not(.blog, .single-format-standard) {
   position: relative;
   line-height: 2.4;
 }
-h3:not(.blog, .single-format-standard):after {
+h3:after {
   content: "";
   background-color: #d2d2d2;
   background-image: -webkit-linear-gradient(left, #d2d2d2 0%, transparent 30%);
@@ -804,16 +804,12 @@ body {
   display: none;
 }
 
-h1.entry-title, .footer-go p {
+h1.entry-title a, .footer-go p a {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   margin: 0;
-}
-h1.entry-title, .footer-go p.entry-title {
   margin-bottom: 2rem;
   font-size: 2.8rem;
-}
-h1.entry-title a, .footer-go p a {
   color: #A3C4BC;
   position: relative;
   z-index: 999;
@@ -1323,7 +1319,7 @@ h1.entry-title a:hover:after, .footer-go p a:hover:after {
   padding-left: 1rem;
 }
 
-.single main, .blog main {
+.single-post main, .blog main {
   padding-bottom: 4rem;
 }
 

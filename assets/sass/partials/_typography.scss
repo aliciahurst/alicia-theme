@@ -27,8 +27,10 @@ h1 {
 	}
 	&.entry-title {
 		@extend %growlink;
-		line-height: 1.4;
-		position: relative;
+		a {
+			line-height: 1.4;
+			position: relative;
+		}
 	}
 }
 
@@ -38,7 +40,7 @@ h2 {
 	font-size: rem(14);
 }
 
-h3:not(.blog, .single-format-standard) {
+h3 {
 	text-transform: uppercase;
 	font-size: rem(13);
 	font-weight: 300;
