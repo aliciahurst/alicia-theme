@@ -1,5 +1,5 @@
 .latest {
-	background: lighten($robin,22);
+	background: $robinlight;
 	.wrapper {
 		header {
 			@include display(flex);

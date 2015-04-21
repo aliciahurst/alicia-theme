@@ -14,31 +14,7 @@ get_header(); ?>
 			
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
-				<header class="entry-header wrapper">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					<div class="work-info">
-						<h3>Overview</h3>
-						<?php the_field('work_description'); ?>
-					</div>
-					<div class="work-roles">
-							<?php if( have_rows('work_roles') ): ?>
-								<h3>Key Roles</h3>
-									<ul>
-									<?php while( have_rows('work_roles') ): the_row(); 
-										// vars
-										$role = get_sub_field('new_role');
-										?>
-										<li><?php echo $role; ?></li>
-									<?php endwhile; ?>
-									</ul>
-							<?php endif; ?>
-
-						<?php if( get_field('client_url') ): ?>
-									<?php $url = get_field('client_url'); ?>
-										<p class="work-live"><a href="<?php echo $url; ?>">Launch live website <svg class="icon-external-link"><use xlink:href="#icon-external-link"></use></svg></a></p>
-							<?php endif; ?>
-					</div>
-				</header><!-- .entry-header -->
+				<?php get_template_part( 'content', 'entry-header' ); ?>
 
 				<div class="entry-content wrapper">
 					<?php if( have_rows('work_images') ): ?>
@@ -57,12 +33,8 @@ get_header(); ?>
 					<p><?php previous_post_link( '%link', '<span>Next project</span> <svg class="icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>'); ?></p>
 				</div>
 
-				<footer class="entry-footer footer-go">
-					<div class="wrapper">
-						<h2>How can I help with your project?</h2>
-						<p><a href="/contact">Get Started</a></p>
-					</div>
-				</footer><!-- .entry-footer -->
+				<?php get_template_part( 'content', 'cta' ); ?>
+
 			</article><!-- #post-## -->
 
 		<?php endwhile; // end of the loop. ?>

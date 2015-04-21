@@ -1,0 +1,52 @@
+.entry-header {
+	@extend .wrapper;
+	.entry-title {
+		text-align: right;
+		color: $white;
+		margin-bottom: -3rem;
+		margin-right: 3rem;
+		z-index: 999;
+		font-size: 8rem;
+	}
+	.entry-left {
+		@include span-columns(6);
+	}
+	.entry-right {
+		@include span-columns(4);
+		@include shift(1);
+		@include omega;
+		ul {
+			margin-top: 0;
+			li {
+				display: block;
+				margin: 0;
+				line-height: 1.7;
+				font-size: rem(15);
+				color: $navgrayhover;
+				&:before {
+					content: "\203A";
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+}
+
+.outbound-link {
+	font-family: $serif;
+	margin: 2rem 0;
+	a {
+		color: $robin;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		letter-spacing: 0.5px;
+	}
+	[class^="icon-"], [class*=" icon-"] {
+	    height: 14px;
+	    width: 14px;
+	    vertical-align: middle;
+	    display: inline-block; 
+	    fill: currentColor; 
+	    margin-left: 5px;
+	}
+}

@@ -25,12 +25,7 @@ get_header(); ?>
 							</div>
 						</div>
 
-						<footer class="entry-footer footer-go">
-							<div class="wrapper">
-								<h2>How can I help with your project?</h2>
-								<p><a href="/contact">Get Started</a></p>
-							</div>
-						</footer><!-- .entry-footer -->
+						<?php get_template_part( 'content', 'cta' ); ?>
 
 						<div class="latest">
 							<div class="wrapper">
@@ -50,15 +45,15 @@ get_header(); ?>
 								</div>
 
 								<div class="latest-blog">
-								<header>
-									<h2>Latest Blog Post</h2>
-									<p><a href="/blog">See More</a></p>
-								</header>
-									<?php $args = array( 'numberposts' => 1 ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
-										<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1> 
-										<?php the_excerpt(); ?> 
-										<p><a href="<?php the_permalink(); ?>">Continue reading</a></p>
-								<?php endforeach; ?>
+									<header>
+										<h2>Latest Blog Post</h2>
+										<p><a href="/blog">See More</a></p>
+									</header>
+										<?php $args = array( 'numberposts' => 1 ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+											<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1> 
+											<?php the_excerpt(); ?> 
+											<p><a href="<?php the_permalink(); ?>">Continue reading</a></p>
+									<?php endforeach; ?>
 								</div>					
 							</div>
 						</div>

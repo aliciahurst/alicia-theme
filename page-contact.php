@@ -19,37 +19,22 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-						<div class="entry-content">
-							<div class="wrapper">
-								<?php the_content(); ?>			
-
-						<h2>Networks</h2>
-						<ul>
-						<?php while( have_rows('social_media', 'option') ): the_row(); 
-
-							// vars
-							$network = get_sub_field('social_media_network');
-							$account = get_sub_field('social_media_account');
-
-							?>
-							<li><a href="http://<?php echo $network; ?>.com/<?php echo $account; ?>"><?php echo $network; ?></a></li>
-						<?php endwhile; ?>
-						</ul>
-
-						</div>
-					</div>
+				<?php get_template_part( 'content', 'entry-header' ); ?>
 
 						<div class="contact-form">
 							<div class="wrapper">
 								<div class="wrapper-min">
-								<h2>New Project Inquiries</h2>
+								<h1>New Project Inquiries</h1>
 								<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
 								</div>
 							</div>
 						</div>
 
 					</article><!-- #post-## -->
-
+				
+				<?php get_template_part( 'content', 'cta' ); ?>
+				
+			</article><!-- #post-## -->
 
 			<?php endwhile; // end of the loop. ?>
 		</main><!-- #main -->
