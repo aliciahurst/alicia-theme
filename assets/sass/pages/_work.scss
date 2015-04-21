@@ -1,21 +1,20 @@
 ///////////////
 //// ARCHIVE
 ///////////////
-.post-type-archive-work .content-area {
-	.work-item {
-		@include span-columns(4);
-		@include omega(3n);
-		a {
-			display: block;
-			text-align: center;
-			color: $robin;
-			h1 {
-				font-size: rem(20);
-				margin-top: -2rem;
-				span {
-					padding: 5px 20px;
-					background: $gray;
-				}
+
+.work-item {
+	@include span-columns(4);
+	@include omega(3n);
+	a {
+		display: block;
+		text-align: center;
+		color: $robin;
+		h1 {
+			font-size: rem(20);
+			margin-top: -2rem;
+			span {
+				padding: 5px 20px;
+				background: $gray;
 			}
 		}
 	}

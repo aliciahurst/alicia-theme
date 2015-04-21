@@ -1122,31 +1122,31 @@ body {
   margin-right: 0;
 }
 
-.post-type-archive-work .content-area .work-item {
+.work-item {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
 }
-.post-type-archive-work .content-area .work-item:last-child {
+.work-item:last-child {
   margin-right: 0;
 }
-.post-type-archive-work .content-area .work-item:nth-child(3n) {
+.work-item:nth-child(3n) {
   margin-right: 0;
 }
-.post-type-archive-work .content-area .work-item:nth-child(3n+1) {
+.work-item:nth-child(3n+1) {
   clear: left;
 }
-.post-type-archive-work .content-area .work-item a {
+.work-item a {
   display: block;
   text-align: center;
   color: #A3C4BC;
 }
-.post-type-archive-work .content-area .work-item a h1 {
+.work-item a h1 {
   font-size: 1.25rem;
   margin-top: -2rem;
 }
-.post-type-archive-work .content-area .work-item a h1 span {
+.work-item a h1 span {
   padding: 5px 20px;
   background: #F8F8F8;
 }

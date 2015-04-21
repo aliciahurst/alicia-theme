@@ -35,14 +35,18 @@ get_header(); ?>
 						<div class="latest">
 							<div class="wrapper">
 								<div class="latest-work">
-								<header>
-										<h2>Latest Work</h2>
-										<p><a href="/work">See More</a></p>
-								</header>
-									<?php $args = array( 'numberposts' => 1, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
-										<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1> 
-										<img src="/wordpress/wp-content/themes/alicia-theme/asets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
-								<?php endforeach; ?>
+									<header>
+											<h2>Latest Work</h2>
+											<p><a href="/work">See More</a></p>
+									</header>
+										<div class="work-item">
+											<?php $args = array( 'numberposts' => 1, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+												<a href=" <?php the_permalink(); ?>">
+													<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
+													<h1><span><?php the_title(); ?></span></h1>
+												</a>
+										</div>
+							<?php endforeach; ?>
 								</div>
 
 								<div class="latest-blog">
