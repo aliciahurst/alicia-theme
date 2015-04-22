@@ -1532,13 +1532,14 @@ blockquote.note ul li {
   margin-right: 0;
 }
 
-.more-link {
+.read-link {
   text-align: center;
   margin: 0;
 }
-.more-link a {
+.read-link a {
   background: #ffffff;
   padding: 10px 20px;
+  border-bottom: 0 !important;
 }
 
 .contact .entry-content ul {

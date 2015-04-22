@@ -300,3 +300,10 @@ function custom_excerpt_more( $more ) {
 	return '...';
 }
 add_filter( 'excerpt_more', 'custom_excerpt_more' );
+
+// Custom more-link
+
+function add_p_tag($link){
+return "<p class=read-link>$link</p>";
+}
+add_filter('the_content_more_link', 'add_p_tag');
