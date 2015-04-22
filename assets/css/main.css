@@ -246,6 +246,7 @@ textarea {
 h1,
 h2,
 h3,
+.contact-form label,
 h4,
 h5,
 h6 {
@@ -711,7 +712,7 @@ h2 {
   font-size: 0.875rem;
 }
 
-h3 {
+h3, .contact-form label {
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: 300;
@@ -721,7 +722,7 @@ h3 {
   position: relative;
   line-height: 2.4;
 }
-.entry-header h3:after {
+.entry-header h3:after, .entry-header .contact-form label:after, .contact-form .entry-header label:after {
   content: "";
   background-color: #d2d2d2;
   background-image: -webkit-linear-gradient(left, #d2d2d2 0%, transparent 30%);
@@ -772,17 +773,17 @@ strong {
   display: table;
 }
 
-.wrapper-min, .blog .entry-content > p, .blog .entry-content > ul, .blog .entry-content > blockquote, .blog .entry-content > aside, .single-post .entry-content > p, .single-post .entry-content > ul, .single-post .entry-content > blockquote, .single-post .entry-content > aside {
+.wrapper-min, .blog .entry-content > p, .blog .entry-content > ul, .blog .entry-content > blockquote, .blog .entry-content > aside, .blog .entry-content > h2, .blog .entry-content > h3, .blog .contact-form .entry-content > label, .contact-form .blog .entry-content > label, .blog .entry-content > h4, .blog .entry-content > h5, .single-post .entry-content > p, .single-post .entry-content > ul, .single-post .entry-content > blockquote, .single-post .entry-content > aside, .single-post .entry-content > h2, .single-post .entry-content > h3, .single-post .contact-form .entry-content > label, .contact-form .single-post .entry-content > label, .single-post .entry-content > h4, .single-post .entry-content > h5 {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
   margin-left: 17.05961%;
 }
-.wrapper-min:last-child, .blog .entry-content > p:last-child, .blog .entry-content > ul:last-child, .blog .entry-content > blockquote:last-child, .blog .entry-content > aside:last-child, .single-post .entry-content > p:last-child, .single-post .entry-content > ul:last-child, .single-post .entry-content > blockquote:last-child, .single-post .entry-content > aside:last-child {
+.wrapper-min:last-child, .blog .entry-content > p:last-child, .blog .entry-content > ul:last-child, .blog .entry-content > blockquote:last-child, .blog .entry-content > aside:last-child, .blog .entry-content > h2:last-child, .blog .entry-content > h3:last-child, .blog .contact-form .entry-content > label:last-child, .contact-form .blog .entry-content > label:last-child, .blog .entry-content > h4:last-child, .blog .entry-content > h5:last-child, .single-post .entry-content > p:last-child, .single-post .entry-content > ul:last-child, .single-post .entry-content > blockquote:last-child, .single-post .entry-content > aside:last-child, .single-post .entry-content > h2:last-child, .single-post .entry-content > h3:last-child, .single-post .contact-form .entry-content > label:last-child, .contact-form .single-post .entry-content > label:last-child, .single-post .entry-content > h4:last-child, .single-post .entry-content > h5:last-child {
   margin-right: 0;
 }
-.wrapper-min::after, .blog .entry-content > p::after, .blog .entry-content > ul::after, .blog .entry-content > blockquote::after, .blog .entry-content > aside::after, .single-post .entry-content > p::after, .single-post .entry-content > ul::after, .single-post .entry-content > blockquote::after, .single-post .entry-content > aside::after {
+.wrapper-min::after, .blog .entry-content > p::after, .blog .entry-content > ul::after, .blog .entry-content > blockquote::after, .blog .entry-content > aside::after, .blog .entry-content > h2::after, .blog .entry-content > h3::after, .blog .contact-form .entry-content > label::after, .contact-form .blog .entry-content > label::after, .blog .entry-content > h4::after, .blog .entry-content > h5::after, .single-post .entry-content > p::after, .single-post .entry-content > ul::after, .single-post .entry-content > blockquote::after, .single-post .entry-content > aside::after, .single-post .entry-content > h2::after, .single-post .entry-content > h3::after, .single-post .contact-form .entry-content > label::after, .contact-form .single-post .entry-content > label::after, .single-post .entry-content > h4::after, .single-post .entry-content > h5::after {
   clear: both;
   content: "";
   display: table;
@@ -981,6 +982,12 @@ body {
   display: block;
   fill: #E7CEC7;
   margin: 0 auto;
+  -webkit-transition: fill 0.2s ease-in-out;
+  -moz-transition: fill 0.2s ease-in-out;
+  transition: fill 0.2s ease-in-out;
+}
+#colophon [class^="icon-"]:hover, #colophon [class*=" icon-"]:hover {
+  fill: #d09f91;
 }
 #colophon a[href*="http://goodreads.com/"] svg {
   fill: #FFFCF2;
@@ -991,6 +998,12 @@ body {
   height: 28px;
   width: 28px;
   background: #E7CEC7;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+#colophon a[href*="http://goodreads.com/"] svg:hover {
+  background: #d09f91;
 }
 #colophon p {
   letter-spacing: 0.5px;
@@ -1004,6 +1017,12 @@ body {
 }
 #colophon p .footer-links {
   padding-left: 2rem;
+}
+#colophon p .footer-links a {
+  border-bottom: 0;
+}
+#colophon p .footer-links a:hover {
+  border-bottom: 1px solid;
 }
 #colophon p .spacer {
   padding: 0 4px;
@@ -1025,7 +1044,7 @@ body {
   text-align: right;
 }
 
-h1.entry-title a, .footer-cta p a, .contact-form input[type=submit], .contact .footer-go p {
+h1.entry-title a, .footer-cta p a, .contact .footer-cta p, .contact-form input[type=submit] {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   margin: 0;
@@ -1040,7 +1059,7 @@ h1.entry-title a, .footer-cta p a, .contact-form input[type=submit], .contact .f
   box-shadow: inset 0 -5px 0 #e1ece9;
   padding: 0 2px;
 }
-h1.entry-title a:after, .footer-cta p a:after, .contact-form input[type=submit]:after, .contact .footer-go p:after {
+h1.entry-title a:after, .footer-cta p a:after, .contact .footer-cta p:after, .contact-form input[type=submit]:after {
   content: "\2192";
   position: absolute;
   padding-left: 10px;
@@ -1050,11 +1069,11 @@ h1.entry-title a:after, .footer-cta p a:after, .contact-form input[type=submit]:
   -moz-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-h1.entry-title a:hover, .footer-cta p a:hover, .contact-form input[type=submit]:hover, .contact .footer-go p:hover {
+h1.entry-title a:hover, .footer-cta p a:hover, .contact .footer-cta p:hover, .contact-form input[type=submit]:hover {
   color: #84b0a5;
   box-shadow: inset 0 -30px 0 #e1ece9;
 }
-h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact-form input[type=submit]:hover:after, .contact .footer-go p:hover:after {
+h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta p:hover:after, .contact-form input[type=submit]:hover:after {
   opacity: 1;
 }
 
@@ -1067,6 +1086,18 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact-form input[t
 }
 .footer-cta h2 {
   color: gray;
+}
+.contact .footer-cta p {
+  display: inline-block;
+  box-shadow: none;
+  color: #787878;
+}
+.contact .footer-cta p:hover {
+  box-shadow: none;
+  color: #787878;
+}
+.contact .footer-cta p:hover:after {
+  content: none;
 }
 
 .special {
@@ -1161,6 +1192,21 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact-form input[t
   margin-left: 5px;
 }
 
+.blog .entry-header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  text-align: center;
+}
+.blog .entry-header:last-child {
+  margin-right: 0;
+}
+.blog .entry-header h1 {
+  margin: 1rem 0 3rem;
+}
+
 aside.image-caption {
   font-size: 1.4rem;
   margin-top: 0;
@@ -1204,7 +1250,8 @@ blockquote.note:before {
   border-color: transparent #FFFCF2;
 }
 blockquote.note p, blockquote.note ul li {
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
+  font-family: "Playfair Display", serif;
   line-height: 24px;
   margin: 0 0 24px 0;
 }
@@ -1368,7 +1415,7 @@ blockquote.note ul li {
   bottom: 0;
 }
 
-.blog .entry-content > p, .blog .entry-content > ul, .blog .entry-content > blockquote, .blog .entry-content > aside, .single-post .entry-content > p, .single-post .entry-content > ul, .single-post .entry-content > blockquote, .single-post .entry-content > aside {
+.blog .entry-content > p, .blog .entry-content > ul, .blog .entry-content > blockquote, .blog .entry-content > aside, .blog .entry-content > h2, .blog .entry-content > h3, .blog .contact-form .entry-content > label, .contact-form .blog .entry-content > label, .blog .entry-content > h4, .blog .entry-content > h5, .single-post .entry-content > p, .single-post .entry-content > ul, .single-post .entry-content > blockquote, .single-post .entry-content > aside, .single-post .entry-content > h2, .single-post .entry-content > h3, .single-post .contact-form .entry-content > label, .contact-form .single-post .entry-content > label, .single-post .entry-content > h4, .single-post .entry-content > h5 {
   clear: both;
 }
 .blog .entry-content > p > img, .single-post .entry-content > p > img {
@@ -1471,14 +1518,34 @@ blockquote.note ul li {
 .contact-form .wrapper, .contact-form .special, .contact-form .posts-navigation .nav-links, .posts-navigation .contact-form .nav-links {
   padding: 4rem 0;
 }
+.contact-form h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
 .contact-form ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.contact-form input:not([type=submit]), .contact-form select {
+.contact-form input:not([type=submit]), .contact-form select, .contact-form textarea {
   width: 100%;
   font-family: "roboto", sans-serif;
+  outline: none;
+  line-height: 1.4;
+  font-size: 1rem;
+  border: 0;
+  background: #ffffff;
+  min-height: 28px;
+  border-radius: 0;
+  color: #A3C4BC;
+  padding: 5px 10px;
+}
+.contact-form select {
+  height: 32px;
+  box-shadow: none;
+  color: #A3C4BC;
 }
 .contact-form li:not(#field_1_9) {
   float: left;
@@ -1520,22 +1587,6 @@ blockquote.note ul li {
 }
 .contact-form input[type=submit]:hover {
   box-shadow: inset 0 -30px 0 #ffffff;
-}
-.contact-form label {
-  color: #e0dee8;
-}
-
-.contact .footer-go p {
-  display: inline-block;
-  box-shadow: none;
-  color: #787878;
-}
-.contact .footer-go p:hover {
-  box-shadow: none;
-  color: #787878;
-}
-.contact .footer-go p:hover:after {
-  content: none;
 }
 
 /*# sourceMappingURL=main.css.map */

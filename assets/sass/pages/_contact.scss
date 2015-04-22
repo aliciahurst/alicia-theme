@@ -14,15 +14,36 @@
 	.wrapper {
 		padding: 4rem 0;
 	}
+	h1 {
+		text-align: center;
+		font-size: 2rem;
+		margin-top: 0;
+		margin-bottom: 3rem;
+	}
 	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 	}
-	input:not([type=submit]), select {
+	input:not([type=submit]), select, textarea {
 		width: 100%;
 		font-family: $sans;
+		outline: none;
+		line-height: 1.4;
+		font-size: 1rem;
+		border: 0;
+		background: $white;
+		min-height: 28px;
+		border-radius: 0;
+		color: $robin;
+		padding: 5px 10px;
 	}
+	select {
+		height: 32px;
+		box-shadow: none;
+		color: $robin;
+	}
+
 	li:not(#field_1_9) {
 		@include span-columns(4 of 8);
 		@include omega(2n);
@@ -49,20 +70,6 @@
 		}
 	}
 	label {
-		color: lighten($navy,60);
-	}
-}
-
-.contact .footer-go p {
-	@extend %growlink;
-	display: inline-block;
-	box-shadow: none;
-	color: $navgrayhover;
-	&:hover {
-		box-shadow: none;
-		color: $navgrayhover;
-		&:after {
-			content: none;
-		}
+		@extend h3;
 	}
 }

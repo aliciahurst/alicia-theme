@@ -1,6 +1,6 @@
 .blog, .single-post {
 	.entry-content > {
-		p, ul, blockquote, aside {
+		p, ul, blockquote, aside, h2, h3, h4, h5 {
 			@extend .wrapper-min;
 			clear: both;
 		}

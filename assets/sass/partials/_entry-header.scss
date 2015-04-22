@@ -68,3 +68,12 @@
 	    margin-left: 5px;
 	}
 }
+
+.blog .entry-header {
+	@include span-columns(10);
+	@include shift(1);
+	text-align: center;
+	h1 {
+		margin: 1rem 0 3rem;
+	}
+}

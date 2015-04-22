@@ -2,10 +2,6 @@
 // Post Blockquotes and Asides
 /////////////////////////////////
 
-blockquote.post-credits {
-
-}
-
 aside.image-caption {
   font-size: 1.4rem;
   margin-top: 0;
@@ -16,10 +12,6 @@ aside.image-caption {
   @media all and (min-width:600px) {
   	  text-align: right;
   }
-}
-
-.entry-content aside {
-
 }
 
 $papercolor: saturate(lighten($navy,65),10);
@@ -57,7 +49,8 @@ blockquote.note {
 	    border-color: transparent $nude;
 	}
 	p, ul li {
-		  font-size: rem(18);
+		  font-size: rem(15);
+      font-family: $serif;
 		  line-height: 24px;
 		  margin: 0 0 24px 0;
 		  &:before {

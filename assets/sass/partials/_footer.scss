@@ -1,5 +1,7 @@
+$footercolor: #E7CEC7;
+
 #colophon {
-	border-bottom: 5px solid desaturate(darken(#E7CEC7,10),20);
+	border-bottom: 5px solid desaturate(darken($footercolor,10),20);
 	background: $nude;
 	.wrapper {
 		padding: 3rem 0;
@@ -20,8 +22,12 @@
 	    height: 32px;
 	    width: 32px;
 	    display: block; 
-	    fill: #E7CEC7;
+	    fill: $footercolor;
 	    margin: 0 auto;
+	    @include transition(fill 0.2s ease-in-out);
+	    &:hover {
+	    	fill: darken($footercolor, 15);
+	    }
 	}
 	a[href*="http://goodreads.com/"] {
 		svg {
@@ -32,20 +38,30 @@
 			  stroke-width: 32px;
 			  height: 28px;
 			  width: 28px;
-			  background: #E7CEC7;
+			  background: $footercolor;
+			   @include transition(background 0.2s ease-in-out);
+			  &:hover {
+			  	background: darken($footercolor, 15);
+			  }
 		}
 	}
 	p {
 		letter-spacing: 0.5px;
 		font-family: $sans;
 		font-size: 0.875rem;
-		color: desaturate(darken(#E7CEC7,10),20);
+		color: desaturate(darken($footercolor,10),20);
 		a {
 			color: inherit;
 			letter-spacing: 0.75px;
 		}
 		.footer-links {
 			padding-left: 2rem;
+			a {
+				border-bottom: 0;
+				&:hover {
+					border-bottom: 1px solid;
+				}
+			}
 		}
 		.spacer {
 			padding: 0 4px;

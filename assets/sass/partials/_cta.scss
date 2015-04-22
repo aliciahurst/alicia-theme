@@ -41,4 +41,19 @@
 			@extend %growlink;
 		}
 	}
+	.contact & {
+		p {
+			@extend %growlink;
+			display: inline-block;
+			box-shadow: none;
+			color: $navgrayhover;
+			&:hover {
+				box-shadow: none;
+				color: $navgrayhover;
+				&:after {
+					content: none;
+				}
+			}
+		}
+	}
 }
