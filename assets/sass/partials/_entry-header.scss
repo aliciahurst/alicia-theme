@@ -1,6 +1,6 @@
 .special {
 	@extend .wrapper;
-	padding-top: 0;
+	padding: 0 0 4rem 0;
 	.entry-title {
 		text-align: right;
 		color: $white;
@@ -11,6 +11,12 @@
 	}
 	.entry-left {
 		@include span-columns(6);
+		.contact & {
+			margin-top: 4rem;
+			h2, p:last-of-type {
+				text-align: center;
+			}
+		}
 	}
 	.entry-right {
 		@include span-columns(4);

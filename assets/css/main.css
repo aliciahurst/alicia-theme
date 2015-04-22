@@ -1101,7 +1101,7 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta 
 }
 
 .special {
-  padding-top: 0;
+  padding: 0 0 4rem 0;
 }
 .special .entry-title {
   text-align: right;
@@ -1119,6 +1119,12 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta 
 }
 .special .entry-left:last-child {
   margin-right: 0;
+}
+.contact .special .entry-left {
+  margin-top: 4rem;
+}
+.contact .special .entry-left h2, .contact .special .entry-left p:last-of-type {
+  text-align: center;
 }
 .special .entry-right {
   float: left;
@@ -1336,6 +1342,12 @@ blockquote.note ul li {
 }
 .latest header p a {
   font-size: 0.875rem;
+}
+.latest header p a:hover {
+  border-bottom: 1px solid;
+}
+.latest header > * {
+  margin: 0;
 }
 
 .work-item {
