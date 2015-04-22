@@ -14,6 +14,9 @@
 		.latest-blog {
 			@include span-columns(4);
 			@include shift(1);
+			h1 {
+				margin: 1rem 0 2rem;
+			}
 			h1 a {
 				@extend %growlink;
 				box-shadow: inset 0 -5px 0 $white;
