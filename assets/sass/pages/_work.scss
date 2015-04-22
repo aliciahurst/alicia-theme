@@ -5,16 +5,39 @@
 .work-item {
 	@include span-columns(4);
 	@include omega(3n);
+	position: relative;
 	a {
 		display: block;
 		text-align: center;
 		color: $robin;
+		@include transition(all 0.2s ease-in);
+		img {
+			opacity: 0.75;
+			border-bottom: 5px solid transparent;
+		}
 		h1 {
 			font-size: rem(20);
-			margin-top: -2rem;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			display: block;
+			width: 100%;
+			margin: 0;
 			span {
 				padding: 5px 20px;
 				background: $gray;
+			}
+		}
+		&:hover {
+			img {
+				opacity: 1;
+				border-bottom: 5px solid $white;
+			}
+			h1 {
+				color: darken($robin,20);
+				span {
+					background: $white;
+				}
 			}
 		}
 	}

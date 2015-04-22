@@ -3,6 +3,7 @@
 	 @include flex-direction(row);
 	 @include justify-content(space-between);
 	 @include align-items(center);
+	 padding: 2rem 0;
 	 .site-name, .main-navigation {
 	 	 @include flex(1);
 	 }
