@@ -42,6 +42,20 @@ body {
 	content: "";
 }
 
+%button {
+	text-align: center;
+	margin: 0;
+	a {
+		background: $white;
+		padding: 10px 20px;
+		border-bottom: 0!important;
+		opacity: 0.75;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
 %three {
 	@include span-columns(4);
 	text-align: center;
@@ -64,3 +78,7 @@ body {
 			line-height: 1.6;
 		}
 }
+
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }

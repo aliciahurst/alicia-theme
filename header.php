@@ -16,6 +16,7 @@
 <script src="https://fontastic.s3.amazonaws.com/hWzFcuyKpTpmn2DL4SVLTT/icons.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,700' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class($post->post_name); ?>>

@@ -57,3 +57,32 @@
 		}
 	}
 }
+
+.about-cta {
+	background: transparent;
+	.read-link {
+		@extend %button;
+		margin: 2rem 0 1rem 0!important;
+	}
+	.read-link a {
+		font-family: $sans;
+		box-shadow: none;
+		font-size: 1rem;
+		line-height: 1.5;
+		letter-spacing: 0.25px;
+		color: $dark-gray;
+		&:after {
+			content: "";
+		}
+		&:hover {
+			box-shadow: none;
+			color: $dark-gray;
+		}
+	}
+	p {
+		margin-bottom: 1rem;
+	}
+	h3 {
+		margin-top: 0;
+	}
+}

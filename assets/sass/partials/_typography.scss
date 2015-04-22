@@ -39,6 +39,9 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: rem(14);
+	&.large {
+		font-size: rem(18);
+	}
 }
 
 h3 {
