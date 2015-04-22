@@ -34,14 +34,9 @@ get_header(); ?>
 											<h2>Latest Work</h2>
 											<p><a href="/work">See More</a></p>
 									</header>
-										<div class="work-item">
 											<?php $args = array( 'numberposts' => 1, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
-												<a href=" <?php the_permalink(); ?>">
-													<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
-													<h1><span><?php the_title(); ?></span></h1>
-												</a>
-										</div>
-							<?php endforeach; ?>
+												<?php get_template_part( 'content', 'work' ); ?>
+										<?php endforeach; ?>
 								</div>
 
 								<div class="latest-blog">
