@@ -94,7 +94,7 @@ a {
 	&:hover, &:active {
 		color: $black;
 	}
-	.blog .entry-content &, .single-post .entry-content & {
+	.blog .entry-content &, .single-post .entry-content &, .single-post .entry-right & {
 		border-bottom: 2px dotted rgba($navgrayhover, 0.1);
 	}
 }

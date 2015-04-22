@@ -752,7 +752,7 @@ a {
 a:hover, a:active {
   color: #000000;
 }
-.blog .entry-content a, .single-post .entry-content a {
+.blog .entry-content a, .single-post .entry-content a, .single-post .entry-right a {
   border-bottom: 2px dotted rgba(120, 120, 120, 0.1);
 }
 
@@ -912,7 +912,7 @@ body {
   background: #ffffff;
 }
 .main-navigation li a {
-  padding: 5px 25px 7px;
+  padding: 7px 25px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "Playfair Display", serif;
@@ -1044,7 +1044,7 @@ body {
   text-align: right;
 }
 
-h1.entry-title a, .footer-cta p a, .contact .footer-cta p, .contact-form input[type=submit] {
+h1.entry-title a, .footer-cta p a, .contact .footer-cta p, .latest .wrapper .latest-blog h1 a, .latest .special .latest-blog h1 a, .latest .posts-navigation .nav-links .latest-blog h1 a, .posts-navigation .latest .nav-links .latest-blog h1 a, .contact-form input[type=submit] {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   margin: 0;
@@ -1059,7 +1059,7 @@ h1.entry-title a, .footer-cta p a, .contact .footer-cta p, .contact-form input[t
   box-shadow: inset 0 -5px 0 #e1ece9;
   padding: 0 2px;
 }
-h1.entry-title a:after, .footer-cta p a:after, .contact .footer-cta p:after, .contact-form input[type=submit]:after {
+h1.entry-title a:after, .footer-cta p a:after, .contact .footer-cta p:after, .latest .wrapper .latest-blog h1 a:after, .latest .special .latest-blog h1 a:after, .latest .posts-navigation .nav-links .latest-blog h1 a:after, .posts-navigation .latest .nav-links .latest-blog h1 a:after, .contact-form input[type=submit]:after {
   content: "\2192";
   position: absolute;
   padding-left: 10px;
@@ -1069,11 +1069,11 @@ h1.entry-title a:after, .footer-cta p a:after, .contact .footer-cta p:after, .co
   -moz-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-h1.entry-title a:hover, .footer-cta p a:hover, .contact .footer-cta p:hover, .contact-form input[type=submit]:hover {
+h1.entry-title a:hover, .footer-cta p a:hover, .contact .footer-cta p:hover, .latest .wrapper .latest-blog h1 a:hover, .latest .special .latest-blog h1 a:hover, .latest .posts-navigation .nav-links .latest-blog h1 a:hover, .posts-navigation .latest .nav-links .latest-blog h1 a:hover, .contact-form input[type=submit]:hover {
   color: #84b0a5;
   box-shadow: inset 0 -30px 0 #e1ece9;
 }
-h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta p:hover:after, .contact-form input[type=submit]:hover:after {
+h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta p:hover:after, .latest .wrapper .latest-blog h1 a:hover:after, .latest .special .latest-blog h1 a:hover:after, .latest .posts-navigation .nav-links .latest-blog h1 a:hover:after, .posts-navigation .latest .nav-links .latest-blog h1 a:hover:after, .contact-form input[type=submit]:hover:after {
   opacity: 1;
 }
 
@@ -1178,6 +1178,15 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta 
 .single-post .entry-left .post_date {
   margin: 3rem 0 0 0;
 }
+.single-post .entry-right a {
+  font-size: 0.9375rem;
+  opacity: 0.7;
+  padding-left: 2px;
+  letter-spacing: 0.25px;
+}
+.single-post .entry-right a:hover {
+  opacity: 1;
+}
 
 .outbound-link {
   font-family: "Playfair Display", serif;
@@ -1274,6 +1283,9 @@ blockquote.note ul li {
 .latest {
   background: #e7f0ee;
 }
+.latest .wrapper, .latest .special, .latest .posts-navigation .nav-links, .posts-navigation .latest .nav-links {
+  padding: 4rem 0;
+}
 .latest .wrapper header, .latest .special header, .latest .posts-navigation .nav-links header, .posts-navigation .latest .nav-links header {
   display: -webkit-box;
   display: -moz-box;
@@ -1329,6 +1341,16 @@ blockquote.note ul li {
 }
 .latest .wrapper .latest-blog:last-child, .latest .special .latest-blog:last-child, .latest .posts-navigation .nav-links .latest-blog:last-child, .posts-navigation .latest .nav-links .latest-blog:last-child {
   margin-right: 0;
+}
+.latest .wrapper .latest-blog h1 a, .latest .special .latest-blog h1 a, .latest .posts-navigation .nav-links .latest-blog h1 a, .posts-navigation .latest .nav-links .latest-blog h1 a {
+  box-shadow: inset 0 -5px 0 #ffffff;
+  padding: 0 4px 0 0;
+}
+.latest .wrapper .latest-blog h1 a:after, .latest .special .latest-blog h1 a:after, .latest .posts-navigation .nav-links .latest-blog h1 a:after, .posts-navigation .latest .nav-links .latest-blog h1 a:after {
+  color: #ffffff;
+}
+.latest .wrapper .latest-blog h1 a:hover, .latest .special .latest-blog h1 a:hover, .latest .posts-navigation .nav-links .latest-blog h1 a:hover, .posts-navigation .latest .nav-links .latest-blog h1 a:hover {
+  box-shadow: inset 0 -30px 0 #ffffff;
 }
 .latest .wrapper .latest-work, .latest .special .latest-work, .latest .posts-navigation .nav-links .latest-work, .posts-navigation .latest .nav-links .latest-work {
   margin-left: 12.79471%;
@@ -1508,9 +1530,12 @@ blockquote.note ul li {
 }
 
 .more-link {
-  margin: 1rem 0;
-  padding: 5px 10px;
-  background: white;
+  text-align: center;
+  margin: 0;
+}
+.more-link a {
+  background: #ffffff;
+  padding: 10px 20px;
 }
 
 .contact .entry-content ul {

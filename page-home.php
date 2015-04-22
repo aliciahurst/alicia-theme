@@ -52,7 +52,7 @@ get_header(); ?>
 										<?php $args = array( 'numberposts' => 1 ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 											<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1> 
 											<?php the_excerpt(); ?> 
-											<p><a href="<?php the_permalink(); ?>">Continue reading</a></p>
+											<p class="more-link"><a href="<?php the_permalink(); ?>">Continue reading</a></p>
 									<?php endforeach; ?>
 								</div>					
 							</div>

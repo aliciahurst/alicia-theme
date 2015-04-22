@@ -76,8 +76,10 @@
 }
 
 .more-link {
-	//display: block;
-	margin: 1rem 0;
-	padding: 5px 10px;
-	background: white;
+	text-align: center;
+	margin: 0;
+	a {
+		background: $white;
+		padding: 10px 20px;
+	}
 }
