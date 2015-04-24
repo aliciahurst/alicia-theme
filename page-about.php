@@ -15,9 +15,11 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 						<div class="entry-content">
+								<div class="wrapper">
 								<?php the_content(); ?>
-						</div>
-						<div class="behind-laptop">
+								</div>
+
+						<!-- <div class="behind-laptop">
 							<div class="wrapper">
 							<h2 class="large">Behind the Laptop</h2>
 								<div class="slider">
@@ -36,20 +38,27 @@ get_header(); ?>
 									<?php endif; ?>
 									</div>
 							</div>
-						</div>
+						</div> -->
+
+						<div class="about-help">
+								<div class="wrapper">
+									<?php the_field('about_help'); ?>
+								</div>
+							</div>
 
 						<div class="entry-footer footer-cta about-cta">
 							<div class="wrapper">
 								<h3>A Note Especially For</h3>
 								<h2 class="large">Companies & Recruiters</h2>
-								<p>I’m also available for full-time, <strong>remote-only</strong> creative positions.</p>
-								<h3>Web, Mobile, and SaaS applications</h3>
+								<p>I’m also available for full-time, <strong>remote-only</strong> creative positions!</p>
+								<h2>Web, Mobile, SaaS apps</h2>
 								<p class="read-link"><a href="mailto:alicia@aliciahurst.com">Email Me</a></p>
 							</div>
 						</div>
 
 						<?php get_template_part( 'content', 'cta' ); ?>
 
+					</div>
 
 					</article><!-- #post-## -->
 

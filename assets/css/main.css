@@ -243,7 +243,7 @@ textarea {
   line-height: 1.5;
 }
 
-h1,
+h1, .behind-laptop h3, .behind-laptop .contact-form label, .contact-form .behind-laptop label,
 h2,
 h3,
 .contact-form label,
@@ -690,7 +690,7 @@ p, li {
   letter-spacing: 0.1px;
 }
 
-h1 {
+h1, .behind-laptop h3, .behind-laptop .contact-form label, .contact-form .behind-laptop label {
   font-size: 3rem;
   letter-spacing: 0.25px;
   font-weight: normal;
@@ -698,10 +698,10 @@ h1 {
   line-height: 1;
   margin: 2rem 0;
 }
-h1 a {
+h1 a, .behind-laptop h3 a, .behind-laptop .contact-form label a, .contact-form .behind-laptop label a {
   color: #A3C4BC;
 }
-h1.entry-title a {
+h1.entry-title a, .behind-laptop h3.entry-title a, .behind-laptop .contact-form label.entry-title a, .contact-form .behind-laptop label.entry-title a {
   line-height: 1.4;
   position: relative;
 }
@@ -929,16 +929,16 @@ body {
   -ms-flex: 1;
   flex: 1;
 }
-#masthead .wrapper h1, #masthead .special h1, #masthead .posts-navigation .nav-links h1, .posts-navigation #masthead .nav-links h1, #masthead .wrapper p, #masthead .special p, #masthead .posts-navigation .nav-links p, .posts-navigation #masthead .nav-links p {
+#masthead .wrapper h1, #masthead .special h1, #masthead .posts-navigation .nav-links h1, .posts-navigation #masthead .nav-links h1, #masthead .wrapper .behind-laptop h3, .behind-laptop #masthead .wrapper h3, #masthead .special .behind-laptop h3, .behind-laptop #masthead .special h3, #masthead .posts-navigation .nav-links .behind-laptop h3, .behind-laptop #masthead .posts-navigation .nav-links h3, .posts-navigation #masthead .nav-links .behind-laptop h3, .behind-laptop .posts-navigation #masthead .nav-links h3, #masthead .wrapper .behind-laptop .contact-form label, .behind-laptop .contact-form #masthead .wrapper label, #masthead .special .behind-laptop .contact-form label, .behind-laptop .contact-form #masthead .special label, #masthead .posts-navigation .nav-links .behind-laptop .contact-form label, .behind-laptop .contact-form #masthead .posts-navigation .nav-links label, .posts-navigation #masthead .nav-links .behind-laptop .contact-form label, .behind-laptop .contact-form .posts-navigation #masthead .nav-links label, #masthead .wrapper .contact-form .behind-laptop label, .contact-form .behind-laptop #masthead .wrapper label, #masthead .special .contact-form .behind-laptop label, .contact-form .behind-laptop #masthead .special label, #masthead .posts-navigation .nav-links .contact-form .behind-laptop label, .contact-form .behind-laptop #masthead .posts-navigation .nav-links label, .posts-navigation #masthead .nav-links .contact-form .behind-laptop label, .contact-form .behind-laptop .posts-navigation #masthead .nav-links label, #masthead .wrapper p, #masthead .special p, #masthead .posts-navigation .nav-links p, .posts-navigation #masthead .nav-links p {
   margin: 0;
 }
 
-.site-name h1 {
+.site-name h1, .site-name .behind-laptop h3, .behind-laptop .site-name h3, .site-name .behind-laptop .contact-form label, .behind-laptop .contact-form .site-name label, .site-name .contact-form .behind-laptop label, .contact-form .behind-laptop .site-name label {
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   line-height: 1.4;
 }
-.site-name h1 a {
+.site-name h1 a, .site-name .behind-laptop h3 a, .behind-laptop .site-name h3 a, .site-name .behind-laptop .contact-form label a, .behind-laptop .contact-form .site-name label a, .site-name .contact-form .behind-laptop label a, .contact-form .behind-laptop .site-name label a {
   color: #000000;
 }
 .site-name h2 {
@@ -1104,7 +1104,7 @@ body {
   text-align: right;
 }
 
-h1.entry-title a, .footer-cta p a, .contact .footer-cta p, .latest .wrapper .latest-blog h1 a, .latest .special .latest-blog h1 a, .latest .posts-navigation .nav-links .latest-blog h1 a, .posts-navigation .latest .nav-links .latest-blog h1 a, .contact-form input[type=submit] {
+h1.entry-title a, .behind-laptop h3.entry-title a, .behind-laptop .contact-form label.entry-title a, .contact-form .behind-laptop label.entry-title a, .footer-cta p a, .contact .footer-cta p, .latest .wrapper .latest-blog h1 a, .latest .special .latest-blog h1 a, .latest .posts-navigation .nav-links .latest-blog h1 a, .posts-navigation .latest .nav-links .latest-blog h1 a, .latest .wrapper .latest-blog .behind-laptop h3 a, .behind-laptop .latest .wrapper .latest-blog h3 a, .latest .special .latest-blog .behind-laptop h3 a, .behind-laptop .latest .special .latest-blog h3 a, .latest .posts-navigation .nav-links .latest-blog .behind-laptop h3 a, .behind-laptop .latest .posts-navigation .nav-links .latest-blog h3 a, .posts-navigation .latest .nav-links .latest-blog .behind-laptop h3 a, .behind-laptop .posts-navigation .latest .nav-links .latest-blog h3 a, .latest .wrapper .latest-blog .behind-laptop .contact-form label a, .behind-laptop .contact-form .latest .wrapper .latest-blog label a, .latest .special .latest-blog .behind-laptop .contact-form label a, .behind-laptop .contact-form .latest .special .latest-blog label a, .latest .posts-navigation .nav-links .latest-blog .behind-laptop .contact-form label a, .behind-laptop .contact-form .latest .posts-navigation .nav-links .latest-blog label a, .posts-navigation .latest .nav-links .latest-blog .behind-laptop .contact-form label a, .behind-laptop .contact-form .posts-navigation .latest .nav-links .latest-blog label a, .latest .wrapper .latest-blog .contact-form .behind-laptop label a, .contact-form .behind-laptop .latest .wrapper .latest-blog label a, .latest .special .latest-blog .contact-form .behind-laptop label a, .contact-form .behind-laptop .latest .special .latest-blog label a, .latest .posts-navigation .nav-links .latest-blog .contact-form .behind-laptop label a, .contact-form .behind-laptop .latest .posts-navigation .nav-links .latest-blog label a, .posts-navigation .latest .nav-links .latest-blog .contact-form .behind-laptop label a, .contact-form .behind-laptop .posts-navigation .latest .nav-links .latest-blog label a, .contact-form input[type=submit] {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   margin: 0;
@@ -1119,7 +1119,7 @@ h1.entry-title a, .footer-cta p a, .contact .footer-cta p, .latest .wrapper .lat
   box-shadow: inset 0 -5px 0 #e1ece9;
   padding: 0 2px;
 }
-h1.entry-title a:after, .footer-cta p a:after, .contact .footer-cta p:after, .latest .wrapper .latest-blog h1 a:after, .latest .special .latest-blog h1 a:after, .latest .posts-navigation .nav-links .latest-blog h1 a:after, .posts-navigation .latest .nav-links .latest-blog h1 a:after, .contact-form input[type=submit]:after {
+h1.entry-title a:after, .behind-laptop h3.entry-title a:after, .behind-laptop .contact-form label.entry-title a:after, .contact-form .behind-laptop label.entry-title a:after, .footer-cta p a:after, .contact .footer-cta p:after, .latest .wrapper .latest-blog h1 a:after, .latest .special .latest-blog h1 a:after, .latest .posts-navigation .nav-links .latest-blog h1 a:after, .posts-navigation .latest .nav-links .latest-blog h1 a:after, .latest .wrapper .latest-blog .behind-laptop h3 a:after, .behind-laptop .latest .wrapper .latest-blog h3 a:after, .latest .special .latest-blog .behind-laptop h3 a:after, .behind-laptop .latest .special .latest-blog h3 a:after, .latest .posts-navigation .nav-links .latest-blog .behind-laptop h3 a:after, .behind-laptop .latest .posts-navigation .nav-links .latest-blog h3 a:after, .posts-navigation .latest .nav-links .latest-blog .behind-laptop h3 a:after, .behind-laptop .posts-navigation .latest .nav-links .latest-blog h3 a:after, .latest .wrapper .latest-blog .behind-laptop .contact-form label a:after, .behind-laptop .contact-form .latest .wrapper .latest-blog label a:after, .latest .special .latest-blog .behind-laptop .contact-form label a:after, .behind-laptop .contact-form .latest .special .latest-blog label a:after, .latest .posts-navigation .nav-links .latest-blog .behind-laptop .contact-form label a:after, .behind-laptop .contact-form .latest .posts-navigation .nav-links .latest-blog label a:after, .posts-navigation .latest .nav-links .latest-blog .behind-laptop .contact-form label a:after, .behind-laptop .contact-form .posts-navigation .latest .nav-links .latest-blog label a:after, .latest .wrapper .latest-blog .contact-form .behind-laptop label a:after, .contact-form .behind-laptop .latest .wrapper .latest-blog label a:after, .latest .special .latest-blog .contact-form .behind-laptop label a:after, .contact-form .behind-laptop .latest .special .latest-blog label a:after, .latest .posts-navigation .nav-links .latest-blog .contact-form .behind-laptop label a:after, .contact-form .behind-laptop .latest .posts-navigation .nav-links .latest-blog label a:after, .posts-navigation .latest .nav-links .latest-blog .contact-form .behind-laptop label a:after, .contact-form .behind-laptop .posts-navigation .latest .nav-links .latest-blog label a:after, .contact-form input[type=submit]:after {
   content: "\2192";
   position: absolute;
   padding-left: 10px;
@@ -1129,11 +1129,11 @@ h1.entry-title a:after, .footer-cta p a:after, .contact .footer-cta p:after, .la
   -moz-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-h1.entry-title a:hover, .footer-cta p a:hover, .contact .footer-cta p:hover, .latest .wrapper .latest-blog h1 a:hover, .latest .special .latest-blog h1 a:hover, .latest .posts-navigation .nav-links .latest-blog h1 a:hover, .posts-navigation .latest .nav-links .latest-blog h1 a:hover, .contact-form input[type=submit]:hover {
+h1.entry-title a:hover, .behind-laptop h3.entry-title a:hover, .behind-laptop .contact-form label.entry-title a:hover, .contact-form .behind-laptop label.entry-title a:hover, .footer-cta p a:hover, .contact .footer-cta p:hover, .latest .wrapper .latest-blog h1 a:hover, .latest .special .latest-blog h1 a:hover, .latest .posts-navigation .nav-links .latest-blog h1 a:hover, .posts-navigation .latest .nav-links .latest-blog h1 a:hover, .latest .wrapper .latest-blog .behind-laptop h3 a:hover, .behind-laptop .latest .wrapper .latest-blog h3 a:hover, .latest .special .latest-blog .behind-laptop h3 a:hover, .behind-laptop .latest .special .latest-blog h3 a:hover, .latest .posts-navigation .nav-links .latest-blog .behind-laptop h3 a:hover, .behind-laptop .latest .posts-navigation .nav-links .latest-blog h3 a:hover, .posts-navigation .latest .nav-links .latest-blog .behind-laptop h3 a:hover, .behind-laptop .posts-navigation .latest .nav-links .latest-blog h3 a:hover, .latest .wrapper .latest-blog .behind-laptop .contact-form label a:hover, .behind-laptop .contact-form .latest .wrapper .latest-blog label a:hover, .latest .special .latest-blog .behind-laptop .contact-form label a:hover, .behind-laptop .contact-form .latest .special .latest-blog label a:hover, .latest .posts-navigation .nav-links .latest-blog .behind-laptop .contact-form label a:hover, .behind-laptop .contact-form .latest .posts-navigation .nav-links .latest-blog label a:hover, .posts-navigation .latest .nav-links .latest-blog .behind-laptop .contact-form label a:hover, .behind-laptop .contact-form .posts-navigation .latest .nav-links .latest-blog label a:hover, .latest .wrapper .latest-blog .contact-form .behind-laptop label a:hover, .contact-form .behind-laptop .latest .wrapper .latest-blog label a:hover, .latest .special .latest-blog .contact-form .behind-laptop label a:hover, .contact-form .behind-laptop .latest .special .latest-blog label a:hover, .latest .posts-navigation .nav-links .latest-blog .contact-form .behind-laptop label a:hover, .contact-form .behind-laptop .latest .posts-navigation .nav-links .latest-blog label a:hover, .posts-navigation .latest .nav-links .latest-blog .contact-form .behind-laptop label a:hover, .contact-form .behind-laptop .posts-navigation .latest .nav-links .latest-blog label a:hover, .contact-form input[type=submit]:hover {
   color: #84b0a5;
   box-shadow: inset 0 -30px 0 #e1ece9;
 }
-h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta p:hover:after, .latest .wrapper .latest-blog h1 a:hover:after, .latest .special .latest-blog h1 a:hover:after, .latest .posts-navigation .nav-links .latest-blog h1 a:hover:after, .posts-navigation .latest .nav-links .latest-blog h1 a:hover:after, .contact-form input[type=submit]:hover:after {
+h1.entry-title a:hover:after, .behind-laptop h3.entry-title a:hover:after, .behind-laptop .contact-form label.entry-title a:hover:after, .contact-form .behind-laptop label.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta p:hover:after, .latest .wrapper .latest-blog h1 a:hover:after, .latest .special .latest-blog h1 a:hover:after, .latest .posts-navigation .nav-links .latest-blog h1 a:hover:after, .posts-navigation .latest .nav-links .latest-blog h1 a:hover:after, .latest .wrapper .latest-blog .behind-laptop h3 a:hover:after, .behind-laptop .latest .wrapper .latest-blog h3 a:hover:after, .latest .special .latest-blog .behind-laptop h3 a:hover:after, .behind-laptop .latest .special .latest-blog h3 a:hover:after, .latest .posts-navigation .nav-links .latest-blog .behind-laptop h3 a:hover:after, .behind-laptop .latest .posts-navigation .nav-links .latest-blog h3 a:hover:after, .posts-navigation .latest .nav-links .latest-blog .behind-laptop h3 a:hover:after, .behind-laptop .posts-navigation .latest .nav-links .latest-blog h3 a:hover:after, .latest .wrapper .latest-blog .behind-laptop .contact-form label a:hover:after, .behind-laptop .contact-form .latest .wrapper .latest-blog label a:hover:after, .latest .special .latest-blog .behind-laptop .contact-form label a:hover:after, .behind-laptop .contact-form .latest .special .latest-blog label a:hover:after, .latest .posts-navigation .nav-links .latest-blog .behind-laptop .contact-form label a:hover:after, .behind-laptop .contact-form .latest .posts-navigation .nav-links .latest-blog label a:hover:after, .posts-navigation .latest .nav-links .latest-blog .behind-laptop .contact-form label a:hover:after, .behind-laptop .contact-form .posts-navigation .latest .nav-links .latest-blog label a:hover:after, .latest .wrapper .latest-blog .contact-form .behind-laptop label a:hover:after, .contact-form .behind-laptop .latest .wrapper .latest-blog label a:hover:after, .latest .special .latest-blog .contact-form .behind-laptop label a:hover:after, .contact-form .behind-laptop .latest .special .latest-blog label a:hover:after, .latest .posts-navigation .nav-links .latest-blog .contact-form .behind-laptop label a:hover:after, .contact-form .behind-laptop .latest .posts-navigation .nav-links .latest-blog label a:hover:after, .posts-navigation .latest .nav-links .latest-blog .contact-form .behind-laptop label a:hover:after, .contact-form .behind-laptop .posts-navigation .latest .nav-links .latest-blog label a:hover:after, .contact-form input[type=submit]:hover:after {
   opacity: 1;
 }
 
@@ -1306,7 +1306,7 @@ h1.entry-title a:hover:after, .footer-cta p a:hover:after, .contact .footer-cta 
 .blog .entry-header:last-child {
   margin-right: 0;
 }
-.blog .entry-header h1 {
+.blog .entry-header h1, .blog .entry-header .behind-laptop h3, .behind-laptop .blog .entry-header h3, .blog .entry-header .behind-laptop .contact-form label, .behind-laptop .contact-form .blog .entry-header label, .blog .entry-header .contact-form .behind-laptop label, .contact-form .behind-laptop .blog .entry-header label {
   margin: 1rem 0 3rem;
 }
 
@@ -1411,7 +1411,7 @@ blockquote.note ul li {
   align-items: center;
   -ms-flex-align: center;
 }
-.latest .wrapper header .p, .latest .special header .p, .latest .posts-navigation .nav-links header .p, .posts-navigation .latest .nav-links header .p, .latest .wrapper header h1, .latest .special header h1, .latest .posts-navigation .nav-links header h1, .posts-navigation .latest .nav-links header h1 {
+.latest .wrapper header .p, .latest .special header .p, .latest .posts-navigation .nav-links header .p, .posts-navigation .latest .nav-links header .p, .latest .wrapper header h1, .latest .special header h1, .latest .posts-navigation .nav-links header h1, .posts-navigation .latest .nav-links header h1, .latest .wrapper header .behind-laptop h3, .behind-laptop .latest .wrapper header h3, .latest .special header .behind-laptop h3, .behind-laptop .latest .special header h3, .latest .posts-navigation .nav-links header .behind-laptop h3, .behind-laptop .latest .posts-navigation .nav-links header h3, .posts-navigation .latest .nav-links header .behind-laptop h3, .behind-laptop .posts-navigation .latest .nav-links header h3, .latest .wrapper header .behind-laptop .contact-form label, .behind-laptop .contact-form .latest .wrapper header label, .latest .special header .behind-laptop .contact-form label, .behind-laptop .contact-form .latest .special header label, .latest .posts-navigation .nav-links header .behind-laptop .contact-form label, .behind-laptop .contact-form .latest .posts-navigation .nav-links header label, .posts-navigation .latest .nav-links header .behind-laptop .contact-form label, .behind-laptop .contact-form .posts-navigation .latest .nav-links header label, .latest .wrapper header .contact-form .behind-laptop label, .contact-form .behind-laptop .latest .wrapper header label, .latest .special header .contact-form .behind-laptop label, .contact-form .behind-laptop .latest .special header label, .latest .posts-navigation .nav-links header .contact-form .behind-laptop label, .contact-form .behind-laptop .latest .posts-navigation .nav-links header label, .posts-navigation .latest .nav-links header .contact-form .behind-laptop label, .contact-form .behind-laptop .posts-navigation .latest .nav-links header label {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
@@ -1430,17 +1430,17 @@ blockquote.note ul li {
 .latest .wrapper .latest-blog:last-child, .latest .special .latest-blog:last-child, .latest .posts-navigation .nav-links .latest-blog:last-child, .posts-navigation .latest .nav-links .latest-blog:last-child {
   margin-right: 0;
 }
-.latest .wrapper .latest-blog h1, .latest .special .latest-blog h1, .latest .posts-navigation .nav-links .latest-blog h1, .posts-navigation .latest .nav-links .latest-blog h1 {
+.latest .wrapper .latest-blog h1, .latest .special .latest-blog h1, .latest .posts-navigation .nav-links .latest-blog h1, .posts-navigation .latest .nav-links .latest-blog h1, .latest .wrapper .latest-blog .behind-laptop h3, .behind-laptop .latest .wrapper .latest-blog h3, .latest .special .latest-blog .behind-laptop h3, .behind-laptop .latest .special .latest-blog h3, .latest .posts-navigation .nav-links .latest-blog .behind-laptop h3, .behind-laptop .latest .posts-navigation .nav-links .latest-blog h3, .posts-navigation .latest .nav-links .latest-blog .behind-laptop h3, .behind-laptop .posts-navigation .latest .nav-links .latest-blog h3, .latest .wrapper .latest-blog .behind-laptop .contact-form label, .behind-laptop .contact-form .latest .wrapper .latest-blog label, .latest .special .latest-blog .behind-laptop .contact-form label, .behind-laptop .contact-form .latest .special .latest-blog label, .latest .posts-navigation .nav-links .latest-blog .behind-laptop .contact-form label, .behind-laptop .contact-form .latest .posts-navigation .nav-links .latest-blog label, .posts-navigation .latest .nav-links .latest-blog .behind-laptop .contact-form label, .behind-laptop .contact-form .posts-navigation .latest .nav-links .latest-blog label, .latest .wrapper .latest-blog .contact-form .behind-laptop label, .contact-form .behind-laptop .latest .wrapper .latest-blog label, .latest .special .latest-blog .contact-form .behind-laptop label, .contact-form .behind-laptop .latest .special .latest-blog label, .latest .posts-navigation .nav-links .latest-blog .contact-form .behind-laptop label, .contact-form .behind-laptop .latest .posts-navigation .nav-links .latest-blog label, .posts-navigation .latest .nav-links .latest-blog .contact-form .behind-laptop label, .contact-form .behind-laptop .posts-navigation .latest .nav-links .latest-blog label {
   margin: 1rem 0 2rem;
 }
-.latest .wrapper .latest-blog h1 a, .latest .special .latest-blog h1 a, .latest .posts-navigation .nav-links .latest-blog h1 a, .posts-navigation .latest .nav-links .latest-blog h1 a {
+.latest .wrapper .latest-blog h1 a, .latest .special .latest-blog h1 a, .latest .posts-navigation .nav-links .latest-blog h1 a, .posts-navigation .latest .nav-links .latest-blog h1 a, .latest .wrapper .latest-blog .behind-laptop h3 a, .behind-laptop .latest .wrapper .latest-blog h3 a, .latest .special .latest-blog .behind-laptop h3 a, .behind-laptop .latest .special .latest-blog h3 a, .latest .posts-navigation .nav-links .latest-blog .behind-laptop h3 a, .behind-laptop .latest .posts-navigation .nav-links .latest-blog h3 a, .posts-navigation .latest .nav-links .latest-blog .behind-laptop h3 a, .behind-laptop .posts-navigation .latest .nav-links .latest-blog h3 a, .latest .wrapper .latest-blog .behind-laptop .contact-form label a, .behind-laptop .contact-form .latest .wrapper .latest-blog label a, .latest .special .latest-blog .behind-laptop .contact-form label a, .behind-laptop .contact-form .latest .special .latest-blog label a, .latest .posts-navigation .nav-links .latest-blog .behind-laptop .contact-form label a, .behind-laptop .contact-form .latest .posts-navigation .nav-links .latest-blog label a, .posts-navigation .latest .nav-links .latest-blog .behind-laptop .contact-form label a, .behind-laptop .contact-form .posts-navigation .latest .nav-links .latest-blog label a, .latest .wrapper .latest-blog .contact-form .behind-laptop label a, .contact-form .behind-laptop .latest .wrapper .latest-blog label a, .latest .special .latest-blog .contact-form .behind-laptop label a, .contact-form .behind-laptop .latest .special .latest-blog label a, .latest .posts-navigation .nav-links .latest-blog .contact-form .behind-laptop label a, .contact-form .behind-laptop .latest .posts-navigation .nav-links .latest-blog label a, .posts-navigation .latest .nav-links .latest-blog .contact-form .behind-laptop label a, .contact-form .behind-laptop .posts-navigation .latest .nav-links .latest-blog label a {
   box-shadow: inset 0 -5px 0 #ffffff;
   padding: 0 4px 0 0;
 }
-.latest .wrapper .latest-blog h1 a:after, .latest .special .latest-blog h1 a:after, .latest .posts-navigation .nav-links .latest-blog h1 a:after, .posts-navigation .latest .nav-links .latest-blog h1 a:after {
+.latest .wrapper .latest-blog h1 a:after, .latest .special .latest-blog h1 a:after, .latest .posts-navigation .nav-links .latest-blog h1 a:after, .posts-navigation .latest .nav-links .latest-blog h1 a:after, .latest .wrapper .latest-blog .behind-laptop h3 a:after, .behind-laptop .latest .wrapper .latest-blog h3 a:after, .latest .special .latest-blog .behind-laptop h3 a:after, .behind-laptop .latest .special .latest-blog h3 a:after, .latest .posts-navigation .nav-links .latest-blog .behind-laptop h3 a:after, .behind-laptop .latest .posts-navigation .nav-links .latest-blog h3 a:after, .posts-navigation .latest .nav-links .latest-blog .behind-laptop h3 a:after, .behind-laptop .posts-navigation .latest .nav-links .latest-blog h3 a:after, .latest .wrapper .latest-blog .behind-laptop .contact-form label a:after, .behind-laptop .contact-form .latest .wrapper .latest-blog label a:after, .latest .special .latest-blog .behind-laptop .contact-form label a:after, .behind-laptop .contact-form .latest .special .latest-blog label a:after, .latest .posts-navigation .nav-links .latest-blog .behind-laptop .contact-form label a:after, .behind-laptop .contact-form .latest .posts-navigation .nav-links .latest-blog label a:after, .posts-navigation .latest .nav-links .latest-blog .behind-laptop .contact-form label a:after, .behind-laptop .contact-form .posts-navigation .latest .nav-links .latest-blog label a:after, .latest .wrapper .latest-blog .contact-form .behind-laptop label a:after, .contact-form .behind-laptop .latest .wrapper .latest-blog label a:after, .latest .special .latest-blog .contact-form .behind-laptop label a:after, .contact-form .behind-laptop .latest .special .latest-blog label a:after, .latest .posts-navigation .nav-links .latest-blog .contact-form .behind-laptop label a:after, .contact-form .behind-laptop .latest .posts-navigation .nav-links .latest-blog label a:after, .posts-navigation .latest .nav-links .latest-blog .contact-form .behind-laptop label a:after, .contact-form .behind-laptop .posts-navigation .latest .nav-links .latest-blog label a:after {
   color: #ffffff;
 }
-.latest .wrapper .latest-blog h1 a:hover, .latest .special .latest-blog h1 a:hover, .latest .posts-navigation .nav-links .latest-blog h1 a:hover, .posts-navigation .latest .nav-links .latest-blog h1 a:hover {
+.latest .wrapper .latest-blog h1 a:hover, .latest .special .latest-blog h1 a:hover, .latest .posts-navigation .nav-links .latest-blog h1 a:hover, .posts-navigation .latest .nav-links .latest-blog h1 a:hover, .latest .wrapper .latest-blog .behind-laptop h3 a:hover, .behind-laptop .latest .wrapper .latest-blog h3 a:hover, .latest .special .latest-blog .behind-laptop h3 a:hover, .behind-laptop .latest .special .latest-blog h3 a:hover, .latest .posts-navigation .nav-links .latest-blog .behind-laptop h3 a:hover, .behind-laptop .latest .posts-navigation .nav-links .latest-blog h3 a:hover, .posts-navigation .latest .nav-links .latest-blog .behind-laptop h3 a:hover, .behind-laptop .posts-navigation .latest .nav-links .latest-blog h3 a:hover, .latest .wrapper .latest-blog .behind-laptop .contact-form label a:hover, .behind-laptop .contact-form .latest .wrapper .latest-blog label a:hover, .latest .special .latest-blog .behind-laptop .contact-form label a:hover, .behind-laptop .contact-form .latest .special .latest-blog label a:hover, .latest .posts-navigation .nav-links .latest-blog .behind-laptop .contact-form label a:hover, .behind-laptop .contact-form .latest .posts-navigation .nav-links .latest-blog label a:hover, .posts-navigation .latest .nav-links .latest-blog .behind-laptop .contact-form label a:hover, .behind-laptop .contact-form .posts-navigation .latest .nav-links .latest-blog label a:hover, .latest .wrapper .latest-blog .contact-form .behind-laptop label a:hover, .contact-form .behind-laptop .latest .wrapper .latest-blog label a:hover, .latest .special .latest-blog .contact-form .behind-laptop label a:hover, .contact-form .behind-laptop .latest .special .latest-blog label a:hover, .latest .posts-navigation .nav-links .latest-blog .contact-form .behind-laptop label a:hover, .contact-form .behind-laptop .latest .posts-navigation .nav-links .latest-blog label a:hover, .posts-navigation .latest .nav-links .latest-blog .contact-form .behind-laptop label a:hover, .contact-form .behind-laptop .posts-navigation .latest .nav-links .latest-blog label a:hover {
   box-shadow: inset 0 -30px 0 #ffffff;
 }
 .latest .wrapper .latest-work, .latest .special .latest-work, .latest .posts-navigation .nav-links .latest-work, .posts-navigation .latest .nav-links .latest-work {
@@ -1491,7 +1491,7 @@ blockquote.note ul li {
   opacity: 0.75;
   border-bottom: 5px solid transparent;
 }
-.work-item a h1 {
+.work-item a h1, .work-item a .behind-laptop h3, .behind-laptop .work-item a h3, .work-item a .behind-laptop .contact-form label, .behind-laptop .contact-form .work-item a label, .work-item a .contact-form .behind-laptop label, .contact-form .behind-laptop .work-item a label {
   font-size: 1.25rem;
   position: absolute;
   left: 0;
@@ -1500,7 +1500,7 @@ blockquote.note ul li {
   width: 100%;
   margin: 0;
 }
-.work-item a h1 span {
+.work-item a h1 span, .work-item a .behind-laptop h3 span, .behind-laptop .work-item a h3 span, .work-item a .behind-laptop .contact-form label span, .behind-laptop .contact-form .work-item a label span, .work-item a .contact-form .behind-laptop label span, .contact-form .behind-laptop .work-item a label span {
   padding: 5px 20px;
   background: #F8F8F8;
 }
@@ -1508,10 +1508,10 @@ blockquote.note ul li {
   opacity: 1;
   border-bottom: 5px solid #ffffff;
 }
-.work-item a:hover h1 {
+.work-item a:hover h1, .work-item a:hover .behind-laptop h3, .behind-laptop .work-item a:hover h3, .work-item a:hover .behind-laptop .contact-form label, .behind-laptop .contact-form .work-item a:hover label, .work-item a:hover .contact-form .behind-laptop label, .contact-form .behind-laptop .work-item a:hover label {
   color: #659c8f;
 }
-.work-item a:hover h1 span {
+.work-item a:hover h1 span, .work-item a:hover .behind-laptop h3 span, .behind-laptop .work-item a:hover h3 span, .work-item a:hover .behind-laptop .contact-form label span, .behind-laptop .contact-form .work-item a:hover label span, .work-item a:hover .contact-form .behind-laptop label span, .contact-form .behind-laptop .work-item a:hover label span {
   background: #ffffff;
 }
 
@@ -1643,12 +1643,23 @@ blockquote.note ul li {
   margin-right: 0;
 }
 
-.about #main h1, .about #main h2, .about #main h3, .about #main .contact-form label, .contact-form .about #main label, .about #main h4 {
+.about #main h1, .about #main .behind-laptop h3, .behind-laptop .about #main h3, .about #main .behind-laptop .contact-form label, .behind-laptop .contact-form .about #main label, .about #main .contact-form .behind-laptop label, .contact-form .behind-laptop .about #main label, .about #main h2, .about #main h3, .about #main .contact-form label, .contact-form .about #main label, .about #main h4 {
   text-align: center;
 }
 
 .behind-laptop {
   background: #e7f0ee;
+}
+.behind-laptop h2 {
+  margin-bottom: 4rem;
+}
+.behind-laptop h3, .behind-laptop .contact-form label, .contact-form .behind-laptop label {
+  font-size: 2rem;
+  text-transform: none;
+  color: #A3C4BC;
+}
+.behind-laptop p {
+  font-size: 1.1rem;
 }
 
 .contact .entry-content ul {
@@ -1668,7 +1679,7 @@ blockquote.note ul li {
 .contact-form .wrapper, .contact-form .special, .contact-form .posts-navigation .nav-links, .posts-navigation .contact-form .nav-links {
   padding: 4rem 0;
 }
-.contact-form h1 {
+.contact-form h1, .contact-form .behind-laptop h3, .behind-laptop .contact-form h3, .behind-laptop .contact-form label, .contact-form .behind-laptop label {
   text-align: center;
   font-size: 2rem;
   margin-top: 0;
@@ -1771,16 +1782,26 @@ blockquote.note ul li {
 
 .sssprev {
   left: 3%;
+  color: #A3C4BC;
 }
 .sssprev:before {
-  content: "hey!";
+  content: "\2039";
+  font-size: 4rem;
+}
+.sssprev:hover {
+  color: #507e73;
 }
 
 .sssnext {
   right: 3%;
+  color: #A3C4BC;
 }
 .sssnext:after {
-  content: "yo!";
+  content: "\203A";
+  font-size: 4rem;
+}
+.sssnext:hover {
+  color: #5a8d81;
 }
 
 .sssprev:hover, .sssnext:hover {

@@ -40,16 +40,26 @@
 .sssprev {
 	left: 3%;
 	//background-position: 0 50%;
+	color: $robin;
 	&:before {
-		content:"hey!";
+		content:"\2039";
+		font-size: 4rem;
+	}
+	&:hover {
+		color: darken($robin,30);
 	}
 }
 
 .sssnext {
 	right: 3%;
 	//background-position: -26px 50%;
+	color: $robin;
 	&:after {
-		content: "yo!";
+		content: "\203A";
+		font-size: 4rem;
+	}
+	&:hover {
+		color: darken($robin, 25);
 	}
 }
 
