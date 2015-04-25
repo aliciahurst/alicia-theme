@@ -47,4 +47,20 @@
 
 .home-three {
 	@extend %three;
+	svg {
+		height: 32px;
+		width: 32px;
+		display: block;
+		margin: 2rem auto;
+		fill: darken($footercolor, 15);
+	}
+	h2 {
+		&:after {
+			content: "–";
+			display: block;
+		}
+	}
+	.read-more {
+		margin: 2rem 0;
+	}
 }

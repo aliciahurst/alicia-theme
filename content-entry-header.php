@@ -19,7 +19,7 @@
 		<?php elseif (is_singular('post')): ?>
 			<h2 class="post_date date updated"><?php the_date(); ?></p>
 		<?php else : ?>
-			<h3>Overview</h3>
+			<h3>Background</h3>
 			<?php the_field('work_description'); ?>
 		<?php endif; ?>
 	</div>
@@ -30,7 +30,7 @@
 		<?php elseif (is_singular('post')): ?>
 			<h3>Tags</h3>
 		<?php else : ?>
-			<h3>Key Roles</h3>
+			<h3>Scope</h3>
 		<?php endif; ?>
 
 		<ul>

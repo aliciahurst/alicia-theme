@@ -59,7 +59,7 @@ body {
 %three {
 	@include span-columns(4);
 	text-align: center;
-	padding: 0 2rem;
+	padding: 0 1.5rem;
 	&:nth-of-type(3n) {
 		@include omega;
 	}
@@ -73,7 +73,7 @@ body {
 	}
 	li, p:not(.read-link) {
 			font-family: $serif;
-			font-size: rem(18);
+			font-size: 1rem;
 			margin: 0;
 			line-height: 1.6;
 		}
