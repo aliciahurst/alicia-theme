@@ -1,13 +1,13 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * 
  *
  * @package alicia-theme
  */
 ?>
 
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<h1>Hey CONTACT ME</h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
