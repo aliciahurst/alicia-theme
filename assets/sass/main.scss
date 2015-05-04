@@ -1,5 +1,6 @@
-// Rest
-@import "modules/reset";
+// Resets
+@import "settings/normalize";
+@import "settings/underscores";
 
 // Bourbon and Neat
 @import "vendor/bourbon/bourbon";

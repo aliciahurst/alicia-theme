@@ -22,6 +22,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php edit_post_link( __( 'Edit', 'alicia-theme' ), '<span class="edit-link">', '</span>' ); ?>
+		
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
