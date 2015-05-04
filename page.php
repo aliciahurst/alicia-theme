@@ -15,10 +15,10 @@ get_header(); ?>
 	<main class="site-main" role="main">
 
 		 <?php while ( have_posts() ) : the_post(); ?>
+		 
+		 	<?php if (locate_template('template-parts/content-' . $post->post_name . '.php') != '') {
 
-		 	<?php if (locate_template('content-' . $pageName . '.php') != '') {
-
-				get_template_part( 'content', $pageName );
+				get_template_part( 'template-parts/content', $post->post_name );
 
 				} else {
 
