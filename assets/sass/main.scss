@@ -7,14 +7,13 @@
 @import "vendor/neat/neat";
 
 // Required stuff
-//@import "partials/variables";
-//@import "partials/typography";
-//@import "partials/global";
-
+//@import "settings/variables";
+//@import "settings/typography";
+@import "parts/global";
 
 // Header and footer
-//@import "partials/header";
-//@import "partials/footer";
+@import "parts/header";
+@import "parts/footer";
 //@import "partials/cta";
 //@import "partials/entry-header";
 //@import "partials/aside";
