@@ -7,13 +7,14 @@
 ?>
 
 	<header class="entry-header">
-		<h1>Hey CONTACT ME</h1>
+		<h1 class="page-title"><?php the_title ?></h1>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<section class="contact-content">
 		<?php the_content(); ?>
-	</div><!-- .entry-content -->
+	</section>
 
-	<footer class="entry-footer">
-		
-	</footer><!-- .entry-footer -->
+	<section class="contact-form">
+		<h2>New Project Inquiries</h2>
+		<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
+	</section>
