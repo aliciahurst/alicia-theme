@@ -6,10 +6,6 @@
  */
 ?>
 
-	<header class="entry-header">
-		<h1 class="page-title"><?php the_title ?></h1>
-	</header><!-- .entry-header -->
-
 	<section class="contact-content">
 		<?php the_content(); ?>
 	</section>
