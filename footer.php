@@ -31,6 +31,8 @@
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php get_template_part('template-parts', 'scripts'); ?>
+
 <?php wp_footer(); ?>
 
 </body>
