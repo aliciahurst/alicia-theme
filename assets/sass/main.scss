@@ -9,8 +9,8 @@
 @import "vendor/neat/neat";
 
 // Required stuff
-//@import "settings/variables";
-//@import "settings/typography";
+@import "settings/variables";
+@import "settings/typography";
 @import "parts/global";
 
 // Header and footer
@@ -26,5 +26,3 @@
 //@import "pages/blog";
 //@import "pages/about";
 //@import "pages/contact";
-
-//@import "modules/sss";

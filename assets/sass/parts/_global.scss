@@ -1,6 +1,14 @@
+body {
+	position: relative;
+}
+
 [class^="icon-"], [class*=" icon-"] {
     height: 32px;
     width: 32px;
     display: inline-block; 
     fill: currentColor; 
+}
+
+.wrapper {
+	@include outer-container();
 }

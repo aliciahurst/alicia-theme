@@ -116,9 +116,8 @@ function alicia_theme_scripts() {
 	// Add JS
 	wp_enqueue_script( 'alicia-theme-js', get_template_directory_uri() . '/assets/js/build/scripts.js', array('jquery'), '1.0.0', true );
 
-	// Add Google Fonts and Fontastic
-	wp_enqueue_script('google-fonts', 'https://fontastic.s3.amazonaws.com/hWzFcuyKpTpmn2DL4SVLTT/icons.js');
-	wp_enqueue_script('fontstic', 'http://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,700');
+	// Add  Fontastic
+	wp_enqueue_script('fontastic', 'https://fontastic.s3.amazonaws.com/hWzFcuyKpTpmn2DL4SVLTT/icons.js');
 
 	//if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	//	wp_enqueue_script( 'comment-reply' );
@@ -255,14 +254,14 @@ function register_cpt_work() {
 	$args = array( 
 		'labels' => $labels,
 		'hierarchical' => false,
-		
+
 		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
 		'taxonomies' => array( 'category', 'post_tag' ),
 		'public' => true,
 		'show_ui' => true,
 		'show_in_menu' => true,
 		'menu_position' => 20,
-		
+
 		'show_in_nav_menus' => true,
 		'publicly_queryable' => true,
 		'exclude_from_search' => false,
