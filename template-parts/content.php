@@ -9,30 +9,30 @@
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php alicia_theme_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<div class="entry-meta">
+				<?php alicia_theme_posted_on(); ?>
+			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'alicia-theme' ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+		/* translators: %s: Name of current post */
+		the_content( sprintf(
+			__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'alicia-theme' ),
+			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
-		?>
+			?>
 
-		<?php
+			<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'alicia-theme' ),
 				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+				) );
+				?>
+			</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php alicia_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+			<footer class="entry-footer">
+				<?php alicia_theme_entry_footer(); ?>
+			</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

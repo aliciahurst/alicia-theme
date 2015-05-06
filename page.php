@@ -12,25 +12,25 @@
 
 get_header(); ?>
 
-	<main class="site-main" role="main">
-		 <?php while ( have_posts() ) : the_post(); ?>
-		 
-		 <header class="entry-header">
+<main class="site-main" role="main">
+	<?php while ( have_posts() ) : the_post(); ?>
+		
+		<header class="entry-header">
 			<h1 class="page-title"><?php the_title(); ?></h1>
 		</header><!-- .entry-header -->
 
-		 	<?php if (locate_template('template-parts/content-' . $post->post_name . '.php') != '') {
+		<?php if (locate_template('template-parts/content-' . $post->post_name . '.php') != '') {
 
-				get_template_part( 'template-parts/content', $post->post_name );
+			get_template_part( 'template-parts/content', $post->post_name );
 
-				} else {
+		} else {
 
-				get_template_part( 'template-parts/content', 'page' ); 
+			get_template_part( 'template-parts/content', 'page' ); 
 
-				}; ?>
+		}; ?>
 
-		<?php endwhile; // end of the loop. ?> 
+	<?php endwhile; // end of the loop. ?> 
 
-	</main> <!-- #main -->
+</main> <!-- #main -->
 
 <?php get_footer(); ?>

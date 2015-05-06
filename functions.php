@@ -51,7 +51,7 @@ function alicia_theme_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'alicia-theme' ),
-	) );
+		) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -59,7 +59,7 @@ function alicia_theme_setup() {
 	 */
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
-	) );
+		) );
 
 	/*
 	 * Enable support for Post Formats.
@@ -94,7 +94,7 @@ function alicia_theme_widgets_init() {
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
-	) );
+		) );
 }
 add_action( 'widgets_init', 'alicia_theme_widgets_init' );
 
@@ -162,15 +162,15 @@ add_filter('show_admin_bar', '__return_false');
 
 // Clean up versioning of scripts and styles
 function ewp_remove_script_version( $src ){
-  return remove_query_arg( 'ver', $src );
+	return remove_query_arg( 'ver', $src );
 }
 add_filter( 'script_loader_src', 'ewp_remove_script_version', 15, 1 );
 add_filter( 'style_loader_src', 'ewp_remove_script_version', 15, 1 );
 add_filter( 'edit_post_link', '__return_false' );
 
 function remove_recent_comments_style() {
-    global $wp_widget_factory;
-    remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
+	global $wp_widget_factory;
+	remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
 }
 
 add_action('widgets_init', 'remove_recent_comments_style');
@@ -189,11 +189,11 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
 
 // Remove menu wrappers
-	function my_wp_nav_menu_args( $args = '' ) {
+function my_wp_nav_menu_args( $args = '' ) {
 	$args['container'] = false;
 	return $args;
-	}
-	add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+}
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
 
 // Remove edit posts link
 add_filter( 'edit_post_link', '__return_false' );
@@ -201,22 +201,22 @@ add_filter( 'edit_post_link', '__return_false' );
 // relative paths for images
 function yoursite_get_relative_attachment_path($path)
 {
-    $paths = (object)parse_url($path);
-    return $paths->path;
+	$paths = (object)parse_url($path);
+	return $paths->path;
 }
 
 // img unautop
 function img_unautop($pee) {
-    $pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="content-img">$1</div>', $pee);
-    return $pee;
+	$pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<div class="content-img">$1</div>', $pee);
+	return $pee;
 }
 add_filter( 'the_content', 'img_unautop', 30 );
 
 // remove empty p tags
 add_filter('the_content', 'remove_empty_p', 20, 1);
 function remove_empty_p($content){
-    $content = force_balance_tags($content);
-    return preg_replace('#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content);
+	$content = force_balance_tags($content);
+	return preg_replace('#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content);
 }
 
 // change default image attachment settings
@@ -237,74 +237,74 @@ add_action( 'init', 'register_cpt_work' );
 
 function register_cpt_work() {
 
-    $labels = array( 
-        'name' => _x( 'Work', 'work' ),
-        'singular_name' => _x( 'Work', 'work' ),
-        'add_new' => _x( 'Add New', 'work' ),
-        'add_new_item' => _x( 'Add New Work', 'work' ),
-        'edit_item' => _x( 'Edit Work', 'work' ),
-        'new_item' => _x( 'New Work', 'work' ),
-        'view_item' => _x( 'View Work', 'work' ),
-        'search_items' => _x( 'Search Work', 'work' ),
-        'not_found' => _x( 'No work found', 'work' ),
-        'not_found_in_trash' => _x( 'No work found in Trash', 'work' ),
-        'parent_item_colon' => _x( 'Parent Work:', 'work' ),
-        'menu_name' => _x( 'Work', 'work' ),
-    );
+	$labels = array( 
+		'name' => _x( 'Work', 'work' ),
+		'singular_name' => _x( 'Work', 'work' ),
+		'add_new' => _x( 'Add New', 'work' ),
+		'add_new_item' => _x( 'Add New Work', 'work' ),
+		'edit_item' => _x( 'Edit Work', 'work' ),
+		'new_item' => _x( 'New Work', 'work' ),
+		'view_item' => _x( 'View Work', 'work' ),
+		'search_items' => _x( 'Search Work', 'work' ),
+		'not_found' => _x( 'No work found', 'work' ),
+		'not_found_in_trash' => _x( 'No work found in Trash', 'work' ),
+		'parent_item_colon' => _x( 'Parent Work:', 'work' ),
+		'menu_name' => _x( 'Work', 'work' ),
+		);
 
-    $args = array( 
-        'labels' => $labels,
-        'hierarchical' => false,
-        
-        'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
-        'taxonomies' => array( 'category', 'post_tag' ),
-        'public' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'menu_position' => 20,
-        
-        'show_in_nav_menus' => true,
-        'publicly_queryable' => true,
-        'exclude_from_search' => false,
-        'has_archive' => true,
-        'query_var' => true,
-        'can_export' => true,
-        'rewrite' => true,
-        'capability_type' => 'post'
-    );
+	$args = array( 
+		'labels' => $labels,
+		'hierarchical' => false,
+		
+		'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
+		'taxonomies' => array( 'category', 'post_tag' ),
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'menu_position' => 20,
+		
+		'show_in_nav_menus' => true,
+		'publicly_queryable' => true,
+		'exclude_from_search' => false,
+		'has_archive' => true,
+		'query_var' => true,
+		'can_export' => true,
+		'rewrite' => true,
+		'capability_type' => 'post'
+		);
 
-    register_post_type( 'work', $args );
+	register_post_type( 'work', $args );
 }
 
 // Remove slug from Work custom post type
 
 function custom_remove_cpt_slug( $post_link, $post, $leavename ) {
 
-    if ( 'work' != $post->post_type || 'publish' != $post->post_status ) {
-        return $post_link;
-    }
+	if ( 'work' != $post->post_type || 'publish' != $post->post_status ) {
+		return $post_link;
+	}
 
-    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
+	$post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
 
-    return $post_link;
+	return $post_link;
 }
 add_filter( 'post_type_link', 'custom_remove_cpt_slug', 10, 3 );
 
 function custom_parse_request_tricksy( $query ) {
 
     // Only noop the main query
-    if ( ! $query->is_main_query() )
-        return;
+	if ( ! $query->is_main_query() )
+		return;
 
     // Only noop our very specific rewrite rule match
-    if ( 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
-        return;
-    }
+	if ( 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
+		return;
+	}
 
     // 'name' will be set if post permalinks are just post_name, otherwise the page rule will match
-    if ( ! empty( $query->query['name'] ) ) {
-        $query->set( 'post_type', array( 'post', 'work', 'page' ) );
-    }
+	if ( ! empty( $query->query['name'] ) ) {
+		$query->set( 'post_type', array( 'post', 'work', 'page' ) );
+	}
 }
 add_action( 'pre_get_posts', 'custom_parse_request_tricksy' );
 
@@ -325,7 +325,7 @@ add_filter( 'excerpt_more', 'custom_excerpt_more' );
 // Custom more-link
 
 function add_p_tag($link){
-return "<p class=more-link>$link</p>";
+	return "<p class=more-link>$link</p>";
 }
 add_filter('the_content_more_link', 'add_p_tag');
 
@@ -334,7 +334,7 @@ function nav_class_filter( $var ) {
 	return is_array($var) ? array_intersect($var, array('current-menu-item', 'current-menu-parent', 'current-menu-ancestor')) : '';
 }
 add_filter('nav_menu_css_class', 'nav_class_filter', 100, 1);
- 
+
 // Add page slug as nav IDs
 function nav_id_filter( $id, $item ) {
 	return 'nav-'.strtolower( str_replace( ' ','-',$item->title ) );

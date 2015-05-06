@@ -16,14 +16,14 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'alicia-theme' ),
-				'after'  => '</div>',
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . __( 'Pages:', 'alicia-theme' ),
+			'after'  => '</div>',
 			) );
-		?>
-	</div><!-- .entry-content -->
+			?>
+		</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php alicia_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+		<footer class="entry-footer">
+			<?php alicia_theme_entry_footer(); ?>
+		</footer><!-- .entry-footer -->
+	</article><!-- #post-## -->
