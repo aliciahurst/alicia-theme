@@ -19,9 +19,23 @@
 }
 
 .latest-work {
-	h2 {
-		@include outer-container;
+	background: $navy;
+	position: relative;
+	.work-h2 {
+		position: absolute;
+		margin-top: 0;
+		display: block;
+		width: 100%;
+		text-align: center;
+		top: 50%;
+		left: 0;
+		z-index: 999;
+		@include transform(translateY(-50%));
 	}
+}
+
+.accordion:hover + .work-h2 {
+	display: none;
 }
 
 .bio {
@@ -54,4 +68,9 @@
 
 .hire-me {
 	clear: both;
+	background: $color2;
+}
+
+.home footer {
+	background: $color2;
 }

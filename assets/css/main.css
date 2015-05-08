@@ -835,15 +835,28 @@ button.menu-toggle:before {
   margin-right: 0;
 }
 
-.latest-work h2 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.latest-work {
+  background: #212d40;
+  position: relative;
 }
-.latest-work h2::after {
-  clear: both;
-  content: "";
-  display: table;
+.latest-work .work-h2 {
+  position: absolute;
+  margin-top: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  z-index: 999;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.accordion:hover + .work-h2 {
+  display: none;
 }
 
 .bio {
@@ -881,6 +894,11 @@ button.menu-toggle:before {
 
 .hire-me {
   clear: both;
+  background: #70c1b3;
+}
+
+.home footer {
+  background: #70c1b3;
 }
 
 .accordion {
@@ -993,6 +1011,37 @@ button.menu-toggle:before {
     -webkit-transition: none;
     transition: none;
   }
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

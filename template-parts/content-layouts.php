@@ -15,12 +15,14 @@
   			<section class="<?php echo $displayType ?>">
 
   				<?php if ($displayType == 'display_slider') : ?>
-  					<ul class="rslides">
-  						<?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
-  							<li><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>"></li>
-  						<?php endwhile; ?>
-  					</ul>
-
+            <div class="rslides_container">
+             <ul class="rslides">
+              <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
+               <li><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>"></li>
+             <?php endwhile; ?>
+           </ul>
+         </div>
+            
   				<?php elseif ($displayType == 'display_before') : ?>
   					<div class="twentytwenty-container">
   						<?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
