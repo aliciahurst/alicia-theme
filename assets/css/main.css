@@ -563,25 +563,24 @@ $color5: #c1666b;
 /* Setup */
 html {
   font-family: "Open Sans", sans-serif !important;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 62.5%;
   /* Sets up the Base 10 stuff */
-  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  line-height: 1.45;
+  line-height: 1.2;
 }
 
 p, li {
   margin-bottom: 2.08rem;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h1.site-title, .bio div.bio-text h2, h4 {
   margin: 2.26rem 0 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -589,12 +588,22 @@ h1 {
   margin-top: 0;
   font-size: 6.39rem;
 }
+h1.site-title {
+  text-transform: lowercase;
+}
+h1.site-title span:nth-of-type(1) {
+  color: #ff1654;
+  font-weight: 700;
+}
+h1.site-title span:nth-of-type(2) {
+  font-weight: 600;
+}
 
 h2 {
   font-size: 4.5rem;
 }
 
-h3 {
+h3, h1.site-title, .bio div.bio-text h2 {
   font-size: 3.19rem;
 }
 
@@ -608,6 +617,7 @@ small, .font_small {
 
 a {
   text-decoration: none;
+  font-size: inherit;
 }
 
 ul, ol {
@@ -619,8 +629,15 @@ ul ul, ul ol, ol ul, ol ol {
   margin-top: 0;
   margin-bottom: 0;
 }
-ul li, ol li {
+
+li {
   margin-bottom: 0;
+}
+.main-navigation li {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.8rem;
+  opacity: 0.9;
 }
 
 body {
@@ -635,7 +652,7 @@ body {
 }
 
 .wrapper {
-  max-width: 75em;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -660,23 +677,11 @@ img {
   border: 0;
 }
 
-.bio div, .bio img {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-.bio div:last-child, .bio img:last-child {
-  margin-right: 0;
-}
-.bio div:nth-child(2n), .bio img:nth-child(2n) {
-  margin-right: 0;
-}
-.bio div:nth-child(2n+1), .bio img:nth-child(2n+1) {
-  clear: left;
+body {
+  border-top: 0.5rem solid #ff1654;
 }
 
-.site-header .wrapper {
+.site-header {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -702,8 +707,9 @@ img {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
+  padding: 2%;
 }
-.site-header .wrapper > * {
+.site-header > * {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
@@ -726,10 +732,7 @@ img {
 }
 .main-navigation ul li {
   display: inline-block;
-  padding: 0 1.5rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  padding: 0 1rem;
 }
 
 button.menu-toggle {
@@ -777,6 +780,9 @@ button.menu-toggle:before {
   height: 33.3vh;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .toggled ul li a {
   display: block;
@@ -798,25 +804,22 @@ button.menu-toggle:before {
 
 .site-footer nav li {
   display: inline-block;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .site-footer {
   text-align: center;
 }
 
-.home {
-  background: #70c1b3;
-  color: #ffffff;
-}
-.home a {
-  color: #ffffff;
-}
 .home .site-name .site-title a {
   display: block;
 }
-.home .site-name .site-title a:first-letter {
-  color: #ff1654;
+.home header, .home .home-top {
+  background: #212d40;
+  color: #ffffff;
+}
+.home header a, .home .home-top a {
+  color: #ffffff;
 }
 
 .services .wrapper {
@@ -833,7 +836,7 @@ button.menu-toggle:before {
 }
 
 .latest-work h2 {
-  max-width: 75em;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -841,6 +844,155 @@ button.menu-toggle:before {
   clear: both;
   content: "";
   display: table;
+}
+
+.bio {
+  background: #f3ffbd;
+}
+.bio .wrapper {
+  position: relative;
+  z-index: 0;
+}
+.bio img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  padding-top: 8%;
+  width: 25%;
+  z-index: -1;
+}
+.bio div.bio-text {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  z-index: 999;
+  color: #212d40;
+}
+.bio div.bio-text:last-child {
+  margin-right: 0;
+}
+.bio div.bio-text h2 {
+  font-weight: 700;
+}
+.bio div.bio-text p {
+  font-size: 3rem;
+}
+
+.hire-me {
+  clear: both;
+}
+
+.accordion {
+  width: 100%;
+  max-height: 40rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background-repeat: none;
+}
+.accordion ul li div a {
+  display: block;
+  height: 40rem;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.accordion ul li div a h2 {
+  text-overflow: clip;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 6%;
+  left: 6%;
+}
+.accordion ul:hover li {
+  width: 8%;
+}
+.accordion ul:hover li:hover {
+  width: 60%;
+}
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.accordion-div {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.accordion-div:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(bottom left, transparent 0%, #f3ffbd 100%);
+  background-image: linear-gradient(to top right,transparent 0%, #f3ffbd 100%);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .accordion {
+    height: auto;
+  }
+  .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+    position: r elative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

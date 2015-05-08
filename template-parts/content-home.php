@@ -43,7 +43,7 @@
 		<div class="accordion">
 			<ul> <?php $args = array( 'numberposts' => 5, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 				<li>
-					<div style="backgrond-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg')">
+					<div style="background-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg')" class="accordion-div">
 						<a href="<?php the_permalink(); ?>">
 							<h2><span><?php the_title(); ?></span></h2>
 						</a>
@@ -56,13 +56,14 @@
 </section>
 
 <section class="bio">	
+	<div class="wrapper">
 		<div class="bio-text">
 			<h2><?php the_field('home_bio-title'); ?></h2>
 			<?php the_field('home_bio'); ?>
 			<p>Want to work together? Contact me!</p>
 		</div>
 		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/headshot.jpg">
-
+		</div>
 	</div>
 </section>
 

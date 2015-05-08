@@ -1,30 +1,23 @@
-// Typesetting variables. Edit these! Typebase.css
-$baseFontSize: 16; // in pixels.
-$baseLineHeight: 1.5; // how large the line height is as a multiple of font size
-$leading: $baseLineHeight * 1rem;
-$regular: 300;
-$bold: 800;
+$regular: 400;
+$semi: 600;
+$bold: 700;
 
-// Rate of growth for headings
-// I actually like this to be slightly smaller then the leading. Makes for tight headings.
-$scale: 1.414;
 
 /* Setup */
 html {
 	font-family: 'Open Sans', sans-serif!important;
 	font-weight: $regular;
 	font-size: 62.5%; /* Sets up the Base 10 stuff */
-	font-size: 1rem;
 	-webkit-font-smoothing: antialiased;
 } 
 
 body {
-  line-height: 1.45;
+  line-height: 1.2;
 }
 
 p, li {
 	margin-bottom: 2.08rem;
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 }
 
 
@@ -37,6 +30,17 @@ h1, h2, h3, h4 {
 h1 {
   margin-top: 0;
   font-size: 6.39rem;
+  &.site-title {
+  	@extend h3;
+  	text-transform: lowercase;
+  	span:nth-of-type(1) {
+  		color: $color5;
+  		font-weight: $bold;
+  	}
+  	span:nth-of-type(2) {
+  		font-weight:$semi;
+  	}
+  }
 }
 
 h2 {
@@ -58,6 +62,7 @@ small, .font_small {
 
 a {
 	text-decoration: none;
+	font-size: inherit;
 }
 
 ul, ol {
@@ -68,7 +73,14 @@ ul, ol {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	li {
-		margin-bottom: 0;
+}
+
+li {
+	margin-bottom: 0;
+	.main-navigation & {
+		text-transform: capitalize;
+		font-weight: $bold;
+		font-size: 1.8rem;
+		opacity: 0.9;
 	}
 }

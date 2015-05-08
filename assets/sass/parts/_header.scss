@@ -1,10 +1,14 @@
-.site-header .wrapper {
+body {
+	border-top: 0.5rem solid $color5;
+}
+.site-header {
 	@include display(flex);
 	@include justify-content(space-between);
 	@include align-items(center);
 	& > * {
 		@include flex(1);
 	}
+	padding: 2%;
 }
 
 .site-name {
@@ -22,10 +26,7 @@
 		text-align: right;
 		li {
 			display: inline-block;
-			padding: 0 $leading;
-			font-weight: $bold;
-			text-transform: uppercase;
-			letter-spacing: 1px;
+			padding: 0 1rem;
 		}
 	}
 }
@@ -69,6 +70,9 @@ button.menu-toggle {
 			height: 33.3vh;
 			text-align: center;
 			width: 100%;
+			text-transform: uppercase;
+			font-weight: $bold;
+			letter-spacing: 1px;
 			a {
 				display: block;
 				@include flex(1);

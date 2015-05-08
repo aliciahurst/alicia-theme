@@ -27,10 +27,3 @@ img {
 	height: auto;
 	border: 0;
 }
-
-.bio {
-	div, img {
-		@include span-columns(6);
-		@include omega(2n);
-	}
-}

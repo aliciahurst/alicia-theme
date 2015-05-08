@@ -1,0 +1,120 @@
+// Responsive accordion via http://codepen.io/ferry/pen/ZYVwxz
+
+// Accordion Height
+$a-height: 40rem;
+
+// Position text along bottom
+$text-offset: $a-height - 90;
+
+.accordion {
+  width:100%;
+  //max-width: $max-width;
+  max-height:$a-height;
+  overflow:hidden;
+  margin:0 auto;
+  ul {
+    width:100%;
+    display:table;
+    table-layout:fixed;
+    margin:0;
+    padding:0;
+    li {
+      display:table-cell;
+      vertical-align:bottom;
+      position: relative;
+      width:16.666%; // 6 into 100
+      height:$a-height;
+      background-repeat:no-repeat;
+      background-position:center center;
+      transition:all 500ms ease;
+      div {
+        display:block;
+        overflow:hidden;
+        width:100%;
+        background-repeat: none;
+        a {
+          display:block;
+          height:$a-height;
+          width:100%;
+          position:relative;
+          z-index:3;
+          vertical-align:bottom;
+          padding:15px 20px;
+          box-sizing:border-box;
+          color: #fff;
+          text-decoration:none;
+          transition:all 200ms ease;
+          * {
+            opacity:0;
+            margin:0;
+            width:100%;
+            text-overflow:ellipsis;
+            position:relative;
+            z-index:5;       
+            white-space:nowrap;
+            overflow:hidden;
+            -webkit-transform:translateX(-20px);
+            transform:translateX(-20px);
+            -webkit-transition:all 400ms ease;
+            transition:all 400ms ease;
+          }
+          h2 {
+            text-overflow:clip;
+            text-transform:uppercase;
+            position: absolute;
+            bottom: 6%;
+            left: 6%;
+          }
+        }
+      }
+    }
+    &:hover li { 
+      width:8%; 
+    }
+    &:hover li:hover {
+      width:60%;
+      a {
+        background:rgba(0,0,0,.4);
+        * {
+          opacity:1;
+          -webkit-transform:translateX(0);
+          transform:translateX(0);
+        }
+      }
+    }
+  }
+}
+
+.accordion-div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    @include linear-gradient(to top right, transparent 0%, $color4 100%);
+  }
+}
+
+// Stack items
+@media screen and (max-width: 600px) {
+  body { 
+    margin: 0; 
+  }
+  .accordion {
+    height:auto;
+    ul,ul:hover {
+      li,li:hover {
+        position:r elative;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        -webkit-transition: none;
+        transition: none;
+      }
+    }
+  }
+}
