@@ -394,12 +394,6 @@ th {
   padding: 0;
 }
 
-.main-navigation {
-  clear: both;
-  display: block;
-  width: 100%;
-}
-
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -526,47 +520,107 @@ html {
   box-sizing: inherit;
 }
 
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 75em;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1;
-}
-@media screen and (max-width: 62.5em) {
-  body:before {
-    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 9.36867%, transparent 9.36867%, transparent 12.94733%, #eee 12.94733%, #eee 22.316%, transparent 22.316%, transparent 25.89467%, #eee 25.89467%, #eee 35.26334%, transparent 35.26334%, transparent 38.842%, #eee 38.842%, #eee 48.21067%, transparent 48.21067%, transparent 51.78933%, #eee 51.78933%, #eee 61.158%, transparent 61.158%, transparent 64.73666%, #eee 64.73666%, #eee 74.10533%, transparent 74.10533%, transparent 77.684%, #eee 77.684%, #eee 87.05267%, transparent 87.05267%, transparent 90.63133%, #eee 90.63133%, #eee 100.0%, transparent 100.0%);
-    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 9.36867%, transparent 9.36867%, transparent 12.94733%, #eee 12.94733%, #eee 22.316%, transparent 22.316%, transparent 25.89467%, #eee 25.89467%, #eee 35.26334%, transparent 35.26334%, transparent 38.842%, #eee 38.842%, #eee 48.21067%, transparent 48.21067%, transparent 51.78933%, #eee 51.78933%, #eee 61.158%, transparent 61.158%, transparent 64.73666%, #eee 64.73666%, #eee 74.10533%, transparent 74.10533%, transparent 77.684%, #eee 77.684%, #eee 87.05267%, transparent 87.05267%, transparent 90.63133%, #eee 90.63133%, #eee 100.0%, transparent 100.0%);
-    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 9.36867%, transparent 9.36867%, transparent 12.94733%, #eee 12.94733%, #eee 22.316%, transparent 22.316%, transparent 25.89467%, #eee 25.89467%, #eee 35.26334%, transparent 35.26334%, transparent 38.842%, #eee 38.842%, #eee 48.21067%, transparent 48.21067%, transparent 51.78933%, #eee 51.78933%, #eee 61.158%, transparent 61.158%, transparent 64.73666%, #eee 64.73666%, #eee 74.10533%, transparent 74.10533%, transparent 77.684%, #eee 77.684%, #eee 87.05267%, transparent 87.05267%, transparent 90.63133%, #eee 90.63133%, #eee 100.0%, transparent 100.0%);
-    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 9.36867%, transparent 9.36867%, transparent 12.94733%, #eee 12.94733%, #eee 22.316%, transparent 22.316%, transparent 25.89467%, #eee 25.89467%, #eee 35.26334%, transparent 35.26334%, transparent 38.842%, #eee 38.842%, #eee 48.21067%, transparent 48.21067%, transparent 51.78933%, #eee 51.78933%, #eee 61.158%, transparent 61.158%, transparent 64.73666%, #eee 64.73666%, #eee 74.10533%, transparent 74.10533%, transparent 77.684%, #eee 77.684%, #eee 87.05267%, transparent 87.05267%, transparent 90.63133%, #eee 90.63133%, #eee 100.0%, transparent 100.0%);
-    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 9.36867%, transparent 9.36867%, transparent 12.94733%, #eee 12.94733%, #eee 22.316%, transparent 22.316%, transparent 25.89467%, #eee 25.89467%, #eee 35.26334%, transparent 35.26334%, transparent 38.842%, #eee 38.842%, #eee 48.21067%, transparent 48.21067%, transparent 51.78933%, #eee 51.78933%, #eee 61.158%, transparent 61.158%, transparent 64.73666%, #eee 64.73666%, #eee 74.10533%, transparent 74.10533%, transparent 77.684%, #eee 77.684%, #eee 87.05267%, transparent 87.05267%, transparent 90.63133%, #eee 90.63133%, #eee 100.0%, transparent 100.0%);
-  }
-}
-@media screen and (max-width: 43.75em) {
-  body:before {
-    background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 19.43277%, transparent 19.43277%, transparent 26.85574%, #eee 26.85574%, #eee 46.28851%, transparent 46.28851%, transparent 53.71149%, #eee 53.71149%, #eee 73.14426%, transparent 73.14426%, transparent 80.56723%, #eee 80.56723%, #eee 100%, transparent 100%);
-    background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 19.43277%, transparent 19.43277%, transparent 26.85574%, #eee 26.85574%, #eee 46.28851%, transparent 46.28851%, transparent 53.71149%, #eee 53.71149%, #eee 73.14426%, transparent 73.14426%, transparent 80.56723%, #eee 80.56723%, #eee 100%, transparent 100%);
-    background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 19.43277%, transparent 19.43277%, transparent 26.85574%, #eee 26.85574%, #eee 46.28851%, transparent 46.28851%, transparent 53.71149%, #eee 53.71149%, #eee 73.14426%, transparent 73.14426%, transparent 80.56723%, #eee 80.56723%, #eee 100%, transparent 100%);
-    background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 19.43277%, transparent 19.43277%, transparent 26.85574%, #eee 26.85574%, #eee 46.28851%, transparent 46.28851%, transparent 53.71149%, #eee 53.71149%, #eee 73.14426%, transparent 73.14426%, transparent 80.56723%, #eee 80.56723%, #eee 100%, transparent 100%);
-    background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 19.43277%, transparent 19.43277%, transparent 26.85574%, #eee 26.85574%, #eee 46.28851%, transparent 46.28851%, transparent 53.71149%, #eee 53.71149%, #eee 73.14426%, transparent 73.14426%, transparent 80.56723%, #eee 80.56723%, #eee 100%, transparent 100%);
-  }
+/*
+// Set 1
+$color1: #11151c; //black
+$color2: #212d40; //navy
+$color3: #364156; //medium blue
+$color4: #7d4e57; //eggplant
+$color5: #d66853; //orangy
+*/
+/*
+// Set 3
+$color1: #264653;
+$color2: #2a9d8f;
+$color3: #e9c46a;
+$color4: #f4a261;
+$color5: #e76f51;
+*/
+/*
+// Set 4
+$color1: #c9cba3;
+$color2: #ffe1a8;
+$color3: #e26d5c;
+$color4: #723d46;
+$color5: #472d30;
+*/
+/*
+// Set 5
+$color1: #ddd8b8;
+$color2: #b3cbb9;
+$color3: #84a9c0;
+$color4: #6a66a3;
+$color5: #542e71;
+*/
+/*
+// Set 6
+$color1: #4281a4;
+$color2: #48a9a6;
+$color3: #e4dfda;
+$color4: #d4b483;
+$color5: #c1666b;
+*/
+/* Setup */
+html {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 300;
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff */
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
 }
 
-body, h1, h2, h3, p {
-  font-family: "Raleway", sans-serif !important;
+body {
+  line-height: 1.45;
+}
+
+p, li {
+  margin-bottom: 2.08rem;
+  font-size: 1.8rem;
+}
+
+h1, h2, h3, h4 {
+  margin: 2.26rem 0 0.8rem;
   font-weight: 300;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 6.39rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 3.19rem;
+}
+
+h4 {
+  font-size: 2.26rem;
+}
+
+small, .font_small {
+  font-size: 1.13rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+ul ul, ul ol, ol ul, ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul li, ol li {
+  margin-bottom: 0;
 }
 
 body {
@@ -590,21 +644,105 @@ body {
   content: "";
   display: table;
 }
-
-.site-name {
-  float: left;
+section .wrapper {
+  padding: 8% 0;
+}
+section .wrapper > *:first-of-type {
+  margin-top: 0;
+}
+#masthead .wrapper, #colophon .wrapper {
+  padding: 4rem 0;
 }
 
-.main-navigation {
-  width: auto;
-  float: right;
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.bio div, .bio img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.bio div:last-child, .bio img:last-child {
+  margin-right: 0;
+}
+.bio div:nth-child(2n), .bio img:nth-child(2n) {
+  margin-right: 0;
+}
+.bio div:nth-child(2n+1), .bio img:nth-child(2n+1) {
+  clear: left;
+}
+
+.site-header .wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+.site-header .wrapper > * {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.site-name .site-title {
+  margin: 1vh;
+  line-height: 1;
+}
+.site-name .site-title a {
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  text-align: right;
+}
+.main-navigation ul li {
+  display: inline-block;
+  padding: 0 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 button.menu-toggle {
   z-index: 4;
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 0;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 62px;
+  width: 62px;
 }
 button.menu-toggle:before {
   content: "\00002b";
@@ -618,9 +756,9 @@ button.menu-toggle:before {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.toggled .nav-menu {
+.toggled ul {
   z-index: 3;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
@@ -628,9 +766,81 @@ button.menu-toggle:before {
   background: white;
   display: block;
 }
-.toggled .nav-menu li {
-  display: block;
+.toggled ul li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 33.3vh;
+  text-align: center;
+  width: 100%;
+}
+.toggled ul li a {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  vertical-align: middle;
+  height: 33vh;
+  line-height: 33vh;
+  width: 100%;
+  font-size: 20vw;
+  align-self: center;
+  text-decoration: none;
+}
+
+.site-footer nav li {
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.home {
+  background: #70c1b3;
+  color: #ffffff;
+}
+.home a {
+  color: #ffffff;
+}
+.home .site-name .site-title a {
+  display: block;
+}
+.home .site-name .site-title a:first-letter {
+  color: #ff1654;
+}
+
+.services .wrapper {
+  text-align: center;
+}
+.services .wrapper > div {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+.services .wrapper > div:last-child {
+  margin-right: 0;
+}
+
+.latest-work h2 {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.latest-work h2::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 /*# sourceMappingURL=main.css.map */

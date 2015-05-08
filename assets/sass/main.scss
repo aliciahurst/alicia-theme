@@ -4,12 +4,13 @@
 
 // Bourbon and Neat
 @import "vendor/bourbon/bourbon";
-@import "vendor/neat/neat-helpers";
+//@import "vendor/neat/neat-helpers";
 @import "settings/grid";
 @import "vendor/neat/neat";
 
 // Required stuff
 @import "settings/variables";
+@import "settings/colors";
 @import "settings/typography";
 @import "parts/global";
 
@@ -21,7 +22,7 @@
 //@import "partials/aside";
 
 // Pages
-//@import "pages/home";
+@import "pages/home";
 //@import "pages/work";
 //@import "pages/blog";
 //@import "pages/about";

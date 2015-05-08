@@ -1,0 +1,30 @@
+.home {
+	background: $color2;
+	color: $white;
+	a {
+		color: $white;
+	}
+	.site-name .site-title a {
+		display: block;
+		&:first-letter {
+			color: $color5;
+		}
+	}
+}
+
+.services .wrapper {
+	text-align: center;
+	> div {
+		@include span-columns(4);
+	}
+}
+
+.latest-work {
+	h2 {
+		@include outer-container;
+	}
+	.bio-text {
+
+	}
+}
+

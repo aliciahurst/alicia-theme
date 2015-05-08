@@ -16,7 +16,9 @@ get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		
 		<header class="entry-header">
-			<h1 class="page-title"><?php the_title(); ?></h1>
+			<div class="wrapper">
+				<h1 class="page-title"><?php the_title(); ?></h1>
+			</div>
 		</header><!-- .entry-header -->
 
 		<?php if (locate_template('template-parts/content-' . $post->post_name . '.php') != '') {

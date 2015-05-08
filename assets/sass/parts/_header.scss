@@ -1,10 +1,33 @@
+.site-header .wrapper {
+	@include display(flex);
+	@include justify-content(space-between);
+	@include align-items(center);
+	& > * {
+		@include flex(1);
+	}
+}
+
 .site-name {
-	float: left;
+	.site-title {
+		margin: 1vh;
+		line-height: 1;
+		a {
+			text-decoration: none;
+		}
+	}
 }
 
 .main-navigation {
-	width: auto;
-	float: right;
+	ul {
+		text-align: right;
+		li {
+			display: inline-block;
+			padding: 0 $leading;
+			font-weight: $bold;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+	}
 }
 
 // Mobile Nav
@@ -14,10 +37,16 @@ button.menu-toggle {
 		content: "\00002b";
 		display: inline-block;
 	}
-	z-index: 4;
-	position: absolute;
-	top: 10px;
-	right: 0;
+	  z-index: 4;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  background: transparent;
+	  border: 0;
+	  padding: 0;
+	  line-height: 1;
+	  font-size: 62px;
+	  width: 62px;
 }
 
 .toggled {
@@ -26,9 +55,9 @@ button.menu-toggle {
 			@include transform(rotate(45deg));
 		}
 	}
-	.nav-menu {
+	ul {
 		z-index: 3;
-		position: absolute;
+		position: fixed;
 		left: 0;
 		top: 0;
 		height: 100vh;
@@ -36,8 +65,21 @@ button.menu-toggle {
 		background: white;
 		display: block;
 		li {
-			display: block;
+			@include display(flex);
 			height: 33.3vh;
+			text-align: center;
+			width: 100%;
+			a {
+				display: block;
+				@include flex(1);
+				vertical-align: middle;
+				height: 33vh;
+				line-height: 33vh;
+				width: 100%;
+				font-size: 20vw;
+				align-self: center;
+				text-decoration: none;
+			}
 		}
 	}
 }

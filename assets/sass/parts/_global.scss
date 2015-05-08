@@ -10,5 +10,27 @@ body {
 }
 
 .wrapper {
-	@include outer-container();
+	@include outer-container;
+	section & {
+		padding: 8% 0;
+		> *:first-of-type {
+			margin-top: 0;
+		}
+	}
+	#masthead &, #colophon & {
+		padding: 4rem 0;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+
+.bio {
+	div, img {
+		@include span-columns(6);
+		@include omega(2n);
+	}
 }
