@@ -1,7 +1,7 @@
 // Responsive accordion via http://codepen.io/ferry/pen/ZYVwxz
 
 // Accordion Height
-$a-height: 40rem;
+$a-height: 45rem;
 
 // Position text along bottom
 $text-offset: $a-height - 90;
@@ -62,6 +62,7 @@ $text-offset: $a-height - 90;
             text-overflow:clip;
             text-transform:uppercase;
             position: absolute;
+            font-weight: $bold;
             bottom: 6%;
             left: 6%;
           }
@@ -74,7 +75,7 @@ $text-offset: $a-height - 90;
     &:hover li:hover {
       width:60%;
       a {
-        background:rgba(0,0,0,.4);
+        background:rgba($color5,.4);
         * {
           opacity:1;
           -webkit-transform:translateX(0);

@@ -1,10 +1,28 @@
 .site-footer nav {
+	text-align: right;
 	li {
 		display: inline-block;
 		padding: 0 1rem;
 	}
 }
 
-.site-footer {
-	text-align: center;
+.footer-container {
+	//position: relative;
+	//z-index: -1;
+	background: $color4;
+	color: $white;
+	a {
+		color: $white;
+	}
 }
+
+
+.to-top {
+  //padding:15px;
+  display: block;
+  //position: absolute;
+  margin-top: -60px;
+  text-align: center;
+  @include transform(translateY(50%));
+}
+

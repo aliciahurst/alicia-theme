@@ -8,8 +8,11 @@
  */
 ?>
 
+
 <footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="wrapper">			
+
+	<div class="footer-container">
+		<p class="copyright"> &copy; <?php echo date('Y'); ?> <a href="/"><strong>Alicia Hurst</strong></a>, all rights reserved. <a href="https://github.com/aliciahurst/alicia-theme#readme">&#10084; site credits</a></span> </p>	
 		<?php if( have_rows('social_media', 'option') ): ?>
 			<nav id="social-navigation-footer" class="social-navigation" role="navigation">
 				<ul>
@@ -21,7 +24,6 @@
 				<?php endwhile; ?>
 			</ul>
 		</nav> <?php endif; ?>	
-		<p class="copyright"> &copy; <?php echo date('Y'); ?> <a href="/"><strong>Alicia Hurst</strong></a>, all rights reserved. <a href="https://github.com/aliciahurst/alicia-theme#readme">&#10084; site credits</a></span> </p>
 	</div>
 </footer><!-- #colophon -->
 </div><!-- #page -->

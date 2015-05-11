@@ -1,7 +1,7 @@
 body {
-	border-top: 0.5rem solid $color5;
+	//border-top: 0.5rem solid $color5;
 }
-.site-header {
+.header-container, .footer-container {
 	@include display(flex);
 	@include justify-content(space-between);
 	@include align-items(center);
