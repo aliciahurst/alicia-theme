@@ -6,10 +6,9 @@
  */
 ?>
 
-<section class="services">
+<section class="services arrow">
 	<div class="wrapper">
 		<h2>How I Can Help</h2>
-		<div class="wrapper-min">
 		<?php while ( have_rows('services') ) : the_row(); ?>
 			<?php if( get_row_layout() == 'service_section' ): ?>
 				<div class="services-div">
@@ -22,7 +21,6 @@
 				</div>
 			<?php endif; ?>
 		<?php endwhile ; ?>
-		</div>
 		<div class="contact-me">
 		<h3>Want to work together?</h3>
 		<p><a href="/contact">Let's talk!</a></p>
@@ -35,16 +33,25 @@
 	</div>
 </section>
 
-<section class="bio">	
+<section class="photos">
+	<div>
+		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/working.jpg">
+	</div>
+	<div>
+		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/headshot2.jpg">
+	</div>
+	<div>
+		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/smiling.jpg">
+	</div>
+</section>
+
+<section class="bio arrow">	
 	<div class="wrapper">
 		<div class="bio-text wrapper-min">
 			<h2><?php the_field('home_bio-title'); ?></h2>
 			<?php the_field('home_bio'); ?>
 		</div>
 	</div>
-	<div class="bio-headshot">
-			<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/headshot.jpg">
-		</div>
 </section>
 
 <section class="work-h2">

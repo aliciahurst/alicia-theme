@@ -2,4 +2,5 @@
   $(function() {
     $(".rslides").responsiveSlides();
   });
+
 </script>

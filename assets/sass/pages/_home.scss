@@ -10,42 +10,48 @@
 	//background-clip: border-box;
 	color: $white;
 	position: relative;
-	overflow: hidden;
+	
 	a {
 		color: $white;
 	}
-	&:before, &:after {
-	  content:"";
-	  position: absolute;
-	  bottom: 0;
-	  width: 50%;
-	  background-color: inherit;
-	  padding-bottom:40px;
-	}
-	&:before {
-	  right: 50%;
-	  -ms-transform-origin: 100% 100%;
-	  -webkit-transform-origin: 100% 100%;
-	  transform-origin: 100% 100%;
-	  -ms-transform: skewX(45deg);
-	  -webkit-transform: skewX(45deg);
-	  transform: skewX(45deg);
-	}
-	&:after {
-	  left: 50%;
-	  -ms-transform-origin: 0 100%;
-	  -webkit-transform-origin: 0 100%;
-	  transform-origin: 0 100%;
-	  -ms-transform: skewX(-45deg);
-	  -webkit-transform: skewX(-45deg);
-	  transform: skewX(-45deg);
-	}
-
 }
 
+.home {
+	#masthead, .photos {
+		position: relative;
+		overflow: hidden;
+		&:before, &:after {
+		  content:"";
+		  position: absolute;
+		  bottom: 0;
+		  width: 50%;
+		  background-color: inherit;
+		  padding-bottom:40px;
+		}
+		&:before {
+		  right: 50%;
+		  -ms-transform-origin: 100% 100%;
+		  -webkit-transform-origin: 100% 100%;
+		  transform-origin: 100% 100%;
+		  -ms-transform: skewX(45deg);
+		  -webkit-transform: skewX(45deg);
+		  transform: skewX(45deg);
+		}
+		&:after {
+		  left: 50%;
+		  -ms-transform-origin: 0 100%;
+		  -webkit-transform-origin: 0 100%;
+		  transform-origin: 0 100%;
+		  -ms-transform: skewX(-45deg);
+		  -webkit-transform: skewX(-45deg);
+		  transform: skewX(-45deg);
+		}
+	}
+}
 .work-h2 {
 	position: relative;
 	z-index: 999;
+	color: $white;
 	&:after {
 		top: 100%;
 		left: 50%;
@@ -56,7 +62,7 @@
 		position: absolute;
 		pointer-events: none;
 		border-color: transparent;
-		border-top-color: $color5;
+		border-top-color: $color1;
 		border-width: 40px;
 		margin-left: -40px;
 		z-index: 999;
@@ -66,7 +72,7 @@
 		text-align: center;
 		@extend h3;
 		padding-bottom: 3rem;
-		background: $color5;
+		background: $color1;
 	}
 }
 
@@ -132,7 +138,7 @@
 
 .services {
 	position: relative;
-	background: $white;
+	background-color: $white;
 	color: $color1;
 	.wrapper {
 		text-align: center;
@@ -155,6 +161,10 @@
 		border-top-color: #ffffff;
 		border-width: 40px;
 		margin-left: -40px;
+		z-index: 999;
+	}
+	li {
+		//font-size: 1.8rem;
 	}
 }
 
@@ -170,7 +180,7 @@
 	@include span-columns(3.75);
 	min-height: 235px;
 	padding: 35px 35px; 
-	margin: 5rem 4% -12% 0 !important;
+	margin: 5rem 0 0 0 !important;
 	float: right;
 	vertical-align: top;
 	display: inline-block;
@@ -224,4 +234,27 @@
 			text-transform: uppercase;
 		}
 	}
+}
+
+.photos {
+	background: $color1;
+	overflow: auto;
+	div {
+		display: inline-block;
+		width: 33.333333%;
+		float: left;
+		img {
+			max-height: 300px;
+		}
+		&:nth-of-type(1) {
+
+		}
+		&:nth-of-type(2) {
+			
+		}
+		&:nth-of-type(2) {
+			
+		}
+	}
+	@include clearfix;
 }

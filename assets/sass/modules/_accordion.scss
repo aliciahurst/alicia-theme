@@ -75,7 +75,7 @@ $text-offset: $a-height - 90;
     &:hover li:hover {
       width:60%;
       a {
-        background:rgba($color5,.4);
+        background:rgba($color1, 0.6);
         * {
           opacity:1;
           -webkit-transform:translateX(0);
@@ -95,8 +95,9 @@ $text-offset: $a-height - 90;
     left: 0;
     height: 100%;
     width: 100%;
+    opacity: 0.5;
     content: "";
-    @include linear-gradient(to top right, transparent 0%, $color4 100%);
+    @include linear-gradient(to bottom left, #B77811 0%, $color5 100%);
   }
 }
 

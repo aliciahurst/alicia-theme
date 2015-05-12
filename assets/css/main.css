@@ -827,15 +827,28 @@ button.menu-toggle:before {
   color: #ffffff;
 }
 
+.site-footer {
+  position: relative;
+}
+
 .to-top {
-  display: block;
-  margin-top: -60px;
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  line-height: 80px;
+  height: 0;
+  width: 0;
   text-align: center;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
+  position: absolute;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #d8d8d8;
+  border-width: 40px;
+  margin-left: -40px;
+  z-index: 9999;
+  font-size: 3rem;
+}
+.to-top span {
+  margin-left: -20px;
 }
 
 .home .entry-header {
@@ -849,12 +862,16 @@ button.menu-toggle:before {
   background-size: cover;
   color: #ffffff;
   position: relative;
-  overflow: hidden;
 }
 .home #masthead a {
   color: #ffffff;
 }
-.home #masthead:before, .home #masthead:after {
+
+.home #masthead, .home .photos {
+  position: relative;
+  overflow: hidden;
+}
+.home #masthead:before, .home #masthead:after, .home .photos:before, .home .photos:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -862,7 +879,7 @@ button.menu-toggle:before {
   background-color: inherit;
   padding-bottom: 40px;
 }
-.home #masthead:before {
+.home #masthead:before, .home .photos:before {
   right: 50%;
   -ms-transform-origin: 100% 100%;
   -webkit-transform-origin: 100% 100%;
@@ -871,7 +888,7 @@ button.menu-toggle:before {
   -webkit-transform: skewX(45deg);
   transform: skewX(45deg);
 }
-.home #masthead:after {
+.home #masthead:after, .home .photos:after {
   left: 50%;
   -ms-transform-origin: 0 100%;
   -webkit-transform-origin: 0 100%;
@@ -884,6 +901,7 @@ button.menu-toggle:before {
 .work-h2 {
   position: relative;
   z-index: 999;
+  color: #ffffff;
 }
 .work-h2:after {
   top: 100%;
@@ -895,7 +913,7 @@ button.menu-toggle:before {
   position: absolute;
   pointer-events: none;
   border-color: transparent;
-  border-top-color: #ff1654;
+  border-top-color: #060828;
   border-width: 40px;
   margin-left: -40px;
   z-index: 999;
@@ -904,7 +922,7 @@ button.menu-toggle:before {
   margin: 0;
   text-align: center;
   padding-bottom: 3rem;
-  background: #ff1654;
+  background: #060828;
 }
 
 .home .rslides_container {
@@ -969,7 +987,7 @@ button.menu-toggle:before {
 
 .services {
   position: relative;
-  background: #ffffff;
+  background-color: #ffffff;
   color: #060828;
 }
 .services .wrapper {
@@ -1004,6 +1022,7 @@ button.menu-toggle:before {
   border-top-color: #ffffff;
   border-width: 40px;
   margin-left: -40px;
+  z-index: 999;
 }
 
 .contact-me {
@@ -1027,7 +1046,7 @@ button.menu-toggle:before {
   width: 29.62911%;
   min-height: 235px;
   padding: 35px 35px;
-  margin: 5rem 4% -12% 0 !important;
+  margin: 5rem 0 0 0 !important;
   float: right;
   vertical-align: top;
   display: inline-block;
@@ -1096,6 +1115,24 @@ button.menu-toggle:before {
   border: 2px solid;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.photos {
+  background: #060828;
+  overflow: auto;
+}
+.photos div {
+  display: inline-block;
+  width: 33.333333%;
+  float: left;
+}
+.photos div img {
+  max-height: 300px;
+}
+.photos::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .accordion {
@@ -1169,7 +1206,7 @@ button.menu-toggle:before {
   width: 60%;
 }
 .accordion ul:hover li:hover a {
-  background: rgba(255, 22, 84, 0.4);
+  background: rgba(6, 8, 40, 0.6);
 }
 .accordion ul:hover li:hover a * {
   opacity: 1;
@@ -1187,10 +1224,11 @@ button.menu-toggle:before {
   left: 0;
   height: 100%;
   width: 100%;
+  opacity: 0.5;
   content: "";
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(bottom left, transparent 0%, #d8d8d8 100%);
-  background-image: linear-gradient(to top right,transparent 0%, #d8d8d8 100%);
+  background-color: #B77811;
+  background-image: -webkit-linear-gradient(top right, #B77811 0%, #ff1654 100%);
+  background-image: linear-gradient(to bottom left,#B77811 0%, #ff1654 100%);
 }
 
 @media screen and (max-width: 600px) {
