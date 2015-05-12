@@ -867,6 +867,10 @@ button.menu-toggle:before {
   color: #ffffff;
 }
 
+.home-top li {
+  color: rgba(253, 181, 181, 0.58);
+}
+
 .home #masthead, .home .photos {
   position: relative;
   overflow: hidden;

@@ -6,7 +6,7 @@
  */
 ?>
 
-<section class="services arrow">
+<section class="services">
 	<div class="wrapper">
 		<h2>How I Can Help</h2>
 		<?php while ( have_rows('services') ) : the_row(); ?>
@@ -45,7 +45,7 @@
 	</div>
 </section>
 
-<section class="bio arrow">	
+<section id="about" class="bio">	
 	<div class="wrapper">
 		<div class="bio-text wrapper-min">
 			<h2><?php the_field('home_bio-title'); ?></h2>
