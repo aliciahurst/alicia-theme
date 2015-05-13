@@ -18,6 +18,7 @@
   "license": "WTFPL",
   "devDependencies": {
     "grunt-cli": "~0.1.13",
+    "grunt-contrib-compass": "^1.0.3",
     "grunt-contrib-concat": "~0.5.0",
     "grunt-contrib-imagemin": "^0.9.4",
     "grunt-contrib-jshint": "~0.10.0",

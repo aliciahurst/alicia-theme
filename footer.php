@@ -14,7 +14,7 @@
 		<!--<a href="#top" class="to-top"><span>up</span></a>-->
 
 <div class="footer-above">
-<p class="contact-button"><span><a href="/contact" class="btn light"><span>Contact</span></a></p>	
+<p class="contact-button"><span><a href="/contact" class="btn"><span>Contact</span></a></p>	
 		<?php if( have_rows('social_media', 'option') ): ?>
 			<nav id="social-navigation-footer" class="social-navigation" role="navigation">
 				<ul>

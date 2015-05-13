@@ -89,16 +89,16 @@ module.exports = function(grunt) {
                 }
             },
             livereload: {
-		        // Browser live reloading
-		        // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
-		        options: {
-		          livereload: true
-		        },
-		        files: [
+                // Browser live reloading
+                // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
+                options: {
+                  livereload: true
+                },
+                files: [
                     'assets/css/main.css',
                     'assets/js/build/scripts.js',
-		        ]
-		    }
+                ]
+            }
         }
     });
 
