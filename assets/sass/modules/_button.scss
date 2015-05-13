@@ -1,0 +1,131 @@
+@import "compass/css3";
+
+$dark: #222223;
+$red: #be3a34;
+$light: #efedea;
+$tan: #c4bfb6;
+$brown: #94795d;
+
+$dark-text-default: $dark !default;
+$light-text-default: #fff !default;
+
+$dark-text-reference: $tan !default;
+$light-text-reference: #fff !default;
+
+// For loop inumerator
+$num: 0;
+
+// Calculeate brightness of a given color.
+@function brightness($color) {
+  @return ((red($color) * .299) + (green($color) * .587) + (blue($color) * .114)) / 255 * 100%;
+}
+
+// Compares contrast of a given color to the light/dark arguments and returns whichever is most "contrasty"
+@function color-contrast($color, $dark: $dark-text-reference, $light: $light-text-reference) {
+  @if $color == null {
+    @return null;
+  }
+  @else {
+    $color-brightness: brightness($color);  
+    $light-text-brightness: brightness($light);
+    $dark-text-brightness: brightness($dark);
+    
+    @return if(abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness), $light-text-default, $dark-text-default);  
+  }
+}
+
+@mixin btn($color: $dark, $length: auto, $invert: false) {
+	// Stylizing the button
+  display: inline-block;
+	width: $length;
+	padding: 15px 40px 15px 40px;
+	margin: 20px 0 20px 0;
+	border: 2px solid $color;
+	background: transparent;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1rem;
+  font-weight: 600;
+	letter-spacing: 5px;
+	display: inline-block;
+	transform: skew(-20deg);
+  @if $invert {
+  	color: color-contrast($color);
+    background-image: linear-gradient(
+      to right,
+      rgba($color,0) 0%,
+      rgba($color,0) 50%,
+      rgba($color,1) 51%,
+      rgba($color,1) 100%
+    );
+  } @else {
+   	color: $color;
+    background-image: linear-gradient(
+      to right,
+      rgba($color,1) 0%,
+      rgba($color,1) 50%,
+      rgba($color,0) 51%,
+      rgba($color,0) 100%
+    );
+  }
+  background-size: 250% 100%;
+  background-position: right center;
+	transition: all ease 0.8s;
+	cursor: pointer;
+
+	// Aligning slanted text back
+	span {
+		transform: skew(20deg);
+		display: inline-block;
+	}
+
+	// Enabling 'fill' on hover
+	&:hover {
+	  @if $invert {
+	    color: $color;
+	  } @else {
+  		color: color-contrast($color);
+		  }
+    background-position: left center;
+	}
+}
+
+.default .btn {
+	@include btn($dark)
+}
+
+.red .btn {
+	@include btn($red)
+}
+
+.light .btn {
+	@include btn($light)
+}
+
+.tan .btn {
+	@include btn($tan)
+}
+
+.brown .btn {
+	@include btn($brown)
+}
+
+.default.invert .btn {
+	@include btn($dark, auto, true)
+}
+
+.red.invert .btn {
+	@include btn($red, auto, true)
+}
+
+.light.invert .btn {
+	@include btn($light, auto, true)
+}
+
+.tan.invert .btn {
+	@include btn($tan, auto, true)
+}
+
+.brown.invert .btn {
+	@include btn($brown, auto, true)
+}

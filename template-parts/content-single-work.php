@@ -15,10 +15,10 @@
 <?php endif; ?>
 
 <div class="stickem">
-	<nav>
-	Next link
-	Portfolio
-	Previous link
+<nav>
+	<svg class="icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>
+	<svg class="icon-grid"><use xlink:href="#icon-grid"></use></svg>
+	<svg class="icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
 </nav>
 	<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 	<?php the_field( 'work_description' ); ?>
@@ -46,9 +46,3 @@
 	<?php get_template_part( 'template-parts/content', 'layouts' ); ?>
 <?php else: ?>
 <?php endif; ?>
-
-<nav>
-	Next link
-	Portfolio
-	Previous link
-</nav>

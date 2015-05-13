@@ -7,12 +7,12 @@
 	display: block;
 }
 
-.header-container, .footer-container {
+.header-container {
 	@include outer-container;
 	@include display(flex);
 	@include justify-content(space-between);
 	@include align-items(center);
-	& > * {
+	> * {
 		@include flex(1);
 	}
 	padding: 20px;
