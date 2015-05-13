@@ -1,22 +1,39 @@
-body {
-	//border-top: 0.5rem solid $color5;
+#masthead {
+	background: $white;
+	box-shadow: 0px 0px 5px 1px rgba($three, 0.45);
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	display: block;
 }
+
 .header-container, .footer-container {
+	@include outer-container;
 	@include display(flex);
 	@include justify-content(space-between);
 	@include align-items(center);
 	& > * {
 		@include flex(1);
 	}
-	padding: 4%;
+	padding: 20px;
 }
 
 .site-name {
 	.site-title {
-		margin: 1vh;
 		line-height: 1;
+		margin: 0;
+		font-size: 25px;
+		font-weight: $semi;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
 		a {
 			text-decoration: none;
+			span:nth-of-type(1) {
+		  		color: $four;
+		  	}
+		  	span:nth-of-type(2) {
+		  		color: $gray1;
+		  	}
 		}
 	}
 }
@@ -26,9 +43,10 @@ body {
 		text-align: right;
 		li {
 			display: inline-block;
-			padding: 0 1rem;
+			padding: 0 2rem;
 			a {
-				color: $black;
+				color: $four;
+				letter-spacing: 0.5px;
 			}
 		}
 	}

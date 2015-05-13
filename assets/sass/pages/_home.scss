@@ -2,19 +2,6 @@
 	display: none;
 }
 
-.home #masthead {
-	background-color: $white;
-	background-image: url('../img/min/header6.jpg');
-	background-position: center;
-	background-size: cover;
-	//background-clip: border-box;
-	color: $white;
-	position: relative;
-	
-	a {
-		color: $white;
-	}
-}
 
 .home-top {
 	li {
@@ -88,7 +75,6 @@
 }
 
 .latest-work {
-	background: $navy;
 	position: relative;
 }
 
@@ -97,7 +83,6 @@
 }
 
 .bio {
-	background: $color1;
 	.wrapper {
 		position: relative;
 		z-index: 0;

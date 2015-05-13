@@ -6,7 +6,9 @@ $bold: 700;
 /* Setup */
 html {
 	//font-family: 'Source Sans Pro', sans-serif!important;
-	font-family: 'Montserrat', sans-serif;
+	//font-family: 'Montserrat', sans-serif;
+	font-family: "freight-sans-pro",sans-serif;
+	//font-family: "Open Sans", sans-serif;
 	font-weight: $regular;
 	font-size: 62.5%; /* Sets up the Base 10 stuff */
 	-webkit-font-smoothing: antialiased;
@@ -14,17 +16,19 @@ html {
 
 body {
   line-height: 1.2;
+  color: $four;
+  letter-spacing: 0.1px;
 }
 
 p, li {
 	margin-bottom: 2.08rem;
-	font-size: 2.2rem;
+	font-size: 1.7rem;
 }
 
 
 h1, h2, h3, h4 {
   margin: 2.26rem 0 0.8rem;
-  font-weight: $regular;
+  font-weight: $semi;
   line-height: 1.2;
   .wrapper + & {
   	margin-top: 0;
@@ -33,27 +37,19 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 6.39rem;
-  &.site-title {
-  	@extend h3;
-  	text-transform: lowercase;
-  	span:nth-of-type(1) {
-  		color: $color5;
-  		font-weight: $bold;
-  	}
-  	span:nth-of-type(2) {
-  		//font-weight:$semi;
-  		color: $black;
-  	}
-  }
+  font-size: 8rem;
+  font-weight: $regular;
+  line-height: 1;
 }
 
 h2 {
-	font-size: 4.5rem;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
 }
 
 h3 {
-	font-size: 3.19rem;
+	font-size: 2.25rem;
 }
 
 h4 {
@@ -84,7 +80,7 @@ li {
 	margin-bottom: 0;
 	.main-navigation & {
 		text-transform: capitalize;
-		font-weight: $bold;
+		font-weight: $semi;
 		font-size: 1.8rem;
 		//opacity: 0.9;
 	}
