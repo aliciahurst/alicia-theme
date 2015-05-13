@@ -1,0 +1,53 @@
+.single-work main {
+	section {
+		padding: $gutter 4% 0;
+		&:first-of-type {
+			padding: 2% 4% 0;
+		}
+		&:last-of-type {
+			padding: $gutter 4% 2%;
+		}
+		position: relative;
+		@include clearfix;
+		img {
+			display: block;
+			margin-bottom: $gutter;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+		> img, > div:not(.stickem) {
+			@include span-columns(8);
+		}
+	}
+	> nav {
+		padding: 4% 4%;
+		background: $white;
+	}
+	
+}
+.stickem {
+	position: absolute;
+	@include span-columns(4);
+	right: 4%;
+	padding-left: $gutter * 2;
+	p {
+		font-size: 1.8rem;
+	}
+}
+
+.layout-text {
+	text-align: center;
+}
+
+.single-work #masthead {
+	//background: #F3F4F8;
+}
+
+.single-work footer {
+	background: #232730;
+}
+
+body {
+	@include linear-gradient(120deg, #C2CBD0 0, #E7ECF0 12%, #E3E8EB 20%, #F7F8FA 70%, #F3F4F8 80%, #F3F4F8 100%);
+}

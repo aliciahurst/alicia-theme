@@ -9,7 +9,6 @@
 .footer-container {
 	//position: relative;
 	//z-index: -1;
-	background: $color4;
 	color: $white;
 	a {
 		color: $white;
@@ -18,9 +17,10 @@
 
 .site-footer {
 	position: relative;
+	background: #000;
 }
 
-.to-top {
+/* .to-top {
 	bottom: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -37,5 +37,21 @@
 	font-size: 3rem;
 	span {
 		margin-left: -20px;
+	}
+} */
+
+.to-top {
+	text-align: center;
+	color: $white;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	font-style: italic;
+	font-size: 3rem;
+	@include transform(translateX(-50%));
+	@include transform(translateY(-45%));
+	&:hover {
+		color: $color5;
 	}
 }

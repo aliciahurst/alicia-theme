@@ -11,7 +11,7 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	
-		<a href="#top" class="to-top"><span>&#94;</span></a>
+		<a href="#top" class="to-top"><span>up</span></a>
 
 	<div class="footer-container">
 		<p class="copyright"> &copy; <?php echo date('Y'); ?> <a href="/"><strong>Alicia Hurst</strong></a>, all rights reserved. <a href="https://github.com/aliciahurst/alicia-theme#readme">&#10084; site credits</a></span> </p>	

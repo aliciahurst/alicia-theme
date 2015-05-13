@@ -32,7 +32,7 @@
 						<!-- Any idea why the li's aren't indented in the output? -->
 					</nav>
 				</div>
-				<?php is_home(); { ?>
-				<?php get_template_part( 'template-parts/content', 'home-header' ); ?>
-				<? } ?>
+
+				<?php if ( is_front_page() ) { get_template_part( 'template-parts/content', 'home-header' ); } else { } ?>
+
 	</header><!-- #masthead -->
