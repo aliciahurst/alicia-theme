@@ -14,4 +14,6 @@ Coded with [Sublime](http://sublimetext.com) and powered by [WordPress](http://w
 
 ## Code
 * [ResponsiveSlides.js](https://github.com/viljamis/ResponsiveSlides.js)
+* [Stickem.js](https://github.com/davist11/jQuery-Stickem)
 * [Responsive Accordion by Michael Ferry](http://codepen.io/ferry/pen/ZYVwxz)
+* [Slanted buttons](http://codepen.io/draymoore/pen/bNXMWx)

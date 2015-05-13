@@ -1,13 +1,13 @@
 #masthead {
 	background: $white;
-	box-shadow: 0px 0px 5px 1px rgba($three, 0.45);
+	box-shadow: 0 10px 10px -13px $black;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
 	display: block;
 }
 
-.header-container {
+.header-container, .footer-container {
 	@include outer-container;
 	@include display(flex);
 	@include justify-content(space-between);

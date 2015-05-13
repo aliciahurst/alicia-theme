@@ -14,25 +14,19 @@
 		text-align: left;
 		padding: 0 2rem;
 		color: $gray1;
-		a {
+		a:not(.btn){
 			color: $gray1;
+		}
+		p {
+			display: inline-block;
+			margin: 2rem 0;
+			&.contact-button {
+				text-align: center;
+			}
 		}
 	}
 }
-.footer-above {
-	position: absolute;;
-	display: inline-block;
-	text-align: center;
-	top: -10rem;
-	left: 50%;
-	@include transform(translateX(-50%));
-	background: white;
-	padding: 0 2rem;
-}
 
-.contact-button {
-	text-align: center;
-}
 /* .to-top {
 	bottom: 100%;
 	left: 50%;

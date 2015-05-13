@@ -3,7 +3,7 @@
 	display: inline-block;
 	width: $length;
 	padding: 15px 40px 15px 40px;
-	margin: 20px 0 20px 0;
+	//margin: 20px 0 20px 0;
 	border: 2px solid $color;
 	background-color: transparent !important;
 	text-transform: uppercase;
@@ -11,6 +11,8 @@
 	display: inline-block;
 	transform: skew(-20deg);
 	color: $color;
+	font-weight: $semi;
+	letter-spacing:1px;
 	@include linear-gradient(to right,
 		rgba($color,1) 0%,
 		rgba($color,1) 50%,
