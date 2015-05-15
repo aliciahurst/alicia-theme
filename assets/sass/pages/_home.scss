@@ -97,7 +97,7 @@
 		font-weight: $bold;
 		@extend h3;
 		margin-top: 0;
-		color: $color5;
+		color: $color1;
 	}
 	p {
 		font-size: 2rem;
@@ -105,7 +105,7 @@
 		color: $white;
 	}
 	strong {
-		color: $color5;
+		color: $color1;
 	}
 }
 
@@ -123,7 +123,7 @@
 		width: 100%;
 		content: "";
 		opacity: 0.5;
-		@include linear-gradient(to bottom right, saturate(lighten($color5,25),50) 0%, saturate($color5,50) 100%);
+		@include linear-gradient(to bottom right, saturate(lighten($color1,25),50) 0%, saturate($color1,50) 100%);
 	}
 }
 
@@ -177,7 +177,7 @@
 	display: inline-block;
 	text-align: center;
 	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-	background: lighten($color5,10);
+	background: lighten($color1,10);
 	@include transform(rotate(-3deg));
 	&:after  {
 		display: block;
@@ -216,7 +216,6 @@
 		line-height: 1.2;
 		letter-spacing: 0.25px;
 		font-weight: $semi;
-		color: darken($color5,25);
 		a {
 			padding: 5px 10px;
 			font-size: 1.6rem;

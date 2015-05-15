@@ -1,12 +1,37 @@
 body {
 	position: relative;
+	//background: $color1;
+}
+/*
+body:before, body:after {
+	content: "";
+	position: fixed;
+	background: $white;
+	left: 0;
+	right: 0;
+	height: 20px;
+}
+body:before {
+	top: 0;
+}
+body:after {
+	bottom: 0;
+}
+body {
+	border-left: 20px solid $white;
+	border-right: 20px solid $white;  
+}
+*/
+
+#masthead, #colophon {
+	background: $white;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    height: 32px;
-    width: 32px;
-    display: inline-block; 
-    fill: currentColor; 
+	height: 32px;
+	width: 32px;
+	display: inline-block; 
+	fill: currentColor; 
 }
 
 .wrapper {
@@ -31,4 +56,8 @@ img {
 	max-width: 100%;
 	height: auto;
 	border: 0;
+}
+
+.site-main {
+	@include outer-container;
 }

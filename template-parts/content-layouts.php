@@ -12,7 +12,7 @@
   		?>
   		<?php if( have_rows('image_urls') ): ?>
   			
-  			<section class="<?php echo $displayType ?>">
+  			<section class="<?php echo $displayType ?> stickem-container">
 
   				<?php if ($displayType == 'display_slider') : ?>
             <div class="rslides_container">
@@ -28,26 +28,23 @@
   						<?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
   							<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> before and after | <?php bloginfo( 'name' ); ?>">
   						<?php endwhile; ?>
-  					</div>
+  				    </div>
 
   				<?php else : //if it's display_images ?>
+            <div class="work-images">
   					<?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
   						<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>">
   					<?php endwhile; ?>
-  				<?php endif; ?>
-
-  				<?php if( get_sub_field( 'block_caption' ) ): ?>
+          </div>
+      
+            <?php endif; ?>
   					<div class="stickem">
   						<?php the_sub_field( 'block_caption' ); ?>
   					</div>
-  				<?php endif; ?>
 
   			</section>
-
-
-  		<?php endif; ?>
-
-  	<?php else : //ther work layouts would go here ?>
+    <?php endif; ?>
+  	<?php else : //other work layouts would go here ?>
   	<?php endif; //end if work layouts ?>
 
   <?php endwhile; //end while work layout has rows ?>

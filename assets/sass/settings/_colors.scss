@@ -5,10 +5,14 @@ $three: #333333;
 $four: #414141;
 $gray1: #c2c2c2;
 $graylt: #e5e5e5;
+$graysuper: lighten($graylt,9);
+$fd: #fdfdfd;
+$niceblue: #67739B; //#757B91;
 
-$navy: #04233F;
-
-
+$color1: #f9f9f9;
+//$color2:
+//$color3: 
+$color5: #ff1654; // hot pink
 /*
 // Set 1
 $color1: #11151c; //black
@@ -25,13 +29,14 @@ $color3: #b2dbbf; // seafoam
 $color4: #FFF7ED; // light green
 $color5: #ff1654; // hot pink
 */
+/*
 // Set Kuler
 $color1: #060828; // dk gray blue
 $color2: #3F5765; // gray blue
 $color3: #BDD4DE; // light gray blue
 $color4: darken(#E5E5E5,5); // gray
-$color5: #ff1654; // hot pink
 
+*/
 /*
 // Set 3
 $color1: #264653;

@@ -1,11 +1,14 @@
 #masthead {
 	background: $white;
-	box-shadow: 0 10px 10px -13px $black;
-	position: fixed;
+	//box-shadow: 0 10px 10px -13px $black;
+	//position: fixed;
+	//top: 0;
 	width: 100%;
 	z-index: 999;
 	display: block;
 }
+
+
 
 .header-container, .footer-container {
 	@include outer-container;
@@ -23,16 +26,13 @@
 		line-height: 1;
 		margin: 0;
 		font-size: 25px;
-		font-weight: $semi;
-		letter-spacing: 0.5px;
-		text-transform: uppercase;
 		a {
 			text-decoration: none;
 			span:nth-of-type(1) {
-		  		color: $four;
+		  		//color: $four;
 		  	}
 		  	span:nth-of-type(2) {
-		  		color: $gray1;
+		  		//color: $gray1;
 		  	}
 		}
 	}

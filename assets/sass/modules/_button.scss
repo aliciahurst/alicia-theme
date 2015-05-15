@@ -33,7 +33,7 @@
 		background-position: left center !important;
 	}
 }
-
+$darken: darken($niceblue,35);
 .btn {
-	@include btn($three)
+	@include btn($darken)
 }

@@ -59,6 +59,5 @@
 	@include transform(translateX(-50%));
 	@include transform(translateY(-45%));
 	&:hover {
-		color: $color5;
 	}
 }
