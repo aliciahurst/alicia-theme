@@ -1399,6 +1399,15 @@ button.menu-toggle:before {
   margin: 0 auto;
 }
 
+.contact .site-main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .contact .entry-header {
   display: none;
 }
@@ -1406,7 +1415,7 @@ button.menu-toggle:before {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
+  width: 40.29137%;
   padding: 2.35765%;
 }
 .contact .contact-content:last-child {
@@ -1416,10 +1425,15 @@ button.menu-toggle:before {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
+  width: 57.35098%;
   margin-right: 0;
   padding: 2.35765%;
+  padding-left: 6.472em;
+  padding-right: 6.472em;
   background: #fcfcfc;
+  background: url("../img/min/contactbg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 .contact .contact-form:last-child {
   margin-right: 0;
@@ -1427,6 +1441,7 @@ button.menu-toggle:before {
 .contact .contact-form h2, .contact .contact-form .outbound-link {
   margin-top: 0;
   text-align: center;
+  color: #ffffff;
 }
 
 .gform_body::after {
@@ -1439,21 +1454,34 @@ button.menu-toggle:before {
   display: block;
   margin-right: 4.82916%;
   width: 47.58542%;
+  /*label {
+  	font-size: 1.6rem;
+  	padding-bottom: 5px;
+  	color: $white;
+  	letter-spacing: 0.3px;
+  	margin: 1rem 0 0.5rem;
+  	display: block;
+  	text-transform: lowercase;
+  }*/
 }
 .gform_body .gfield:last-child {
   margin-right: 0;
 }
-.gform_body .gfield input, .gform_body .gfield textarea {
+.gform_body .gfield input, .gform_body .gfield textarea, .gform_body .gfield select {
   width: 100%;
-  border: 2px solid #67739B;
+  /*border: 2px solid $white;
   background: transparent;
-}
-.gform_body .gfield input:selected, .gform_body .gfield textarea:selected {
-  background: #ffffff;
-}
-.gform_body .gfield label {
-  font-size: 1.6rem;
-  padding-bottom: 5px;
+  border-radius: 0 !important;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  line-height: 1.1;
+  color: $white;
+  &:focus{
+  	background: $white;
+  	outline: none;
+  	border-color: $color5;
+  	color: $color5;
+  } */
 }
 .gform_body .gfield textarea {
   height: 10rem;
@@ -1464,7 +1492,7 @@ button.menu-toggle:before {
 
 .gform_footer {
   text-align: center;
-  padding: 2.35765%;
+  margin-top: 1.8rem;
 }
 .gform_footer .button {
   margin: 0 auto;
@@ -1473,6 +1501,90 @@ button.menu-toggle:before {
 
 .contact .site-footer .footer-container p.contact-button {
   display: none;
+}
+
+.gfield {
+  position: relative;
+  margin: 2rem 0;
+}
+.gfield label {
+  display: none;
+}
+
+input, textarea, select {
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  overflow: auto;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  background: #000000;
+  color: #ffffff;
+  border-color: #ff1654;
+}
+
+textarea {
+  padding: 5px 10px;
+  resize: none;
+}
+
+.gfield_description {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  -webkit-transition: all, 0.2s, ease-in-out;
+  -moz-transition: all, 0.2s, ease-in-out;
+  transition: all, 0.2s, ease-in-out;
+}
+textarea + .gfield_description {
+  top: 0;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+input:focus + .gfield_description, textarea:focus + .gfield_description, .filled + .gfield_description, .filled + .gfield_description {
+  color: #ff1654;
+  top: 0;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.filled:not(:focus) {
+  background: rgba(0, 0, 0, 0.4);
+  color: #ff95b2;
+}
+.filled:not(:focus) + .gfield_description {
+  color: #ff95b2;
+}
+
+select {
+  height: 4rem;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .accordion {
@@ -1620,10 +1732,10 @@ button.menu-toggle:before {
   border: 0;
 }
 
-.btn, .gform_footer .button {
+.btn {
   display: inline-block;
   width: auto;
-  padding: 15px 40px 15px 40px;
+  padding: 12px 30px;
   border: 2px solid #202330;
   background-color: transparent !important;
   text-transform: uppercase;
@@ -1631,8 +1743,10 @@ button.menu-toggle:before {
   display: inline-block;
   transform: skew(-20deg);
   color: #202330;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-family: "refrigerator-deluxe", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
   background-color: #202330;
   background-image: -webkit-linear-gradient(left, #202330 0%, #202330 50%, rgba(32, 35, 48, 0) 51%, rgba(32, 35, 48, 0) 100%);
   background-image: linear-gradient(to right,#202330 0%, #202330 50%, rgba(32, 35, 48, 0) 51%, rgba(32, 35, 48, 0) 100%);
@@ -1641,11 +1755,43 @@ button.menu-toggle:before {
   transition: all ease 0.8s;
   cursor: pointer;
 }
-.btn span, .gform_footer .button span {
+.btn span {
   transform: skew(20deg);
   display: inline-block;
 }
-.btn:hover, .gform_footer .button:hover {
+.btn:hover {
+  color: #ffffff;
+  background-position: left center !important;
+}
+
+.btn-color, .gform_footer .button {
+  display: inline-block;
+  width: auto;
+  padding: 12px 30px;
+  border: 2px solid #ff1654;
+  background-color: transparent !important;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  transform: skew(-20deg);
+  color: #ff1654;
+  font-family: "refrigerator-deluxe", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  background-color: #ff1654;
+  background-image: -webkit-linear-gradient(left, #ff1654 0%, #ff1654 50%, rgba(255, 22, 84, 0) 51%, rgba(255, 22, 84, 0) 100%);
+  background-image: linear-gradient(to right,#ff1654 0%, #ff1654 50%, rgba(255, 22, 84, 0) 51%, rgba(255, 22, 84, 0) 100%);
+  background-size: 250% 100%;
+  background-position: right center !important;
+  transition: all ease 0.8s;
+  cursor: pointer;
+}
+.btn-color span, .gform_footer .button span {
+  transform: skew(20deg);
+  display: inline-block;
+}
+.btn-color:hover, .gform_footer .button:hover {
   color: #ffffff;
   background-position: left center !important;
 }

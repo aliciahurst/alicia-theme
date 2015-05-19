@@ -6,7 +6,6 @@
 ?>
 
 <section class="contact-content">
-	<div class="wrapper-min">
 		<?php the_content(); ?>
 		<h2>Networks</h2>
 		<?php if( have_rows('social_media', 'option') ): ?>
@@ -19,7 +18,6 @@
 			<?php endwhile; ?>
 		</ul>
 		<?php endif; ?>
-	</div>
 </section>
 
 <section class="contact-form">
