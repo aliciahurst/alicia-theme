@@ -1,7 +1,7 @@
 $regular: 400;
 $semi: 600;
 $bold: 700;
-$serif: "proxima-nova", serif;
+$serif: "refrigerator-deluxe", serif;
 
 /* Setup */
 html {
@@ -17,24 +17,28 @@ html {
 body {
   line-height: 1.2;
   color: $four;
-  letter-spacing: 0.1px;
 }
 
 p, li {
 	margin-bottom: 2.08rem;
-	font-size: 1.7rem;
+	font-size: 2rem;
+	color: lighten($black,60);
 }
 
+p:last-of-type {
+	margin-bottom: 0;
+}
 
 h1, h2, h3, h4 {
-  margin: 2.26rem 0 0.8rem;
+  margin: 2.26rem 0 1.8rem;
   //font-weight: $semi;
   line-height: 1.2;
-  letter-spacing: 0;
-  font-family: $serif;
-  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: $regular;
   color: $black; // $niceblue;
+  font-family: $serif;
+  -webkit-font-smoothing: auto;
+  text-transform: uppercase;
   a {
   	color: inherit;
   }
@@ -47,12 +51,11 @@ h1 {
   margin-top: 0;
   font-size: 6rem;
   line-height: 1;
+  font-family: $serif;
 }
 
 h2 {
 	font-size: 2rem;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
 }
 
 h3 {

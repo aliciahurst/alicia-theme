@@ -1,0 +1,58 @@
+.contact {
+	.entry-header {
+		display: none;
+	}
+	.contact-content {
+		@include span-columns(6);
+		@include pad();
+	}
+	.contact-form {
+		@include span-columns(6);
+		@include omega;
+		@include pad();
+		background: $graysuper;
+		h2 {
+		margin-top: 0;
+		text-align: center;
+		}
+	}
+}
+
+.gform_body {
+	@include clearfix;
+	.gfield {
+		@include span-columns(3 of 6);
+		input, textarea {
+			width: 100%;
+			border: 2px solid $niceblue;
+			background: transparent;
+			&:selected {
+				background: $white;
+			}
+		}
+		label {
+			font-size: 1.6rem;
+			padding-bottom: 5px;
+		}
+		textarea {
+			height: 10rem;
+		}
+		&:nth-of-type(2n) {
+			@include omega;
+		}
+	}
+}
+
+.gform_footer {
+	text-align: center;
+	@include pad();
+	.button {
+		margin: 0 auto;
+		@extend .btn;
+		font-size: 1.8rem;
+	}
+}
+
+.contact .site-footer .footer-container p.contact-button {
+	display: none;
+}

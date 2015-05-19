@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Rock+Salt|Reenie+Beanie|Permanent+Marker|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
 	<script src="//use.typekit.net/nht0rlx.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<?php wp_head(); ?>
@@ -26,7 +26,7 @@
 			<div class="header-container">
 				<div class="site-name">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<span>Alicia</span><span>Hurst</span></a></h1>
+						<span>Alicia</span> <span>Hurst</span></a></h1>
 					</div>
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button>

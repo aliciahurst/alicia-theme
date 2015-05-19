@@ -23,13 +23,17 @@ body {
 }
 */
 
+#page {
+	margin: 0 20px;
+}
+
 #masthead, #colophon {
 	background: $white;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	height: 32px;
-	width: 32px;
+	height: 3rem;
+	width: auto;
 	display: inline-block; 
 	fill: currentColor; 
 }
@@ -54,6 +58,7 @@ body {
 
 img {
 	max-width: 100%;
+	width: 100%;
 	height: auto;
 	border: 0;
 }

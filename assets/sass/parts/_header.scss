@@ -8,8 +8,6 @@
 	display: block;
 }
 
-
-
 .header-container, .footer-container {
 	@include outer-container;
 	@include display(flex);
