@@ -17,7 +17,7 @@
 
 	<div class="footer-container">
 
-		<p class="copyright"><span class="copy-date"> &copy; <?php echo date('Y'); ?></span> <a href="/"><strong>Alicia Hurst</strong></a>, all rights reserved <a href="https://github.com/aliciahurst/alicia-theme#readme"><span class="copy-heart">&#10084;</span> site credits</a></p>
+		<p class="copyright"><span class="copy-date"> &copy; <?php echo date('Y'); ?> <a href="/"><strong>Alicia Hurst</strong></a></span>, all rights reserved <a href="https://github.com/aliciahurst/alicia-theme#readme"><span class="copy-heart">&#10084;</span> site credits</a></p>
 
 		<p class="contact-button"><a href="/contact" class="btn"><span>Contact Me</span></a></p>	
 		<?php if( have_rows('social_media', 'option') ): ?>

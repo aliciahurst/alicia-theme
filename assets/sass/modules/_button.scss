@@ -11,10 +11,9 @@
 	display: inline-block;
 	transform: skew(-20deg);
 	color: $color;
-	font-family: $serif;
 	font-weight: bold; 
-	font-size: 2rem;
-	letter-spacing: 2px;
+	font-size: 1.7rem;
+	letter-spacing: 1.5px;
 	@include linear-gradient(to right,
 		rgba($color,1) 0%,
 		rgba($color,1) 50%,

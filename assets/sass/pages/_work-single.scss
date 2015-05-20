@@ -38,9 +38,17 @@
 
 
 .down-arrow {
-	height: 65px;
-	text-align: center;
+	@include display(flex);
+	@include align-items(center);
+	margin-bottom: 0 !important;
+	@include pad();
+	svg {
+		margin: 0 auto;
+		height: 50px;
+		width: auto;
+	}
 }
+
 .contribution {
 	@include pad();
 	h3 {
@@ -117,6 +125,12 @@
 	img {
 		float: left;
 		width: 50%;
+		&:first-of-type {
+			padding-right: 10px;
+		}
+		&:last-of-type {
+			padding-left: 10px;
+		}
 	}
 	&:after {
 		@include clearfix;

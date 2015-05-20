@@ -1,13 +1,14 @@
 $regular: 400;
 $semi: 600;
 $bold: 700;
-$serif: "refrigerator-deluxe", serif;
+$serif: "refrigerator-deluxe", helvetica, serif;
+$sans: "freight-sans-pro", helvetica, sans-serif;
 
 /* Setup */
 html {
 	//font-family: 'Source Sans Pro', sans-serif!important;
 	//font-family: 'Montserrat', sans-serif;
-	font-family: "freight-sans-pro", sans-serif;
+	font-family: $sans;
 	//font-family: "Open Sans", sans-serif;
 	font-weight: $regular;
 	font-size: 62.5%; /* Sets up the Base 10 stuff */
@@ -24,7 +25,12 @@ p, li {
 	font-size: 2rem;
 	color: lighten($black,60);
 }
-
+a {
+	color: currentColor;
+	.site-main & {
+		border-bottom: 1px solid;
+	}
+}
 p:last-of-type {
 	margin-bottom: 0;
 }
