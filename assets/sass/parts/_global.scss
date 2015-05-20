@@ -1,6 +1,5 @@
 body {
 	position: relative;
-	//background: $color1;
 }
 /*
 body:before, body:after {
@@ -65,4 +64,6 @@ img {
 
 .site-main {
 	@include outer-container;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }

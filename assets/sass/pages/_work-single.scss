@@ -1,6 +1,9 @@
 .single-work {
 	section {
 		margin-bottom: 20px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 		@include clearfix;
 		p {
 			color: lighten($black,50);

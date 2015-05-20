@@ -739,6 +739,8 @@ img {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .site-main::after {
   clear: both;
@@ -782,7 +784,8 @@ img {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  padding: 20px;
+  padding: 0 2rem;
+  min-height: 90px;
 }
 .header-container::after, .footer-container::after {
   clear: both;
@@ -961,6 +964,17 @@ button.menu-toggle:before {
   -ms-transform: translateY(-45%);
   -o-transform: translateY(-45%);
   transform: translateY(-45%);
+}
+
+.copy-date {
+  font-family: "refrigerator-deluxe", serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}
+
+.copy-heart {
+  padding: 0 0.5rem 0 1rem;
 }
 
 .home .entry-header {
@@ -1233,6 +1247,9 @@ button.menu-toggle:before {
 .single-work section {
   margin-bottom: 20px;
 }
+.single-work section:last-of-type {
+  margin-bottom: 0;
+}
 .single-work section::after {
   clear: both;
   content: "";
@@ -1462,7 +1479,7 @@ button.menu-toggle:before {
   	margin: 1rem 0 0.5rem;
   	display: block;
   	text-transform: lowercase;
-  }*/
+  	}*/
 }
 .gform_body .gfield:last-child {
   margin-right: 0;
@@ -1481,7 +1498,7 @@ button.menu-toggle:before {
   	outline: none;
   	border-color: $color5;
   	color: $color5;
-  } */
+  	} */
 }
 .gform_body .gfield textarea {
   height: 10rem;
@@ -1496,7 +1513,9 @@ button.menu-toggle:before {
 }
 .gform_footer .button {
   margin: 0 auto;
+  transform: none !important;
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .contact .site-footer .footer-container p.contact-button {
@@ -1514,16 +1533,20 @@ button.menu-toggle:before {
 input, textarea, select {
   padding: 0 10px;
   background: transparent;
-  border: 1px solid;
+  border: 2px solid transparent;
+  border-bottom: 2px solid;
   font-size: 1.8rem;
   line-height: 1.2;
   overflow: auto;
 }
 input:focus, textarea:focus, select:focus {
   outline: none;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.4);
   color: #ffffff;
+  border: 2px solid;
   border-color: #ff1654;
+  box-shadow: inset 0 1px 3px rgba(255, 22, 84, 0.5);
+  border-radius: 2px;
 }
 
 textarea {
@@ -1533,17 +1556,12 @@ textarea {
 
 .gfield_description {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  bottom: 0;
   left: 0;
   width: 100%;
   pointer-events: none;
   color: #ffffff;
-  padding: 5px 10px;
+  padding: 10px;
   font-size: 1.8rem;
   line-height: 1.2;
   letter-spacing: 0.3px;
@@ -1552,30 +1570,23 @@ textarea {
   transition: all, 0.2s, ease-in-out;
 }
 textarea + .gfield_description {
-  top: 0;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
+  padding: 15px 10px;
 }
 
 input:focus + .gfield_description, textarea:focus + .gfield_description, .filled + .gfield_description, .filled + .gfield_description {
   color: #ff1654;
-  top: 0;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
+  bottom: 100%;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0;
+  padding: 5px;
 }
 
 .filled:not(:focus) {
   background: rgba(0, 0, 0, 0.4);
   color: #ff95b2;
+  border: 1px solid;
+  border-color: #ff95b2;
 }
 .filled:not(:focus) + .gfield_description {
   color: #ff95b2;
@@ -1583,6 +1594,12 @@ input:focus + .gfield_description, textarea:focus + .gfield_description, .filled
 
 select {
   height: 4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   color: #ffffff;
   opacity: 0.8;
 }

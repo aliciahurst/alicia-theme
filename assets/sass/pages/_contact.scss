@@ -21,9 +21,9 @@
 		background-position: center center;
 		background-size: cover;
 		h2 {
-		margin-top: 0;
-		text-align: center;
-		color: $white;
+			margin-top: 0;
+			text-align: center;
+			color: $white;
 		}
 		//@include display(flex);
 		//@include justify-content(center);
@@ -49,8 +49,8 @@
 				outline: none;
 				border-color: $color5;
 				color: $color5;
-			} */
-		}
+				} */
+			}
 		/*label {
 			font-size: 1.6rem;
 			padding-bottom: 5px;
@@ -59,91 +59,102 @@
 			margin: 1rem 0 0.5rem;
 			display: block;
 			text-transform: lowercase;
-		}*/
-		textarea {
-			height: 10rem;
-		}
-		&:nth-of-type(2n) {
-			@include omega;
+			}*/
+			textarea {
+				height: 10rem;
+			}
+			&:nth-of-type(2n) {
+				@include omega;
+			}
 		}
 	}
-}
 
-.gform_footer {
-	text-align: center;
-	margin-top: 1.8rem;
-	.button {
-		margin: 0 auto;
-		@extend .btn-color;
-		font-size: 1.8rem;
+	.gform_footer {
+		text-align: center;
+		margin-top: 1.8rem;
+		.button {
+			margin: 0 auto;
+			@extend .btn-color;
+			transform: none !important;
+			font-size: 1.8rem;
+			font-weight: bold;
+		}
 	}
-}
 
-.contact .site-footer .footer-container p.contact-button {
-	display: none;
-}
-
-.gfield {
-	position: relative;
-	margin: 2rem 0;
-	label {
+	.contact .site-footer .footer-container p.contact-button {
 		display: none;
 	}
-}
 
-input, textarea, select {
-	padding: 0 10px;
-	background: transparent;
-	border: 1px solid;
+	.gfield {
+		position: relative;
+		margin: 2rem 0;
+		label {
+			display: none;
+		}
+	}
+
+	input, textarea, select {
+		padding: 0 10px;
+		background: transparent;
+	//border: 1px solid;
+	border: 2px solid transparent;
+	border-bottom: 2px solid;
 	font-size: 1.8rem;
 	line-height: 1.2;
 	overflow: auto;
 	&:focus {
 		outline: none;
-		background: $black;
+		background: rgba($black, 0.4);
 		color: $white;
+		border: 2px solid;
 		border-color: $color5;
+		box-shadow: inset 0 1px 3px rgba($color5,0.5);
+		border-radius: 2px;
 	}
 }
 
 textarea {
 	padding: 5px 10px;
-	 resize: none;
+	resize: none;
 }
 
 .gfield_description {
 	position: absolute;
-	top: 50%;
-	@include transform(translateY(-50%));
+	bottom: 0;
+	//@include transform(translateY(-25%));
 	left: 0;
 	width: 100%;
 	pointer-events: none;
 	color: $white;
-	padding: 5px 10px;
+	padding: 10px;
 	font-size: 1.8rem;
 	line-height: 1.2;
 	letter-spacing: 0.3px;
 	@include transition(all, 0.2s, ease-in-out);
 	textarea + & {
-		top: 0;
-		@include transform(none);
+		//top: 100%;
+		//@include transform(translateY(-150%));
+		padding: 15px 10px;
 	}
 }
 
 .gfield_description {
 	input:focus + &, textarea:focus + &, .filled + &, .filled + & {
 		color: $color5;
-	top: 0;
-	@include transform(translateY(-100%));
-	font-size: 1.6rem;
-	font-weight: $bold;
-	letter-spacing: 0;
+		bottom: 100%;
+		//@include transform(translateY(-100%));
+		font-size: 1.6rem;
+		font-weight: $bold;
+		letter-spacing: 0;
+		padding: 5px;
 	}
 }
 
 .filled:not(:focus) {
 	background: rgba($black,0.4);
 	color: lighten($color5,25);
+	border: 1px solid;
+	border-color: lighten($color5,25);
 	+ .gfield_description {
 		color: lighten($color5,25);
 	}
@@ -151,6 +162,12 @@ textarea {
 
 select {
 	height: 4rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;   
+	-webkit-border-radius: 0; 
+	-moz-border-radius: 0; 
+	border-radius: 0;
 	color: $white;
 	opacity: 0.8;
 	&:focus {

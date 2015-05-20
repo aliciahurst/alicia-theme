@@ -16,7 +16,8 @@
 	> * {
 		@include flex(1);
 	}
-	padding: 20px;
+	padding: 0 2rem;
+	min-height: 90px;
 }
 
 .site-name {
