@@ -1,0 +1,13 @@
+.post-type-archive-work {
+	.site-main {
+		@include display(flex);
+		@include flex-wrap(wrap);
+		@include align-content(flex-start);
+	}
+	.work-item {
+		width: 25%;
+		h1 {
+			@extend h2;
+		}
+	}
+}

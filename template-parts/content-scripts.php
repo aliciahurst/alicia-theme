@@ -12,9 +12,7 @@
     default_offset_pct: 0.5, // How much of the before image is visible when the page loads
     orientation: 'horizontal' // Orientation of the before and after images ('horizontal' or 'vertical')
   });
-  $('.ginput_container input').unwrap();
-  $('.ginput_container select').unwrap();
-  $('.ginput_container textarea').unwrap();
+  $('.ginput_container *').unwrap();
   $('.input_*[value=""]').addClass('empty');
         $('input, textarea, select').keyup(function(){
             if( $(this).val() == ""){

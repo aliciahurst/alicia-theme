@@ -600,7 +600,7 @@ p:last-of-type {
   margin-bottom: 0;
 }
 
-h1, h2, .outbound-link, h3, .work-h2 h2, .work-h2 .outbound-link, .bio-text h2, .bio-text .outbound-link, .twentytwenty-before-label:before, .twentytwenty-after-label:before, h4 {
+h1, h2, .outbound-link, .post-type-archive-work .work-item h1, h3, .work-h2 h2, .work-h2 .outbound-link, .work-h2 .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .work-h2 h1, .bio-text h2, .bio-text .outbound-link, .bio-text .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .bio-text h1, .twentytwenty-before-label:before, .twentytwenty-after-label:before, h4 {
   margin: 2.26rem 0 1.8rem;
   line-height: 1.2;
   letter-spacing: 2px;
@@ -610,10 +610,10 @@ h1, h2, .outbound-link, h3, .work-h2 h2, .work-h2 .outbound-link, .bio-text h2, 
   -webkit-font-smoothing: auto;
   text-transform: uppercase;
 }
-h1 a, h2 a, .outbound-link a, h3 a, .work-h2 h2 a, .work-h2 .outbound-link a, .bio-text h2 a, .bio-text .outbound-link a, .twentytwenty-before-label:before a, .twentytwenty-after-label:before a, h4 a {
+h1 a, h2 a, .outbound-link a, .post-type-archive-work .work-item h1 a, h3 a, .work-h2 h2 a, .work-h2 .outbound-link a, .work-h2 .post-type-archive-work .work-item h1 a, .post-type-archive-work .work-item .work-h2 h1 a, .bio-text h2 a, .bio-text .outbound-link a, .bio-text .post-type-archive-work .work-item h1 a, .post-type-archive-work .work-item .bio-text h1 a, .twentytwenty-before-label:before a, .twentytwenty-after-label:before a, h4 a {
   color: inherit;
 }
-.wrapper + h1, .wrapper + h2, .wrapper + .outbound-link, .wrapper + h3, .work-h2 .wrapper + h2, .work-h2 .wrapper + .outbound-link, .bio-text .wrapper + h2, .bio-text .wrapper + .outbound-link, .wrapper + .twentytwenty-before-label:before, .wrapper + .twentytwenty-after-label:before, .wrapper + h4 {
+.wrapper + h1, .wrapper + h2, .wrapper + .outbound-link, .post-type-archive-work .work-item .wrapper + h1, .wrapper + h3, .work-h2 .wrapper + h2, .work-h2 .wrapper + .outbound-link, .work-h2 .post-type-archive-work .work-item .wrapper + h1, .post-type-archive-work .work-item .work-h2 .wrapper + h1, .bio-text .wrapper + h2, .bio-text .wrapper + .outbound-link, .bio-text .post-type-archive-work .work-item .wrapper + h1, .post-type-archive-work .work-item .bio-text .wrapper + h1, .wrapper + .twentytwenty-before-label:before, .wrapper + .twentytwenty-after-label:before, .wrapper + h4 {
   margin-top: 0;
 }
 
@@ -624,11 +624,11 @@ h1 {
   font-family: "refrigerator-deluxe", serif;
 }
 
-h2, .outbound-link {
+h2, .outbound-link, .post-type-archive-work .work-item h1 {
   font-size: 2rem;
 }
 
-h3, .work-h2 h2, .work-h2 .outbound-link, .bio-text h2, .bio-text .outbound-link, .twentytwenty-before-label:before, .twentytwenty-after-label:before {
+h3, .work-h2 h2, .work-h2 .outbound-link, .work-h2 .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .work-h2 h1, .bio-text h2, .bio-text .outbound-link, .bio-text .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .bio-text h1, .twentytwenty-before-label:before, .twentytwenty-after-label:before {
   font-size: 2.25rem;
 }
 
@@ -1032,7 +1032,7 @@ button.menu-toggle:before {
   margin-left: -40px;
   z-index: 999;
 }
-.work-h2 h2, .work-h2 .outbound-link {
+.work-h2 h2, .work-h2 .outbound-link, .work-h2 .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .work-h2 h1 {
   margin: 0;
   text-align: center;
   padding-bottom: 3rem;
@@ -1062,7 +1062,7 @@ button.menu-toggle:before {
   padding-top: 4%;
   padding-bottom: 4%;
 }
-.bio-text h2, .bio-text .outbound-link {
+.bio-text h2, .bio-text .outbound-link, .bio-text .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .bio-text h1 {
   font-weight: 700;
   margin-top: 0;
   color: #f9f9f9;
@@ -1206,7 +1206,7 @@ button.menu-toggle:before {
   -o-transform: rotate(-2deg) translateX(-50%);
   transform: rotate(-2deg) translateX(-50%);
 }
-.note-wrap h3, .note-wrap .work-h2 h2, .work-h2 .note-wrap h2, .note-wrap .work-h2 .outbound-link, .work-h2 .note-wrap .outbound-link, .note-wrap .bio-text h2, .bio-text .note-wrap h2, .note-wrap .bio-text .outbound-link, .bio-text .note-wrap .outbound-link, .note-wrap .twentytwenty-before-label:before, .note-wrap .twentytwenty-after-label:before {
+.note-wrap h3, .note-wrap .work-h2 h2, .work-h2 .note-wrap h2, .note-wrap .work-h2 .outbound-link, .work-h2 .note-wrap .outbound-link, .note-wrap .work-h2 .post-type-archive-work .work-item h1, .work-h2 .post-type-archive-work .work-item .note-wrap h1, .note-wrap .post-type-archive-work .work-item .work-h2 h1, .post-type-archive-work .work-item .work-h2 .note-wrap h1, .note-wrap .bio-text h2, .bio-text .note-wrap h2, .note-wrap .bio-text .outbound-link, .bio-text .note-wrap .outbound-link, .note-wrap .bio-text .post-type-archive-work .work-item h1, .bio-text .post-type-archive-work .work-item .note-wrap h1, .note-wrap .post-type-archive-work .work-item .bio-text h1, .post-type-archive-work .work-item .bio-text .note-wrap h1, .note-wrap .twentytwenty-before-label:before, .note-wrap .twentytwenty-after-label:before {
   font-size: 2rem;
   color: #f9f9f9;
   margin-top: 1rem;
@@ -1288,7 +1288,7 @@ button.menu-toggle:before {
 .contribution {
   padding: 2.35765%;
 }
-.contribution h3, .contribution .work-h2 h2, .work-h2 .contribution h2, .contribution .work-h2 .outbound-link, .work-h2 .contribution .outbound-link, .contribution .bio-text h2, .bio-text .contribution h2, .contribution .bio-text .outbound-link, .bio-text .contribution .outbound-link, .contribution .twentytwenty-before-label:before, .contribution .twentytwenty-after-label:before {
+.contribution h3, .contribution .work-h2 h2, .work-h2 .contribution h2, .contribution .work-h2 .outbound-link, .work-h2 .contribution .outbound-link, .contribution .work-h2 .post-type-archive-work .work-item h1, .work-h2 .post-type-archive-work .work-item .contribution h1, .contribution .post-type-archive-work .work-item .work-h2 h1, .post-type-archive-work .work-item .work-h2 .contribution h1, .contribution .bio-text h2, .bio-text .contribution h2, .contribution .bio-text .outbound-link, .bio-text .contribution .outbound-link, .contribution .bio-text .post-type-archive-work .work-item h1, .bio-text .post-type-archive-work .work-item .contribution h1, .contribution .post-type-archive-work .work-item .bio-text h1, .post-type-archive-work .work-item .bio-text .contribution h1, .contribution .twentytwenty-before-label:before, .contribution .twentytwenty-after-label:before {
   text-align: center;
 }
 .contribution ul {
@@ -1416,6 +1416,30 @@ button.menu-toggle:before {
   margin: 0 auto;
 }
 
+.post-type-archive-work .site-main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  align-content: flex-start;
+  -ms-flex-line-pack: start;
+}
+.post-type-archive-work .work-item {
+  width: 25%;
+}
+
 .contact .site-main {
   display: -webkit-box;
   display: -moz-box;
@@ -1455,7 +1479,7 @@ button.menu-toggle:before {
 .contact .contact-form:last-child {
   margin-right: 0;
 }
-.contact .contact-form h2, .contact .contact-form .outbound-link {
+.contact .contact-form h2, .contact .contact-form .outbound-link, .contact .contact-form .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .contact .contact-form h1 {
   margin-top: 0;
   text-align: center;
   color: #ffffff;
@@ -1660,7 +1684,7 @@ select {
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-.accordion ul li div a h2, .accordion ul li div a .outbound-link {
+.accordion ul li div a h2, .accordion ul li div a .outbound-link, .accordion ul li div a .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .accordion ul li div a h1 {
   text-overflow: clip;
   text-transform: uppercase;
   position: absolute;
