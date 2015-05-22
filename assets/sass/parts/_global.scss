@@ -1,5 +1,9 @@
+html, body {
+	height: 100%;
+}
+
 body {
-	position: relative;
+	//position: relative;
 }
 /*
 body:before, body:after {
@@ -23,7 +27,7 @@ body {
 */
 
 #page {
-	margin: 0 20px;
+	///margin: 0 20px;
 }
 
 #masthead, #colophon {
@@ -63,7 +67,7 @@ img {
 }
 
 .site-main {
-	@include outer-container;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	//@include outer-container;
+	//margin-top: 20px;
+	//margin-bottom: 20px;
 }

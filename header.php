@@ -27,6 +27,7 @@
 				<div class="site-name">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<span>Alicia</span> <span>Hurst</span></a></h1>
+						
 					</div>
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button>
@@ -34,7 +35,4 @@
 						<!-- Any idea why the li's aren't indented in the output? -->
 					</nav>
 				</div>
-
-				<?php if ( is_front_page() ) { get_template_part( 'template-parts/content', 'home-header' ); } else { } ?>
-
 	</header><!-- #masthead -->
