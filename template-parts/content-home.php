@@ -28,35 +28,38 @@
 
 <section class="home-services">
 	<h2>How I Can Help</h2>
-	<?php while ( have_rows('services') ) : the_row(); ?>
-		<?php if( get_row_layout() == 'service_section' ): ?>
-			<div class="services-div">
-			<?php if( get_sub_field('service_svg') ): ?>
-		<?php $svg = get_sub_field('service_svg'); ?>
-		<svg class="icon-<?php echo $svg ?>"><use xlink:href="#icon-<?php echo $svg ?>"></use></svg>
-<?php endif; ?>
-				<h3><?php the_sub_field('service_section_title'); ?></h3>
-				<ul>
-					<?php while( have_rows('services_list') ): the_row(); ?>
-						<li><?php echo get_sub_field('service_item'); ?></li>
-					<?php endwhile; ?>
-				</ul>
-			</div>
-		<?php endif; ?>
-	<?php endwhile ; ?>
+	<div class="services-container">
+		<?php while ( have_rows('services') ) : the_row(); ?>
+			<?php if( get_row_layout() == 'service_section' ): ?>
+				<div class="services-div">
+					<h3> <?php if( get_sub_field('service_svg') ): ?>
+						<?php $svg = get_sub_field('service_svg'); ?>
+						<svg class="icon-<?php echo $svg ?>"><use xlink:href="#icon-<?php echo $svg ?>"></use></svg>
+					<?php endif; ?>
+					<?php the_sub_field('service_section_title'); ?></h3>
+					<ul>
+						<?php while( have_rows('services_list') ): the_row(); ?>
+							<li><?php echo get_sub_field('service_item'); ?></li>
+						<?php endwhile; ?>
+					</ul>
+				</div>
+			<?php endif; ?>
+		<?php endwhile ; ?>
+	</div>
 </section>
 
 <section class="home-contact">
-	<div>
-		<h3>Want to work together?</h3>
-		<p><a href="/contact">Let's talk!</a></p>
-	</div>
-	<div>
-	<h3>Want to hire me?</h3>
-	<p>I’m also available for <strong>full-time, remote</strong> creative positions!</p>
-		<p><strong>Keywords:</strong> web design, front-end development, project management, product management, SaaS/web/mobile applications</p>
-		<p><a href="mailto:hire@aliciahurst.com">Get in touch</a></p>
-	</div>
+		<div>
+			<h3>Want to work together?</h3>
+			<p>I'm currently accepting for new projects.</p>
+			<p><a href="/contact" class="btn">Let's talk!</a></p>
+		</div>
+		<div>
+			<h3>Want to hire me?</h3>
+			<p>I’m also available for <strong>full-time, remote</strong> creative positions!</p>
+			<p><strong>Keywords:</strong> web design, front-end development, project management, product management, SaaS/web/mobile applications</p>
+			<p><a href="mailto:hire@aliciahurst.com">Get in touch</a></p>
+		</div>
 </section>
 
 <section id="about" class="home-about">	

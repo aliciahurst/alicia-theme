@@ -45,6 +45,11 @@ h1, h2, h3, h4 {
   font-family: $serif;
   -webkit-font-smoothing: auto;
   text-transform: uppercase;
+  section > &, div > & {
+  	&:first-of-type {
+  		margin-top: 0;
+  	}
+  }
   a {
   	color: inherit;
   }

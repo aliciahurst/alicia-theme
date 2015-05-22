@@ -119,7 +119,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1 {
+h1, .home-contact div h3, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -525,7 +525,7 @@ html {
 $color1: #11151c; //black
 $color2: #212d40; //navy
 $color3: #364156; //medium blue
-$color4: #7d4e57; //eggplant
+
 $color5: #d66853; //orangy
 */
 /*
@@ -607,7 +607,7 @@ p:last-of-type {
   margin-bottom: 0;
 }
 
-h1, h2, .outbound-link, .post-type-archive-work .work-item h1, h3, .twentytwenty-before-label:before, .twentytwenty-after-label:before, h4 {
+h1, .home-contact div h3, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before, h2, .outbound-link, .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-contact div h3, .home-contact div .post-type-archive-work .work-item h3, .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, h3, .twentytwenty-before-label:before, .twentytwenty-after-label:before, h4 {
   margin: 2.26rem 0 1.8rem;
   line-height: 1.2;
   letter-spacing: 2px;
@@ -617,21 +617,24 @@ h1, h2, .outbound-link, .post-type-archive-work .work-item h1, h3, .twentytwenty
   -webkit-font-smoothing: auto;
   text-transform: uppercase;
 }
-h1 a, h2 a, .outbound-link a, .post-type-archive-work .work-item h1 a, h3 a, .twentytwenty-before-label:before a, .twentytwenty-after-label:before a, h4 a {
+section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div section > .twentytwenty-after-label:first-of-type:before, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div > .twentytwenty-after-label:first-of-type:before, section > h2:first-of-type, section > .outbound-link:first-of-type, .post-type-archive-work .work-item section > h1:first-of-type, .post-type-archive-work .work-item .home-contact div section > h3:first-of-type, .home-contact div .post-type-archive-work .work-item section > h3:first-of-type, .post-type-archive-work .work-item .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div .post-type-archive-work .work-item section > .twentytwenty-before-label:first-of-type:before, .post-type-archive-work .work-item .home-contact div section > .twentytwenty-after-label:first-of-type:before, .home-contact div .post-type-archive-work .work-item section > .twentytwenty-after-label:first-of-type:before, div > h2:first-of-type, div > .outbound-link:first-of-type, .post-type-archive-work .work-item div > h1:first-of-type, .post-type-archive-work .work-item .home-contact div > h3:first-of-type, .home-contact div .post-type-archive-work .work-item div > h3:first-of-type, .post-type-archive-work .work-item .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div .post-type-archive-work .work-item div > .twentytwenty-before-label:first-of-type:before, .post-type-archive-work .work-item .home-contact div > .twentytwenty-after-label:first-of-type:before, .home-contact div .post-type-archive-work .work-item div > .twentytwenty-after-label:first-of-type:before, section > h3:first-of-type, section > .twentytwenty-before-label:first-of-type:before, section > .twentytwenty-after-label:first-of-type:before, div > h3:first-of-type, div > .twentytwenty-before-label:first-of-type:before, div > .twentytwenty-after-label:first-of-type:before, section > h4:first-of-type, div > h4:first-of-type {
+  margin-top: 0;
+}
+h1 a, .home-contact div h3 a, .home-contact div .twentytwenty-before-label:before a, .home-contact div .twentytwenty-after-label:before a, h2 a, .outbound-link a, .post-type-archive-work .work-item h1 a, .post-type-archive-work .work-item .home-contact div h3 a, .home-contact div .post-type-archive-work .work-item h3 a, .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before a, .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before a, .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before a, .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before a, h3 a, .twentytwenty-before-label:before a, .twentytwenty-after-label:before a, h4 a {
   color: inherit;
 }
-.wrapper + h1, .wrapper + h2, .wrapper + .outbound-link, .post-type-archive-work .work-item .wrapper + h1, .wrapper + h3, .wrapper + .twentytwenty-before-label:before, .wrapper + .twentytwenty-after-label:before, .wrapper + h4 {
+.wrapper + h1, .home-contact div .wrapper + h3, .home-contact div .wrapper + .twentytwenty-before-label:before, .home-contact div .wrapper + .twentytwenty-after-label:before, .wrapper + h2, .wrapper + .outbound-link, .post-type-archive-work .work-item .wrapper + h1, .post-type-archive-work .work-item .home-contact div .wrapper + h3, .home-contact div .post-type-archive-work .work-item .wrapper + h3, .post-type-archive-work .work-item .home-contact div .wrapper + .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .wrapper + .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .wrapper + .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .wrapper + .twentytwenty-after-label:before, .wrapper + h3, .wrapper + .twentytwenty-before-label:before, .wrapper + .twentytwenty-after-label:before, .wrapper + h4 {
   margin-top: 0;
 }
 
-h1 {
+h1, .home-contact div h3, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before {
   margin-top: 0;
   font-size: 6rem;
   line-height: 1;
   font-family: "refrigerator-deluxe", helvetica, serif;
 }
 
-h2, .outbound-link, .post-type-archive-work .work-item h1 {
+h2, .outbound-link, .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-contact div h3, .home-contact div .post-type-archive-work .work-item h3, .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before {
   font-size: 3rem;
 }
 
@@ -1096,7 +1099,7 @@ button.menu-toggle:before {
   padding: 6%;
   text-align: center;
 }
-.home-top div:last-of-type ul li h2, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-top div:last-of-type ul li h1 {
+.home-top div:last-of-type ul li h2, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-top div:last-of-type ul li h1, .home-top .post-type-archive-work .work-item .home-contact div:last-of-type ul li h3, .post-type-archive-work .work-item .home-contact .home-top div:last-of-type ul li h3, .home-top .home-contact div:last-of-type ul li .post-type-archive-work .work-item h3, .home-contact .home-top div:last-of-type ul li .post-type-archive-work .work-item h3, .home-top .home-contact div:last-of-type .post-type-archive-work .work-item ul li h3, .home-contact .home-top div:last-of-type .post-type-archive-work .work-item ul li h3, .home-top .post-type-archive-work .work-item .home-contact div:last-of-type ul li .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact .home-top div:last-of-type ul li .twentytwenty-before-label:before, .home-top .home-contact div:last-of-type ul li .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact .home-top div:last-of-type ul li .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-top .home-contact div:last-of-type .post-type-archive-work .work-item ul li .twentytwenty-before-label:before, .home-contact .home-top div:last-of-type .post-type-archive-work .work-item ul li .twentytwenty-before-label:before, .home-top .post-type-archive-work .work-item .home-contact div:last-of-type ul li .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact .home-top div:last-of-type ul li .twentytwenty-after-label:before, .home-top .home-contact div:last-of-type ul li .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact .home-top div:last-of-type ul li .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-top .home-contact div:last-of-type .post-type-archive-work .work-item ul li .twentytwenty-after-label:before, .home-contact .home-top div:last-of-type .post-type-archive-work .work-item ul li .twentytwenty-after-label:before {
   font-size: 5rem;
   letter-spacing: 5px;
 }
@@ -1106,21 +1109,69 @@ button.menu-toggle:before {
 }
 
 .home-services {
-  text-align: center;
   padding: 6%;
 }
-.home-services .services-div {
-  float: left;
-  width: 33%;
-  padding: 3% 6%;
-  margin: 0;
+.home-services h2, .home-services .outbound-link, .home-services .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-services h1, .home-services .post-type-archive-work .work-item .home-contact div h3, .post-type-archive-work .work-item .home-contact div .home-services h3, .home-services .home-contact div .post-type-archive-work .work-item h3, .home-contact div .post-type-archive-work .work-item .home-services h3, .home-services .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .home-services .twentytwenty-before-label:before, .home-services .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .home-services .twentytwenty-before-label:before, .home-services .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact div .home-services .twentytwenty-after-label:before, .home-services .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .home-services .twentytwenty-after-label:before {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 6%;
 }
-.home-services::after {
+.home-services .services-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  width: 100%;
+}
+.home-services .services-container::after {
   clear: both;
   content: "";
   display: table;
 }
+.home-services .services-div {
+  width: 25%;
+  text-align: center;
+  border: 1px solid;
+  margin: 2% 0;
+}
+.home-services .services-div h3, .home-services .services-div .twentytwenty-before-label:before, .home-services .services-div .twentytwenty-after-label:before {
+  padding: 2rem 6%;
+  line-height: 1;
+  margin: 0;
+}
+.home-services .services-div svg {
+  display: inline-block;
+  margin-right: 2rem;
+  margin-top: -5px;
+  vertical-align: middle;
+}
+.home-services .services-div ul {
+  border-top: 1px solid;
+  padding: 2rem 0;
+}
+.home-services .services-div ul li {
+  padding: 6% 6%;
+}
+.home-services .services-div:nth-of-type(2) {
+  margin: 0 6%;
+}
 
+.home-contact {
+  padding: 0 12% 6%;
+}
 .home-contact div {
   float: left;
   display: inline-block;
@@ -1128,8 +1179,10 @@ button.menu-toggle:before {
   padding: 6%;
   margin: 0;
 }
-.home-contact div:first-of-type {
-  background: #000000;
+.home-contact div:last-of-type {
+  background: #decdac;
+}
+.home-contact div:last-of-type p, .home-contact div:last-of-type h3, .home-contact div:last-of-type .twentytwenty-before-label:before, .home-contact div:last-of-type .twentytwenty-after-label:before {
   color: #ffffff;
 }
 .home-contact::after {
@@ -1139,7 +1192,9 @@ button.menu-toggle:before {
 }
 
 .home-about {
+  background: #F7F7F7;
   height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: table;
   width: 100%;
@@ -1152,21 +1207,24 @@ button.menu-toggle:before {
   padding: 6%;
   vertical-align: middle;
 }
+.home-about div.bio-text h2, .home-about div.bio-text .outbound-link, .home-about div.bio-text .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-about div.bio-text h1, .home-about .post-type-archive-work .work-item .home-contact div.bio-text h3, .post-type-archive-work .work-item .home-contact .home-about div.bio-text h3, .home-about .home-contact div.bio-text .post-type-archive-work .work-item h3, .home-contact .home-about div.bio-text .post-type-archive-work .work-item h3, .home-about .post-type-archive-work .work-item .home-contact div.bio-text .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact .home-about div.bio-text .twentytwenty-before-label:before, .home-about .home-contact div.bio-text .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact .home-about div.bio-text .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-about .post-type-archive-work .work-item .home-contact div.bio-text .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact .home-about div.bio-text .twentytwenty-after-label:before, .home-about .home-contact div.bio-text .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact .home-about div.bio-text .post-type-archive-work .work-item .twentytwenty-after-label:before {
+  margin-top: 0;
+}
 .home-about .bio-photos {
   display: table;
   height: 100%;
   position: relative;
   width: 100%;
-}
-.home-about .bio-photos:after {
-  position: absolute;
-  height: 76%;
-  content: "";
-  width: 76%;
-  top: 12%;
-  left: 12%;
-  z-index: 999;
-  border: 4px solid #ffffff;
+  /* &:after {
+  	position: absolute;
+  	height: 76%;
+  	content: "";
+  	width: 76%;
+  	top: 12%;
+  	left: 12%;
+  	z-index: 999;
+  	border: 4px solid $white;
+  } */
 }
 .home-about .bio-photos .bio-headshot {
   background: url("../img/min/headshotcolor.jpg");
@@ -1424,7 +1482,7 @@ button.menu-toggle:before {
   background-position: center center;
   background-size: cover;
 }
-.contact .contact-form h2, .contact .contact-form .outbound-link, .contact .contact-form .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .contact .contact-form h1 {
+.contact .contact-form h2, .contact .contact-form .outbound-link, .contact .contact-form .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .contact .contact-form h1, .contact .contact-form .post-type-archive-work .work-item .home-contact div h3, .post-type-archive-work .work-item .home-contact div .contact .contact-form h3, .contact .contact-form .home-contact div .post-type-archive-work .work-item h3, .home-contact div .post-type-archive-work .work-item .contact .contact-form h3, .contact .contact-form .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .contact .contact-form .twentytwenty-before-label:before, .contact .contact-form .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .contact .contact-form .twentytwenty-before-label:before, .contact .contact-form .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact div .contact .contact-form .twentytwenty-after-label:before, .contact .contact-form .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .contact .contact-form .twentytwenty-after-label:before {
   margin-top: 0;
   text-align: center;
   color: #ffffff;
@@ -1624,7 +1682,7 @@ select {
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-.accordion ul li div a h2, .accordion ul li div a .outbound-link, .accordion ul li div a .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .accordion ul li div a h1 {
+.accordion ul li div a h2, .accordion ul li div a .outbound-link, .accordion ul li div a .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .accordion ul li div a h1, .accordion ul li .post-type-archive-work .work-item .home-contact div a h3, .post-type-archive-work .work-item .home-contact .accordion ul li div a h3, .accordion ul li .home-contact div a .post-type-archive-work .work-item h3, .home-contact .accordion ul li div a .post-type-archive-work .work-item h3, .accordion ul li .home-contact div .post-type-archive-work .work-item a h3, .home-contact .accordion ul li div .post-type-archive-work .work-item a h3, .accordion ul li .post-type-archive-work .work-item .home-contact div a .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact .accordion ul li div a .twentytwenty-before-label:before, .accordion ul li .home-contact div a .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact .accordion ul li div a .post-type-archive-work .work-item .twentytwenty-before-label:before, .accordion ul li .home-contact div .post-type-archive-work .work-item a .twentytwenty-before-label:before, .home-contact .accordion ul li div .post-type-archive-work .work-item a .twentytwenty-before-label:before, .accordion ul li .post-type-archive-work .work-item .home-contact div a .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact .accordion ul li div a .twentytwenty-after-label:before, .accordion ul li .home-contact div a .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact .accordion ul li div a .post-type-archive-work .work-item .twentytwenty-after-label:before, .accordion ul li .home-contact div .post-type-archive-work .work-item a .twentytwenty-after-label:before, .home-contact .accordion ul li div .post-type-archive-work .work-item a .twentytwenty-after-label:before {
   text-overflow: clip;
   text-transform: uppercase;
   position: absolute;
@@ -1717,19 +1775,18 @@ select {
   display: inline-block;
   width: auto;
   padding: 12px 30px;
-  border: 2px solid #202330;
+  border: 2px solid #c1a263 !important;
   background-color: transparent !important;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
-  transform: skew(-20deg);
-  color: #202330;
+  color: #c1a263;
   font-weight: bold;
   font-size: 1.7rem;
   letter-spacing: 1.5px;
-  background-color: #202330;
-  background-image: -webkit-linear-gradient(left, #202330 0%, #202330 50%, rgba(32, 35, 48, 0) 51%, rgba(32, 35, 48, 0) 100%);
-  background-image: linear-gradient(to right,#202330 0%, #202330 50%, rgba(32, 35, 48, 0) 51%, rgba(32, 35, 48, 0) 100%);
+  background-color: #c1a263;
+  background-image: -webkit-linear-gradient(left, #c1a263 0%, #c1a263 50%, rgba(193, 162, 99, 0) 51%, rgba(193, 162, 99, 0) 100%);
+  background-image: linear-gradient(to right,#c1a263 0%, #c1a263 50%, rgba(193, 162, 99, 0) 51%, rgba(193, 162, 99, 0) 100%);
   background-size: 250% 100%;
   background-position: right center !important;
   transition: all ease 0.8s;
@@ -1748,12 +1805,11 @@ select {
   display: inline-block;
   width: auto;
   padding: 12px 30px;
-  border: 2px solid #ff1654;
+  border: 2px solid #ff1654 !important;
   background-color: transparent !important;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
-  transform: skew(-20deg);
   color: #ff1654;
   font-weight: bold;
   font-size: 1.7rem;

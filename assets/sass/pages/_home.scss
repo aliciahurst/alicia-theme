@@ -61,20 +61,51 @@
 }
 
 .home-services {
-	text-align: center;
 	padding: 6%;
+	//min-height: 100vh;
 	h2 {
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 6%;
+	}
+	.services-container {
+		@include clearfix;
+		text-align: center;
+		@include display(flex);
+		@include justify-content(center);
+		width: 100%;
 	}
 	.services-div {
-		float: left;
-		width: 33%;
-		padding: 3% 6%;
-		margin: 0;
-	}
-	@include clearfix;
+		width: 25%;
+		text-align: center;
+		border: 1px solid;
+		margin: 2% 0;
+		h3 {
+			padding: 2rem 6%;
+			line-height: 1;
+			margin: 0;
+		}
+		svg {
+			display: inline-block;
+			margin-right: 2rem;
+			margin-top: -5px;
+			vertical-align: middle;
+		}
+		ul {
+			border-top: 1px solid;
+			padding: 2rem 0;
+			li {
+				padding: 6% 6%;
+			}
+		}
+		&:nth-of-type(2) {
+			margin: 0 6%;
+		}
+	}	
 }
 
 .home-contact {
+	padding: 0 12% 6%;
 	div {
 		float: left;
 		display: inline-block;
@@ -82,22 +113,36 @@
 		padding: 6%;
 		margin: 0;
 		&:first-of-type {
-			background: $black;
-			color: $white;
+			//@include display(flex);
+			//@include flex-direction(column);
+			//@include align-items(flex-start);
+		}
+		&:last-of-type {
+			background: darken($tan, 20);
+			p, h3 {
+				color: $white;
+			}
+		}
+		h3 {
+			@extend h1;
 		}
 	}
 	@include clearfix;
 }
 
 .home-about {
+	background: #F7F7F7;
 	height: 100%;
-	//min-height: 100vh;
+	min-height: 100vh;
 	@include fill-parent();
 @include row(table);
 	vertical-align: middle;
 	div {
 		//width: 50%;
 		&.bio-text {
+			h2 {
+				margin-top: 0;
+			}
 			@include display(table-cell);
 			width: 50%;
 			padding: 6%;
@@ -109,7 +154,7 @@
 		height: 100%;
 		position: relative;
 		width: 100%;
-		&:after {
+		/* &:after {
 			position: absolute;
 			height: 76%;
 			content: "";
@@ -118,7 +163,7 @@
 			left: 12%;
 			z-index: 999;
 			border: 4px solid $white;
-		}
+		} */
 		.bio-headshot {
 			background: url('../img/min/headshotcolor.jpg');
 			background-size: cover;
