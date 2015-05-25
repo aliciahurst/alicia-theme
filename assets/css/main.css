@@ -686,6 +686,17 @@ img {
   width: 100%;
   z-index: 999;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+}
+#masthead nav a {
+  color: #ffffff;
+}
+.archive #masthead nav a {
+  color: #414141;
 }
 
 .header-container, .footer-container {
@@ -933,17 +944,6 @@ button.menu-toggle:before {
 
 .home .entry-header {
   display: none;
-}
-
-.home #masthead {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: transparent;
-}
-.home #masthead nav a {
-  color: #ffffff;
 }
 
 .home-top {

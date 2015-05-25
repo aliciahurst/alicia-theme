@@ -2,19 +2,6 @@
 	display: none;
 }
 
-.home {
-	#masthead {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		background: transparent;
-		nav a {
-			color: $white;
-		}
-	}
-}
-
 .home-top {
 	@include display(flex);
 	@include flex-direction(row);
