@@ -11,7 +11,7 @@
 
 .site-footer {
 	position: relative;
-	background: lighten($black,20);
+	background: $four;
 	.footer-container {
 		@include outer-container;
 		@include justify-content(space-around);

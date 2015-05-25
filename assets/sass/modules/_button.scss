@@ -30,13 +30,16 @@
 	}
 	// Enabling 'fill' on hover
 	&:hover {
-		color: darken($color,70) !important;
+		color: $three;
 		background-position: left center !important;
 	}
 }
-$darken: darken($niceblue,35);
+
 .btn {
-	//@include btn(darken($tan,40));
+	@include btn($four);
+	&:hover {
+		color: $white;
+	}
 }
 .btn-white {
 	@include btn($white);

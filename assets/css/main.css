@@ -520,62 +520,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
-// Set 1
-$color1: #11151c; //black
-$color2: #212d40; //navy
-$color3: #364156; //medium blue
-
-$color5: #d66853; //orangy
-*/
-/*
-// Set 2
-$color1: #247ba0; // medium blue
-$color2: #70c1b3; // robins egg
-$color3: #b2dbbf; // seafoam
-$color4: #FFF7ED; // light green
-$color5: #ff1654; // hot pink
-*/
-/*
-// Set Kuler
-$color1: #060828; // dk gray blue
-$color2: #3F5765; // gray blue
-$color3: #BDD4DE; // light gray blue
-$color4: darken(#E5E5E5,5); // gray
-
-*/
-/*
-// Set 3
-$color1: #264653;
-$color2: #2a9d8f;
-$color3: #e9c46a;
-$color4: #f4a261;
-$color5: #e76f51;
-*/
-/*
-// Set 4
-$color1: #c9cba3;
-$color2: #ffe1a8;
-$color3: #e26d5c;
-$color4: #723d46;
-$color5: #472d30;
-*/
-/*
-// Set 5
-$color1: #ddd8b8;
-$color2: #b3cbb9;
-$color3: #84a9c0;
-$color4: #6a66a3;
-$color5: #542e71;
-*/
-/*
-// Set 6
-$color1: #4281a4;
-$color2: #48a9a6;
-$color3: #e4dfda;
-$color4: #d4b483;
-$color5: #c1666b;
-*/
 /* Setup */
 html {
   font-family: "freight-sans-pro", helvetica, sans-serif;
@@ -892,7 +836,7 @@ button.menu-toggle:before {
 
 .site-footer {
   position: relative;
-  background: #333333;
+  background: #414141;
 }
 .site-footer .footer-container {
   max-width: 1400px;
@@ -1185,7 +1129,7 @@ button.menu-toggle:before {
   margin: 0;
 }
 .home-contact div:last-of-type {
-  background: #decdac;
+  background: #c2c2c2;
 }
 .home-contact div:last-of-type p, .home-contact div:last-of-type h3, .home-contact div:last-of-type .twentytwenty-before-label:before, .home-contact div:last-of-type .twentytwenty-after-label:before {
   color: #ffffff;
@@ -1229,7 +1173,7 @@ button.menu-toggle:before {
   	left: 12%;
   	z-index: 999;
   	border: 4px solid $white;
-  } */
+  	} */
 }
 .home-about .bio-photos .bio-headshot {
   background: url("../img/min/headshotcolor.jpg");
@@ -1245,6 +1189,37 @@ button.menu-toggle:before {
   display: table-cell;
   width: 50%;
   height: 100%;
+}
+
+.home-work {
+  padding: 6% 12%;
+}
+.home-work h2, .home-work .outbound-link, .home-work .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-work h1, .home-work .post-type-archive-work .work-item .home-contact div h3, .post-type-archive-work .work-item .home-contact div .home-work h3, .home-work .home-contact div .post-type-archive-work .work-item h3, .home-contact div .post-type-archive-work .work-item .home-work h3, .home-work .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .home-work .twentytwenty-before-label:before, .home-work .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .home-work .twentytwenty-before-label:before, .home-work .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact div .home-work .twentytwenty-after-label:before, .home-work .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .home-work .twentytwenty-after-label:before {
+  text-align: center;
+  margin-bottom: 6%;
+}
+.home-work div {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  text-align: left;
+}
+.home-work div:nth-of-type(2) {
+  float: none;
+}
+.home-work div:nth-of-type(2)::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.home-work div a {
+  display: block;
+  border: 0;
+}
+.home-work p {
+  text-align: center;
+  margin-top: 6%;
 }
 
 .latest-work {
@@ -1570,8 +1545,8 @@ input:focus, textarea:focus, select:focus {
   background: rgba(0, 0, 0, 0.4);
   color: #ffffff;
   border: 2px solid;
-  border-color: #ff1654;
-  box-shadow: inset 0 1px 3px rgba(255, 22, 84, 0.5);
+  border-color: #f9f9f9;
+  box-shadow: inset 0 1px 3px rgba(249, 249, 249, 0.5);
   border-radius: 2px;
 }
 
@@ -1600,7 +1575,7 @@ textarea + .gfield_description {
 }
 
 input:focus + .gfield_description, textarea:focus + .gfield_description, .filled + .gfield_description, .filled + .gfield_description {
-  color: #ff1654;
+  color: #f9f9f9;
   bottom: 100%;
   font-size: 1.6rem;
   font-weight: 700;
@@ -1610,12 +1585,12 @@ input:focus + .gfield_description, textarea:focus + .gfield_description, .filled
 
 .filled:not(:focus) {
   background: rgba(0, 0, 0, 0.4);
-  color: #ff95b2;
+  color: white;
   border: 1px solid;
-  border-color: #ff95b2;
+  border-color: white;
 }
 .filled:not(:focus) + .gfield_description {
-  color: #ff95b2;
+  color: white;
 }
 
 select {
@@ -1722,8 +1697,8 @@ select {
   opacity: 0.5;
   content: "";
   background-color: #B77811;
-  background-image: -webkit-linear-gradient(top right, #B77811 0%, #ff1654 100%);
-  background-image: linear-gradient(to bottom left,#B77811 0%, #ff1654 100%);
+  background-image: -webkit-linear-gradient(top right, #B77811 0%, #f9f9f9 100%);
+  background-image: linear-gradient(to bottom left,#B77811 0%, #f9f9f9 100%);
 }
 
 @media screen and (max-width: 600px) {
@@ -1775,6 +1750,38 @@ select {
   border: 0;
 }
 
+.btn {
+  display: inline-block;
+  width: auto;
+  padding: 12px 30px;
+  border: 2px solid #414141 !important;
+  background-color: transparent !important;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  color: #414141;
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 1.5px;
+  background-color: #414141;
+  background-image: -webkit-linear-gradient(left, #414141 0%, #414141 50%, rgba(65, 65, 65, 0) 51%, rgba(65, 65, 65, 0) 100%);
+  background-image: linear-gradient(to right,#414141 0%, #414141 50%, rgba(65, 65, 65, 0) 51%, rgba(65, 65, 65, 0) 100%);
+  background-size: 250% 100%;
+  background-position: right center !important;
+  transition: all ease 0.8s;
+  cursor: pointer;
+}
+.btn span {
+  display: inline-block;
+}
+.btn:hover {
+  color: #333333;
+  background-position: left center !important;
+}
+.btn:hover {
+  color: #ffffff;
+}
+
 .btn-white, .gform_footer .button {
   display: inline-block;
   width: auto;
@@ -1800,7 +1807,7 @@ select {
   display: inline-block;
 }
 .btn-white:hover, .gform_footer .button:hover {
-  color: #4d4d4d !important;
+  color: #333333;
   background-position: left center !important;
 }
 

@@ -58,7 +58,7 @@
 			<h3>Want to hire me?</h3>
 			<p>I’m also available for <strong>full-time, remote</strong> creative positions!</p>
 			<p><strong>Keywords:</strong> web design, front-end development, ux/ui, project management, product management, SaaS/web/mobile applications</p>
-			<p><a href="mailto:hire@aliciahurst.com">Get in touch</a></p>
+			<p><a href="mailto:hi@aliciahurst.com">Get in touch &rarr;</a></p>
 		</div>
 </section>
 
@@ -73,22 +73,16 @@
 	</div>
 </section>
 
-<section class="work-h2">
-	<h2>Latest Work</h2>
-</section>
-
 <section class="home-work">
-	<div class="accordion">
-		<ul> <?php $args = array( 'numberposts' => 5, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
-			<li>
-				<div style="background-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg')" class="accordion-div">
-					<a href="<?php the_permalink(); ?>">
-						<h2><span><?php the_title(); ?></span></h2>
+	<h2>Latest Work</h2>
+		<?php $args = array( 'numberposts' => 2, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+		<div>
+		<a href="<?php the_permalink(); ?>">
+				<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
+						<h3><span><?php the_title(); ?></span></h3>
 					</a>
 				</div>
-			</li>
 		<?php endforeach; ?>
 		<?php wp_reset_query(); ?>
-	</ul>
-</div>
+		<p><a href="/work" class="btn">View All Work</a></p>
 </section>
