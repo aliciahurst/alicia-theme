@@ -1,5 +1,8 @@
 .site-footer nav {
-	text-align: right;
+	text-align: center;
+	ul {
+		padding: 6.5px 0;
+	}
 	li {
 		display: inline-block;
 		padding: 0 1rem;
@@ -8,25 +11,36 @@
 
 .site-footer {
 	position: relative;
-	color: $white;
+	background: lighten($black,20);
 	.footer-container {
 		@include outer-container;
-		text-align: left;
-		padding: 0 2rem;
-		color: $gray1;
-		a:not(.btn){
-			color: $gray1;
-		}
-		p {
-			display: inline-block;
-			margin: 2rem 0;
-			&.contact-button {
-				text-align: center;
+		@include justify-content(space-around);
+		div, nav {
+			width: 25%;
+			text-align: center;
+			color: $white;
+			@include flex(none);
+			h3 {
+				color: $white;
+				margin: 0 0 1.8rem 0;
 			}
+		}
+		.top {
+			margin-top: 0;
+		}
+		padding: 6%;
+		color: $white;
+		a:not(.btn-white){
+			color: $white;
 		}
 	}
 }
 
+.footer-contact {
+	p {
+		margin: 0 !important;
+	}
+}
 /* .to-top {
 	bottom: 100%;
 	left: 50%;
@@ -62,23 +76,6 @@
 	}
 }
 .copyright {
-	font-family: $serif;
 	letter-spacing: 0.5px;
-	strong {
-		text-transform: uppercase;
-	}
-}
-
-.copy-date {
-	font-family: $serif;
-	font-weight: bold;
-	letter-spacing: 2px;
 	font-size: 1.6rem;
-}
-.copy-heart {
-	padding: 0 0.5rem;
-}
-
-.contact-button {
-	font-family: $sans;
 }

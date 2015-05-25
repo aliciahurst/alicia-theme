@@ -8,7 +8,7 @@
 <section class="home-top">
 	<div class="home-title">
 		<h1> Design + Development</h1>
-		<h3>By Alicia</h3>
+		<h3>By Me, Alicia</h3>
 	</div>
 
 	<div class="rslides_container">
@@ -51,13 +51,13 @@
 <section class="home-contact">
 		<div>
 			<h3>Want to work together?</h3>
-			<p>I'm currently accepting for new projects.</p>
+			<p>I'm currently accepting inquiries for new projects.</p>
 			<p><a href="/contact" class="btn">Let's talk!</a></p>
 		</div>
 		<div>
 			<h3>Want to hire me?</h3>
 			<p>I’m also available for <strong>full-time, remote</strong> creative positions!</p>
-			<p><strong>Keywords:</strong> web design, front-end development, project management, product management, SaaS/web/mobile applications</p>
+			<p><strong>Keywords:</strong> web design, front-end development, ux/ui, project management, product management, SaaS/web/mobile applications</p>
 			<p><a href="mailto:hire@aliciahurst.com">Get in touch</a></p>
 		</div>
 </section>
