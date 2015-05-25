@@ -1,101 +1,76 @@
 .contact {
-	.site-main {
-		@include display(flex);
-		//@include flex-direction(row-reverse);
-	}
 	.entry-header {
 		display: none;
 	}
-	.contact-content {
-		@include span-columns(5);
-		@include pad();
+	.site-main {
+		@include display(flex);
+		@include flex-direction(row);
+		@include justify-content(center);
+		@include align-items(stretch);
+		height: 100%;
+		min-height: 100vh;
 	}
-	.contact-form {
-		@include span-columns(7);
-		@include omega;
-		@include pad();
-		padding-left: $gutter * 4;
-		padding-right: $gutter * 4;
-		background: $graysuper;
-		background: url('../img/min/contactbg.jpg') no-repeat;
-		background-position: center center;
-		background-size: cover;
-		h2 {
-			margin-top: 0;
-			text-align: center;
-			color: $white;
-		}
-		//@include display(flex);
-		//@include justify-content(center);
-		//@include flex-direction(column);
+	section {
+		@include flex(1);
+		@include display(flex);
+		@include flex-direction(column);
+		@include justify-content(center);
+		padding: 6%;
+	}
+	ul a {
+		border: 0;
+	}
+}
+
+.contact-form { 
+	background: $graysuper;
+	background: url('../img/min/contactbg.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	h2 {
+		color: $white;
+		margin-top: 6% !important;
+		text-align: center;
 	}
 }
 
 .gform_body {
 	@include clearfix;
 	.gfield {
-		@include span-columns(3 of 6);
-		input, textarea, select {
-			width: 100%;
-			/*border: 2px solid $white;
-			background: transparent;
-			border-radius: 0 !important;
-			font-size: 1.4rem;
-			padding: 5px 10px;
-			line-height: 1.1;
-			color: $white;
-			&:focus{
-				background: $white;
-				outline: none;
-				border-color: $color5;
-				color: $color5;
-				} */
-			}
-		/*label {
-			font-size: 1.6rem;
-			padding-bottom: 5px;
-			color: $white;
-			letter-spacing: 0.3px;
-			margin: 1rem 0 0.5rem;
-			display: block;
-			text-transform: lowercase;
-			}*/
-			textarea {
-				height: 10rem;
-			}
-			&:nth-of-type(2n) {
-				@include omega;
-			}
-		}
-	}
-
-	.gform_footer {
-		text-align: center;
-		margin-top: 1.8rem;
-		.button {
-			margin: 0 auto;
-			@extend .btn-white;
-			font-size: 1.8rem;
-			font-weight: bold;
-		}
-	}
-
-	.contact .site-footer .footer-container p.contact-button {
-		display: none;
-	}
-
-	.gfield {
+		width: 48.5%;
+		float: left;
 		position: relative;
 		margin: 2rem 0;
 		label {
 			display: none;
 		}
+		input, textarea, select {
+			width: 100%;
+		}
+		textarea {
+			height: 10rem;
+		}
+		&:nth-of-type(2n) {
+			@include omega;
+			margin-left: 3%;
+		}
 	}
+}
 
-	input, textarea, select {
-		padding: 0 10px;
-		background: transparent;
-	//border: 1px solid;
+.gform_footer {
+	text-align: center;
+	margin-top: 1.8rem;
+	.button {
+		margin: 0 auto;
+		@extend .btn-white;
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+}
+
+input, textarea, select {
+	padding: 0 10px;
+	background: transparent;
 	border: 2px solid transparent;
 	border-bottom: 2px solid;
 	font-size: 1.8rem;
@@ -120,7 +95,6 @@ textarea {
 .gfield_description {
 	position: absolute;
 	bottom: 0;
-	//@include transform(translateY(-25%));
 	left: 0;
 	width: 100%;
 	pointer-events: none;
@@ -131,17 +105,11 @@ textarea {
 	letter-spacing: 0.3px;
 	@include transition(all, 0.2s, ease-in-out);
 	textarea + & {
-		//top: 100%;
-		//@include transform(translateY(-150%));
 		padding: 15px 10px;
 	}
-}
-
-.gfield_description {
 	input:focus + &, textarea:focus + &, .filled + &, .filled + & {
 		color: $color5;
 		bottom: 100%;
-		//@include transform(translateY(-100%));
 		font-size: 1.6rem;
 		font-weight: $bold;
 		letter-spacing: 0;
@@ -156,20 +124,5 @@ textarea {
 	border-color: lighten($color5,25);
 	+ .gfield_description {
 		color: lighten($color5,25);
-	}
-}
-
-select {
-	height: 4rem;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;   
-	-webkit-border-radius: 0; 
-	-moz-border-radius: 0; 
-	border-radius: 0;
-	color: $white;
-	opacity: 0.8;
-	&:focus {
-		//color: $black;
 	}
 }

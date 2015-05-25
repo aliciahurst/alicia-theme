@@ -564,6 +564,9 @@ h1, .home-contact div h3, .home-contact div .twentytwenty-before-label:before, .
 section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div section > .twentytwenty-after-label:first-of-type:before, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div > .twentytwenty-after-label:first-of-type:before, section > h2:first-of-type, section > .outbound-link:first-of-type, .post-type-archive-work .work-item section > h1:first-of-type, .post-type-archive-work .work-item .home-contact div section > h3:first-of-type, .home-contact div .post-type-archive-work .work-item section > h3:first-of-type, .post-type-archive-work .work-item .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div .post-type-archive-work .work-item section > .twentytwenty-before-label:first-of-type:before, .post-type-archive-work .work-item .home-contact div section > .twentytwenty-after-label:first-of-type:before, .home-contact div .post-type-archive-work .work-item section > .twentytwenty-after-label:first-of-type:before, div > h2:first-of-type, div > .outbound-link:first-of-type, .post-type-archive-work .work-item div > h1:first-of-type, .post-type-archive-work .work-item .home-contact div > h3:first-of-type, .home-contact div .post-type-archive-work .work-item div > h3:first-of-type, .post-type-archive-work .work-item .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div .post-type-archive-work .work-item div > .twentytwenty-before-label:first-of-type:before, .post-type-archive-work .work-item .home-contact div > .twentytwenty-after-label:first-of-type:before, .home-contact div .post-type-archive-work .work-item div > .twentytwenty-after-label:first-of-type:before, section > h3:first-of-type, section > .twentytwenty-before-label:first-of-type:before, section > .twentytwenty-after-label:first-of-type:before, div > h3:first-of-type, div > .twentytwenty-before-label:first-of-type:before, div > .twentytwenty-after-label:first-of-type:before, section > h4:first-of-type, div > h4:first-of-type {
   margin-top: 0;
 }
+section > h1 + p, .home-contact div section > h3 + p, .home-contact div section > .twentytwenty-before-label:before + p, .home-contact div section > .twentytwenty-after-label:before + p, div > h1 + p, .home-contact div > h3 + p, .home-contact div > .twentytwenty-before-label:before + p, .home-contact div > .twentytwenty-after-label:before + p, section > h2 + p, section > .outbound-link + p, .post-type-archive-work .work-item section > h1 + p, .post-type-archive-work .work-item .home-contact div section > h3 + p, .home-contact div .post-type-archive-work .work-item section > h3 + p, .post-type-archive-work .work-item .home-contact div section > .twentytwenty-before-label:before + p, .home-contact div .post-type-archive-work .work-item section > .twentytwenty-before-label:before + p, .post-type-archive-work .work-item .home-contact div section > .twentytwenty-after-label:before + p, .home-contact div .post-type-archive-work .work-item section > .twentytwenty-after-label:before + p, div > h2 + p, div > .outbound-link + p, .post-type-archive-work .work-item div > h1 + p, .post-type-archive-work .work-item .home-contact div > h3 + p, .home-contact div .post-type-archive-work .work-item div > h3 + p, .post-type-archive-work .work-item .home-contact div > .twentytwenty-before-label:before + p, .home-contact div .post-type-archive-work .work-item div > .twentytwenty-before-label:before + p, .post-type-archive-work .work-item .home-contact div > .twentytwenty-after-label:before + p, .home-contact div .post-type-archive-work .work-item div > .twentytwenty-after-label:before + p, section > h3 + p, section > .twentytwenty-before-label:before + p, section > .twentytwenty-after-label:before + p, div > h3 + p, div > .twentytwenty-before-label:before + p, div > .twentytwenty-after-label:before + p, section > h4 + p, div > h4 + p {
+  margin-top: 0;
+}
 h1 a, .home-contact div h3 a, .home-contact div .twentytwenty-before-label:before a, .home-contact div .twentytwenty-after-label:before a, h2 a, .outbound-link a, .post-type-archive-work .work-item h1 a, .post-type-archive-work .work-item .home-contact div h3 a, .home-contact div .post-type-archive-work .work-item h3 a, .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before a, .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before a, .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before a, .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before a, h3 a, .twentytwenty-before-label:before a, .twentytwenty-after-label:before a, h4 a {
   color: inherit;
 }
@@ -1438,6 +1441,9 @@ button.menu-toggle:before {
   border: 0;
 }
 
+.contact .entry-header {
+  display: none;
+}
 .contact .site-main {
   display: -webkit-box;
   display: -moz-box;
@@ -1446,31 +1452,87 @@ button.menu-toggle:before {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  height: 100%;
+  min-height: 100vh;
 }
-.contact .entry-header {
-  display: none;
+.contact section {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  padding: 6%;
 }
-.contact .contact-content {
-  display: table-cell;
-  width: 41.66667%;
-  padding: 2.35765%;
+.contact ul a {
+  border: 0;
 }
-.contact .contact-form {
-  display: table-cell;
-  width: 58.33333%;
-  margin-right: 0;
-  padding: 2.35765%;
-  padding-left: 6.472em;
-  padding-right: 6.472em;
+
+.contact-form {
   background: #fcfcfc;
   background: url("../img/min/contactbg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-.contact .contact-form h2, .contact .contact-form .outbound-link, .contact .contact-form .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .contact .contact-form h1, .contact .contact-form .post-type-archive-work .work-item .home-contact div h3, .post-type-archive-work .work-item .home-contact div .contact .contact-form h3, .contact .contact-form .home-contact div .post-type-archive-work .work-item h3, .home-contact div .post-type-archive-work .work-item .contact .contact-form h3, .contact .contact-form .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .contact .contact-form .twentytwenty-before-label:before, .contact .contact-form .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .contact .contact-form .twentytwenty-before-label:before, .contact .contact-form .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact div .contact .contact-form .twentytwenty-after-label:before, .contact .contact-form .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .contact .contact-form .twentytwenty-after-label:before {
-  margin-top: 0;
-  text-align: center;
+.contact-form h2, .contact-form .outbound-link, .contact-form .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .contact-form h1, .contact-form .post-type-archive-work .work-item .home-contact div h3, .post-type-archive-work .work-item .home-contact div .contact-form h3, .contact-form .home-contact div .post-type-archive-work .work-item h3, .home-contact div .post-type-archive-work .work-item .contact-form h3, .contact-form .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .contact-form .twentytwenty-before-label:before, .contact-form .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .contact-form .twentytwenty-before-label:before, .contact-form .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact div .contact-form .twentytwenty-after-label:before, .contact-form .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .contact-form .twentytwenty-after-label:before {
   color: #ffffff;
+  margin-top: 6% !important;
+  text-align: center;
 }
 
 .gform_body::after {
@@ -1479,39 +1541,23 @@ button.menu-toggle:before {
   display: table;
 }
 .gform_body .gfield {
-  display: table-cell;
-  width: 50%;
-  /*label {
-  	font-size: 1.6rem;
-  	padding-bottom: 5px;
-  	color: $white;
-  	letter-spacing: 0.3px;
-  	margin: 1rem 0 0.5rem;
-  	display: block;
-  	text-transform: lowercase;
-  	}*/
+  width: 48.5%;
+  float: left;
+  position: relative;
+  margin: 2rem 0;
+}
+.gform_body .gfield label {
+  display: none;
 }
 .gform_body .gfield input, .gform_body .gfield textarea, .gform_body .gfield select {
   width: 100%;
-  /*border: 2px solid $white;
-  background: transparent;
-  border-radius: 0 !important;
-  font-size: 1.4rem;
-  padding: 5px 10px;
-  line-height: 1.1;
-  color: $white;
-  &:focus{
-  	background: $white;
-  	outline: none;
-  	border-color: $color5;
-  	color: $color5;
-  	} */
 }
 .gform_body .gfield textarea {
   height: 10rem;
 }
 .gform_body .gfield:nth-of-type(2n) {
   margin-right: 0;
+  margin-left: 3%;
 }
 
 .gform_footer {
@@ -1522,18 +1568,6 @@ button.menu-toggle:before {
   margin: 0 auto;
   font-size: 1.8rem;
   font-weight: bold;
-}
-
-.contact .site-footer .footer-container p.contact-button {
-  display: none;
-}
-
-.gfield {
-  position: relative;
-  margin: 2rem 0;
-}
-.gfield label {
-  display: none;
 }
 
 input, textarea, select {
@@ -1578,7 +1612,6 @@ textarea {
 textarea + .gfield_description {
   padding: 15px 10px;
 }
-
 input:focus + .gfield_description, textarea:focus + .gfield_description, .filled + .gfield_description, .filled + .gfield_description {
   color: #f9f9f9;
   bottom: 100%;
@@ -1596,18 +1629,6 @@ input:focus + .gfield_description, textarea:focus + .gfield_description, .filled
 }
 .filled:not(:focus) + .gfield_description {
   color: white;
-}
-
-select {
-  height: 4rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  color: #ffffff;
-  opacity: 0.8;
 }
 
 .accordion {
