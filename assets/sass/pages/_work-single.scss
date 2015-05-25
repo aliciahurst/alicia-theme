@@ -1,24 +1,16 @@
 .single-work {
-	section {
-		margin-bottom: 20px;
-		&:last-of-type {
-			margin-bottom: 0;
-		}
-		@include clearfix;
-		p {
-			color: lighten($black,50);
-		}
-	}
-}
-.work-intro {
-	aside {
-		p:first-of-type {
-			font-size: 1.6rem;
-			line-height: 1.4;
-		}
+	@include clearfix;
+	p {
+		color: lighten($black,50);
 	}
 }
 
+.aside {
+	position: relative;
+}
+.portfolio-nav {
+
+}
 .outbound-link {
 	border-top: 1px solid;
 	border-bottom: 1px solid;
@@ -72,7 +64,7 @@
 		}
 	}
 }
-.display_images {
+/*.display_images {
 	vertical-align: top;
 	@include clearfix;
 	> div {
@@ -99,62 +91,97 @@
 			margin-bottom: -3px;
 		}
 	}
+	*/
 
-.layout-text {
-	text-align: center;
-	.wrapper {
-		@include span-columns(6);
-		@include pad();
-		display: inline-block;
-		margin: 0 auto;
-		float: none;
-	}
-}
-.layout-lone-image {
-	.wrapper {
-		max-width: 1088px;
-		margin: 0 auto;
-		padding: 0;
-	}
-}
 
-.layout-two {
-	overflow: hidden;
-	width: 100%;
-	clear: both;
-	img {
-		float: left;
-		width: 50%;
-		&:first-of-type {
-			padding-right: 10px;
+	.display_images {
+		@include display(flex);
+		@include flex-direction(row);
+		@include justify-content(center);
+		@include align-items(stretch);
+		height: 100%;
+		min-height: 100vh;
+		> div {
+			@include flex(1);
+			@include display(flex);
+			@include flex-direction(column);
+			@include justify-content(center);
+			padding: 6%;
 		}
-		&:last-of-type {
-			padding-left: 10px;
+		.work-image {
+			background-repeat: no-repeat !important;
+			background-size: cover !important;
+			background-position: center !important;
 		}
 	}
-	&:after {
-		@include clearfix;
-	}
-}
-.portfolio-nav {
-	text-align: center;
-	padding: 2rem 0 4rem;
-	[class^="icon-"], [class*=" icon-"] {
-		height: 40px;
-		border: 1px solid;
-		border-radius: 50%;
-		margin: 5px;
-		padding: 8px;
-		width: auto;
-		display: inline-block; 
-		fill: currentColor; 
-	}
-}
 
-.display_before {
-	background: $graysuper;
+	.layout-text {
+		text-align: center;
+		.wrapper {
+			@include span-columns(6);
+			@include pad();
+			display: inline-block;
+			margin: 0 auto;
+			float: none;
+		}
+	}
+	.layout-lone-image {
+		.wrapper {
+			max-width: 1088px;
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+
+	.layout-two {
+		overflow: hidden;
+		width: 100%;
+		clear: both;
+		img {
+			float: left;
+			width: 50%;
+			&:first-of-type {
+				padding-right: 10px;
+			}
+			&:last-of-type {
+				padding-left: 10px;
+			}
+		}
+		&:after {
+			@include clearfix;
+		}
+	}
+	.portfolio-nav {
+		text-align: center;
+		padding: 2rem 0 4rem;
+		[class^="icon-"], [class*=" icon-"] {
+			height: 40px;
+			border: 1px solid;
+			border-radius: 50%;
+			margin: 5px;
+			padding: 8px;
+			width: auto;
+			display: inline-block; 
+			fill: currentColor; 
+		}
+	}
+
+	.display_before {
+		background: $graysuper;
+		div {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+	}
+
+.work-navigation {
+	@extend .home-work;
 	div {
-		max-width: 1000px;
-		margin: 0 auto;
+		&:last-of-type {
+			@include clearfix;
+		}
+	}
+	p {
+		@include clearfix;
 	}
 }

@@ -55,12 +55,12 @@
   <?php endwhile; ?>
 </div>
 
-<?php endif; ?>
-<?php if( get_field('block_caption') ): ?>
- <aside>
-  <?php the_sub_field( 'block_caption' ); ?>
-</aside>
-<?php endif; ?>
+  <?php endif; ?>
+  <?php if( get_field('block_caption') ): ?>
+     <div class="aside">
+      <?php the_sub_field( 'block_caption' ); ?>
+    </div>
+  <?php endif; ?>
 
 </section>
 <?php endif; ?>

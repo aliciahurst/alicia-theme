@@ -625,26 +625,6 @@ html, body {
   height: 100%;
 }
 
-/*
-body:before, body:after {
-	content: "";
-	position: fixed;
-	background: $white;
-	left: 0;
-	right: 0;
-	height: 20px;
-}
-body:before {
-	top: 0;
-}
-body:after {
-	bottom: 0;
-}
-body {
-	border-left: 20px solid $white;
-	border-right: 20px solid $white;  
-}
-*/
 [class^="icon-"], [class*=" icon-"] {
   height: 3rem;
   width: auto;
@@ -856,15 +836,15 @@ button.menu-toggle:before {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-pack: distribute;
-  -moz-box-pack: distribute;
-  box-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -ms-justify-content: space-around;
-  -o-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-pack: distribute;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
   padding: 6%;
   color: #ffffff;
 }
@@ -1194,33 +1174,33 @@ button.menu-toggle:before {
   height: 100%;
 }
 
-.home-work {
+.home-work, .work-navigation {
   padding: 6% 12%;
 }
-.home-work h2, .home-work .outbound-link, .home-work .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-work h1, .home-work .post-type-archive-work .work-item .home-contact div h3, .post-type-archive-work .work-item .home-contact div .home-work h3, .home-work .home-contact div .post-type-archive-work .work-item h3, .home-contact div .post-type-archive-work .work-item .home-work h3, .home-work .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .home-work .twentytwenty-before-label:before, .home-work .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .home-work .twentytwenty-before-label:before, .home-work .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact div .home-work .twentytwenty-after-label:before, .home-work .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .home-work .twentytwenty-after-label:before {
+.home-work h2, .work-navigation h2, .home-work .outbound-link, .work-navigation .outbound-link, .home-work .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .home-work h1, .work-navigation .post-type-archive-work .work-item h1, .post-type-archive-work .work-item .work-navigation h1, .home-work .post-type-archive-work .work-item .home-contact div h3, .post-type-archive-work .work-item .home-contact div .home-work h3, .work-navigation .post-type-archive-work .work-item .home-contact div h3, .post-type-archive-work .work-item .home-contact div .work-navigation h3, .home-work .home-contact div .post-type-archive-work .work-item h3, .home-contact div .post-type-archive-work .work-item .home-work h3, .work-navigation .home-contact div .post-type-archive-work .work-item h3, .home-contact div .post-type-archive-work .work-item .work-navigation h3, .home-work .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .home-work .twentytwenty-before-label:before, .work-navigation .post-type-archive-work .work-item .home-contact div .twentytwenty-before-label:before, .post-type-archive-work .work-item .home-contact div .work-navigation .twentytwenty-before-label:before, .home-work .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .home-work .twentytwenty-before-label:before, .work-navigation .home-contact div .post-type-archive-work .work-item .twentytwenty-before-label:before, .home-contact div .post-type-archive-work .work-item .work-navigation .twentytwenty-before-label:before, .home-work .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact div .home-work .twentytwenty-after-label:before, .work-navigation .post-type-archive-work .work-item .home-contact div .twentytwenty-after-label:before, .post-type-archive-work .work-item .home-contact div .work-navigation .twentytwenty-after-label:before, .home-work .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .home-work .twentytwenty-after-label:before, .work-navigation .home-contact div .post-type-archive-work .work-item .twentytwenty-after-label:before, .home-contact div .post-type-archive-work .work-item .work-navigation .twentytwenty-after-label:before {
   text-align: center;
   margin-bottom: 6%;
 }
-.home-work div {
+.home-work div, .work-navigation div {
   float: left;
   display: inline-block;
   width: 50%;
   margin: 0;
   text-align: left;
 }
-.home-work div:nth-of-type(2) {
+.home-work div:nth-of-type(2), .work-navigation div:nth-of-type(2) {
   float: none;
 }
-.home-work div:nth-of-type(2)::after {
+.home-work div:nth-of-type(2)::after, .work-navigation div:nth-of-type(2)::after {
   clear: both;
   content: "";
   display: table;
 }
-.home-work div a {
+.home-work div a, .work-navigation div a {
   display: block;
   border: 0;
 }
-.home-work p {
+.home-work p, .work-navigation p {
   text-align: center;
   margin-top: 6%;
 }
@@ -1233,24 +1213,17 @@ button.menu-toggle:before {
   display: none;
 }
 
-.single-work section {
-  margin-bottom: 20px;
-}
-.single-work section:last-of-type {
-  margin-bottom: 0;
-}
-.single-work section::after {
+.single-work::after {
   clear: both;
   content: "";
   display: table;
 }
-.single-work section p {
+.single-work p {
   color: gray;
 }
 
-.work-intro aside p:first-of-type {
-  font-size: 1.6rem;
-  line-height: 1.4;
+.aside {
+  position: relative;
 }
 
 .outbound-link {
@@ -1320,34 +1293,113 @@ button.menu-toggle:before {
   width: auto;
 }
 
+/*.display_images {
+	vertical-align: top;
+	@include clearfix;
+	> div {
+		@include span-columns(8);
+			//@include pad;
+		}
+		aside {
+			@include span-columns(4);
+			@include pad;
+			padding-top: 0;
+			padding-bottom: 0;
+			vertical-align: top;
+			li {
+				font-family: $serif;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-size: 1.6rem;
+				&:before {
+
+				}
+			}
+		}
+		img {
+			margin-bottom: -3px;
+		}
+	}
+	*/
 .display_images {
-  vertical-align: top;
-}
-.display_images::after {
-  clear: both;
-  content: "";
-  display: table;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  height: 100%;
+  min-height: 100vh;
 }
 .display_images > div {
-  display: table-cell;
-  width: 66.66667%;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  padding: 6%;
 }
-.display_images aside {
-  display: table-cell;
-  width: 33.33333%;
-  padding: 2.35765%;
-  padding-top: 0;
-  padding-bottom: 0;
-  vertical-align: top;
-}
-.display_images aside li {
-  font-family: "refrigerator-deluxe", helvetica, serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1.6rem;
-}
-.display_images img {
-  margin-bottom: -3px;
+.display_images .work-image {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .layout-text {
@@ -1410,6 +1462,17 @@ button.menu-toggle:before {
 .display_before div {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.work-navigation div:last-of-type::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.work-navigation p::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .post-type-archive-work .site-main {

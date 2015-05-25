@@ -14,7 +14,7 @@
 	background: $four;
 	.footer-container {
 		@include outer-container;
-		@include justify-content(space-around);
+		@include justify-content(center);
 		div, nav {
 			width: 25%;
 			text-align: center;

@@ -35,6 +35,9 @@
 		font-size: 25px;
 		a {
 			text-decoration: none;
+			.single-work & {
+				//color: $white;
+			}
 			span:nth-of-type(1) {
 		  		//color: $four;
 		  	}
