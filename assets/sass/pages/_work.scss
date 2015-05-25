@@ -3,9 +3,14 @@
 		@include display(flex);
 		@include flex-wrap(wrap);
 		@include align-content(flex-start);
+		padding: 6% 0;
 	}
 	.work-item {
 		width: 25%;
+		a {
+			display: block;
+			border: 0;
+		}
 		h1 {
 			@extend h2;
 		}

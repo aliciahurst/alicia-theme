@@ -1428,9 +1428,14 @@ button.menu-toggle:before {
   -moz-align-content: flex-start;
   align-content: flex-start;
   -ms-flex-line-pack: start;
+  padding: 6% 0;
 }
 .post-type-archive-work .work-item {
   width: 25%;
+}
+.post-type-archive-work .work-item a {
+  display: block;
+  border: 0;
 }
 
 .contact .site-main {
