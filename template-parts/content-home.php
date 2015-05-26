@@ -18,8 +18,10 @@
 			$author = get_sub_field('single_author' );
 			?>
 			<li>
-				<h2><?php echo $quote; ?></h2>
+			<h3>&times;</h3>
+			<h2><?php echo $quote; ?></h2> 
 				<h4><?php echo $author; ?></h4>
+				<h3>&times;</h3>
 			</li>
 		<?php endwhile; ?>
 	</ul>
