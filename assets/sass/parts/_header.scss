@@ -53,7 +53,10 @@
 			text-align: right;
 			li {
 				display: inline-block;
-				padding: 0 2rem;
+				padding: 1rem 2rem;
+				.postid-550 & {
+					background: rgba($black,0.15);
+				}
 				a {
 					color: $four;
 					letter-spacing: 0.5px;

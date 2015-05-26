@@ -1,7 +1,14 @@
 <script>
   $(function() {
-    $(".rslides").responsiveSlides();
-  });
+  $("#home-slider").responsiveSlides();
+   $("#slider").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        namespace: "transparent-btns"
+      });
+ });  
   $(function() {
     $('.stickem-container').stickem({ offset: 0 });
 	var sticky = $('.container').stickem();

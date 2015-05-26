@@ -743,7 +743,10 @@ img {
 }
 .main-navigation ul li {
   display: inline-block;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
+}
+.postid-550 .main-navigation ul li {
+  background: rgba(0, 0, 0, 0.15);
 }
 .main-navigation ul li a {
   color: #414141;
@@ -1500,6 +1503,11 @@ button.menu-toggle:before {
   transform: translateY(-50%);
 }
 
+[class^="nav-"], [class*=" nav-"] a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
 [class^="nav-"]:hover, [class*=" nav-"] a:hover {
   pointer: cursor;
 }
@@ -1517,14 +1525,28 @@ button.menu-toggle:before {
   margin: 0 auto;
 }
 
-.backgrounder:nth-of-type(3n + 1) {
-  background: #f7f7f7;
-}
-.backgrounder:nth-of-type(3n + 2) {
+.display_before:nth-of-type(2n + 1) {
   background: #d1d1d1;
+  background-image: url("../img/min/watercolorbg1.png");
+  background-size: cover;
+  background-position: center;
 }
-.backgrounder:nth-of-type(3n) {
-  background: #dedede;
+.display_before:nth-of-type(2n) {
+  background-color: #ededed;
+}
+
+.display_slider {
+  padding: 6% 6% 0;
+}
+.display_slider::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.display_slider .rslides_container {
+  width: 75%;
+  margin: 0 auto;
+  float: none;
 }
 
 .work-navigation div:last-of-type::after {
@@ -1555,7 +1577,7 @@ button.menu-toggle:before {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(247, 247, 247, 0.5);
+  background: rgba(65, 65, 65, 0.3);
   margin: 0;
 }
 .work-navigation h3 span, .work-navigation .outbound-link span, .work-navigation .twentytwenty-before-label:before span, .work-navigation .twentytwenty-after-label:before span {
@@ -1942,6 +1964,143 @@ input:focus + .gfield_description, textarea:focus + .gfield_description, .filled
   float: left;
   width: 100%;
   border: 0;
+}
+
+.rslides {
+  margin: 0 auto;
+}
+
+.rslides_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.home .rslides_container {
+  margin-bottom: 0;
+}
+
+.centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("themes.gif") no-repeat left top;
+  margin-top: -45px;
+}
+
+.centered-btns_nav:active {
+  opacity: 1.0;
+}
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+
+.transparent-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  top: 0;
+  left: 0;
+  display: block;
+  background: #fff;
+  /* Fix for IE6-9 */
+  opacity: 0;
+  filter: alpha(opacity=1);
+  width: 48%;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 91%;
+}
+
+.transparent-btns_nav.next {
+  left: auto;
+  right: 0;
+}
+
+.large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("themes.gif") no-repeat left 50%;
+  width: 38px;
+}
+
+.large-btns_nav:active {
+  opacity: 1.0;
+}
+
+.large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+}
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none;
+}
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px;
+}
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+}
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+  background: #222;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .btn {

@@ -31,11 +31,11 @@
     ?>
     <?php if( have_rows('image_urls') ): ?>
 
-     <section class="backgrounder <?php echo $displayType ?>">
+     <section class="<?php echo $displayType ?>">
 
       <?php if ($displayType == 'display_slider') : ?>
         <div class="rslides_container">
-         <ul class="rslides">
+         <ul class="rslides" id="slider">
           <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
            <li><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>"></li>
          <?php endwhile; ?>
@@ -57,7 +57,7 @@
 </div>
 
   <?php endif; ?>
-  <?php if( get_field('block_caption') ): ?>
+  <?php if( get_sub_field('block_caption') ): ?>
      <div class="aside">
       <?php the_sub_field( 'block_caption' ); ?>
     </div>
