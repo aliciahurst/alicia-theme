@@ -1,5 +1,5 @@
-## Credits
-The all-new aliciahurst.com, developed in May 2015 and released in June 2015. 
+# Credits
+The all-new [aliciahurst.com](http://aliciahurst.com), developed May-June 2015 and released June ??, 2015. 
 
 ### Development 
 * Coded with [Sublime](http://sublimetext.com)
