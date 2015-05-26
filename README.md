@@ -1,7 +1,5 @@
 # Credits
-The all-new aliciahurst.com.
-
-Developed in May 2015 and released in June 2015. 
+The all-new aliciahurst.com, developed in May 2015 and released in June 2015. 
 
 ## Development 
 * Coded with [Sublime](http://sublimetext.com)
@@ -19,7 +17,9 @@ Developed in May 2015 and released in June 2015.
 ## Resources
 * [Flexbox Cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
 
-## Images 
-(by various designers and photographers via)
+## Assets 
+By various designers and photographers via...
 * [Graphic Burger](http://graphicburger.com/mock-ups/)
 * [Pexels](http://pexels.com)
+* [Freight Sans Pro](https://typekit.com/fonts/freight-sans-pro) and [Refrigerator Deluxe](https://typekit.com/fonts/refrigerator-deluxe) on Typekit
+* [Fontastic](http://fontastic.me)
