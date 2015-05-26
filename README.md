@@ -12,6 +12,7 @@ The all-new aliciahurst.com, developed in May 2015 and released in June 2015.
 
 ## Code
 * [ResponsiveSlides.js](https://github.com/viljamis/ResponsiveSlides.js)
+* [Twenty-Twenty](https://github.com/zurb/twentytwenty) 
 * [Slanted buttons](http://codepen.io/draymoore/pen/bNXMWx)
 
 ## Resources
@@ -21,5 +22,5 @@ The all-new aliciahurst.com, developed in May 2015 and released in June 2015.
 By various designers and photographers via...
 * [Graphic Burger](http://graphicburger.com/mock-ups/)
 * [Pexels](http://pexels.com)
-* [Freight Sans Pro](https://typekit.com/fonts/freight-sans-pro) and [Refrigerator Deluxe](https://typekit.com/fonts/refrigerator-deluxe) on Typekit
+* Typkit for [Freight Sans Pro](https://typekit.com/fonts/freight-sans-pro) and [Refrigerator Deluxe](https://typekit.com/fonts/refrigerator-deluxe)
 * [Fontastic](http://fontastic.me)
