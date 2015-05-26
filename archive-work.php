@@ -23,6 +23,11 @@ get_header(); ?>
 		<?php endwhile; ?>
 	<?php else : ?>
 	<?php endif; ?>
+	<div class="work-item">
+		<a href="/contact">
+			<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/your-site-here.jpg">
+		</a>
+	</div>
 </main><!-- #main -->
 
 <?php get_footer(); ?>

@@ -12,7 +12,7 @@ The all-new aliciahurst.com, developed in May 2015 and released in June 2015.
 
 ## Code
 * [ResponsiveSlides.js](https://github.com/viljamis/ResponsiveSlides.js)
-* [Twenty-Twenty](https://github.com/zurb/twentytwenty) 
+* [Twentytwenty](https://github.com/zurb/twentytwenty) 
 * [Slanted buttons](http://codepen.io/draymoore/pen/bNXMWx)
 
 ## Resources
