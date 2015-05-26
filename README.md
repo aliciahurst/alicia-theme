@@ -1,12 +1,12 @@
 # Credits
 The all-new aliciahurst.com.
 
-Developed and released in May 2015. 
-
-Coded with [Sublime](http://sublimetext.com) and powered by [WordPress](http://wordpress.org).
-
+Developed in May 2015 and released in June 2015. 
 
 ## Development 
+* Coded with [Sublime](http://sublimetext.com)
+* Powered by [WordPress](http://wordpress.org)
+* [Advanced Custom Fields](http://advancedcustomfields.com)
 * [Underscores](http://underscores.me)
 * [Bourbon](http://bourbon.io) and [Neat](http://neat.bourbon.io)
 * [Grunt](http://gruntjs.com)
@@ -14,6 +14,12 @@ Coded with [Sublime](http://sublimetext.com) and powered by [WordPress](http://w
 
 ## Code
 * [ResponsiveSlides.js](https://github.com/viljamis/ResponsiveSlides.js)
-* [Stickem.js](https://github.com/davist11/jQuery-Stickem)
-* [Responsive Accordion by Michael Ferry](http://codepen.io/ferry/pen/ZYVwxz)
 * [Slanted buttons](http://codepen.io/draymoore/pen/bNXMWx)
+
+## Resources
+* [Flexbox Cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
+
+## Images 
+(by various designers and photographers via)
+* [Graphic Burger](http://graphicburger.com/mock-ups/)
+* [Pexels](http://pexels.com)
