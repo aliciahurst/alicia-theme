@@ -1,7 +1,9 @@
 .home .entry-header {
 	display: none;
 }
-
+#about {
+	outline: none;
+}
 .home-top {
 	@include display(flex);
 	@include flex-direction(row);
@@ -113,7 +115,7 @@
 }
 
 .home-about {
-	background: #F7F7F7;
+	background: $f7;
 	height: 100%;
 	min-height: 100vh;
 	@include fill-parent();

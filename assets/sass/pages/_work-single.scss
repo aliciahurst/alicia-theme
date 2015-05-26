@@ -7,15 +7,13 @@
 
 .aside {
 	position: relative;
+	.work-intro & {
+		background: $f7;
+	}
 }
-.portfolio-nav {
 
-}
 .outbound-link {
-	border-top: 1px solid;
-	border-bottom: 1px solid;
-	padding: 8px 0;
-	@extend h2;
+	@extend h3;
 	text-align: center;
 	span {
 		vertical-align: middle;
@@ -32,17 +30,18 @@
 .down-arrow {
 	@include display(flex);
 	@include align-items(center);
-	margin-bottom: 0 !important;
-	@include pad();
+	margin: 6% 0;
+	padding: 0 !important;
 	svg {
 		margin: 0 auto;
 		height: 50px;
 		width: auto;
+		color: $gray1;
 	}
 }
 
 .contribution {
-	@include pad();
+	padding: 6%;
 	h3 {
 		text-align: center;
 	}
@@ -50,129 +49,149 @@
 		text-align: center;
 		max-width: 1200px;
 		margin: 0 auto;
+		@include clearfix;
+		text-align: center;
+		@include display(flex);
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+		width: 100%;
 	}
 	li {
-		@include span-columns(3);
-		@include pad();
+		width: 30%;
+		text-align: center;
+		margin: 2% 0;
 		float: none;
 		display: inline-block;
 		text-transform: capitalize;
-		margin-right: 0;
 		svg {
 			height: 40px;
 			width: auto;
 		}
 	}
 }
-/*.display_images {
-	vertical-align: top;
-	@include clearfix;
-	> div {
-		@include span-columns(8);
-			//@include pad;
-		}
-		aside {
-			@include span-columns(4);
-			@include pad;
-			padding-top: 0;
-			padding-bottom: 0;
-			vertical-align: top;
-			li {
-				font-family: $serif;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-				font-size: 1.6rem;
-				&:before {
 
-				}
-			}
-		}
-		img {
-			margin-bottom: -3px;
+.layout-text {
+	text-align: center;
+	div {
+		width: 50%;
+		display: inline-block;
+		margin: 0 auto;
+		float: none;
+		padding: 6%;
+	}
+}
+
+.layout-lone-image {
+	.wrapper {
+		max-width: 1088px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+.display_images {
+	@extend %fifty-fifty;
+}
+
+.layout-two {
+	@extend %fifty-fifty;
+	min-height: 90vh;
+}
+
+.portfolio-nav {
+	text-align: center;
+	margin: 6% 0;
+	li {
+		margin: 5px;
+		display: inline-block; 
+		position: relative;
+	}
+	a {
+		border: 0;
+		display: block;
+	}
+	[class^="icon-"], [class*=" icon-"] {
+		height: 30px;
+		width: auto;
+		fill: currentColor; 
+		opacity: 0.5;
+	}
+}
+
+.nav-1 a {
+	&:hover {
+		&:after {
+			content: "Previous Project";
+			position: absolute;
+			left: -190px;
+			top: 50%;
+			display: block;
+			width: 200px;
+			@include transform(translateY(-50%));
 		}
 	}
-	*/
+}
 
-
-	.display_images {
-		@include display(flex);
-		@include flex-direction(row);
-		@include justify-content(center);
-		@include align-items(stretch);
-		height: 100%;
-		min-height: 100vh;
-		> div {
-			@include flex(1);
-			@include display(flex);
-			@include flex-direction(column);
-			@include justify-content(center);
-			padding: 6%;
-		}
-		.work-image {
-			background-repeat: no-repeat !important;
-			background-size: cover !important;
-			background-position: center !important;
+.nav-2 a {
+	&:hover {
+		&:after {
+			content: "All Work";
+			position: absolute;
+			left: 50%;
+			@include transform(translateX(-50%));
+			top: -3.5rem;
+			display: block;
+			width: 200px;
 		}
 	}
+}
 
-	.layout-text {
-		text-align: center;
-		.wrapper {
-			@include span-columns(6);
-			@include pad();
-			display: inline-block;
-			margin: 0 auto;
-			float: none;
+.nav-3 a {
+	&:hover {
+		&:after {
+			content: "Next Project";
+			position: absolute;
+			right: -175px;
+			top: 50%;
+			display: block;
+			width: 200px;
+			@include transform(translateY(-50%));
 		}
 	}
-	.layout-lone-image {
-		.wrapper {
-			max-width: 1088px;
-			margin: 0 auto;
-			padding: 0;
-		}
-	}
+}
 
-	.layout-two {
-		overflow: hidden;
-		width: 100%;
-		clear: both;
-		img {
-			float: left;
-			width: 50%;
-			&:first-of-type {
-				padding-right: 10px;
-			}
-			&:last-of-type {
-				padding-left: 10px;
-			}
+[class^="nav-"], [class*=" nav-"] a {
+	&:hover {
+		pointer: cursor;
+		svg {
+			opacity: 1;
 		}
 		&:after {
-			@include clearfix;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 1.4rem;
 		}
 	}
-	.portfolio-nav {
-		text-align: center;
-		padding: 2rem 0 4rem;
-		[class^="icon-"], [class*=" icon-"] {
-			height: 40px;
-			border: 1px solid;
-			border-radius: 50%;
-			margin: 5px;
-			padding: 8px;
-			width: auto;
-			display: inline-block; 
-			fill: currentColor; 
-		}
-	}
+}
 
-	.display_before {
-		background: $graysuper;
-		div {
-			max-width: 1000px;
-			margin: 0 auto;
-		}
+.display_before {
+	div {
+		max-width: 1000px;
+		margin: 0 auto;
 	}
+}
+
+.backgrounder {
+	&:nth-of-type(3n + 1) {
+		background: $f7;
+	}
+	&:nth-of-type(3n + 2) {
+		background: darken($f7,15);
+	}
+	&:nth-of-type(3n) {
+		background: darken($f7,10);
+	}
+}
 
 .work-navigation {
 	@extend .home-work;
@@ -180,8 +199,54 @@
 		&:last-of-type {
 			@include clearfix;
 		}
+		&:last-of-type h3 {
+			&:hover {
+				span:after {
+					content: "\2192";
+				}
+			}
+		}
+		&:first-of-type h3 {
+			&:hover {
+				span:after {
+					content: "\2190";
+				}
+			}
+		}
 	}
 	p {
 		@include clearfix;
+	}
+	a {
+		position: relative;
+		img {
+			margin-bottom: -3px;
+		}
+	}
+	h3 {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: rgba($f7, 0.5);
+		margin: 0;
+		span {
+			position: absolute;
+			color: $white;
+			top: 50%;
+			width: 100%;
+			display: block;
+			text-align: center;
+			@include transform(translateY(-50%));
+				&:after {
+				content: "\2015";
+				text-align: center;
+				display: block;
+			}
+		}
+		&:hover {
+			background: rgba($four, 0.5);
+		}
 	}
 }

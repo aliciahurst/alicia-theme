@@ -3,7 +3,7 @@
   	<?php if( get_row_layout() == 'text_only' ): ?>
 
   		<section class="layout-text">
-        <div class="wrapper">
+        <div>
           <?php the_sub_field('paragraph_text'); ?>
         </div>
       </section>
@@ -20,7 +20,8 @@
 
       <section class="layout-two">
         <?php while( have_rows('two_images') ): the_row(); $imageurl = get_sub_field('two_image_single'); ?>
-         <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>">
+          <div style="background-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>')"></div>
+        <!-- <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>"> -->
        <?php endwhile; ?>
      </section>
 
@@ -29,8 +30,8 @@
     $displayType = get_sub_field('display_type'); 
     ?>
     <?php if( have_rows('image_urls') ): ?>
-     
-     <section class="layout-images <?php echo $displayType ?>">
+
+     <section class="backgrounder <?php echo $displayType ?>">
 
       <?php if ($displayType == 'display_slider') : ?>
         <div class="rslides_container">
