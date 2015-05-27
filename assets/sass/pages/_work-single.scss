@@ -41,7 +41,7 @@
 }
 
 .contribution {
-	padding: 6%;
+	padding: 6% 6% 0;
 	h3 {
 		text-align: center;
 	}
@@ -70,6 +70,7 @@
 	}
 }
 
+
 .layout-text {
 	text-align: center;
 	div {
@@ -81,7 +82,14 @@
 	}
 }
 
+.contribution {
+	 + .display_slider, + .layout-two, + .display_before {
+		margin-top: 6%;
+	}
+}
 .layout-lone-image {
+	padding: 6%;
+	max-height: 100vh;
 	.wrapper {
 		max-width: 1088px;
 		margin: 0 auto;
@@ -89,13 +97,18 @@
 	}
 }
 
-.display_images {
+.top_image {
 	@extend %fifty-fifty;
 }
 
 .layout-two {
 	@extend %fifty-fifty;
 	min-height: 90vh;
+}
+
+.layout-text ~ .display_slider {
+	padding-top: 0;
+	padding-bottom: 6%;
 }
 
 .portfolio-nav {
@@ -174,6 +187,21 @@
 			letter-spacing: 1px;
 			font-size: 1.4rem;
 		}
+	}
+}
+
+.display_images {
+	@extend %fifty-fifty;
+	//min-height: 90vh;
+	.aside {
+		@include justify-content(center);
+		padding: 6% 6%;
+		h3, p {
+			padding: 0 6%;
+		}
+	}
+	&:nth-of-type(2n-1) {
+		@include flex-direction(row-reverse);
 	}
 }
 

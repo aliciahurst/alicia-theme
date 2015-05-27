@@ -19,7 +19,7 @@
 			$lastID = end($pages);
 			?>
 
-<section class="work-intro backgrounder display_images">
+<section class="work-intro top_image">
 	<div class="aside">
 
 		<nav class="portfolio-nav">

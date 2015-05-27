@@ -50,11 +50,10 @@
    </div>
 
  <?php else : //if it's display_images ?>
-  <div class="work-images">
-   <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
-    <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>">
-  <?php endwhile; ?>
+  <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
+  <div class="work-images" style="background-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>')">
 </div>
+<?php endwhile; ?>
 
   <?php endif; ?>
   <?php if( get_sub_field('block_caption') ): ?>

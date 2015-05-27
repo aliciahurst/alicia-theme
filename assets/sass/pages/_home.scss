@@ -38,8 +38,8 @@
 					text-align: center;
 					min-height: 550px;
 					@include display(flex);
-				@include flex-direction(column);
-				@include justify-content(space-between);
+					@include flex-direction(column);
+					@include justify-content(space-between);
 					h2 {
 						font-size: 5rem;
 						letter-spacing: 5px;
@@ -204,10 +204,11 @@
 		
 	}
 
-	.latest-work {
-		position: relative;
+	.home .home-work {
+		h3 {
+			@extend %plus;
+		}
 	}
-
 	.accordion:hover + .work-h2 {
 		display: none;
 	}
