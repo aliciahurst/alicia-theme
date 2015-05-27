@@ -33,3 +33,16 @@ img {
 	height: auto;
 	border: 0;
 }
+
+@media screen and (max-width: 65em) {
+	.site-main {
+		padding-top: 12%;
+	}
+}
+
+
+@media screen and (max-width: 48em) {
+	.site-main {
+		padding-top: 18%;
+	}
+}

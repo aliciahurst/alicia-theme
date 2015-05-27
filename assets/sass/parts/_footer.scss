@@ -13,7 +13,7 @@
 	position: relative;
 	background: $four;
 	.footer-container {
-		@include outer-container;
+		//@include outer-container;
 		@include justify-content(center);
 		div, nav {
 			width: 25%;
@@ -24,6 +24,9 @@
 				color: $white;
 				margin: 0 0 1.8rem 0;
 			}
+			@media all and (max-width:65em) {
+				width: 33%;
+			}
 		}
 		.top {
 			margin-top: 0;
@@ -32,6 +35,16 @@
 		color: $white;
 		a:not(.btn-white){
 			color: $white;
+		}
+		@media all and (max-width:48em) {
+			@include flex-direction(column);
+			div, nav {
+				width: 100%;
+				margin: 6% 0;
+			}
+			.footer-center {
+				@include order(-1);
+			}
 		}
 	}
 }

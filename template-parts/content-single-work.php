@@ -68,7 +68,7 @@
 	<?php if( have_rows('initial_images') ): ?>
 		<?php while( have_rows('initial_images') ): the_row(); 
 		$name = get_sub_field('opening_image'); ?>
-		<div style="background:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>');" class="work-image">
+		<div style="background:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>');" class="work-image img-bg">
 
 			<!-- <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>">-->
 		<?php endwhile; ?>

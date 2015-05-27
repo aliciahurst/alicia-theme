@@ -18,4 +18,16 @@
 			font-size: 3rem;
 		}
 	}
+	@media all and (max-width:65em) {
+		.work-item {
+			width: 50%;
+		}
+
+	}
+	@media all and (max-width:48em) {
+		@include flex-direction(column);
+		.work-item {
+			width: 100%;
+		}
+	}
 }

@@ -20,6 +20,18 @@
 	ul a {
 		border: 0;
 	}
+	@media all and (max-width:65em) {
+		.site-main {
+			@include flex-direction(column);
+			width: 100%;
+			.contact-content {
+
+			}
+		}
+	}
+	@media all and (max-width:48em) {
+
+	}
 }
 
 .contact-form { 
@@ -41,6 +53,7 @@
 		float: left;
 		position: relative;
 		margin: 2rem 0;
+
 		label {
 			display: none;
 		}
@@ -53,6 +66,13 @@
 		&:nth-of-type(2n) {
 			@include omega;
 			margin-left: 3%;
+		}
+		@media all and (max-width:75em) {
+			width: 100%;
+			float: none;
+			&:nth-of-type(2n) {
+				margin-left: 0;
+			}
 		}
 	}
 }
@@ -68,61 +88,89 @@
 	}
 }
 
-input, textarea, select {
-	padding: 0 10px;
-	background: transparent;
-	border: 2px solid transparent;
-	border-bottom: 2px solid;
-	font-size: 1.8rem;
-	line-height: 1.2;
-	overflow: auto;
-	&:focus {
-		outline: none;
-		background: rgba($black, 0.4);
+@media all and (max-width: 75em) {
+	.gform_body {
+		.gfield label {
+			display: block;
+			color: $white;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			font-size: 1.6rem;
+			font-weight: $bold;
+			padding: 1rem 0.25rem 0.5rem;
+		}
+		.gfield_description {
+			display: none;
+		}
+		input, textarea, select {
+			background: rgba($black,0.7);
+			color: $white;
+			box-shadow: none;
+			border: 0;
+			line-height: 1.2;
+			font-size: 1.7rem;
+			padding: 5px 10px;
+			outline: none;
+		}
+	}
+}
+@media all and (min-width:75em) {
+	input, textarea, select {
+		padding: 0 10px;
+		background: transparent;
+		border: 2px solid transparent;
+		border-bottom: 2px solid;
+		font-size: 1.8rem;
+		line-height: 1.2;
+		overflow: auto;
+		&:focus {
+			outline: none;
+			background: rgba($black, 0.4);
+			color: $white;
+			border: 2px solid;
+			border-color: $color5;
+			box-shadow: inset 0 1px 3px rgba($color5,0.5);
+			border-radius: 2px;
+		}
+	}
+
+	textarea {
+		padding: 5px 10px;
+		resize: none;
+	}
+
+	.gfield_description {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		pointer-events: none;
 		color: $white;
-		border: 2px solid;
-		border-color: $color5;
-		box-shadow: inset 0 1px 3px rgba($color5,0.5);
-		border-radius: 2px;
+		padding: 10px;
+		font-size: 1.8rem;
+		line-height: 1.2;
+		letter-spacing: 0.3px;
+		@include transition(all, 0.2s, ease-in-out);
+		textarea + & {
+			padding: 15px 10px;
+		}
+		input:focus + &, textarea:focus + &, .filled + &, .filled + & {
+			color: $color5;
+			bottom: 100%;
+			font-size: 1.6rem;
+			font-weight: $bold;
+			letter-spacing: 0;
+			padding: 5px;
+		}
 	}
-}
 
-textarea {
-	padding: 5px 10px;
-	resize: none;
-}
-
-.gfield_description {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	pointer-events: none;
-	color: $white;
-	padding: 10px;
-	font-size: 1.8rem;
-	line-height: 1.2;
-	letter-spacing: 0.3px;
-	@include transition(all, 0.2s, ease-in-out);
-	textarea + & {
-		padding: 15px 10px;
-	}
-	input:focus + &, textarea:focus + &, .filled + &, .filled + & {
-		color: $color5;
-		bottom: 100%;
-		font-size: 1.6rem;
-		font-weight: $bold;
-		letter-spacing: 0;
-		padding: 5px;
-	}
-}
-
-.filled:not(:focus) {
-	background: rgba($black,0.4);
-	color: lighten($color5,25);
-	border: 1px solid;
-	border-color: lighten($color5,25);
-	+ .gfield_description {
+	.filled:not(:focus) {
+		background: rgba($black,0.4);
 		color: lighten($color5,25);
+		border: 1px solid;
+		border-color: lighten($color5,25);
+		+ .gfield_description {
+			color: lighten($color5,25);
+		}
 	}
 }

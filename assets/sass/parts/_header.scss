@@ -14,6 +14,11 @@
 			color: $four;
 		}
 	}
+	@media all and (max-width:65em) {
+		nav a {
+			color: $four;
+		}
+	}
 }
 
 .header-container, .footer-container {

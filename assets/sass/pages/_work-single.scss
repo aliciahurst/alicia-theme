@@ -38,6 +38,9 @@
 		width: auto;
 		color: $gray1;
 	}
+	@media all and (max-width:65em) {
+		margin-bottom: 0;
+	}
 }
 
 .contribution {
@@ -106,7 +109,7 @@
 	min-height: 90vh;
 }
 
-.layout-text ~ .display_slider {
+.layout-text ~ .display_slider, .layout-text ~ .layout-lone-image {
 	padding-top: 0;
 	padding-bottom: 6%;
 }
@@ -232,6 +235,9 @@
 		width: 75%;
 		margin: 0 auto;
 		float: none;
+		.postid-668 & {
+			width: 800px;
+		}
 	}
 }
 
@@ -290,5 +296,11 @@
 		&:hover {
 			background: rgba($four, 0.5);
 		}
+	}
+}
+
+.postid-668 {
+	.contribution {
+		display: none;
 	}
 }
