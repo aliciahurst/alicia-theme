@@ -14,6 +14,7 @@ The all-new [aliciahurst.com](http://aliciahurst.com), developed May-June 2015 a
 * [ResponsiveSlides.js](https://github.com/viljamis/ResponsiveSlides.js)
 * [Twentytwenty](https://github.com/zurb/twentytwenty) 
 * [Slanted buttons](http://codepen.io/draymoore/pen/bNXMWx)
+* [Smooth scroll](https://css-tricks.com/examples/SmoothPageScroll/)
 
 ### Resources
 * [Flexbox Cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)

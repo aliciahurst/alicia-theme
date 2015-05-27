@@ -1,11 +1,4 @@
 .archive {
-	.site-main {
-		@include display(flex);
-		@include flex-wrap(wrap);
-		@include align-content(flex-start);
-		padding: 6%;
-		margin-top: 6%;
-	}
 	.work-item {
 		width: 33%;
 		margin-bottom: 6%;

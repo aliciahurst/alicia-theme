@@ -4,12 +4,12 @@
 
 // Bourbon and Neat
 @import "vendor/bourbon/bourbon";
-//@import "vendor/neat/neat-helpers";
+@import "vendor/neat/neat-helpers";
 @import "settings/grid";
 @import "vendor/neat/neat";
+@import "vendor/animate-sass/animate";
 
 // Required stuff
-@import "settings/variables";
 @import "settings/colors";
 @import "settings/typography";
 @import "parts/global";
@@ -23,12 +23,9 @@
 @import "pages/home";
 @import "pages/work-single";
 @import "pages/work";
-//@import "pages/blog";
-//@import "pages/about";
 @import "pages/contact";
 
 // Modules
-@import "modules/accordion";
 @import "modules/slider";
 @import "modules/button";
 @import "modules/twentytwenty";

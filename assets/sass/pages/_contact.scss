@@ -9,6 +9,10 @@
 		@include align-items(stretch);
 		height: 100%;
 		min-height: 100vh;
+		@include media($med) {
+			@include flex-direction(column);
+			@include justify-content(flex-start);
+		}
 	}
 	section {
 		@include flex(1);
@@ -16,21 +20,12 @@
 		@include flex-direction(column);
 		@include justify-content(center);
 		padding: 6%;
+		@include media($med) {
+			@include justify-content(flex-start);
+		}
 	}
 	ul a {
 		border: 0;
-	}
-	@media all and (max-width:65em) {
-		.site-main {
-			@include flex-direction(column);
-			width: 100%;
-			.contact-content {
-
-			}
-		}
-	}
-	@media all and (max-width:48em) {
-
 	}
 }
 
@@ -111,9 +106,14 @@
 			font-size: 1.7rem;
 			padding: 5px 10px;
 			outline: none;
+			&:focus {
+				background: $f7;
+				color: $four;
+			}
 		}
 	}
 }
+
 @media all and (min-width:75em) {
 	input, textarea, select {
 		padding: 0 10px;
@@ -133,12 +133,10 @@
 			border-radius: 2px;
 		}
 	}
-
 	textarea {
 		padding: 5px 10px;
 		resize: none;
 	}
-
 	.gfield_description {
 		position: absolute;
 		bottom: 0;
@@ -163,7 +161,6 @@
 			padding: 5px;
 		}
 	}
-
 	.filled:not(:focus) {
 		background: rgba($black,0.4);
 		color: lighten($color5,25);

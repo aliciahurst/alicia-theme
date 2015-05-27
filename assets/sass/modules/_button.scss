@@ -1,5 +1,4 @@
 @mixin btn($color: $dark, $length: auto) {
-	// Stylizing the button
 	display: inline-block;
 	width: $length;
 	padding: 12px 30px;
@@ -22,10 +21,7 @@
 	background-size: 250% 100%;
 	background-position: right center !important;
 	transition: all ease 0.8s;
-	cursor: pointer;
-	// Aligning slanted text back
 	span {
-		//transform: skew(20deg);
 		display: inline-block;
 	}
 	// Enabling 'fill' on hover

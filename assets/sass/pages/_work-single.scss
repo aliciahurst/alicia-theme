@@ -38,7 +38,7 @@
 		width: auto;
 		color: $gray1;
 	}
-	@media all and (max-width:65em) {
+	@include media($med) {
 		margin-bottom: 0;
 	}
 }

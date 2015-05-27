@@ -11,10 +11,6 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	
-	<!--<a href="#top" class="to-top"><span>up</span></a>-->
-
-	
-
 	<div class="footer-container">
 
 		<div class="footer-contact">

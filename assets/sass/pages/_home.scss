@@ -29,10 +29,7 @@
 			* {
 				color: $white;
 			}
-			ul {
-				
-				//border: 4px solid rgba($white,0.5);
-
+			ul {	
 				li {
 					padding: 6%;
 					text-align: center;
@@ -40,6 +37,9 @@
 					@include display(flex);
 					@include flex-direction(column);
 					@include justify-content(space-between);
+					@include media($med) {
+
+					}
 					h2 {
 						font-size: 5rem;
 						letter-spacing: 5px;
@@ -56,7 +56,7 @@
 			}
 		}
 	}
-	@media screen and (max-width:65em) {
+	@include media($med) {
 		@include flex-direction(column);
 		div {
 			width: 100%;
@@ -64,9 +64,14 @@
 	}
 }
 
+#home-slider {
+	@include media($small) {
+		height: 100vh;
+	}
+}
+
 .home-services {
 	padding: 6%;
-	//min-height: 100vh;
 	h2 {
 		text-align: center;
 		margin-top: 0;
@@ -106,7 +111,7 @@
 			margin: 0 6%;
 		}
 	}
-	@media screen and (max-width:65em) {
+	@include media($med) {
 		.services-container {
 			@include flex-direction(column);
 		}
@@ -116,10 +121,13 @@
 			&:nth-of-type(2) {
 				margin: 0 auto 6%;
 			}
+			&:last-of-type {
+				margin-bottom: 0;
+			}
 		}
 
 	}
-	@media screen and (max-width:48em) {
+	@include media($small) {
 		.services-div {
 			width: 85%;
 		}
@@ -145,6 +153,18 @@
 			@extend h1;
 		}
 	}
+	@include media($med) {
+		div {
+			float: none;
+			width: 100%;
+		}
+	}
+	@include media($small) {
+		padding: 0;
+		div {
+			padding: 12%;
+		}
+	}
 	@include clearfix;
 }
 
@@ -156,7 +176,6 @@
 	@include row(table);
 	vertical-align: middle;
 	div {
-		//width: 50%;
 		&.bio-text {
 			h2 {
 				margin-top: 0;
@@ -165,6 +184,9 @@
 			width: 50%;
 			padding: 6%;
 			vertical-align: middle;
+			@include media($small) {
+				width: 100%;
+			}
 		}
 	}
 	.bio-photos {
@@ -172,68 +194,78 @@
 		height: 100%;
 		position: relative;
 		width: 100%;
-		/* &:after {
-			position: absolute;
-			height: 76%;
-			content: "";
-			width: 76%;
-			top: 12%;
-			left: 12%;
-			z-index: 999;
-			border: 4px solid $white;
-			} */
-			.bio-headshot {
-				background: url('../img/min/headshotcolor.jpg');
-				background-size: cover;
-				background-position: center;
-			}
-			.bio-setup {
-				background: url('../img/min/compbw.jpg');
-				background-size: cover;
-				background-position: center;
-			}
-			div {
-				@include display(table-cell);
-				width: 50%;
-				height: 100%;
-			}
+		.bio-headshot {
+			background: url('../img/min/headshotcolor.jpg');
+			background-size: cover;
+			background-position: center;
 		}
-	}
-
-	.home-work {
-		padding: 6% 12%;
-		h2 {
-			text-align: center;
-			margin-bottom: 6%;
+		.bio-setup {
+			background: url('../img/min/compbw.jpg');
+			background-size: cover;
+			background-position: center;
 		}
 		div {
-			float: left;
-			display: inline-block;
+			@include display(table-cell);
 			width: 50%;
-			//padding: 6%;
-			margin: 0;
-			text-align: left;
-			&:nth-of-type(2) {
-				@include clearfix;
-				float: none;
-			}
-			a {
-				display: block;
-				border: 0;
-			}
+			height: 100%;
 		}
-		p {
-			text-align: center;
-			margin-top: 6%;
-		}
-		
 	}
+}
 
-	.home .home-work {
-		h3 {
-			@extend %plus;
+.home-about {
+	@include media($small) {
+		display: block;
+		min-height: auto;
+		.bio-text {
+			padding: 12%;
+		}
+		.bio-photos {
+			display: block;
+			height: 50vh;
+			div {
+				float: left;
+				width: 50%;
+				height: 50vh;
+			}
 		}
 	}
-	.accordion:hover + .work-h2 {
-		display: none;
+}
+.home-work {
+	padding: 6% 12%;
+	h2 {
+		text-align: center;
+		margin-bottom: 6%;
 	}
+	div {
+		float: left;
+		display: inline-block;
+		width: 50%;
+		margin: 0;
+		text-align: left;
+		&:nth-of-type(2) {
+			@include clearfix;
+			float: none;
+		}
+		@include media($small) {
+			float: none;
+			width: 100%;
+		}
+		a {
+			display: block;
+			border: 0;
+		}
+	}
+	p {
+		text-align: center;
+		margin-top: 6%;
+	}
+}
+
+.home .home-work {
+	h3 {
+		@extend %plus;
+	}
+}
+.accordion:hover + .work-h2 {
+	display: none;
+}

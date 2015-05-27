@@ -4,12 +4,8 @@ $bold: 700;
 $serif: "refrigerator-deluxe", helvetica, serif;
 $sans: "freight-sans-pro", helvetica, sans-serif;
 
-/* Setup */
 html {
-	//font-family: 'Source Sans Pro', sans-serif!important;
-	//font-family: 'Montserrat', sans-serif;
 	font-family: $sans;
-	//font-family: "Open Sans", sans-serif;
 	font-weight: $regular;
 	font-size: 62.5%; /* Sets up the Base 10 stuff */
 	-webkit-font-smoothing: antialiased;
@@ -37,11 +33,10 @@ p:last-of-type {
 
 h1, h2, h3, h4 {
   margin: 2.26rem 0 1.8rem;
-  //font-weight: $semi;
   line-height: 1.2;
   letter-spacing: 2px;
   font-weight: $regular;
-  color: $black; // $niceblue;
+  color: $black;
   font-family: $serif;
   -webkit-font-smoothing: auto;
   text-transform: uppercase;
@@ -106,6 +101,5 @@ li {
 		text-transform: uppercase;
 		font-weight: $semi;
 		font-size: 1.6rem;
-		//opacity: 0.9;
 	}
 }
