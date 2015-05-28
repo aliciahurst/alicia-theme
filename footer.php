@@ -15,11 +15,11 @@
 
 		<div class="footer-contact">
 			<h3>Get in Touch</h3>
-			<p><a href="/contact" class="btn-white"><span>Contact Me</span></a></p>
+			<p><a href="/contact" class="btn-white wow pulse"><span>Contact Me</span></a></p>
 		</div>
 
 		<div class="footer-center">
-			<p class="top"><a href="#top"><svg class="icon-double-up"><use xlink:href="#icon-double-up"></use></svg></a></p>
+			<p class="top"><a href="#top" class="animated"><svg class="icon-double-up"><use xlink:href="#icon-double-up"></use></svg></a></p>
 			<p class="copyright">&copy; <?php echo date('Y'); ?> <a href="/"><strong>Alicia Hurst</strong></a>, <br/> all rights reserved.</p>
 		</div>
 

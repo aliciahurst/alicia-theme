@@ -564,6 +564,225 @@ body {
   animation-duration: 0.75s;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.1);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1);
+  }
+  50% {
+    -o-transform: scale(1.1);
+  }
+  100% {
+    -o-transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse, .site-footer .footer-container .top a:hover {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(30px);
+  }
+  80% {
+    -moz-transform: translateY(-10px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -o-transform: translateY(30px);
+  }
+  80% {
+    -o-transform: translateY(-10px);
+  }
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  -moz-animation-name: bounceInDown;
+  -o-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  -moz-animation-name: slideInLeft;
+  -o-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  -moz-animation-name: slideInRight;
+  -o-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
 /*!
  * animsition v3.5.2
  * http://blivesta.github.io/animsition/
@@ -3339,7 +3558,7 @@ img {
   align-content: flex-start;
   -ms-flex-line-pack: start;
   padding: 6%;
-  margin-top: 6%;
+  padding-top: 8%;
 }
 
 @media screen and (max-width: 65em) {
@@ -3893,6 +4112,11 @@ button.menu-toggle:before {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
+@media screen and (max-width: 48em) {
+  .home-top div:last-of-type ul li {
+    min-height: 650px;
+  }
+}
 .home-top div:last-of-type ul li h2 {
   font-size: 5rem;
   letter-spacing: 5px;
@@ -3920,12 +4144,6 @@ button.menu-toggle:before {
   }
   .home-top div {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 48em) {
-  #home-slider {
-    height: 100vh;
   }
 }
 

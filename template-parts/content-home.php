@@ -33,7 +33,7 @@
 	<div class="services-container">
 		<?php while ( have_rows('services') ) : the_row(); ?>
 			<?php if( get_row_layout() == 'service_section' ): ?>
-				<div class="services-div">
+				<div class="services-div wow fadeInUp" data-wow-delay="0.5s">
 					<h3> <?php if( get_sub_field('service_svg') ): ?>
 						<?php $svg = get_sub_field('service_svg'); ?>
 						<svg class="icon-<?php echo $svg ?>"><use xlink:href="#icon-<?php echo $svg ?>"></use></svg>
@@ -51,12 +51,12 @@
 </section>
 
 <section class="home-contact">
-		<div>
+		<div class="wow slideInLeft" data-wow-offset="30">
 			<h3>Want to work together?</h3>
 			<p>I'm currently accepting inquiries for new projects.</p>
 			<p><a href="/contact" class="btn">Let's talk!</a></p>
 		</div>
-		<div>
+		<div class="wow slideInRight" data-wow-offset="30">
 			<h3>Want to hire me?</h3>
 			<p>I’m also available for <strong>full-time, remote</strong> creative positions!</p>
 			<p><strong>Keywords:</strong> web design, front-end development, ux/ui, project management, product management, SaaS/web/mobile applications</p>

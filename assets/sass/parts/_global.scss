@@ -6,12 +6,12 @@ body {
     -webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
 }
 .animated {
-    @include animate-prefixer(animation-duration, $base-duration);
-    @include animate-prefixer(animation-fill-mode, both);
+	@include animate-prefixer(animation-duration, $base-duration);
+	@include animate-prefixer(animation-fill-mode, both);
 
-    &.hinge {
-        @include animate-prefixer(animation-duration, $base-duration * 2);
-    }
+	&.hinge {
+		@include animate-prefixer(animation-duration, $base-duration * 2);
+	}
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -47,12 +47,12 @@ img {
 }
 
 .archive .site-main {
-		@include display(flex);
-		@include flex-wrap(wrap);
-		@include align-content(flex-start);
-		padding: 6%;
-		margin-top: 6%;
-	}
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include align-content(flex-start);
+	padding: 6%;
+	padding-top: 8%;
+}
 
 @include media($med) {
 	.site-main, .archive .site-main {

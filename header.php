@@ -20,7 +20,7 @@
 </head>
 
 <body <?php body_class($post->post_name); ?>>
-	<div id="page" class="hfeed site main">
+	<div id="page" class="hfeed site main animsition">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'alicia-theme' ); ?></a>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="header-container">

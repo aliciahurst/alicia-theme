@@ -30,6 +30,9 @@
 		}
 		.top {
 			margin-top: 0;
+			a:hover {
+				@extend .pulse;
+			}
 		}
 		padding: 6%;
 		color: $white;

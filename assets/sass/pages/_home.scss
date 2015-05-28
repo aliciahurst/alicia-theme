@@ -37,8 +37,8 @@
 					@include display(flex);
 					@include flex-direction(column);
 					@include justify-content(space-between);
-					@include media($med) {
-
+					@include media($small) {
+						min-height: 650px;
 					}
 					h2 {
 						font-size: 5rem;
@@ -64,11 +64,6 @@
 	}
 }
 
-#home-slider {
-	@include media($small) {
-		height: 100vh;
-	}
-}
 
 .home-services {
 	padding: 6%;
