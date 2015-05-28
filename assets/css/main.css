@@ -608,7 +608,7 @@ body {
     transform: scale(1);
   }
 }
-.pulse, .site-footer .footer-container .top a:hover {
+.pulse, .site-footer nav li a:hover, .site-footer .footer-container .top a:hover {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -o-animation-name: pulse;
@@ -3585,6 +3585,22 @@ img {
 #masthead nav a {
   color: #ffffff;
 }
+#masthead nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#masthead nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
 .archive #masthead nav a {
   color: #414141;
 }
@@ -3761,7 +3777,22 @@ button.menu-toggle:before {
 }
 .site-footer nav li {
   display: inline-block;
-  padding: 0 1rem;
+}
+.site-footer nav li svg {
+  height: 28px;
+  width: 28px;
+}
+.site-footer nav li a {
+  padding: 10px;
+  border: 2px solid transparent;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.9;
+  padding: 10px 11px 7px;
+}
+.site-footer nav li a:hover {
+  border-color: #ffffff;
+  opacity: 1;
 }
 
 .site-footer {
@@ -3804,6 +3835,12 @@ button.menu-toggle:before {
 }
 .site-footer .footer-container .top {
   margin-top: 0;
+}
+.site-footer .footer-container .top a {
+  opacity: 0.5;
+}
+.site-footer .footer-container .top a:hover {
+  opacity: 1;
 }
 .site-footer .footer-container a:not(.btn-white) {
   color: #ffffff;
@@ -4145,6 +4182,27 @@ button.menu-toggle:before {
   .home-top div {
     width: 100%;
   }
+}
+
+.home-title img {
+  display: block;
+  margin: 0 auto;
+}
+.home-title img:first-of-type {
+  width: 55%;
+  max-width: 405px;
+}
+.home-title img:last-of-type {
+  width: 80%;
+  max-width: 654px;
+}
+.home-title h2 {
+  margin: 0;
+  margin-top: -2rem !important;
+  font-weight: 700;
+}
+.home-title h3, .home-title .home .home-work h3, .home .home-work .home-title h3, .home-title .home .work-navigation h3, .home .work-navigation .home-title h3, .home-title .archive .work-item h1, .archive .work-item .home-title h1, .home-title .archive .work-item .home-contact div h3, .archive .work-item .home-contact div .home-title h3, .home-title .home-contact div .archive .work-item h3, .home-contact div .archive .work-item .home-title h3, .home-title .outbound-link, .home-title .twentytwenty-before-label:before, .home-title .twentytwenty-after-label:before {
+  margin-top: 3rem !important;
 }
 
 .home-services {

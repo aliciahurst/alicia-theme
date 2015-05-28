@@ -9,6 +9,7 @@
         namespace: "transparent-btns"
       });
  });  
+
   $(window).load(function(){
   $(".twentytwenty-container").twentytwenty({
     default_offset_pct: 0.5, // How much of the before image is visible when the page loads
@@ -26,6 +27,7 @@
             }
         });
 });
+
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -41,6 +43,8 @@ $(function() {
       }
     });
   });
+
+
 $(document).ready(function() {
   
   $(".animsition").animsition({
@@ -67,5 +71,7 @@ $(document).ready(function() {
     overlayParentElement  :   'body'
   });
 });
+
 new WOW().init();
+
 </script>

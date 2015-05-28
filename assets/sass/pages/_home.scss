@@ -64,6 +64,28 @@
 	}
 }
 
+.home-title {
+	img {
+		display: block;
+		margin: 0 auto;
+		&:first-of-type {
+			width: 55%;
+			max-width: 405px;
+		}
+		&:last-of-type {
+			width: 80%;
+			max-width: 654px;
+		}
+	}
+	h2 {
+		margin: 0;
+		margin-top: -2rem !important;
+		font-weight: $bold;
+	}
+	h3 {
+		margin-top: 3rem !important;
+	}
+}
 
 .home-services {
 	padding: 6%;

@@ -7,7 +7,7 @@
 ?>
 <section class="home-top">
 	<div class="home-title">
-		<h1> Design + Development</h1>
+		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/design.png"> <h2>&plus;</h2><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/development.png">
 		<h3>By Me, Alicia</h3>
 	</div>
 

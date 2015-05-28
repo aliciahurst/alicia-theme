@@ -5,7 +5,23 @@
 	}
 	li {
 		display: inline-block;
-		padding: 0 1rem;
+		svg {
+			height: 28px;
+			width: 28px;
+		}
+		a {
+			padding: 10px;
+			border: 2px solid transparent;
+			display: block;
+			border-radius: 50%;
+			opacity: 0.9;
+			padding: 10px 11px 7px;
+			&:hover {
+				border-color: $white;
+				@extend .pulse;
+				opacity: 1;
+			}
+		}
 	}
 }
 
@@ -30,8 +46,13 @@
 		}
 		.top {
 			margin-top: 0;
-			a:hover {
+		
+			a {
+				opacity: 0.5;
+				&:hover {
 				@extend .pulse;
+				opacity: 1;
+				}
 			}
 		}
 		padding: 6%;

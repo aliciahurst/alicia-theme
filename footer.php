@@ -31,7 +31,7 @@
 					$network = get_sub_field('social_media_network');
 					$account = get_sub_field('social_media_account');
 					?>
-					<li> <a href="http://<?php echo $network; ?>.com/<?php echo $account; ?>"><svg class="icon-<?php echo $network; ?>"><use xlink:href="#icon-<?php echo $network; ?>"></use></svg></a> </li>
+					<li> <a href="http://<?php echo $network; ?>.com/<?php echo $account; ?>" class="animated"><svg class="icon-<?php echo $network; ?>"><use xlink:href="#icon-<?php echo $network; ?>"></use></svg></a> </li>
 				<?php endwhile; ?>
 			</ul>
 		<?php endif; ?>	
