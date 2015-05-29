@@ -3789,6 +3789,9 @@ button.menu-toggle:before {
   border-radius: 50%;
   opacity: 0.9;
   padding: 10px 11px 7px;
+  -webkit-transition: border, ease-in-out, 0.5s;
+  -moz-transition: border, ease-in-out, 0.5s;
+  transition: border, ease-in-out, 0.5s;
 }
 .site-footer nav li a:hover {
   border-color: #ffffff;
