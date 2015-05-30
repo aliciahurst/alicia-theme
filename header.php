@@ -12,8 +12,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
 	<script src="//use.typekit.net/nht0rlx.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<?php wp_head(); ?>
@@ -32,7 +30,6 @@
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						<!-- Any idea why the li's aren't indented in the output? -->
 					</nav>
 				</div>
 	</header><!-- #masthead -->

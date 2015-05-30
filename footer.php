@@ -15,7 +15,7 @@
 
 		<div class="footer-contact">
 			<h3>Get in Touch</h3>
-			<p><a href="/contact" class="btn-white wow pulse"><span>Contact Me</span></a></p>
+			<p><a href="/contact" class="btn-white"><span>Contact Me</span></a></p>
 		</div>
 
 		<div class="footer-center">

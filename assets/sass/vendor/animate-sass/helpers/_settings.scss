@@ -49,7 +49,7 @@ $hinge-translate 				: 700px !default;
 
 // Fade Enter
 $use-fadeIn 			:	false !default;
-$use-fadeInUp 			:	true !default;
+$use-fadeInUp 			:	false !default;
 $use-fadeInUpBig 		:	false !default;
 $use-fadeInDown 		:	false !default;
 $use-fadeInDownBig 		:	false !default;
@@ -74,7 +74,7 @@ $use-fadeOutRightBig	:	false !default;
 // Bounce Enter
 $use-bounceIn			:	false !default;
 $use-bounceInUp			: 	false !default;
-$use-bounceInDown 		: 	true !default;
+$use-bounceInDown 		: 	false !default;
 $use-bounceInLeft 		: 	false !default;
 $use-bounceInRight 		: 	false !default;
 
@@ -108,8 +108,8 @@ $use-rotateOutDownRight : 	false !default;
 $use-slideIn			:   false !default;
 $use-slideInUp			:   false !default;
 $use-slideInDown		:   false !default;
-$use-slideInLeft		:   true !default;
-$use-slideInRight		:   true !default;
+$use-slideInLeft		:   false !default;
+$use-slideInRight		:   false !default;
 
 // Slide Exit
 $use-slideOut			:   false !default;

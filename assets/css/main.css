@@ -615,174 +615,6 @@ body {
   animation-name: pulse;
 }
 
-@-webkit-keyframes bounceInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translateY(30px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-  }
-}
-@-moz-keyframes bounceInDown {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(-2000px);
-  }
-  60% {
-    opacity: 1;
-    -moz-transform: translateY(30px);
-  }
-  80% {
-    -moz-transform: translateY(-10px);
-  }
-  100% {
-    -moz-transform: translateY(0);
-  }
-}
-@-o-keyframes bounceInDown {
-  0% {
-    opacity: 0;
-    -o-transform: translateY(-2000px);
-  }
-  60% {
-    opacity: 1;
-    -o-transform: translateY(30px);
-  }
-  80% {
-    -o-transform: translateY(-10px);
-  }
-  100% {
-    -o-transform: translateY(0);
-  }
-}
-@keyframes bounceInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-2000px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-  80% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.bounceInDown {
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-}
-
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-@-moz-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -moz-transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -moz-transform: translateY(0);
-  }
-}
-@-o-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -o-transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -o-transform: translateY(0);
-  }
-}
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  -moz-animation-name: fadeInUp;
-  -o-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-@-webkit-keyframes slideInLeft {
-  0% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes slideInLeft {
-  0% {
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-.slideInLeft {
-  -webkit-animation-name: slideInLeft;
-  -moz-animation-name: slideInLeft;
-  -o-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-}
-
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes slideInRight {
-  0% {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-.slideInRight {
-  -webkit-animation-name: slideInRight;
-  -moz-animation-name: slideInRight;
-  -o-animation-name: slideInRight;
-  animation-name: slideInRight;
-}
-
 /*!
  * animsition v3.5.2
  * http://blivesta.github.io/animsition/
@@ -4781,15 +4613,17 @@ button.menu-toggle:before {
 
 .thumbnail {
   position: relative;
+  overflow: hidden;
+  height: auto;
   -webkit-transition: color 0.35s;
   -moz-transition: color 0.35s;
   transition: color 0.35s;
 }
 .thumbnail .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail .twentytwenty-before-label:before, .thumbnail .twentytwenty-after-label:before, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail .home-contact div .outbound-link, .home-contact div .thumbnail .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, .thumbnail .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail .twentytwenty-before-label:before, .thumbnail .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail .twentytwenty-after-label:before {
   text-align: center;
-  margin-top: 0;
+  margin: 0;
   background: #ffffff;
-  padding-top: 0.75rem;
+  padding: 0.75rem 0;
   position: relative;
   color: #c2c2c2;
 }
@@ -4815,14 +4649,15 @@ button.menu-toggle:before {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   -moz-transition: opacity 0.35s, -moz-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
+  margin-bottom: -3px;
 }
 .thumbnail:hover img {
   opacity: 0.95;
-  -webkit-transform: scale3d(1.05, 1.05, 1);
-  -moz-transform: scale3d(1.05, 1.05, 1);
-  -ms-transform: scale3d(1.05, 1.05, 1);
-  -o-transform: scale3d(1.05, 1.05, 1);
-  transform: scale3d(1.05, 1.05, 1);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  transform: scale(1.25);
 }
 .thumbnail:hover h1, .thumbnail:hover .home-contact div h3, .home-contact div .thumbnail:hover h3, .thumbnail:hover .home-contact div .outbound-link, .home-contact div .thumbnail:hover .outbound-link, .thumbnail:hover .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail:hover .twentytwenty-after-label:before, .thumbnail:hover .outbound-link, .thumbnail:hover h3, .thumbnail:hover h1, .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .twentytwenty-after-label:before {
   color: #414141;
@@ -4964,10 +4799,10 @@ button.menu-toggle:before {
   display: table;
 }
 .gform_body .gfield {
-  width: 48.5%;
-  float: left;
   position: relative;
   margin: 2rem 0;
+  display: inline-block;
+  width: 48%;
 }
 .gform_body .gfield label {
   display: none;
@@ -4979,8 +4814,11 @@ button.menu-toggle:before {
   height: 10rem;
 }
 .gform_body .gfield:nth-of-type(2n) {
+  margin-left: 4%;
   margin-right: 0;
-  margin-left: 3%;
+}
+.gform_body .gfield:last-of-type {
+  width: 100%;
 }
 @media all and (max-width: 75em) {
   .gform_body .gfield {
@@ -5063,7 +4901,7 @@ button.menu-toggle:before {
     pointer-events: none;
     color: #ffffff;
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 1.2;
     letter-spacing: 0.3px;
     -webkit-transition: all, 0.2s, ease-in-out;

@@ -19,8 +19,8 @@
 			@include transition(border, ease-in-out, 0.5s);
 			&:hover {
 				border-color: $white;
-				@extend .pulse;
 				opacity: 1;
+				@extend .pulse;
 			}
 		}
 	}
@@ -30,7 +30,6 @@
 	position: relative;
 	background: $four;
 	.footer-container {
-		//@include outer-container;
 		@include justify-content(center);
 		div, nav {
 			width: 25%;
@@ -47,7 +46,6 @@
 		}
 		.top {
 			margin-top: 0;
-		
 			a {
 				opacity: 0.5;
 				&:hover {

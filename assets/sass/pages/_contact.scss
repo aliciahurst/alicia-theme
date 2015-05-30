@@ -44,11 +44,10 @@
 .gform_body {
 	@include clearfix;
 	.gfield {
-		width: 48.5%;
-		float: left;
 		position: relative;
 		margin: 2rem 0;
-
+		display: inline-block;
+		width: 48%;
 		label {
 			display: none;
 		}
@@ -59,8 +58,12 @@
 			height: 10rem;
 		}
 		&:nth-of-type(2n) {
+			margin-left: 4%;
 			@include omega;
-			margin-left: 3%;
+		}
+		&:last-of-type {
+			//float: none;
+			width: 100%;
 		}
 		@media all and (max-width:75em) {
 			width: 100%;
@@ -145,7 +148,7 @@
 		pointer-events: none;
 		color: $white;
 		padding: 10px;
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 		line-height: 1.2;
 		letter-spacing: 0.3px;
 		@include transition(all, 0.2s, ease-in-out);
