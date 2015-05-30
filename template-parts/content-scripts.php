@@ -28,6 +28,16 @@
         });
 });
 
+jQuery(document).ready(function($) {
+
+ $(".medium").focus(function(){
+   $(this).parent().addClass("inputbg");
+  }).blur(function(){
+       $(this).parent().removeClass("inputbg");
+  })
+
+});   
+
 $(document).ready(function() {
   
   $(".animsition").animsition({

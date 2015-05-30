@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="footer-center">
-			<p class="top"><a href="#top" class="animated"><svg class="icon-double-up"><use xlink:href="#icon-double-up"></use></svg></a></p>
+			<p class="top"><a href="#top"><svg class="icon-double-up"><use xlink:href="#icon-double-up"></use></svg></a></p>
 			<p class="copyright">&copy; <?php echo date('Y'); ?> <a href="/"><strong>Alicia Hurst</strong></a>, <br/> all rights reserved.</p>
 		</div>
 

@@ -23,10 +23,19 @@ p, li {
 }
 a {
 	color: currentColor;
-	.site-main & {
-		border-bottom: 1px solid;
+}
+
+.normal {
+	@include transition(all 0.35s ease-in-out);
+	border-bottom: 1px solid;
+	background: transparent;
+	color: inherit;
+	&:hover {
+		background: $white;
+		border-bottom: 1px solid transparent;
 	}
 }
+
 p:last-of-type {
 	margin-bottom: 0;
 }

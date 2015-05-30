@@ -14,7 +14,11 @@
 
 .outbound-link {
 	@extend h3;
+	@extend .normal;
 	text-align: center;
+	a {
+		padding: 2px 5px;
+	}
 	span {
 		vertical-align: middle;
 	}
@@ -23,6 +27,7 @@
 		width: auto;
 		vertical-align: middle;
 		margin-left: 1rem;
+		padding-right: 5px;
 	}
 }
 
@@ -279,6 +284,7 @@
 		left: 0;
 		background: rgba($four, 0.3);
 		margin: 0;
+		@include transition(all 0.35s ease-in-out);
 		span {
 			position: absolute;
 			color: $white;
@@ -286,6 +292,7 @@
 			width: 100%;
 			display: block;
 			text-align: center;
+			@include transition(all 0.35s ease-in-out);
 			@include transform(translateY(-50%));
 				&:after {
 				content: "\2015";

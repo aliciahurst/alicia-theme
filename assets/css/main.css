@@ -532,7 +532,7 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
-.animated {
+.animated, .site-footer .footer-container .top a, .inputbg {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -o-animation-duration: 1s;
@@ -542,26 +542,65 @@ body {
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.animated.infinite {
+.animated.infinite, .site-footer .footer-container .top a.infinite, .infinite.inputbg {
   animation-iteration-count: infinite;
 }
-.animated.hinge {
+.animated.hinge, .site-footer .footer-container .top a.hinge, .hinge.inputbg {
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   -o-animation-duration: 2s;
   animation-duration: 2s;
 }
-.animated.bounceIn, .animated.bounceOut {
+.animated.bounceIn, .site-footer .footer-container .top a.bounceIn, .bounceIn.inputbg, .animated.bounceOut, .site-footer .footer-container .top a.bounceOut, .bounceOut.inputbg {
   -webkit-animation-duration: 0.75s;
   -moz-animation-duration: 0.75s;
   -o-animation-duration: 0.75s;
   animation-duration: 0.75s;
 }
-.animated.flipOutX, .animated.flipOutY {
+.animated.flipOutX, .site-footer .footer-container .top a.flipOutX, .flipOutX.inputbg, .animated.flipOutY, .site-footer .footer-container .top a.flipOutY, .flipOutY.inputbg {
   -webkit-animation-duration: 0.75s;
   -moz-animation-duration: 0.75s;
   -o-animation-duration: 0.75s;
   animation-duration: 0.75s;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@-o-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.flash {
+  -webkit-animation-name: flash;
+  -moz-animation-name: flash;
+  -o-animation-name: flash;
+  animation-name: flash;
 }
 
 @-webkit-keyframes pulse {
@@ -613,6 +652,45 @@ body {
   -moz-animation-name: pulse;
   -o-animation-name: pulse;
   animation-name: pulse;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn, .inputbg {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 /*!
@@ -3219,7 +3297,7 @@ body {
   color: #414141;
 }
 
-p, li {
+p, .validation_error, li {
   margin-bottom: 2.08rem;
   font-size: 2rem;
   color: #999999;
@@ -3228,15 +3306,25 @@ p, li {
 a {
   color: currentColor;
 }
-.site-main a {
+
+.normal, .outbound-link, .contact-content a {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
   border-bottom: 1px solid;
+  background: transparent;
+  color: inherit;
+}
+.normal:hover, .outbound-link:hover, .contact-content a:hover {
+  background: #ffffff;
+  border-bottom: 1px solid transparent;
 }
 
-p:last-of-type {
+p:last-of-type, .validation_error:last-of-type {
   margin-bottom: 0;
 }
 
-h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before, h2, h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .twentytwenty-before-label:before, .twentytwenty-after-label:before, h4 {
+h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before, h2, h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .twentytwenty-before-label:before, .twentytwenty-after-label:before, h4, .gform_confirmation_message {
   margin: 2.26rem 0 1.8rem;
   line-height: 1.2;
   letter-spacing: 2px;
@@ -3246,16 +3334,16 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
   -webkit-font-smoothing: auto;
   text-transform: uppercase;
 }
-section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .outbound-link:first-of-type, .home-contact div .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h1:first-of-type, .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div section > .twentytwenty-after-label:first-of-type:before, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .outbound-link:first-of-type, .home-contact div .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h1:first-of-type, .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div > .twentytwenty-after-label:first-of-type:before, section > h2:first-of-type, div > h2:first-of-type, section > h3:first-of-type, section > .outbound-link:first-of-type, .thumbnail section > h3:first-of-type, .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h3:first-of-type, section > .twentytwenty-before-label:first-of-type:before, section > .twentytwenty-after-label:first-of-type:before, div > h3:first-of-type, div > .outbound-link:first-of-type, .thumbnail div > h3:first-of-type, .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h3:first-of-type, div > .twentytwenty-before-label:first-of-type:before, div > .twentytwenty-after-label:first-of-type:before, section > h4:first-of-type, div > h4:first-of-type {
+section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .outbound-link:first-of-type, .home-contact div .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h1:first-of-type, .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div section > .twentytwenty-after-label:first-of-type:before, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .outbound-link:first-of-type, .home-contact div .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h1:first-of-type, .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div > .twentytwenty-after-label:first-of-type:before, section > h2:first-of-type, div > h2:first-of-type, section > h3:first-of-type, section > .outbound-link:first-of-type, .thumbnail section > h3:first-of-type, .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h3:first-of-type, section > .twentytwenty-before-label:first-of-type:before, section > .twentytwenty-after-label:first-of-type:before, div > h3:first-of-type, div > .outbound-link:first-of-type, .thumbnail div > h3:first-of-type, .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h3:first-of-type, div > .twentytwenty-before-label:first-of-type:before, div > .twentytwenty-after-label:first-of-type:before, section > h4:first-of-type, section > .gform_confirmation_message:first-of-type, div > h4:first-of-type, div > .gform_confirmation_message:first-of-type {
   margin-top: 0;
 }
-section > h1 + p, .home-contact div section > h3 + p, .home-contact div section > .outbound-link + p, .home-contact div .thumbnail section > h1 + p, .thumbnail .home-contact div section > h1 + p, .home-contact div section > .twentytwenty-before-label:before + p, .home-contact div section > .twentytwenty-after-label:before + p, div > h1 + p, .home-contact div > h3 + p, .home-contact div > .outbound-link + p, .home-contact div .thumbnail div > h1 + p, .thumbnail .home-contact div > h1 + p, .home-contact div > .twentytwenty-before-label:before + p, .home-contact div > .twentytwenty-after-label:before + p, section > h2 + p, div > h2 + p, section > h3 + p, section > .outbound-link + p, .thumbnail section > h3 + p, .thumbnail section > h1 + p, section > .twentytwenty-before-label:before + p, section > .twentytwenty-after-label:before + p, div > h3 + p, div > .outbound-link + p, .thumbnail div > h3 + p, .thumbnail div > h1 + p, div > .twentytwenty-before-label:before + p, div > .twentytwenty-after-label:before + p, section > h4 + p, div > h4 + p {
+section > h1 + p, .home-contact div section > h3 + p, .home-contact div section > .outbound-link + p, .home-contact div .thumbnail section > h1 + p, .thumbnail .home-contact div section > h1 + p, .home-contact div section > .twentytwenty-before-label:before + p, .home-contact div section > .twentytwenty-after-label:before + p, section > h1 + .validation_error, .home-contact div section > h3 + .validation_error, .home-contact div section > .outbound-link + .validation_error, .home-contact div section > .twentytwenty-before-label:before + .validation_error, .home-contact div section > .twentytwenty-after-label:before + .validation_error, div > h1 + p, .home-contact div > h3 + p, .home-contact div > .outbound-link + p, .home-contact div .thumbnail div > h1 + p, .thumbnail .home-contact div > h1 + p, .home-contact div > .twentytwenty-before-label:before + p, .home-contact div > .twentytwenty-after-label:before + p, div > h1 + .validation_error, .home-contact div > h3 + .validation_error, .home-contact div > .outbound-link + .validation_error, .home-contact div .thumbnail div > h1 + .validation_error, .home-contact div > .twentytwenty-before-label:before + .validation_error, .home-contact div > .twentytwenty-after-label:before + .validation_error, section > h2 + p, section > h2 + .validation_error, div > h2 + p, div > h2 + .validation_error, section > h3 + p, section > .outbound-link + p, .thumbnail section > h3 + p, .thumbnail section > h1 + p, section > .twentytwenty-before-label:before + p, section > .twentytwenty-after-label:before + p, section > h3 + .validation_error, section > .outbound-link + .validation_error, .thumbnail section > h1 + .validation_error, section > .twentytwenty-before-label:before + .validation_error, section > .twentytwenty-after-label:before + .validation_error, div > h3 + p, div > .outbound-link + p, .thumbnail div > h3 + p, .thumbnail div > h1 + p, div > .twentytwenty-before-label:before + p, div > .twentytwenty-after-label:before + p, div > h3 + .validation_error, div > .outbound-link + .validation_error, .thumbnail div > h1 + .validation_error, .home-contact div .thumbnail div > h3 + .validation_error, div > .twentytwenty-before-label:before + .validation_error, div > .twentytwenty-after-label:before + .validation_error, section > h4 + p, section > .gform_confirmation_message + p, section > h4 + .validation_error, section > .gform_confirmation_message + .validation_error, div > h4 + p, div > .gform_confirmation_message + p, div > h4 + .validation_error, div > .gform_confirmation_message + .validation_error {
   margin-top: 0;
 }
-h1 a, .home-contact div h3 a, .home-contact div .outbound-link a, .home-contact div .thumbnail h1 a, .thumbnail .home-contact div h1 a, .home-contact div .twentytwenty-before-label:before a, .home-contact div .twentytwenty-after-label:before a, h2 a, h3 a, .outbound-link a, .thumbnail h3 a, .thumbnail h1 a, .twentytwenty-before-label:before a, .twentytwenty-after-label:before a, h4 a {
+h1 a, .home-contact div h3 a, .home-contact div .outbound-link a, .home-contact div .thumbnail h1 a, .thumbnail .home-contact div h1 a, .home-contact div .twentytwenty-before-label:before a, .home-contact div .twentytwenty-after-label:before a, h2 a, h3 a, .outbound-link a, .thumbnail h3 a, .thumbnail h1 a, .twentytwenty-before-label:before a, .twentytwenty-after-label:before a, h4 a, .gform_confirmation_message a {
   color: inherit;
 }
-.wrapper + h1, .home-contact div .wrapper + h3, .home-contact div .wrapper + .outbound-link, .home-contact div .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h1, .home-contact div .wrapper + .twentytwenty-before-label:before, .home-contact div .wrapper + .twentytwenty-after-label:before, .wrapper + h2, .wrapper + h3, .wrapper + .outbound-link, .thumbnail .wrapper + h3, .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h3, .wrapper + .twentytwenty-before-label:before, .wrapper + .twentytwenty-after-label:before, .wrapper + h4 {
+.wrapper + h1, .home-contact div .wrapper + h3, .home-contact div .wrapper + .outbound-link, .home-contact div .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h1, .home-contact div .wrapper + .twentytwenty-before-label:before, .home-contact div .wrapper + .twentytwenty-after-label:before, .wrapper + h2, .wrapper + h3, .wrapper + .outbound-link, .thumbnail .wrapper + h3, .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h3, .wrapper + .twentytwenty-before-label:before, .wrapper + .twentytwenty-after-label:before, .wrapper + h4, .wrapper + .gform_confirmation_message {
   margin-top: 0;
 }
 
@@ -3274,7 +3362,7 @@ h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h
   font-size: 2.25rem;
 }
 
-h4 {
+h4, .gform_confirmation_message {
   font-size: 1.8rem;
 }
 
@@ -3309,7 +3397,7 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
-.animated {
+.animated, .site-footer .footer-container .top a, .inputbg {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -o-animation-duration: 1s;
@@ -3319,7 +3407,7 @@ body {
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.animated.hinge {
+.animated.hinge, .site-footer .footer-container .top a.hinge, .hinge.inputbg {
   -webkit-animation-duration: 2s;
   -moz-animation-duration: 2s;
   -o-animation-duration: 2s;
@@ -3696,7 +3784,7 @@ button.menu-toggle:before {
   }
 }
 
-.footer-contact p {
+.footer-contact p, .footer-contact .validation_error {
   margin: 0 !important;
 }
 
@@ -3957,7 +4045,7 @@ button.menu-toggle:before {
   font-size: 5rem;
   letter-spacing: 5px;
 }
-.home-top div:last-of-type ul li h4 {
+.home-top div:last-of-type ul li h4, .home-top div:last-of-type ul li .gform_confirmation_message {
   font-family: "freight-sans-pro", helvetica, sans-serif;
   text-transform: capitalize;
 }
@@ -4107,7 +4195,7 @@ button.menu-toggle:before {
 .home-contact div:last-of-type {
   background: #c2c2c2;
 }
-.home-contact div:last-of-type p, .home-contact div:last-of-type h3, .home-contact div:last-of-type .outbound-link, .home-contact div:last-of-type .thumbnail h1, .thumbnail .home-contact div:last-of-type h1, .home-contact div:last-of-type .twentytwenty-before-label:before, .home-contact div:last-of-type .twentytwenty-after-label:before {
+.home-contact div:last-of-type p, .home-contact div:last-of-type .validation_error, .home-contact div:last-of-type h3, .home-contact div:last-of-type .outbound-link, .home-contact div:last-of-type .thumbnail h1, .thumbnail .home-contact div:last-of-type h1, .home-contact div:last-of-type .twentytwenty-before-label:before, .home-contact div:last-of-type .twentytwenty-after-label:before {
   color: #ffffff;
 }
 @media screen and (max-width: 65em) {
@@ -4227,7 +4315,7 @@ button.menu-toggle:before {
   display: block;
   border: 0;
 }
-.home-work p, .work-navigation p {
+.home-work p, .work-navigation p, .home-work .validation_error, .work-navigation .validation_error {
   text-align: center;
   margin-top: 6%;
 }
@@ -4237,7 +4325,7 @@ button.menu-toggle:before {
   content: "";
   display: table;
 }
-.single-work p {
+.single-work p, .single-work .validation_error {
   color: gray;
 }
 
@@ -4251,6 +4339,9 @@ button.menu-toggle:before {
 .outbound-link {
   text-align: center;
 }
+.outbound-link a {
+  padding: 2px 5px;
+}
 .outbound-link span {
   vertical-align: middle;
 }
@@ -4259,6 +4350,7 @@ button.menu-toggle:before {
   width: auto;
   vertical-align: middle;
   margin-left: 1rem;
+  padding-right: 5px;
 }
 
 .down-arrow {
@@ -4472,7 +4564,7 @@ button.menu-toggle:before {
   -ms-flex-pack: center;
   padding: 6% 6%;
 }
-.display_images .aside h3, .display_images .aside .outbound-link, .display_images .aside .thumbnail h1, .thumbnail .display_images .aside h1, .display_images .aside .twentytwenty-before-label:before, .display_images .aside .twentytwenty-after-label:before, .display_images .aside p {
+.display_images .aside h3, .display_images .aside .outbound-link, .display_images .aside .thumbnail h1, .thumbnail .display_images .aside h1, .display_images .aside .twentytwenty-before-label:before, .display_images .aside .twentytwenty-after-label:before, .display_images .aside p, .display_images .aside .validation_error {
   padding: 0 6%;
 }
 .display_images:nth-of-type(2n-1) {
@@ -4531,7 +4623,7 @@ button.menu-toggle:before {
 .work-navigation div:first-of-type h3:hover span:after, .work-navigation div:first-of-type .outbound-link:hover span:after, .work-navigation div:first-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:first-of-type h1:hover span:after, .work-navigation div:first-of-type .twentytwenty-before-label:hover:before span:after, .work-navigation div:first-of-type .twentytwenty-after-label:hover:before span:after {
   content: "\2190";
 }
-.work-navigation p::after {
+.work-navigation p::after, .work-navigation .validation_error::after {
   clear: both;
   content: "";
   display: table;
@@ -4550,6 +4642,9 @@ button.menu-toggle:before {
   left: 0;
   background: rgba(65, 65, 65, 0.3);
   margin: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 .work-navigation h3 span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span, .work-navigation .twentytwenty-before-label:before span, .work-navigation .twentytwenty-after-label:before span {
   position: absolute;
@@ -4558,6 +4653,9 @@ button.menu-toggle:before {
   width: 100%;
   display: block;
   text-align: center;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4625,7 +4723,7 @@ button.menu-toggle:before {
   background: #ffffff;
   padding: 0.75rem 0;
   position: relative;
-  color: #c2c2c2;
+  color: #818181;
 }
 .thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before, .thumbnail .twentytwenty-before-label:before, .thumbnail .twentytwenty-after-label:before, .thumbnail h1:before, .thumbnail .home-contact div h3:before, .home-contact div .thumbnail h3:before, .thumbnail .home-contact div .outbound-link:before, .home-contact div .thumbnail .outbound-link:before, .thumbnail .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail .twentytwenty-before-label:before, .thumbnail .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail .twentytwenty-after-label:before {
   content: "\002B";
@@ -4643,6 +4741,9 @@ button.menu-toggle:before {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 .thumbnail img {
   opacity: 0.75;
@@ -4661,6 +4762,9 @@ button.menu-toggle:before {
 }
 .thumbnail:hover h1, .thumbnail:hover .home-contact div h3, .home-contact div .thumbnail:hover h3, .thumbnail:hover .home-contact div .outbound-link, .home-contact div .thumbnail:hover .outbound-link, .thumbnail:hover .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail:hover .twentytwenty-after-label:before, .thumbnail:hover .outbound-link, .thumbnail:hover h3, .thumbnail:hover h1, .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .twentytwenty-after-label:before {
   color: #414141;
+}
+.thumbnail:hover h1:before, .thumbnail:hover .home-contact div h3:before, .home-contact div .thumbnail:hover h3:before, .thumbnail:hover .home-contact div .outbound-link:before, .home-contact div .thumbnail:hover .outbound-link:before, .thumbnail:hover .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail:hover .twentytwenty-after-label:before, .thumbnail:hover .outbound-link:before, .thumbnail:hover h3:before, .thumbnail:hover h1:before, .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .twentytwenty-after-label:before {
+  content: "\00D7";
 }
 
 .contact .entry-header {
@@ -4781,6 +4885,18 @@ button.menu-toggle:before {
   border: 0;
 }
 
+.contact-content a:hover {
+  background: #fcfcfc;
+  color: #333333 !important;
+}
+.contact-content li a {
+  line-height: 1.5;
+  border-bottom: 0;
+}
+.contact-content li a:hover {
+  border-bottom: 0;
+}
+
 .contact-form {
   background: #fcfcfc;
   background: url("../img/min/contactbg.jpg") no-repeat;
@@ -4789,7 +4905,7 @@ button.menu-toggle:before {
 }
 .contact-form h2 {
   color: #ffffff;
-  margin-top: 6% !important;
+  margin-top: 8% !important;
   text-align: center;
 }
 
@@ -4801,11 +4917,17 @@ button.menu-toggle:before {
 .gform_body .gfield {
   position: relative;
   margin: 2rem 0;
+  padding: 0 5px 7px;
   display: inline-block;
-  width: 48%;
+  width: 49%;
+  border-radius: 2px;
 }
 .gform_body .gfield label {
-  display: none;
+  display: block;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding: 2px 0 5px;
 }
 .gform_body .gfield input, .gform_body .gfield textarea, .gform_body .gfield select {
   width: 100%;
@@ -4814,7 +4936,7 @@ button.menu-toggle:before {
   height: 10rem;
 }
 .gform_body .gfield:nth-of-type(2n) {
-  margin-left: 4%;
+  margin-left: 2%;
   margin-right: 0;
 }
 .gform_body .gfield:last-of-type {
@@ -4830,6 +4952,31 @@ button.menu-toggle:before {
   }
 }
 
+.gfield input, .gfield textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+}
+.gfield input:focus, .gfield textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #414141;
+  color: #333333;
+  font-size: 1.8rem;
+}
+.gfield textarea {
+  border: 2px solid #ffffff;
+}
+.gfield textarea:focus {
+  border: 2px solid #414141;
+}
+
+.inputbg {
+  background: white;
+}
+.inputbg label {
+  color: #414141 !important;
+}
+
 .gform_footer {
   text-align: center;
   margin-top: 1.8rem;
@@ -4840,96 +4987,42 @@ button.menu-toggle:before {
   font-weight: bold;
 }
 
-@media all and (max-width: 75em) {
-  .gform_body .gfield label {
-    display: block;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-size: 1.6rem;
-    font-weight: 700;
-    padding: 1rem 0.25rem 0.5rem;
-  }
-  .gform_body .gfield_description {
-    display: none;
-  }
-  .gform_body input, .gform_body textarea, .gform_body select {
-    background: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-    box-shadow: none;
-    border: 0;
-    line-height: 1.2;
-    font-size: 1.7rem;
-    padding: 5px 10px;
-    outline: none;
-  }
-  .gform_body input:focus, .gform_body textarea:focus, .gform_body select:focus {
-    background: #f7f7f7;
-    color: #414141;
-  }
+.validation_error {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 2px;
 }
-@media all and (min-width: 75em) {
-  input, textarea, select {
-    padding: 0 10px;
-    background: transparent;
-    border: 2px solid transparent;
-    border-bottom: 2px solid;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    overflow: auto;
-  }
-  input:focus, textarea:focus, select:focus {
-    outline: none;
-    background: rgba(0, 0, 0, 0.4);
-    color: #ffffff;
-    border: 2px solid;
-    border-color: #f9f9f9;
-    box-shadow: inset 0 1px 3px rgba(249, 249, 249, 0.5);
-    border-radius: 2px;
-  }
 
-  textarea {
-    padding: 5px 10px;
-    resize: none;
-  }
-
-  .gfield_description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    color: #ffffff;
-    padding: 10px;
-    font-size: 1.7rem;
-    line-height: 1.2;
-    letter-spacing: 0.3px;
-    -webkit-transition: all, 0.2s, ease-in-out;
-    -moz-transition: all, 0.2s, ease-in-out;
-    transition: all, 0.2s, ease-in-out;
-  }
-  textarea + .gfield_description {
-    padding: 15px 10px;
-  }
-  input:focus + .gfield_description, textarea:focus + .gfield_description, .filled + .gfield_description, .filled + .gfield_description {
-    color: #f9f9f9;
-    bottom: 100%;
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 0;
-    padding: 5px;
-  }
-
-  .filled:not(:focus) {
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    border: 1px solid;
-    border-color: white;
-  }
-  .filled:not(:focus) + .gfield_description {
-    color: white;
-  }
+.validation_message {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff006f;
+  padding-top: 5px;
 }
+.validation_message:before {
+  content: "\2192";
+  padding-right: 2px;
+}
+
+.gform_confirmation_message {
+  color: #ffffff;
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  text-transform: initial;
+  text-align: center;
+}
+.gform_confirmation_message:before {
+  content: "\00D7";
+  display: block;
+  padding: 2rem 2rem 4rem;
+  color: #ffffff;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+input.filled ~ .validation_message, textarea.filled ~ .validation_message {
+  visibility: hidden;
+}
+
 .rslides {
   position: relative;
   list-style: none;
