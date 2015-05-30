@@ -46,13 +46,13 @@
 				letter-spacing: 1px;
 				color: $white;
 				display: block;
-				padding: 0 0 0.35rem 0.5rem;
-				border-bottom: 2px solid;
-				width: 10rem;
-				text-align: left;
+				padding: 0 1rem;
+				//border-bottom: 2px solid;
+				//width: 10rem;
 				opacity: 0.5;
 				&:hover {
 					opacity: 1;
+					color: $black;
 				}
 				.archive & {
 					color: $four;

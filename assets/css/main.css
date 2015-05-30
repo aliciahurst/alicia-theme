@@ -3648,14 +3648,12 @@ img {
   letter-spacing: 1px;
   color: #ffffff;
   display: block;
-  padding: 0 0 0.35rem 0.5rem;
-  border-bottom: 2px solid;
-  width: 10rem;
-  text-align: left;
+  padding: 0 1rem;
   opacity: 0.5;
 }
 .main-navigation ul li a:hover {
   opacity: 1;
+  color: #000000;
 }
 .archive .main-navigation ul li a {
   color: #414141;

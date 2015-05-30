@@ -339,3 +339,9 @@ function nav_id_filter( $id, $item ) {
 	return 'nav-'.strtolower( str_replace( ' ','-',$item->title ) );
 }
 add_filter( 'nav_menu_item_id', 'nav_id_filter', 10, 2 );
+
+// Remove jQuery Gravity Forms console error
+add_filter("gform_init_scripts_footer", "init_scripts");
+function init_scripts() {
+return true;
+}
