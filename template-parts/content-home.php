@@ -78,7 +78,7 @@
 <section class="home-work">
 	<h2>Latest Work</h2>
 		<?php $args = array( 'numberposts' => 2, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
-		<div>
+		<div class="thumbnail">
 		<a href="<?php the_permalink(); ?>">
 				<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
 						<h3><span><?php the_title(); ?></span></h3>

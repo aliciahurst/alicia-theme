@@ -277,12 +277,3 @@
 		margin-top: 6%;
 	}
 }
-
-.home .home-work {
-	h3 {
-		@extend %plus;
-	}
-}
-.accordion:hover + .work-h2 {
-	display: none;
-}

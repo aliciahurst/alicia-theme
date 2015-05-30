@@ -14,7 +14,7 @@ get_header(); ?>
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			
-			<div class="work-item">
+			<div class="work-item thumbnail">
 				<a href="<?php the_permalink(); ?>">
 					<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
 					<h1><span><?php the_title(); ?></span></h1>

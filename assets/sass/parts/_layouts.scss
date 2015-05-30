@@ -29,23 +29,3 @@
 	}
 }
 
-%plus {
-	@extend h3;
-		text-align: center;
-		margin-top: 0.75rem;
-		position: relative;
-		&:before {
-			content: "\002B";
-			position: absolute;
-			font-size: 2.5rem;
-			line-height: 1;
-			height: 2.5rem;
-			padding: 0 1rem;
-			font-weight: $bold;
-			top: -3.5rem;
-			background: white;
-			left: 50%;
-			text-align: center;
-			@include transform(translateX(-50%));
-		}
-}
