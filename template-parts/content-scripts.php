@@ -28,38 +28,6 @@
         });
 });
 
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-
-$(document).ready(function() {
-    $('html, body').hide();
-
-    if (window.location.hash) {
-        setTimeout(function() {
-            $('html, body').scrollTop(0).show();
-            $('html, body').animate({
-                scrollTop: $(window.location.hash).offset().top
-                }, 1000)
-        }, 0);
-    }
-    else {
-        $('html, body').show();
-    }
-});
-
 $(document).ready(function() {
   
   $(".animsition").animsition({
@@ -84,6 +52,39 @@ $(document).ready(function() {
     
     overlayClass          :   'animsition-overlay-slide',
     overlayParentElement  :   'body'
+  });
+});
+
+  jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 1000;
+    jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > offset) {
+        jQuery('.top').fadeIn(duration);
+      } else {
+        jQuery('.top').fadeOut(duration);
+      }
+    });
+ 
+    jQuery('.top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    })
+  });
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
   });
 });
 
