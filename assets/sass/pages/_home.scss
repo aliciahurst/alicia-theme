@@ -145,6 +145,7 @@
 
 	}
 	@include media($small) {
+		padding: 12% 6% 0;
 		.services-div {
 			width: 85%;
 		}
@@ -202,7 +203,7 @@
 			}
 			@include display(table-cell);
 			width: 50%;
-			padding: 6%;
+			padding: 12%;
 			vertical-align: middle;
 			@include media($small) {
 				width: 100%;
@@ -266,10 +267,6 @@
 			@extend %clearfix;
 			float: none;
 		}
-		@include media($small) {
-			float: none;
-			width: 100%;
-		}
 		a {
 			display: block;
 			border: 0;
@@ -278,5 +275,12 @@
 	p {
 		text-align: center;
 		margin-top: 6%;
+	}
+	@include media($small) {
+		padding: 12%;
+		div {
+			float: none;
+			width: 100%;
+		}
 	}
 }

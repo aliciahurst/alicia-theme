@@ -36,8 +36,7 @@
 				top: 50%;
 				width: 0;
 				border-top: 2px solid;
-				//height: 1px;
-				@include transition(width 0.35s ease-in-out);
+				@include transition(width 0.25s ease-in-out);
 			}
 			&:hover {
 				&:after {
@@ -87,13 +86,14 @@
 
 button.menu-toggle {
 	&:before {
-		content: "\00002b";
+		content: "\002B";
 		display: inline-block;
 		overflow: hidden;
 	}
 	z-index: 4;
 	position: absolute;
-	top: 1rem;
+	top: 0;
+	@include transform(translateY(25%));
 	overflow: hidden;
 	right: 0;
 	background: transparent;
@@ -102,14 +102,17 @@ button.menu-toggle {
 	line-height: 1;
 	font-size: 5rem;
 	width: 5rem;
+	outline: none;
 }
 
 .toggled {
 	button.menu-toggle {
 		&:before {
-			@include transform(rotate(45deg));
+			content: "\00D7";
 		}
 		position: fixed;
+		top: 0;
+		outline: none;
 		color: $white;
 	}
 	ul {

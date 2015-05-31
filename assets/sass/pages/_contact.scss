@@ -10,7 +10,7 @@
 		height: 100%;
 		min-height: 100vh;
 		@include media($med) {
-			@include flex(column);
+			@include flex-direction(column);
 			@include justify-content(flex-start);
 		}
 	}
@@ -26,6 +26,15 @@
 	}
 	ul a {
 		border: 0;
+	}
+	@include media($small) {
+		.contact-content {
+			padding: 12%;
+			background: $f7;
+		}
+		.contact-form {
+			padding: 12% 6%;
+		}
 	}
 }
 

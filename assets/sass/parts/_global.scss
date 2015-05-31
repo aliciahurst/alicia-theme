@@ -62,8 +62,11 @@ img {
 
 
 @include media($small) {
-	.site-main, .archive .site-main {
+	.site-main {
 		padding-top: 18%;
+	}
+	.archive .site-main {
+		padding-top: 25%;
 	}
 }
 

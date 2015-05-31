@@ -934,8 +934,12 @@ img {
   }
 }
 @media screen and (max-width: 48em) {
-  .site-main, .archive .site-main {
+  .site-main {
     padding-top: 18%;
+  }
+
+  .archive .site-main {
+    padding-top: 25%;
   }
 }
 #masthead {
@@ -971,9 +975,9 @@ img {
   top: 50%;
   width: 0;
   border-top: 2px solid;
-  -webkit-transition: width 0.35s ease-in-out;
-  -moz-transition: width 0.35s ease-in-out;
-  transition: width 0.35s ease-in-out;
+  -webkit-transition: width 0.25s ease-in-out;
+  -moz-transition: width 0.25s ease-in-out;
+  transition: width 0.25s ease-in-out;
 }
 .site-name .site-title a:hover:after {
   width: 100%;
@@ -1017,7 +1021,12 @@ img {
 button.menu-toggle {
   z-index: 4;
   position: absolute;
-  top: 1rem;
+  top: 0;
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -o-transform: translateY(25%);
+  transform: translateY(25%);
   overflow: hidden;
   right: 0;
   background: transparent;
@@ -1026,23 +1035,22 @@ button.menu-toggle {
   line-height: 1;
   font-size: 5rem;
   width: 5rem;
+  outline: none;
 }
 button.menu-toggle:before {
-  content: "\00002b";
+  content: "\002B";
   display: inline-block;
   overflow: hidden;
 }
 
 .toggled button.menu-toggle {
   position: fixed;
+  top: 0;
+  outline: none;
   color: #ffffff;
 }
 .toggled button.menu-toggle:before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  content: "\00D7";
 }
 .toggled ul {
   z-index: 3;
@@ -1573,6 +1581,9 @@ button.menu-toggle:before {
   }
 }
 @media screen and (max-width: 48em) {
+  .home-services {
+    padding: 12% 6% 0;
+  }
   .home-services .services-div {
     width: 85%;
   }
@@ -1625,7 +1636,7 @@ button.menu-toggle:before {
 .home-about div.bio-text {
   display: table-cell;
   width: 50%;
-  padding: 6%;
+  padding: 12%;
   vertical-align: middle;
 }
 .home-about div.bio-text h2 {
@@ -1694,12 +1705,6 @@ button.menu-toggle:before {
 .home-work div:nth-of-type(2), .work-navigation div:nth-of-type(2) {
   float: none;
 }
-@media screen and (max-width: 48em) {
-  .home-work div, .work-navigation div {
-    float: none;
-    width: 100%;
-  }
-}
 .home-work div a, .work-navigation div a {
   display: block;
   border: 0;
@@ -1707,6 +1712,15 @@ button.menu-toggle:before {
 .home-work p, .work-navigation p, .home-work .validation_error, .work-navigation .validation_error {
   text-align: center;
   margin-top: 6%;
+}
+@media screen and (max-width: 48em) {
+  .home-work, .work-navigation {
+    padding: 12%;
+  }
+  .home-work div, .work-navigation div {
+    float: none;
+    width: 100%;
+  }
 }
 
 .single-work p, .single-work .validation_error {
@@ -1906,7 +1920,7 @@ button.menu-toggle:before {
 .display_images .aside h3, .display_images .aside .outbound-link, .display_images .aside .thumbnail h1, .thumbnail .display_images .aside h1, .display_images .aside .twentytwenty-before-label:before, .display_images .aside .twentytwenty-after-label:before, .display_images .aside p, .display_images .aside .validation_error {
   padding: 0 6%;
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 65em) {
   .display_images:nth-of-type(2n-1) {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
@@ -1920,8 +1934,36 @@ button.menu-toggle:before {
     -ms-flex-direction: column-reverse;
   }
 }
+@media screen and (max-width: 65em) {
+  .display_images {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
+}
 @media screen and (max-width: 48em) {
   .display_images {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     box-orient: vertical;
@@ -1966,6 +2008,9 @@ button.menu-toggle:before {
   width: 800px;
 }
 
+.work-navigation {
+  background: #f7f7f7;
+}
 .work-navigation div:last-of-type h3:hover span:after, .work-navigation div:last-of-type .outbound-link:hover span:after, .work-navigation div:last-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:last-of-type h1:hover span:after, .work-navigation div:last-of-type .twentytwenty-before-label:hover:before span:after, .work-navigation div:last-of-type .twentytwenty-after-label:hover:before span:after {
   content: "\2192";
 }
@@ -2116,13 +2161,16 @@ button.menu-toggle:before {
 }
 @media screen and (max-width: 65em) {
   .contact .site-main {
-    -webkit-box-flex: column;
-    -moz-box-flex: column;
-    box-flex: column;
-    -webkit-flex: column;
-    -moz-flex: column;
-    -ms-flex: column;
-    flex: column;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
     -webkit-box-pack: start;
     -moz-box-pack: start;
     box-pack: start;
@@ -2152,6 +2200,15 @@ button.menu-toggle:before {
 }
 .contact ul a {
   border: 0;
+}
+@media screen and (max-width: 48em) {
+  .contact .contact-content {
+    padding: 12%;
+    background: #f7f7f7;
+  }
+  .contact .contact-form {
+    padding: 12% 6%;
+  }
 }
 
 .contact-content a:hover {
