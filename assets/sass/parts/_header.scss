@@ -28,6 +28,22 @@
 		font-size: 25px;
 		a {
 			text-decoration: none;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 50%;
+				width: 0;
+				border-top: 2px solid;
+				//height: 1px;
+				@include transition(width 0.35s ease-in-out);
+			}
+			&:hover {
+				&:after {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
