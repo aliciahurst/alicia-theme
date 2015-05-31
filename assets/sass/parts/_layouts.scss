@@ -1,16 +1,72 @@
-%fifty-fifty {
+%flex {
 	@include display(flex);
+}
+
+%flex-row {
 	@include flex-direction(row);
+}
+
+%flex-row-reverse {
+	@include flex-direction(row-reverse);
+}
+
+%flex-column {
+	@include flex-direction(column);
+}
+
+%flex-column-reverse {
+	@include flex-direction(column-reverse);
+}
+
+%flex-justify-center {
 	@include justify-content(center);
+}
+
+%flex-justify-around {
+	@include justify-content(space-around);
+}
+
+%flex-justify-between {
+	@include justify-content(space-between);
+}
+
+%flex-justify-start {
+	@include justify-content(flex-start);
+}
+
+%flex-align-stretch {
 	@include align-items(stretch);
+}
+
+%flex-align-center {
+	@include align-items(center);
+}
+
+%flex-1 {
+	@include flex(1);
+}
+
+%flex-wrap {
+	@include flex-wrap(wrap);
+}
+
+%clearfix {
+	@include clearfix;
+}
+
+%fifty-fifty {
+	@extend %flex;
+	@extend %flex-row;
+	@extend %flex-justify-center;
+	@extend %flex-align-stretch;
 	height: 100%;
 	min-height: 100vh;
 	div {
-		@include flex(1);
-		@include display(flex);
-		@include flex-direction(column);
-		@include align-items(center);
-		@include justify-content(space-around);
+		@extend %flex-1;
+		@extend %flex;
+		@extend %flex-column;
+		@extend %flex-align-center;
+		@extend %flex-justify-around;
 		padding: 6%;
 		text-align: center;
 		background-repeat: no-repeat !important;
@@ -29,3 +85,55 @@
 	}
 }
 
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+%underline {
+ @media screen and (min-width: 600px) {
+ 	  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+   &:before,
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 2px;
+		left: 0; right: 0;
+		height: 2px;
+		background-color: $gray1;
+	}
+	&:before {
+		opacity: 0;
+		transform: translateY(- $distance);
+		transition: transform 0s $easeOutBack, opacity 0s;
+	}
+	&:after {
+		opacity: 0;
+		transform: translateY($distance/2);
+		transition: transform $duration $easeOutBack, opacity $duration;
+	}
+	&:hover,
+	&:focus {
+		&:before,
+		&:after {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		&:before {
+			transition: transform $duration $easeOutBack, opacity $duration;
+		}
+		&:after {
+			transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+		}
+	}
+ }
+}
+
+%translateY {
+	@include transform(translateY(-50%));
+}
+
+%translateX {
+	@include transform(translateX(-50%));
+}

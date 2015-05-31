@@ -114,7 +114,7 @@ $twenty20-label-radius: 2px !default;
 
 // 20/20 Container
 .#{$pluginPrefix}-container {
-  @include box-sizing(content-box);
+  box-sizing: content-box;
   z-index: 0;
   overflow: hidden;
   position: relative;
@@ -134,7 +134,7 @@ $twenty20-label-radius: 2px !default;
     .#{$pluginPrefix}-before-label,
     .#{$pluginPrefix}-after-label { opacity: 1; }
   }
-  * { @include box-sizing(content-box); }
+  * { box-sizing: content-box; }
 }
 
 // 20/20 Before Label

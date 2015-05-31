@@ -1,5 +1,5 @@
 .single-work {
-	@include clearfix;
+	@extend %clearfix;
 	p {
 		color: lighten($black,50);
 	}
@@ -9,6 +9,11 @@
 	position: relative;
 	.work-intro & {
 		background: $f7;
+		@include media($med) {
+			p {
+				text-align: left;
+			}
+		}
 	}
 }
 
@@ -33,8 +38,8 @@
 
 
 .down-arrow {
-	@include display(flex);
-	@include align-items(center);
+	@extend %flex;
+	@extend %flex-align-center;
 	margin: 6% 0;
 	padding: 0 !important;
 	svg {
@@ -57,11 +62,11 @@
 		text-align: center;
 		max-width: 1200px;
 		margin: 0 auto;
-		@include clearfix;
+		@extend %clearfix;
 		text-align: center;
-		@include display(flex);
-		@include flex-wrap(wrap);
-		@include justify-content(center);
+		@extend %flex;
+		@extend %flex-wrap;
+		@extend %flex-justify-center;
 		width: 100%;
 	}
 	li {
@@ -71,6 +76,9 @@
 		float: none;
 		display: inline-block;
 		text-transform: capitalize;
+		@include media($small) {
+			width: 50%;
+		}
 		svg {
 			height: 40px;
 			width: auto;
@@ -87,11 +95,17 @@
 		margin: 0 auto;
 		float: none;
 		padding: 6%;
+		@include media($med) {
+			width: 75%
+		}
+		@include media($small) {
+			width: 100%;
+		}
 	}
 }
 
 .contribution {
-	 + .display_slider, + .layout-two, + .display_before {
+	+ .display_slider, + .layout-two, + .display_before {
 		margin-top: 6%;
 	}
 }
@@ -130,12 +144,20 @@
 	a {
 		border: 0;
 		display: block;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 1.4rem;
+		&:after {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 1.4rem;
+		}
 	}
 	[class^="icon-"], [class*=" icon-"] {
 		height: 30px;
 		width: auto;
 		fill: currentColor; 
-		opacity: 0.5;
+		opacity: 1;
 	}
 }
 
@@ -148,7 +170,11 @@
 			top: 50%;
 			display: block;
 			width: 200px;
-			@include transform(translateY(-50%));
+			@extend %translateY;
+			@include media($small) {
+				width: 100px;
+				left: -110px;
+			}
 		}
 	}
 }
@@ -159,7 +185,7 @@
 			content: "All Work";
 			position: absolute;
 			left: 50%;
-			@include transform(translateX(-50%));
+			@extend %translateX;
 			top: -3.5rem;
 			display: block;
 			width: 200px;
@@ -176,50 +202,37 @@
 			top: 50%;
 			display: block;
 			width: 200px;
-			@include transform(translateY(-50%));
-		}
-	}
-}
-
-[class^="nav-"], [class*=" nav-"] a {
-	text-transform: uppercase;
-			letter-spacing: 1px;
-			font-size: 1.4rem;
-	&:hover {
-		pointer: cursor;
-		svg {
-			opacity: 1;
-		}
-		&:after {
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			font-size: 1.4rem;
+			@extend %translateY;
+			@include media($small) {
+				width: 100px;
+				right: -95px;
+			}
 		}
 	}
 }
 
 .display_images {
 	@extend %fifty-fifty;
-	//min-height: 90vh;
 	.aside {
-		@include justify-content(center);
+		@extend %flex-justify-center;
 		padding: 6% 6%;
 		h3, p {
 			padding: 0 6%;
 		}
 	}
 	&:nth-of-type(2n-1) {
-		@include flex-direction(row-reverse);
+		@extend %flex-row-reverse;
+		@include media($small) {
+			@include flex-direction(column-reverse);
+		}
+	}
+	@include media($med) {
+
+	}
+	@include media($small) {
+		@include flex-direction(column-reverse);
 	}
 }
-
-.display_before {
-	div {
-		max-width: 1000px;
-		margin: 0 auto;
-	}
-}
-
 
 .display_before {
 	&:nth-of-type(2n + 1) {
@@ -231,15 +244,22 @@
 	&:nth-of-type(2n) {
 		background-color: darken($f7,4);
 	}
+	div {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
 }
 
 .display_slider {
-	@include clearfix;
+	@extend %clearfix;
 	padding: 6% 6% 0;
 	.rslides_container {
 		width: 75%;
 		margin: 0 auto;
 		float: none;
+		@include media($med) {
+			width: 100%;
+		}
 		.postid-668 & {
 			width: 800px;
 		}
@@ -250,7 +270,7 @@
 	@extend .home-work;
 	div {
 		&:last-of-type {
-			@include clearfix;
+			@extend %clearfix;
 		}
 		&:last-of-type h3 {
 			&:hover {
@@ -268,7 +288,7 @@
 		}
 	}
 	p {
-		@include clearfix;
+		@extend %clearfix;
 	}
 	a {
 		position: relative;
@@ -293,8 +313,8 @@
 			display: block;
 			text-align: center;
 			@include transition(all 0.35s ease-in-out);
-			@include transform(translateY(-50%));
-				&:after {
+			@extend %translateY;
+			&:after {
 				content: "\2015";
 				text-align: center;
 				display: block;
@@ -309,5 +329,11 @@
 .postid-668 {
 	.contribution {
 		display: none;
+	}
+}
+
+.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
+	@include media($small) {
+		margin-top: 0 !important;
 	}
 }

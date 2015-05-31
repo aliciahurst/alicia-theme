@@ -30,7 +30,7 @@
 	position: relative;
 	background: $four;
 	.footer-container {
-		@include justify-content(center);
+		@extend %flex-justify-center;
 		div, nav {
 			width: 25%;
 			text-align: center;
@@ -76,6 +76,9 @@
 .footer-contact {
 	p {
 		margin: 0 !important;
+	}
+	h3 {
+		padding-bottom: 13px;
 	}
 }
 

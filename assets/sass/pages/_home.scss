@@ -5,18 +5,18 @@
 	outline: none;
 }
 .home-top {
-	@include display(flex);
-	@include flex-direction(row);
-	@include justify-content(center);
-	@include align-items(stretch);
+	@extend %flex;
+	@extend %flex-row;
+	@extend %flex-justify-center;
+	@extend %flex-align-stretch;
 	height: 100%;
 	min-height: 100vh;
 	div {
-		@include flex(1);
-		@include display(flex);
-		@include flex-direction(column);
-		@include align-items(center);
-		@include justify-content(center);
+		@extend %flex;
+		@extend %flex-1;
+		@extend %flex-column;
+		@extend %flex-align-center;
+		@extend %flex-justify-center;
 		padding: 6%;
 		text-align: center;
 		&:first-of-type {
@@ -34,9 +34,9 @@
 					padding: 6%;
 					text-align: center;
 					min-height: 550px;
-					@include display(flex);
-					@include flex-direction(column);
-					@include justify-content(space-between);
+					@extend %flex;
+					@extend %flex-column;
+					@extend %flex-justify-between;
 					@include media($small) {
 						min-height: 650px;
 					}
@@ -95,10 +95,10 @@
 		margin-bottom: 6%;
 	}
 	.services-container {
-		@include clearfix;
+		@extend %clearfix;
 		text-align: center;
-		@include display(flex);
-		@include justify-content(center);
+		@extend %flex;
+		@extend %flex-justify-center;
 		width: 100%;
 	}
 	.services-div {
@@ -165,6 +165,9 @@
 			p, h3 {
 				color: $white;
 			}
+			a {
+				border-bottom: 1px solid;
+			}
 		}
 		h3 {
 			@extend h1;
@@ -182,7 +185,7 @@
 			padding: 12%;
 		}
 	}
-	@include clearfix;
+	@extend %clearfix;
 }
 
 .home-about {
@@ -260,7 +263,7 @@
 		margin: 0;
 		text-align: left;
 		&:nth-of-type(2) {
-			@include clearfix;
+			@extend %clearfix;
 			float: none;
 		}
 		@include media($small) {

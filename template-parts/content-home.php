@@ -51,15 +51,15 @@
 </section>
 
 <section class="home-contact">
-		<div class="slideInLeft">
+		<div>
 			<h3>Want to work together?</h3>
 			<p>I'm currently accepting inquiries for new projects.</p>
 			<p><a href="/contact" class="btn">Let's talk!</a></p>
 		</div>
-		<div class="slideInRight">
+		<div>
 			<h3>Want to hire me?</h3>
-			<p>I’m also available for <strong>full-time, remote</strong> creative positions!</p>
-			<p><strong>Keywords:</strong> web design, front-end development, ux/ui, project management, product management, SaaS/web/mobile applications</p>
+			<p>I’m also available for <strong>full-time, remote</strong> creative or technical positions!</p>
+			<p><strong>Keywords:</strong> web design, front-end development, ux/ui, project management, product management, saas/web/mobile applications</p>
 			<p><a href="mailto:hi@aliciahurst.com">Get in touch &rarr;</a></p>
 		</div>
 </section>

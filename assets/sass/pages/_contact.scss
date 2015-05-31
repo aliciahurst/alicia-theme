@@ -3,22 +3,22 @@
 		display: none;
 	}
 	.site-main {
-		@include display(flex);
-		@include flex-direction(row);
-		@include justify-content(center);
-		@include align-items(stretch);
+		@extend %flex;
+		@extend %flex-row;
+		@extend %flex-justify-center;
+		@extend %flex-align-stretch;
 		height: 100%;
 		min-height: 100vh;
 		@include media($med) {
-			@include flex-direction(column);
+			@include flex(column);
 			@include justify-content(flex-start);
 		}
 	}
 	section {
-		@include flex(1);
-		@include display(flex);
-		@include flex-direction(column);
-		@include justify-content(center);
+		@extend %flex-1;
+		@extend %flex;
+		@extend %flex-column;
+		@extend %flex-justify-center;
 		padding: 6%;
 		@include media($med) {
 			@include justify-content(flex-start);
@@ -33,11 +33,10 @@
 	a {
 		@extend .normal;
 		&:hover {
-			background: $graysuper;
 			color: $three !important;
 		}
 	}
-	li a {
+	li a, .email {
 		line-height: 1.5;
 		border-bottom: 0;
 		&:hover {
