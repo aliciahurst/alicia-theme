@@ -23,9 +23,10 @@ get_header(); ?>
 		<?php endwhile; ?>
 	<?php else : ?>
 	<?php endif; ?>
-	<div class="work-item">
+	<div class="work-item thumbnail">
 		<a href="/contact">
 			<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/your-site-here.jpg">
+			<h1><span>Get in touch &rarr;</span></h1>
 		</a>
 	</div>
 </main><!-- #main -->

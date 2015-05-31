@@ -50,8 +50,7 @@ img {
 	@extend %flex;
 	@extend %flex-wrap;
 	@include align-content(flex-start);
-	padding: 6%;
-	padding-top: 8%;
+	padding: 8% 12% 2%;
 }
 
 @include media($med) {
