@@ -21,46 +21,45 @@
       <section class="layout-two">
         <?php while( have_rows('two_images') ): the_row(); $imageurl = get_sub_field('two_image_single'); ?>
           <div style="background-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>')" class="img-bg"></div>
-        <!-- <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>"> -->
+        <?php endwhile; ?>
+      </section>
+
+    <?php elseif( get_row_layout() == 'work_layout_images' ): ?>
+      <?php 
+      $displayType = get_sub_field('display_type'); 
+      ?>
+      <?php if( have_rows('image_urls') ): ?>
+
+       <section class="<?php echo $displayType ?>">
+
+        <?php if ($displayType == 'display_slider') : ?>
+          <div class="rslides_container">
+           <ul class="rslides" id="slider">
+            <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
+             <li><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>"></li>
+           <?php endwhile; ?>
+         </ul>
+       </div>
+       
+     <?php elseif ($displayType == 'display_before') : ?>
+       <div class="twentytwenty-container">
+        <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
+         <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> before and after | <?php bloginfo( 'name' ); ?>">
        <?php endwhile; ?>
-     </section>
-
-   <?php elseif( get_row_layout() == 'work_layout_images' ): ?>
-    <?php 
-    $displayType = get_sub_field('display_type'); 
-    ?>
-    <?php if( have_rows('image_urls') ): ?>
-
-     <section class="<?php echo $displayType ?>">
-
-      <?php if ($displayType == 'display_slider') : ?>
-        <div class="rslides_container">
-         <ul class="rslides" id="slider">
-          <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
-           <li><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>"></li>
-         <?php endwhile; ?>
-       </ul>
      </div>
-     
-   <?php elseif ($displayType == 'display_before') : ?>
-     <div class="twentytwenty-container">
-      <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
-       <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>" alt="<?php the_title(); ?> before and after | <?php bloginfo( 'name' ); ?>">
-     <?php endwhile; ?>
-   </div>
 
- <?php else : //if it's display_images ?>
-  <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
-  <div class="work-images" style="background-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>')">
-</div>
-<?php endwhile; ?>
+   <?php else : //if it's display_images ?>
+    <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
+      <div class="work-images" style="background-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>')">
+      </div>
+    <?php endwhile; ?>
 
   <?php endif; ?>
   <?php if( get_sub_field('block_caption') ): ?>
-     <div class="aside">
-      <?php the_sub_field( 'block_caption' ); ?>
-    </div>
-  <?php endif; ?>
+   <div class="aside">
+    <?php the_sub_field( 'block_caption' ); ?>
+  </div>
+<?php endif; ?>
 
 </section>
 <?php endif; ?>

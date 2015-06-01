@@ -54,18 +54,31 @@ img {
 }
 
 @include media($med) {
-	.site-main, .archive .site-main {
-		padding-top: 12%;
+	#masthead {
+		height: 10vh;
+		.archive & {
+			background-color: $f7;
+		}
+	}
+	.site-main {
+		padding-top: 10vh;
+		.archive & {
+			padding-top: 14vh;
+		}
+	}
+	.work-intro .aside {
+		min-height: 90vh;
+		.intro-content {
+			padding: 0 6%;
+		}
 	}
 }
 
-
 @include media($small) {
 	.site-main {
-		padding-top: 18%;
-	}
-	.archive .site-main {
-		padding-top: 25%;
+		.archive & {
+			padding-bottom: 6%;
+		}
 	}
 }
 
