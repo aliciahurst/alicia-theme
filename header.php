@@ -12,7 +12,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="icon" type="image/x-icon" href="/wordpress/wp-content/themes/alicia-theme/assets/img/raw/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/wordpress/wp-content/themes/alicia-theme/assets/img/min/favicon.ico">
 	<script src="//use.typekit.net/nht0rlx.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<?php wp_head(); ?>
