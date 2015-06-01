@@ -954,6 +954,10 @@ img {
     padding-bottom: 6%;
   }
 }
+.error404 .rslides_container {
+  margin-bottom: 0;
+}
+
 #masthead {
   background: #ffffff;
   width: 100%;

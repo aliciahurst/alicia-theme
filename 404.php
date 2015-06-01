@@ -7,50 +7,32 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<main id="main" class="site-main" role="main">
+<section class="home-top">
+	<div class="home-title">
+		<h1 class="entry-title">404 &mdash; Page Not Found</h1>
+<p> Well that was unexpected! There's nothing here!
+						Maybe something used to be here, but it is no longer? We may never know.</p>
+						<p>Please click the back button on your browswer
+						and try another link. You can also check the address bar for common misspellings.</p>
+	</div>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'alicia-theme' ); ?></h1>
-				</header><!-- .page-header -->
+	<div class="rslides_container">
+		<ul id="home-slider" class="rslides">
+			<li>
+			<h3>&times;</h3>
+			<h2>If you gaze into the abyss, the abyss gazes also into you.</h2>
+					<h4>&mdash; Friedrich Nietzsche</h4>
+				<h3>&times;</h3>
+			</li>
+	</ul>
+</div>
+</section>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'alicia-theme' ); ?></p>
 
-					<?php get_search_form(); ?>
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+</main><!-- #main -->
 
-					<?php if ( alicia_theme_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'alicia-theme' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
-
-					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'alicia-theme' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
