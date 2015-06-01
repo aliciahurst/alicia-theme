@@ -1635,7 +1635,7 @@ button.menu-toggle:before {
 .home-about div.bio-text {
   display: table-cell;
   width: 50%;
-  padding: 12%;
+  padding: 6%;
   vertical-align: middle;
 }
 .home-about div.bio-text h2 {
@@ -1644,6 +1644,7 @@ button.menu-toggle:before {
 @media screen and (max-width: 48em) {
   .home-about div.bio-text {
     width: 100%;
+    padding: 12%;
   }
 }
 .home-about .bio-photos {

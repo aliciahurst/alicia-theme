@@ -203,10 +203,11 @@
 			}
 			@include display(table-cell);
 			width: 50%;
-			padding: 12%;
+			padding: 6%;
 			vertical-align: middle;
 			@include media($small) {
 				width: 100%;
+				padding: 12%;
 			}
 		}
 	}
