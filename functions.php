@@ -345,3 +345,9 @@ add_filter("gform_init_scripts_footer", "init_scripts");
 function init_scripts() {
 return true;
 }
+
+// Auto update plugins
+add_filter('auto_update_plugin', '__return_true');
+
+// Don't update WP with nightly builds
+add_filter( 'allow_dev_auto_core_updates', '__return_false' );
