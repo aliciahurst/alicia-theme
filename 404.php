@@ -12,9 +12,8 @@ get_header(); ?>
 		<div class="home-title">
 			<h1 class="entry-title">404 &mdash; Page Not Found</h1>
 			<p>There's nothing here!
-				Maybe something used to be, but it is no longer? We may never know.</p>
-				<p>Please click the back button on your browswer
-					and try another link. You can also check the address bar for common misspellings.</p>
+				Maybe something used to be, but it is no longer? We may never know. Please click the back button on your browswer
+					or try another link. You can also check the address bar for common misspellings.</p>
 				</div>
 
 				<div class="rslides_container">
