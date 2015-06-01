@@ -924,7 +924,7 @@ img {
   -moz-align-content: flex-start;
   align-content: flex-start;
   -ms-flex-line-pack: start;
-  padding: 8% 12% 2%;
+  padding: 8% 12% 1%;
 }
 
 @media screen and (max-width: 65em) {
@@ -1977,10 +1977,7 @@ button.menu-toggle:before {
 }
 
 .display_before:nth-of-type(2n + 1) {
-  background: #d1d1d1;
-  background-image: url("../img/min/watercolorbg1.png");
-  background-size: cover;
-  background-position: center;
+  background: #dedede;
 }
 .display_before:nth-of-type(2n) {
   background-color: #ededed;
@@ -2004,7 +2001,7 @@ button.menu-toggle:before {
   }
 }
 .postid-668 .display_slider .rslides_container {
-  width: 800px;
+  max-width: 800px;
 }
 
 .work-navigation {
@@ -2058,10 +2055,8 @@ button.menu-toggle:before {
   display: none;
 }
 
-@media screen and (max-width: 48em) {
-  .twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
-    margin-top: 0 !important;
-  }
+.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
+  margin-top: 0 !important;
 }
 
 .archive .work-item {
@@ -2149,6 +2144,24 @@ button.menu-toggle:before {
 }
 .thumbnail:hover h1:before, .thumbnail:hover .home-contact div h3:before, .home-contact div .thumbnail:hover h3:before, .thumbnail:hover .home-contact div .outbound-link:before, .home-contact div .thumbnail:hover .outbound-link:before, .thumbnail:hover .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail:hover .twentytwenty-after-label:before, .thumbnail:hover .outbound-link:before, .thumbnail:hover h3:before, .thumbnail:hover h1:before, .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .twentytwenty-after-label:before {
   content: "\00D7";
+}
+
+.last {
+  margin: 0 auto;
+  text-align: center;
+}
+.last h1:before, .last .home-contact div h3:before, .home-contact div .last h3:before, .last .home-contact div .outbound-link:before, .home-contact div .last .outbound-link:before, .last .home-contact div .twentytwenty-before-label:before, .home-contact div .last .twentytwenty-before-label:before, .last .home-contact div .twentytwenty-after-label:before, .home-contact div .last .twentytwenty-after-label:before {
+  display: none;
+}
+.last:hover img {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.last span {
+  display: inline-block;
 }
 
 .contact .entry-header {

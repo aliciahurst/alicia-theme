@@ -71,3 +71,16 @@
 	}
 }
 
+.last {
+	margin: 0 auto;
+	text-align: center;
+	h1:before {
+		display: none;
+	}
+	&:hover img {
+		@include transform(none);
+	}
+	span {
+		display: inline-block;
+	}
+}

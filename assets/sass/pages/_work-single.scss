@@ -240,10 +240,7 @@
 
 .display_before {
 	&:nth-of-type(2n + 1) {
-		background: darken($f7,15);
-		background-image: url('../img/min/watercolorbg1.png');
-		background-size: cover;
-		background-position: center;
+		background: darken($f7,10);
 	}
 	&:nth-of-type(2n) {
 		background-color: darken($f7,4);
@@ -265,7 +262,7 @@
 			width: 100%;
 		}
 		.postid-668 & {
-			width: 800px;
+			max-width: 800px;
 		}
 	}
 }
@@ -338,7 +335,5 @@
 }
 
 .twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
-	@include media($small) {
 		margin-top: 0 !important;
-	}
 }
