@@ -22,5 +22,5 @@
 
 <section class="contact-form">
 		<h2>New Project Inquiries</h2>
-		<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="false]'); ?>
+		<?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="false]'); ?>
 </section>

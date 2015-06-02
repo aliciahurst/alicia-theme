@@ -124,9 +124,6 @@ function alicia_theme_scripts() {
 	//}
 
 	// Browser Reload Grunt
-	if ( is_user_logged_in() ) {
-		wp_enqueue_script( 'browser-reload', '//localhost:35729/livereload.js', array(), null , true );
-	}
 }
 
 add_action( 'wp_enqueue_scripts', 'alicia_theme_scripts' );
