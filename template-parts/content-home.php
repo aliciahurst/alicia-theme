@@ -29,7 +29,7 @@
 </section>
 
 <section class="home-services">
-	<h2>How I Can Help</h2>
+	<h2>What I Do</h2>
 	<div class="services-container">
 		<?php while ( have_rows('services') ) : the_row(); ?>
 			<?php if( get_row_layout() == 'service_section' ): ?>
@@ -58,7 +58,7 @@
 		</div>
 		<div>
 			<h3>Hire Me</h3>
-			<p>I’m available for a <strong>full-time, remote</strong> Product Manager or Front-End Developer position on a web/SaaS applications team.</p>
+			<p>I’m available for a <strong>full-time, remote</strong> position as Product Manager or Front-End Developer on a web/SaaS applications team.</p>
 			<p><a href="http://linkedin.com/in/aliciahurst" class="no-line">Find me on LinkedIn</a> or <a href="mailto:hi@aliciahurst.com">Get in touch &rarr;</a></p>
 		</div>
 </section>
