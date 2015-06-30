@@ -52,15 +52,14 @@
 
 <section class="home-contact">
 		<div>
-			<h3>Want to work together?</h3>
-			<p>I'm currently accepting inquiries for new projects.</p>
+			<h3>Projects</h3>
+			<p>I'm currently accepting inquiries for new front-end development projects, preferably those that are team-based.</p>
 			<p><a href="/contact" class="btn">Let's talk!</a></p>
 		</div>
 		<div>
-			<h3>Want to hire me?</h3>
-			<p>I’m also available for <strong>full-time, remote</strong> creative or technical positions!</p>
-			<p><strong>Keywords:</strong> web design, front-end development, ux/ui, project management, product management, saas/web/mobile applications</p>
-			<p><a href="mailto:hi@aliciahurst.com">Get in touch &rarr;</a></p>
+			<h3>Hire Me</h3>
+			<p>I’m available for a <strong>full-time, remote</strong> Product Manager or Front-End Developer position on a web/SaaS applications team.</p>
+			<p><a href="http://linkedin.com/in/aliciahurst">Find me on LinkedIn</a> or <a href="mailto:hi@aliciahurst.com">Get in touch &rarr;</a></p>
 		</div>
 </section>
 
