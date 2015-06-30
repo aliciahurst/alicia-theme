@@ -53,13 +53,13 @@
 <section class="home-contact">
 		<div>
 			<h3>Projects</h3>
-			<p>I'm currently accepting inquiries for new front-end development projects, preferably those that are team-based.</p>
+			<p>I'm accepting inquiries for new, freelance front-end development projects, preferably those that are team-based.</p>
 			<p><a href="/contact" class="btn">Let's talk!</a></p>
 		</div>
 		<div>
 			<h3>Hire Me</h3>
 			<p>I’m available for a <strong>full-time, remote</strong> Product Manager or Front-End Developer position on a web/SaaS applications team.</p>
-			<p><a href="http://linkedin.com/in/aliciahurst">Find me on LinkedIn</a> or <a href="mailto:hi@aliciahurst.com">Get in touch &rarr;</a></p>
+			<p><a href="http://linkedin.com/in/aliciahurst" class="no-line">Find me on LinkedIn</a> or <a href="mailto:hi@aliciahurst.com">Get in touch &rarr;</a></p>
 		</div>
 </section>
 
@@ -75,7 +75,7 @@
 </section>
 
 <section class="home-work">
-	<h2>Latest Work</h2>
+	<h2>Recent Work</h2>
 		<?php $args = array( 'numberposts' => 2, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 		<div class="thumbnail">
 		<a href="<?php the_permalink(); ?>">
