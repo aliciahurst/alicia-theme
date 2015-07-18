@@ -20,7 +20,7 @@
 			<nav id="social-navigation-footer" class="social-navigation" role="navigation">
 				<?php if( have_rows('social_media', 'option') ): ?>
 					<ul>
-						<li> <a href="mailto:alicia@aliciahurst.com" class="animated"><svg class="icon-mail"><use xlink:href="#icon-mail"></use></svg></a> </li>
+						<li> <a href="mailto:hi@aliciahurst.com" class="animated"><svg class="icon-mail"><use xlink:href="#icon-mail"></use></svg></a> </li>
 						<?php while( have_rows('social_media', 'option') ): the_row(); 
 						$network = get_sub_field('social_media_network');
 						$account = get_sub_field('social_media_account');
