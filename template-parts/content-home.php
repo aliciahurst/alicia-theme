@@ -92,7 +92,8 @@
 
 <section id="work" class="home-work">
 	<h2>Past Work</h2>
-		<?php $args = array( 'numberposts' => 6, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+	<p>Web Design & Front-End Development</p>
+		<?php $args = array( 'numberposts' => 7, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 		<div class="thumbnail">
 		<a href="<?php the_permalink(); ?>">
 				<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
