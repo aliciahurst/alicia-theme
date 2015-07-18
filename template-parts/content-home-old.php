@@ -5,7 +5,7 @@
  * @package alicia-theme
  */
 ?>
-<!-- <section class="home-top">
+<section class="home-top">
 	<div class="home-title">
 		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/design.png"> <h2>&plus;</h2><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/development.png">
 		<h3>By Me, Alicia</h3>
@@ -61,7 +61,7 @@
 			<p>I’m available for a <strong>full-time, remote</strong> position as Product Manager or Front-End Developer on a web/SaaS applications team.</p>
 			<p><a href="http://linkedin.com/in/aliciahurst" class="no-line">Find me on LinkedIn</a> or <a href="mailto:hi@aliciahurst.com">Get in touch &rarr;</a></p>
 		</div>
-</section> -->
+</section>
 
 <section id="about" class="home-about">	
 	<div class="bio-text">
@@ -74,9 +74,9 @@
 	</div>
 </section>
 
-<section id="work" class="home-work">
-	<h2>Past Work</h2>
-		<?php $args = array( 'numberposts' => 6, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+<section class="home-work">
+	<h2>Recent Work</h2>
+		<?php $args = array( 'numberposts' => 2, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 		<div class="thumbnail">
 		<a href="<?php the_permalink(); ?>">
 				<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
@@ -85,4 +85,5 @@
 				</div>
 		<?php endforeach; ?>
 		<?php wp_reset_query(); ?>
+		<p><a href="/work" class="btn">View All Work</a></p>
 </section>

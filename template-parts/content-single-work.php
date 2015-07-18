@@ -35,7 +35,7 @@
 			<?php } ?>
 		<svg class="icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg></a></li>
 
-		<li class="nav-2"><a href="/work"><svg class="icon-grid"><use xlink:href="#icon-grid"></use></svg></a></li>
+		<li class="nav-2"><a href="/#work"><svg class="icon-grid"><use xlink:href="#icon-grid"></use></svg></a></li>
 		
 		<li class="nav-3">
 			<?php if (!empty($nextID)) { ?>
@@ -126,5 +126,5 @@
 						<h3><span><?php echo get_the_title($firstID); ?></span></h3></a>
 					<?php } ?>
 						</div>
-					<p><a href="/work" class="btn">View All Work</a></p>
+					<p><a href="/#work" class="btn">View All Work</a></p>
 				</section>

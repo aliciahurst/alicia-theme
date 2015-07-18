@@ -1510,12 +1510,16 @@ button.menu-toggle {
       .layout-text div {
         width: 100%; } }
 
+.intro-content p:first-of-type a, .intro-content .validation_error:first-of-type a, .layout-text a {
+  border-bottom: 1px dotted #c2c2c2; }
+  .intro-content p:first-of-type a:hover, .intro-content .validation_error:first-of-type a:hover, .layout-text a:hover {
+    color: #c2c2c2; }
+
 .contribution + .display_slider, .contribution + .layout-two, .contribution + .display_before {
   margin-top: 6%; }
 
 .layout-lone-image {
-  padding: 6%;
-  max-height: 100vh; }
+  padding: 6%; }
   .layout-lone-image .wrapper {
     max-width: 1088px;
     margin: 0 auto;
@@ -1794,7 +1798,6 @@ button.menu-toggle {
       content: "\00D7"; }
 
 .last {
-  margin: 0 auto;
   text-align: center; }
   .last h1:before, .last .home-contact div h3:before, .home-contact div .last h3:before, .last .home-contact div .outbound-link:before, .home-contact div .last .outbound-link:before, .last .home-contact div .twentytwenty-before-label:before, .home-contact div .last .twentytwenty-before-label:before, .last .home-contact div .twentytwenty-after-label:before, .home-contact div .last .twentytwenty-after-label:before {
     display: none; }

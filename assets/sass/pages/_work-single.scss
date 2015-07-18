@@ -104,6 +104,13 @@
 	}
 }
 
+.intro-content p:first-of-type a, .layout-text a {
+	border-bottom: 1px dotted $gray1;
+	&:hover {
+		color: $gray1;
+	}
+}
+
 .contribution {
 	+ .display_slider, + .layout-two, + .display_before {
 		margin-top: 6%;
@@ -111,7 +118,7 @@
 }
 .layout-lone-image {
 	padding: 6%;
-	max-height: 100vh;
+	//max-height: 100vh;
 	.wrapper {
 		max-width: 1088px;
 		margin: 0 auto;
