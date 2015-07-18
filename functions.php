@@ -115,7 +115,7 @@ function alicia_theme_scripts() {
 
 	// Add JS
 	wp_enqueue_script( 'alicia-theme-js', get_template_directory_uri() . '/assets/js/build/scripts.js', array('jquery'), '1.0.0', true );
-
+	wp_enqueue_script( 'alicia-theme-custom-js', get_template_directory_uri() . '/assets/js/build/content-scripts.js', array('jquery'), '1.0.0', true );
 	// Add  Fontastic
 	wp_enqueue_script('fontastic', 'https://fontastic.s3.amazonaws.com/hWzFcuyKpTpmn2DL4SVLTT/icons.js');
 

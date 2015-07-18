@@ -38,6 +38,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<?php get_template_part('template-parts/content', 'scripts'); ?>
+
 </body>
 </html>
