@@ -1395,8 +1395,8 @@ button.menu-toggle {
     width: auto;
     margin-bottom: 40px;
     opacity: 0.8; }
-  .bio-text h2 {
-    margin: 40px 0; }
+  .bio-text h3, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3, .bio-text .twentytwenty-before-label:before, .bio-text .twentytwenty-after-label:before {
+    margin: 30px 0; }
   .bio-text nav ul li {
     display: inline-block;
     margin: 0; }
