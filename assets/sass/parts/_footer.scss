@@ -1,10 +1,11 @@
-.site-footer nav {
+.site-footer nav, .bio-text nav {
 	text-align: center;
 	ul {
 		padding: 6.5px 0;
 	}
 	li {
 		display: inline-block;
+		margin: 0 5px;
 		svg {
 			height: 28px;
 			width: 28px;
@@ -26,13 +27,19 @@
 	}
 }
 
+.home .site-footer nav {
+	display: none;
+}
+
 .site-footer {
 	position: relative;
 	background: $four;
+	clear: both;
+	text-align: center;
 	.footer-container {
-		@extend %flex-justify-center;
+		//@extend %flex-justify-center;
 		div, nav {
-			width: 25%;
+			//width: 25%;
 			text-align: center;
 			color: $white;
 			@include flex(none);
@@ -41,7 +48,7 @@
 				margin: 0 0 1.8rem 0;
 			}
 			@include media($med) {
-				width: 33%;
+				//width: 33%;
 			}
 		}
 		.top {
@@ -61,16 +68,30 @@
 			color: $white;
 		}
 		@include media($small) {
-			@include flex-direction(column);
+			//@include flex-direction(column);
 			div, nav {
 				width: 100%;
 				margin: 6% 0;
 			}
 			.footer-center {
-				@include order(-1);
+				//@include order(-1);
 			}
 		}
 	}
+	.home & {
+		background: $white;
+		.footer-container {
+			//padding-top: 0;
+		}
+	}
+}
+
+.home .site-footer .footer-container a, .home .site-footer .footer-container {
+	color: $gray1;
+}
+
+.footer-center {
+	margin: 0 auto;
 }
 
 .footer-contact {

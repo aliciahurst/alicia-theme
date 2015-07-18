@@ -65,8 +65,24 @@
 
 <section id="about" class="home-about">	
 	<div class="bio-text">
-		<h2><?php the_field('home_bio-title'); ?></h2>
-		<?php the_field('home_bio'); ?>
+		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/logoname.png">
+		<h2>Product Manager at <a href="http://powertofly.com">PowerToFly</a></h2>
+		<nav id="social-navigation-footer" class="social-navigation" role="navigation">
+				<?php if( have_rows('social_media', 'option') ): ?>
+					<ul>
+						<li> <a href="mailto:alicia@aliciahurst.com" class="animated"><svg class="icon-mail"><use xlink:href="#icon-mail"></use></svg></a> </li>
+						<?php while( have_rows('social_media', 'option') ): the_row(); 
+						$network = get_sub_field('social_media_network');
+						$account = get_sub_field('social_media_account');
+						?>
+						<li> <a href="http://<?php echo $network; ?>.com/<?php echo $account; ?>" class="animated"><svg class="icon-<?php echo $network; ?>"><use xlink:href="#icon-<?php echo $network; ?>"></use></svg></a> </li>
+					<?php endwhile; ?>
+				</ul>
+			<?php endif; ?>	
+		</nav> 
+		<div class="down-arrow">
+			<svg class="icon-chevron-down"><use xlink:href="#icon-chevron-down"></use></svg>
+		</div>
 	</div>
 	<div class="bio-photos">
 		<div class="bio-headshot"></div>

@@ -15,7 +15,7 @@
 
 		<div class="footer-center">
 			<p class="top"><a href="#top"><svg class="icon-double-up"><use xlink:href="#icon-double-up"></use></svg></a></p>
-			
+
 
 			<nav id="social-navigation-footer" class="social-navigation" role="navigation">
 				<?php if( have_rows('social_media', 'option') ): ?>
@@ -30,8 +30,8 @@
 				</ul>
 			<?php endif; ?>	
 		</nav> 
-		
-		<p class="copyright">&copy; <?php echo date('Y'); ?> <a href="/"><strong>Alicia Hurst</strong></a>, <br/> all rights reserved.</p>
+
+		<p class="copyright">&copy; <?php echo date('Y'); ?> <a href="/"><strong>Alicia Hurst</strong></a>, all rights reserved.</p>
 	</div>
 </div>
 </footer><!-- #colophon -->

@@ -15,6 +15,7 @@
 	<link rel="icon" type="image/x-icon" href="/wordpress/wp-content/themes/alicia-theme/assets/img/min/favicon.ico">
 	<script src="//use.typekit.net/nht0rlx.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Dosis:400|Cabin:400,700|' rel='stylesheet' type='text/css'> -->
 	<?php wp_head(); ?>
 </head>
 
@@ -26,7 +27,7 @@
 			<div class="header-container">
 				<div class="site-name">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<span>Alicia Hurst</span><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/newlogotransparent.png"/></a></h1>
+						<span>Alicia Hurst</span></a></h1>
 						
 					</div>
 					<!-- <nav id="site-navigation" class="main-navigation" role="navigation">

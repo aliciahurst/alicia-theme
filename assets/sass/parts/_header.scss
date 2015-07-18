@@ -22,6 +22,9 @@
 }
 
 .site-name {
+	.home & {
+		display: none;
+	}
 	.site-title {
 		line-height: 1;
 		margin: 0;

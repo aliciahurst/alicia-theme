@@ -552,7 +552,7 @@ body {
     transform: scale(1.1); }
   100% {
     transform: scale(1); } }
-.pulse, .site-footer nav li a:hover, .site-footer .footer-container .top a:hover {
+.pulse, .site-footer nav li a:hover, .bio-text nav li a:hover, .site-footer .footer-container .top a:hover {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -o-animation-name: pulse;
@@ -811,6 +811,8 @@ img {
   min-height: 90px;
   padding: 3%; }
 
+.home .site-name {
+  display: none; }
 .site-name .site-title {
   line-height: 1;
   margin: 0;
@@ -929,16 +931,17 @@ button.menu-toggle {
     .toggled ul li:nth-of-type(3) {
       background: #f7f7f7; }
 
-.site-footer nav {
+.site-footer nav, .bio-text nav {
   text-align: center; }
-  .site-footer nav ul {
+  .site-footer nav ul, .bio-text nav ul {
     padding: 6.5px 0; }
-  .site-footer nav li {
-    display: inline-block; }
-    .site-footer nav li svg {
+  .site-footer nav li, .bio-text nav li {
+    display: inline-block;
+    margin: 0 5px; }
+    .site-footer nav li svg, .bio-text nav li svg {
       height: 28px;
       width: 28px; }
-    .site-footer nav li a {
+    .site-footer nav li a, .bio-text nav li a {
       padding: 10px;
       border: 2px solid transparent;
       display: block;
@@ -948,18 +951,22 @@ button.menu-toggle {
       -webkit-transition: border, ease-in-out, 0.5s;
       -moz-transition: border, ease-in-out, 0.5s;
       transition: border, ease-in-out, 0.5s; }
-      .site-footer nav li a:hover {
+      .site-footer nav li a:hover, .bio-text nav li a:hover {
         border-color: #ffffff;
         opacity: 1; }
 
+.home .site-footer nav {
+  display: none; }
+
 .site-footer {
   position: relative;
-  background: #414141; }
+  background: #414141;
+  clear: both;
+  text-align: center; }
   .site-footer .footer-container {
     padding: 6%;
     color: #ffffff; }
     .site-footer .footer-container div, .site-footer .footer-container nav {
-      width: 25%;
       text-align: center;
       color: #ffffff;
       -webkit-box-flex: none;
@@ -972,9 +979,6 @@ button.menu-toggle {
       .site-footer .footer-container div h3, .site-footer .footer-container div .outbound-link, .site-footer .footer-container div .thumbnail h1, .thumbnail .site-footer .footer-container div h1, .site-footer .footer-container div .twentytwenty-before-label:before, .site-footer .footer-container div .twentytwenty-after-label:before, .site-footer .footer-container nav h3, .site-footer .footer-container nav .outbound-link, .site-footer .footer-container nav .thumbnail h1, .thumbnail .site-footer .footer-container nav h1, .site-footer .footer-container nav .twentytwenty-before-label:before, .site-footer .footer-container nav .twentytwenty-after-label:before {
         color: #ffffff;
         margin: 0 0 1.8rem 0; }
-      @media screen and (max-width: 65em) {
-        .site-footer .footer-container div, .site-footer .footer-container nav {
-          width: 33%; } }
     .site-footer .footer-container .top {
       margin-top: 0; }
       .site-footer .footer-container .top a {
@@ -984,28 +988,17 @@ button.menu-toggle {
     .site-footer .footer-container a:not(.btn-white) {
       color: #ffffff; }
     @media screen and (max-width: 48em) {
-      .site-footer .footer-container {
-        -webkit-box-orient: vertical;
-        -moz-box-orient: vertical;
-        box-orient: vertical;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        box-direction: normal;
-        -webkit-flex-direction: column;
-        -moz-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-direction: column; }
-        .site-footer .footer-container div, .site-footer .footer-container nav {
-          width: 100%;
-          margin: 6% 0; }
-        .site-footer .footer-container .footer-center {
-          -webkit-box-ordinal-group: -1;
-          -moz-box-ordinal-group: -1;
-          box-ordinal-group: -1;
-          -webkit-order: -1;
-          -moz-order: -1;
-          order: -1;
-          -ms-flex-order: -1; } }
+      .site-footer .footer-container div, .site-footer .footer-container nav {
+        width: 100%;
+        margin: 6% 0; } }
+  .home .site-footer {
+    background: #ffffff; }
+
+.home .site-footer .footer-container a, .home .site-footer .footer-container {
+  color: #c2c2c2; }
+
+.footer-center {
+  margin: 0 auto; }
 
 .footer-contact p, .footer-contact .validation_error {
   margin: 0 !important; }
@@ -1061,7 +1054,7 @@ button.menu-toggle {
   flex-direction: column;
   -ms-flex-direction: column; }
 
-.site-footer .footer-container, .top_image, .layout-two, .display_images, .home-top, .home-top div, .home-services .services-container, .contribution ul, .display_images .aside, .contact .site-main, .contact section {
+.top_image, .layout-two, .display_images, .home-top, .home-top div, .home-services .services-container, .contribution ul, .display_images .aside, .contact .site-main, .contact section {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   box-pack: center;
@@ -1395,12 +1388,28 @@ button.menu-toggle {
       width: 50%;
       height: 100%; }
 
+.bio-text {
+  text-align: center; }
+  .bio-text img {
+    max-height: 120px;
+    width: auto;
+    margin-bottom: 40px;
+    opacity: 0.8; }
+  .bio-text h2 {
+    margin: 40px 0; }
+  .bio-text nav ul li {
+    display: inline-block;
+    margin: 0; }
+    .bio-text nav ul li a:hover {
+      border-color: #c2c2c2; }
+
 @media screen and (max-width: 48em) {
   .home-about {
     display: block;
     min-height: auto; }
     .home-about .bio-text {
-      padding: 12%; }
+      padding: 12%;
+      text-align: center; }
     .home-about .bio-photos {
       display: block;
       height: 50vh; }
@@ -1434,6 +1443,16 @@ button.menu-toggle {
       .home-work div, .work-navigation div {
         float: none;
         width: 100%; } }
+
+.home .home-work div, .home .work-navigation div {
+  width: 33%;
+  margin: 5px auto; }
+  @media all and (max-width: 950px) {
+    .home .home-work div, .home .work-navigation div {
+      width: 50%; } }
+  @media screen and (max-width: 48em) {
+    .home .home-work div, .home .work-navigation div {
+      width: 100%; } }
 
 .single-work p, .single-work .validation_error {
   color: gray; }
