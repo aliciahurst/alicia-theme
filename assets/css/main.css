@@ -781,10 +781,8 @@ img {
     .archive #masthead {
       background-color: #f7f7f7; }
 
-  .site-main {
-    padding-top: 10vh; }
-    .archive .site-main {
-      padding-top: 14vh; }
+  .archive .site-main {
+    padding-top: 14vh; }
 
   .work-intro .aside {
     min-height: 90vh; }
@@ -806,6 +804,14 @@ img {
   left: 0;
   width: 100%;
   background: transparent; }
+  @media screen and (max-width: 65em) {
+    #masthead {
+      position: relative;
+      display: block;
+      background: #ffffff;
+      text-align: center; } }
+  .home #masthead {
+    display: none; }
 
 .header-container, .footer-container {
   min-height: 90px;
@@ -1409,7 +1415,8 @@ button.menu-toggle {
     min-height: auto; }
     .home-about .bio-text {
       padding: 12%;
-      text-align: center; }
+      text-align: center;
+      display: block !important; }
     .home-about .bio-photos {
       display: block;
       height: 50vh; }

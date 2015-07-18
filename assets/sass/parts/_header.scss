@@ -8,6 +8,15 @@
 	left: 0;
 	width: 100%;
 	background: transparent;
+	@include media($med) {
+		position: relative;
+		display: block;
+		background: $white;
+		text-align: center;
+	}
+	.home & {
+		display: none;
+	}
 }
 
 .header-container, .footer-container {
