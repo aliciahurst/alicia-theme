@@ -1470,6 +1470,18 @@ button.menu-toggle {
   margin-top: 0;
   margin-bottom: 6%; }
 
+.bio-text h3, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3, .bio-text .twentytwenty-before-label:before, .bio-text .twentytwenty-after-label:before {
+  margin-bottom: 0; }
+.bio-text p, .bio-text .validation_error {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.5rem; }
+
+.bottom-unavailable {
+  clear: left;
+  text-align: center;
+  padding: 3% 12%; }
+
 .single-work p, .single-work .validation_error {
   color: gray; }
 

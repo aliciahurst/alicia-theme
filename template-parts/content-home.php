@@ -10,6 +10,7 @@
 	<div class="bio-text">
 		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/logoname.png">
 		<h3>Product Manager at <a href="http://powertofly.com">PowerToFly</a></h3>
+		<p class="unavailable">currently <strong>unavailable</strong> for freelance projects</p>
 		<nav id="social-navigation-footer" class="social-navigation" role="navigation">
 				<?php if( have_rows('social_media', 'option') ): ?>
 					<ul>
@@ -23,6 +24,7 @@
 				</ul>
 			<?php endif; ?>	
 		</nav> 
+
 		<div class="down-arrow">
 			<svg class="icon-chevron-down"><use xlink:href="#icon-chevron-down"></use></svg>
 		</div>
@@ -45,4 +47,9 @@
 				</div>
 		<?php endforeach; ?>
 		<?php wp_reset_query(); ?>
+
 </section>
+<section class="bottom-unavailable">
+	<p>Please note I am currently <strong>unavailable</strong> for any freelance projects.</p>
+</section>
+
