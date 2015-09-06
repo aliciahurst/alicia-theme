@@ -947,6 +947,10 @@ button.menu-toggle {
     .site-footer nav li svg, .bio-text nav li svg {
       height: 28px;
       width: 28px; }
+      @media all and (max-width: 700px) {
+        .site-footer nav li svg, .bio-text nav li svg {
+          height: 18px;
+          width: 18px; } }
     .site-footer nav li a, .bio-text nav li a {
       padding: 10px;
       border: 2px solid transparent;

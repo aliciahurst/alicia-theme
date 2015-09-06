@@ -9,6 +9,10 @@
 		svg {
 			height: 28px;
 			width: 28px;
+			@media all and (max-width: 700px) {
+				height: 18px;
+				width: 18px;
+			}
 		}
 		a {
 			padding: 10px;
