@@ -19,7 +19,20 @@
 			$lastID = end($pages);
 			?>
 
-<section class="work-intro top_image">
+<section class="top_image">
+
+	<?php if( have_rows('initial_images') ): ?>
+		<?php while( have_rows('initial_images') ): the_row(); 
+		$name = get_sub_field('opening_image'); ?>
+		<div style="background:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>');" class="work-image img-bg">
+
+			<!-- <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>">-->
+		<?php endwhile; ?>
+	<?php endif; ?>
+</section>
+
+
+<section class="work-intro">
 	<div class="aside">
 
 		<nav class="portfolio-nav">
@@ -65,14 +78,7 @@
 			<svg class="icon-chevron-down"><use xlink:href="#icon-chevron-down"></use></svg>
 		</div>
 	</div>
-	<?php if( have_rows('initial_images') ): ?>
-		<?php while( have_rows('initial_images') ): the_row(); 
-		$name = get_sub_field('opening_image'); ?>
-		<div style="background:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>');" class="work-image img-bg">
 
-			<!-- <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>" alt="<?php the_title(); ?> | <?php bloginfo( 'name' ); ?>">-->
-		<?php endwhile; ?>
-	<?php endif; ?>
 </div>
 </section>
 

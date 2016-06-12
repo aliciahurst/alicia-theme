@@ -1019,7 +1019,7 @@ button.menu-toggle {
   letter-spacing: 0.5px;
   font-size: 1.6rem; }
 
-.archive .site-main, .header-container, .footer-container, .toggled ul li, .top_image, .layout-two, .display_images, .top_image div, .layout-two div, .display_images div, .home-top, .home-top div, .home-top div:last-of-type ul li, .home-services .services-container, .down-arrow, .contribution ul, .contact .site-main, .contact section {
+.archive .site-main, .header-container, .footer-container, .toggled ul li, .layout-two, .display_images, .layout-two div, .display_images div, .home-top, .home-top div, .home-top div:last-of-type ul li, .home-services .services-container, .down-arrow, .contribution ul, .contact .site-main, .contact section {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -1028,7 +1028,7 @@ button.menu-toggle {
   display: -ms-flexbox;
   display: flex; }
 
-.top_image, .layout-two, .display_images, .home-top, .contact .site-main {
+.layout-two, .display_images, .home-top, .contact .site-main {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   box-orient: horizontal;
@@ -1052,7 +1052,7 @@ button.menu-toggle {
   flex-direction: row-reverse;
   -ms-flex-direction: row-reverse; }
 
-.top_image div, .layout-two div, .display_images div, .home-top div, .home-top div:last-of-type ul li, .contact section {
+.layout-two div, .display_images div, .home-top div, .home-top div:last-of-type ul li, .contact section {
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   box-orient: vertical;
@@ -1064,7 +1064,7 @@ button.menu-toggle {
   flex-direction: column;
   -ms-flex-direction: column; }
 
-.top_image, .layout-two, .display_images, .home-top, .home-top div, .home-services .services-container, .contribution ul, .display_images .aside, .contact .site-main, .contact section {
+.layout-two, .display_images, .home-top, .home-top div, .home-services .services-container, .contribution ul, .display_images .aside, .contact .site-main, .contact section {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   box-pack: center;
@@ -1075,7 +1075,7 @@ button.menu-toggle {
   justify-content: center;
   -ms-flex-pack: center; }
 
-.top_image div, .layout-two div, .display_images div {
+.layout-two div, .display_images div {
   -webkit-box-pack: distribute;
   -moz-box-pack: distribute;
   box-pack: distribute;
@@ -1097,7 +1097,7 @@ button.menu-toggle {
   justify-content: space-between;
   -ms-flex-pack: justify; }
 
-.top_image, .layout-two, .display_images, .home-top, .contact .site-main {
+.layout-two, .display_images, .home-top, .contact .site-main {
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
   box-align: stretch;
@@ -1108,7 +1108,7 @@ button.menu-toggle {
   align-items: stretch;
   -ms-flex-align: stretch; }
 
-.header-container, .footer-container, .top_image div, .layout-two div, .display_images div, .home-top div, .down-arrow {
+.header-container, .footer-container, .layout-two div, .display_images div, .home-top div, .down-arrow {
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
@@ -1119,7 +1119,7 @@ button.menu-toggle {
   align-items: center;
   -ms-flex-align: center; }
 
-.header-container > *, .footer-container > *, .toggled ul li a, .top_image div, .layout-two div, .display_images div, .home-top div, .contact section {
+.header-container > *, .footer-container > *, .toggled ul li a, .layout-two div, .display_images div, .home-top div, .contact section {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
@@ -1142,10 +1142,10 @@ button.menu-toggle {
   content: "";
   display: table; }
 
-.top_image, .layout-two, .display_images {
+.layout-two, .display_images {
   height: 100%;
   min-height: 100vh; }
-  .top_image div, .layout-two div, .display_images div {
+  .layout-two div, .display_images div {
     padding: 6%;
     text-align: center;
     background-repeat: no-repeat !important;
@@ -1153,7 +1153,7 @@ button.menu-toggle {
     background-position: center !important;
     color: #ffffff; }
   @media screen and (max-width: 65em) {
-    .top_image, .layout-two, .display_images {
+    .layout-two, .display_images {
       -webkit-box-orient: vertical;
       -moz-box-orient: vertical;
       box-orient: vertical;
@@ -1164,9 +1164,9 @@ button.menu-toggle {
       -moz-flex-direction: column;
       flex-direction: column;
       -ms-flex-direction: column; }
-      .top_image div, .layout-two div, .display_images div {
+      .layout-two div, .display_images div {
         width: 100%; }
-        .top_image div.img-bg, .layout-two div.img-bg, .display_images div.img-bg {
+        .layout-two div.img-bg, .display_images div.img-bg {
           height: 90vh; } }
 
 @media screen and (min-width: 600px) {
@@ -1571,6 +1571,16 @@ button.menu-toggle {
     max-width: 1088px;
     margin: 0 auto;
     padding: 0; }
+
+.top_image {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  .top_image div {
+    height: 100%;
+    width: 100%; }
 
 .layout-two {
   min-height: 90vh; }
