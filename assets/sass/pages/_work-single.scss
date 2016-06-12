@@ -1,3 +1,29 @@
+.top_image {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+	div {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.work-content {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 50%;
+	z-index: 999;
+	background: white;
+	padding: 20px;
+}
+
+
+
+
+
 .single-work {
 	@extend %clearfix;
 	p {
@@ -125,19 +151,6 @@
 		padding: 0;
 	}
 }
-
-.top_image {
-	position: fixed;
-	height: 100vh;
-	width: 100%;
-	top: 0;
-	left: 0;
-	div {
-		height: 100%;
-		width: 100%;
-	}
-}
-
 
 
 
