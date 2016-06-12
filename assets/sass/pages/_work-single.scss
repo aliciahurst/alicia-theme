@@ -271,14 +271,14 @@
 
 .display_slider {
 	@extend %clearfix;
-	padding: 6% 6% 0;
+	//padding: 6% 6% 0;
 	.rslides_container {
-		width: 75%;
+		//width: 75%;
 		margin: 0 auto;
 		float: none;
-		@include media($med) {
-			width: 100%;
-		}
+		//@include media($med) {
+			//width: 100%;
+		//}
 		.postid-668 & {
 			//max-width: 800px;
 		}

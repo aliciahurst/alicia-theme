@@ -3,9 +3,7 @@
   	<?php if( get_row_layout() == 'text_only' ): ?>
 
   		<section class="layout-text">
-        <div>
           <?php the_sub_field('paragraph_text'); ?>
-        </div>
       </section>
 
     <?php elseif( get_row_layout() == 'lone_image' ): ?>

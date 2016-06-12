@@ -1706,15 +1706,9 @@ button.menu-toggle {
 .display_before div {
   margin: 0 auto; }
 
-.display_slider {
-  padding: 6% 6% 0; }
-  .display_slider .rslides_container {
-    width: 75%;
-    margin: 0 auto;
-    float: none; }
-    @media screen and (max-width: 65em) {
-      .display_slider .rslides_container {
-        width: 100%; } }
+.display_slider .rslides_container {
+  margin: 0 auto;
+  float: none; }
 
 .work-navigation {
   background: #f7f7f7; }
