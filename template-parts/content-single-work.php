@@ -5,7 +5,7 @@
 * @package alicia-theme
 */
 ?>
-
+hi
 	<?php
 			$pagelist = get_posts('sort_column=menu_order&sort_order=asc&post_type=work');
 			$pages = array();
@@ -20,7 +20,6 @@
 			?>
 
 <section class="top_image">
-
 	<?php if( have_rows('initial_images') ): ?>
 		<?php while( have_rows('initial_images') ): the_row(); 
 		$name = get_sub_field('opening_image'); ?>
