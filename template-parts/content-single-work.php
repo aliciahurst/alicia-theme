@@ -19,6 +19,19 @@
 <div class="work-content">
 	<section class="work-intro">
 		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+		<?php if( have_rows('work_roles') ): //what I did ?>
+				<!-- <h3>Contribution</h3> -->
+				<ul>
+					<?php while( have_rows('work_roles') ): the_row(); 
+					$role = get_sub_field('single_role');
+					$svg = get_sub_field('role_svg'); ?>
+					<li>
+						<svg class="icon-<?php echo $svg; ?>"><use xlink:href="#icon-<?php echo $svg; ?>"></use></svg>
+						<span class="work-role"><?php echo $role; ?></span>
+					</li>
+				<?php endwhile; ?>
+			</ul>
+		<?php endif; ?>
 		<?php the_field( 'work_description' ); ?>
 				<!-- <?php if( get_field('client_url') ): // live link ?>
 					<?php $url = get_field('client_url'); ?>
@@ -29,19 +42,7 @@
 			<!-- <div class="down-arrow">
 				<svg class="icon-chevron-down"><use xlink:href="#icon-chevron-down"></use></svg>
 			</div> -->
-			<?php if( have_rows('work_roles') ): //what I did ?>
-				<h3>Contribution</h3>
-				<ul>
-					<?php while( have_rows('work_roles') ): the_row(); 
-					$role = get_sub_field('single_role');
-					$svg = get_sub_field('role_svg'); ?>
-					<li>
-						<svg class="icon-<?php echo $svg; ?>"><use xlink:href="#icon-<?php echo $svg; ?>"></use></svg>
-						<p><?php echo $role; ?></p>
-					</li>
-				<?php endwhile; ?>
-			</ul>
-		<?php endif; ?>
+			
 	</section>
 
 	<?php if( have_rows('work_layouts') ): ?>

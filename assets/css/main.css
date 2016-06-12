@@ -676,12 +676,11 @@ p:last-of-type, .validation_error:last-of-type {
 h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before, h2, h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .twentytwenty-before-label:before, .twentytwenty-after-label:before, h4, .gform_confirmation_message {
   margin: 2.26rem 0 1.8rem;
   line-height: 1.2;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   font-weight: 400;
   color: #000000;
   font-family: "Open Sans", helvetica, sans-serif;
-  -webkit-font-smoothing: auto;
-  text-transform: uppercase; }
+  -webkit-font-smoothing: auto; }
   section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .outbound-link:first-of-type, .home-contact div .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h1:first-of-type, .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div section > .twentytwenty-after-label:first-of-type:before, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .outbound-link:first-of-type, .home-contact div .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h1:first-of-type, .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div > .twentytwenty-after-label:first-of-type:before, section > h2:first-of-type, div > h2:first-of-type, section > h3:first-of-type, section > .outbound-link:first-of-type, .thumbnail section > h3:first-of-type, .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h3:first-of-type, section > .twentytwenty-before-label:first-of-type:before, section > .twentytwenty-after-label:first-of-type:before, div > h3:first-of-type, div > .outbound-link:first-of-type, .thumbnail div > h3:first-of-type, .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h3:first-of-type, div > .twentytwenty-before-label:first-of-type:before, div > .twentytwenty-after-label:first-of-type:before, section > h4:first-of-type, section > .gform_confirmation_message:first-of-type, div > h4:first-of-type, div > .gform_confirmation_message:first-of-type {
     margin-top: 0; }
   section > h1 + p, .home-contact div section > h3 + p, .home-contact div section > .outbound-link + p, .home-contact div .thumbnail section > h1 + p, .thumbnail .home-contact div section > h1 + p, .home-contact div section > .twentytwenty-before-label:before + p, .home-contact div section > .twentytwenty-after-label:before + p, section > h1 + .validation_error, .home-contact div section > h3 + .validation_error, .home-contact div section > .outbound-link + .validation_error, .home-contact div section > .twentytwenty-before-label:before + .validation_error, .home-contact div section > .twentytwenty-after-label:before + .validation_error, div > h1 + p, .home-contact div > h3 + p, .home-contact div > .outbound-link + p, .home-contact div .thumbnail div > h1 + p, .thumbnail .home-contact div > h1 + p, .home-contact div > .twentytwenty-before-label:before + p, .home-contact div > .twentytwenty-after-label:before + p, div > h1 + .validation_error, .home-contact div > h3 + .validation_error, .home-contact div > .outbound-link + .validation_error, .home-contact div .thumbnail div > h1 + .validation_error, .home-contact div > .twentytwenty-before-label:before + .validation_error, .home-contact div > .twentytwenty-after-label:before + .validation_error, section > h2 + p, section > h2 + .validation_error, div > h2 + p, div > h2 + .validation_error, section > h3 + p, section > .outbound-link + p, .thumbnail section > h3 + p, .thumbnail section > h1 + p, section > .twentytwenty-before-label:before + p, section > .twentytwenty-after-label:before + p, section > h3 + .validation_error, section > .outbound-link + .validation_error, .thumbnail section > h1 + .validation_error, section > .twentytwenty-before-label:before + .validation_error, section > .twentytwenty-after-label:before + .validation_error, div > h3 + p, div > .outbound-link + p, .thumbnail div > h3 + p, .thumbnail div > h1 + p, div > .twentytwenty-before-label:before + p, div > .twentytwenty-after-label:before + p, div > h3 + .validation_error, div > .outbound-link + .validation_error, .thumbnail div > h1 + .validation_error, .home-contact div .thumbnail div > h3 + .validation_error, div > .twentytwenty-before-label:before + .validation_error, div > .twentytwenty-after-label:before + .validation_error, section > h4 + p, section > .gform_confirmation_message + p, section > h4 + .validation_error, section > .gform_confirmation_message + .validation_error, div > h4 + p, div > .gform_confirmation_message + p, div > h4 + .validation_error, div > .gform_confirmation_message + .validation_error {
@@ -695,7 +694,8 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
   margin-top: 0;
   font-size: 6rem;
   line-height: 1;
-  font-family: "Open Sans", helvetica, sans-serif; }
+  font-family: "Open Sans", helvetica, sans-serif;
+  font-weight: 700; }
 
 h2 {
   font-size: 3rem; }
@@ -706,7 +706,7 @@ h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h
 h4, .gform_confirmation_message {
   font-size: 1.8rem; }
 
-small, .font_small {
+small, .font_small, .work-role {
   font-size: 1.13rem; }
 
 a {
@@ -1498,6 +1498,12 @@ button.menu-toggle {
   background: white;
   padding: 20px; }
 
+.work-role {
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700; }
+
 .single-work p, .single-work .validation_error {
   color: gray; }
 
@@ -1593,28 +1599,41 @@ button.menu-toggle {
   padding-top: 0;
   padding-bottom: 6%; }
 
-.portfolio-nav {
+.work-intro {
   text-align: center;
   margin: 6% 0; }
-  .portfolio-nav li {
-    margin: 5px;
+  .work-intro li {
+    margin: 5px 10px;
     display: inline-block;
     position: relative; }
-  .portfolio-nav a {
+    .work-intro li:before {
+      content: " ";
+      height: 20px;
+      width: 20px;
+      display: block;
+      background: #e5e5e5;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 2%;
+      z-index: -1; }
+  .work-intro a {
     border: 0;
     display: block;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.4rem; }
-    .portfolio-nav a:after {
+    .work-intro a:after {
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 1.4rem; }
-  .portfolio-nav [class^="icon-"], .portfolio-nav [class*=" icon-"] {
-    height: 30px;
+  .work-intro [class^="icon-"], .work-intro [class*=" icon-"] {
+    height: 20px;
     width: auto;
     fill: currentColor;
-    opacity: 1; }
+    opacity: 1;
+    display: inline-block;
+    vertical-align: middle; }
 
 .nav-1 a:hover:after {
   content: "Previous Project";

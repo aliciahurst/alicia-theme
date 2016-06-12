@@ -16,7 +16,13 @@
 	padding: 20px;
 }
 
-
+.work-role {
+	@extend .font_small;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: $bold;
+}
 
 
 
@@ -158,13 +164,25 @@
 	padding-bottom: 6%;
 }
 
-.portfolio-nav {
+.work-intro {
 	text-align: center;
 	margin: 6% 0;
 	li {
-		margin: 5px;
+		margin: 5px 10px;
 		display: inline-block; 
 		position: relative;
+		&:before {
+			content: " ";
+			height: 20px;
+			width: 20px;
+			display: block;
+			background: $graylt;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 2%;
+			z-index: -1;
+		}
 	}
 	a {
 		border: 0;
@@ -179,10 +197,12 @@
 		}
 	}
 	[class^="icon-"], [class*=" icon-"] {
-		height: 30px;
+		height: 20px;
 		width: auto;
 		fill: currentColor; 
 		opacity: 1;
+		display: inline-block;
+		vertical-align: middle;
 	}
 }
 
