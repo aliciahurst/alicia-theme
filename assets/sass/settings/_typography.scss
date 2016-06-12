@@ -1,7 +1,7 @@
 $regular: 400;
-$semi: 600;
-$bold: 700;
-$font: "Open Sans";
+$semi: 500;
+$bold: bold;
+$font: "Lato";
 $serif: $font, helvetica, sans-serif;
 $sans: $font, helvetica, sans-serif;
 
@@ -93,6 +93,7 @@ h4 {
 
 small, .font_small {
 	font-size: 1.13rem;
+	letter-spacing: 0.25px;
 	text-transform: uppercase;
 	font-weight: $bold;
 }

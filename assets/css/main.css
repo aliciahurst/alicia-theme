@@ -641,7 +641,7 @@ body {
   animation-name: fade-out; }
 
 html {
-  font-family: "Open Sans", helvetica, sans-serif;
+  font-family: "Lato", helvetica, sans-serif;
   font-weight: 400;
   font-size: 62.5%;
   /* Sets up the Base 10 stuff */
@@ -682,7 +682,7 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
   letter-spacing: 0px;
   font-weight: 400;
   color: #000000;
-  font-family: "Open Sans", helvetica, sans-serif;
+  font-family: "Lato", helvetica, sans-serif;
   -webkit-font-smoothing: auto; }
   section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .outbound-link:first-of-type, .home-contact div .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h1:first-of-type, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .outbound-link:first-of-type, .home-contact div .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h1:first-of-type, section > h2:first-of-type, div > h2:first-of-type, section > h3:first-of-type, section > .outbound-link:first-of-type, .thumbnail section > h3:first-of-type, .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h3:first-of-type, div > h3:first-of-type, div > .outbound-link:first-of-type, .thumbnail div > h3:first-of-type, .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h3:first-of-type, section > h4:first-of-type, section > .gform_confirmation_message:first-of-type, div > h4:first-of-type, div > .gform_confirmation_message:first-of-type {
     margin-top: 0; }
@@ -697,8 +697,8 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
   margin-top: 0;
   font-size: 5rem;
   line-height: 1;
-  font-family: "Open Sans", helvetica, sans-serif;
-  font-weight: 700; }
+  font-family: "Lato", helvetica, sans-serif;
+  font-weight: bold; }
 
 h2 {
   font-size: 3rem; }
@@ -711,8 +711,9 @@ h4, .gform_confirmation_message {
 
 small, .font_small, .work-role, .twentytwenty-before-label:before, .twentytwenty-after-label:before {
   font-size: 1.13rem;
+  letter-spacing: 0.25px;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: bold; }
 
 a {
   text-decoration: none;
@@ -849,7 +850,7 @@ img {
     margin: 0 0.5rem; }
     .main-navigation ul li a {
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.4rem;
       letter-spacing: 1px;
       color: #ffffff;
@@ -915,7 +916,7 @@ button.menu-toggle {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: bold;
     letter-spacing: 1px; }
     .toggled ul li a {
       display: block;
@@ -924,7 +925,7 @@ button.menu-toggle {
       line-height: 33vh;
       width: 100%;
       font-size: 20vw;
-      font-family: "Open Sans", helvetica, sans-serif;
+      font-family: "Lato", helvetica, sans-serif;
       letter-spacing: 2px;
       align-self: center;
       text-decoration: none;
@@ -1244,7 +1245,7 @@ button.menu-toggle {
           font-size: 5rem;
           letter-spacing: 5px; }
         .home-top div:last-of-type ul li h4, .home-top div:last-of-type ul li .gform_confirmation_message {
-          font-family: "Open Sans", helvetica, sans-serif;
+          font-family: "Lato", helvetica, sans-serif;
           text-transform: capitalize; }
         .home-top div:last-of-type ul li h3, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .thumbnail h1, .thumbnail .home-top div:last-of-type ul li h1 {
           margin: 0;
@@ -1276,7 +1277,7 @@ button.menu-toggle {
 .home-title h2 {
   margin: 0;
   margin-top: -2rem !important;
-  font-weight: 700; }
+  font-weight: bold; }
 .home-title h3, .home-title .outbound-link, .home-title .thumbnail h1, .thumbnail .home-title h1, .home-title .thumbnail .home-contact div h3, .thumbnail .home-contact div .home-title h3, .home-title .home-contact div .thumbnail h3, .home-contact div .thumbnail .home-title h3 {
   margin-top: 3rem !important; }
 
@@ -1491,10 +1492,19 @@ button.menu-toggle {
   width: 100%;
   top: 0;
   left: 0; }
+  .top_image img {
+    height: 100%;
+    width: auto; }
+
+.name-scroll {
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  opacity: 0.5; }
 
 .work-content {
   position: absolute;
-  left: 50%;
+  right: 0%;
   top: 0;
   width: 50%;
   z-index: 999;
@@ -1505,7 +1515,7 @@ button.menu-toggle {
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
-  font-weight: 700; }
+  font-weight: bold; }
 
 .ex {
   text-align: right; }
@@ -1612,6 +1622,9 @@ button.menu-toggle {
 .work-intro {
   text-align: center;
   margin: 6% 0; }
+  .work-intro ul {
+    width: 80%;
+    margin: 0 auto; }
   .work-intro li {
     margin: 5px 10px;
     display: inline-block;
@@ -1624,7 +1637,7 @@ button.menu-toggle {
       background: yellow;
       border-radius: 50%;
       position: absolute;
-      top: 2px;
+      top: 25%;
       left: 2%;
       z-index: -1; }
   .work-intro a {
@@ -1816,7 +1829,7 @@ button.menu-toggle {
       font-size: 2.5rem;
       line-height: 1;
       padding: 0.5rem 1.5rem 1rem;
-      font-weight: 700;
+      font-weight: bold;
       top: -3rem;
       background: white;
       left: 50%;
@@ -1934,7 +1947,7 @@ button.menu-toggle {
   border-radius: 2px; }
   .gform_body .gfield label {
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.6rem;
     color: #ffffff;
     padding: 2px 0 5px; }
@@ -1988,7 +2001,7 @@ button.menu-toggle {
 
 .validation_message {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #ff006f;
   padding-top: 5px; }
   .validation_message:before {
@@ -1997,7 +2010,7 @@ button.menu-toggle {
 
 .gform_confirmation_message {
   color: #ffffff;
-  font-family: "Open Sans", helvetica, sans-serif;
+  font-family: "Lato", helvetica, sans-serif;
   text-transform: initial;
   text-align: center; }
   .gform_confirmation_message:before {

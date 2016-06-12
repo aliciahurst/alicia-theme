@@ -4,11 +4,22 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+	img {
+		height: 100%;
+		width: auto;
+	}
+}
+
+.name-scroll {
+	position: fixed;
+	bottom: 0;
+	left: 20px;
+	opacity: 0.5;
 }
 
 .work-content {
 	position: absolute;
-	left: 50%;
+	right: 0%;
 	top: 0;
 	width: 50%;
 	z-index: 999;
@@ -174,6 +185,10 @@
 .work-intro {
 	text-align: center;
 	margin: 6% 0;
+	ul {
+		width: 80%;
+		margin: 0 auto;
+	}
 	li {
 		margin: 5px 10px;
 		display: inline-block; 
@@ -186,7 +201,7 @@
 			background: yellow;
 			border-radius: 50%;
 			position: absolute;
-			top: 2px;
+			top: 25%;
 			left: 2%;
 			z-index: -1;
 		}
