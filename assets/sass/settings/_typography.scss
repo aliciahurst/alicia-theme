@@ -1,8 +1,9 @@
 $regular: 400;
 $semi: 600;
 $bold: 700;
-$serif: "freight-sans-pro", helvetica, sans-serif;
-$sans: "freight-sans-pro", helvetica, sans-serif;
+$font: "Lato";
+$serif: $font, helvetica, sans-serif;
+$sans: $font, helvetica, sans-serif;
 
 html {
 	font-family: $sans;
