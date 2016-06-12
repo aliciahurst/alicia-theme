@@ -27,7 +27,7 @@
 			<div class="header-container">
 				<div class="site-name">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<span>Alicia Hurst</span></a></h1>
+						<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/logoname.png"></a></h1>
 						
 					</div>
 					<!-- <nav id="site-navigation" class="main-navigation" role="navigation">

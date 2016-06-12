@@ -801,15 +801,12 @@ img {
   margin-bottom: 0; }
 
 #masthead {
-  background: #ffffff;
-  width: 100%;
   z-index: 999;
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background: transparent; }
+  width: 100%; }
   @media screen and (max-width: 65em) {
     #masthead {
       position: relative;
@@ -831,19 +828,20 @@ img {
   font-size: 25px; }
   .site-name .site-title a {
     text-decoration: none;
-    position: relative; }
-    .site-name .site-title a:after {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 50%;
-      width: 0;
-      border-top: 2px solid;
-      -webkit-transition: width 0.25s ease-in-out;
-      -moz-transition: width 0.25s ease-in-out;
-      transition: width 0.25s ease-in-out; }
-    .site-name .site-title a:hover:after {
-      width: 100%; }
+    position: relative;
+    color: white; }
+    .site-name .site-title a img {
+      height: 40px;
+      width: auto;
+      opacity: 0.4;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out; }
+    .site-name .site-title a:hover img {
+      opacity: 1;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out; }
 
 .main-navigation ul {
   text-align: right; }

@@ -1,13 +1,10 @@
 #masthead {
-	background: $white;
-	width: 100%;
 	z-index: 999;
 	display: block;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: transparent;
 	@include media($med) {
 		position: relative;
 		display: block;
@@ -41,18 +38,17 @@
 		a {
 			text-decoration: none;
 			position: relative;
-			&:after {
-				position: absolute;
-				content: "";
-				left: 0;
-				top: 50%;
-				width: 0;
-				border-top: 2px solid;
-				@include transition(width 0.25s ease-in-out);
+			color: white;
+			img {
+				height: 40px;
+				width: auto;
+				opacity: 0.4;
+				@include transition(all 0.35s ease-in-out);
 			}
 			&:hover {
-				&:after {
-					width: 100%;
+				img {
+					opacity: 1;
+					@include transition(all 0.35s ease-in-out);
 				}
 			}
 		}
