@@ -1065,7 +1065,8 @@ button.menu-toggle {
   width: 46%;
   margin: 2%; }
   .home .display_images .ims {
-    position: relative; }
+    position: relative;
+    display: block; }
     .home .display_images .ims:before {
       background: #000000;
       content: "";
