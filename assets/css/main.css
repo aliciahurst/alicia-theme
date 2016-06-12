@@ -641,7 +641,7 @@ body {
   animation-name: fade-out; }
 
 html {
-  font-family: "Lato", helvetica, sans-serif;
+  font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 400;
   font-size: 62.5%;
   /* Sets up the Base 10 stuff */
@@ -679,7 +679,7 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
   letter-spacing: 2px;
   font-weight: 400;
   color: #000000;
-  font-family: "Lato", helvetica, sans-serif;
+  font-family: "Open Sans", helvetica, sans-serif;
   -webkit-font-smoothing: auto;
   text-transform: uppercase; }
   section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .outbound-link:first-of-type, .home-contact div .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h1:first-of-type, .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div section > .twentytwenty-after-label:first-of-type:before, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .outbound-link:first-of-type, .home-contact div .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h1:first-of-type, .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div > .twentytwenty-after-label:first-of-type:before, section > h2:first-of-type, div > h2:first-of-type, section > h3:first-of-type, section > .outbound-link:first-of-type, .thumbnail section > h3:first-of-type, .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h3:first-of-type, section > .twentytwenty-before-label:first-of-type:before, section > .twentytwenty-after-label:first-of-type:before, div > h3:first-of-type, div > .outbound-link:first-of-type, .thumbnail div > h3:first-of-type, .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h3:first-of-type, div > .twentytwenty-before-label:first-of-type:before, div > .twentytwenty-after-label:first-of-type:before, section > h4:first-of-type, section > .gform_confirmation_message:first-of-type, div > h4:first-of-type, div > .gform_confirmation_message:first-of-type {
@@ -695,7 +695,7 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
   margin-top: 0;
   font-size: 6rem;
   line-height: 1;
-  font-family: "Lato", helvetica, sans-serif; }
+  font-family: "Open Sans", helvetica, sans-serif; }
 
 h2 {
   font-size: 3rem; }
@@ -921,7 +921,7 @@ button.menu-toggle {
       line-height: 33vh;
       width: 100%;
       font-size: 20vw;
-      font-family: "Lato", helvetica, sans-serif;
+      font-family: "Open Sans", helvetica, sans-serif;
       letter-spacing: 2px;
       align-self: center;
       text-decoration: none;
@@ -1241,7 +1241,7 @@ button.menu-toggle {
           font-size: 5rem;
           letter-spacing: 5px; }
         .home-top div:last-of-type ul li h4, .home-top div:last-of-type ul li .gform_confirmation_message {
-          font-family: "Lato", helvetica, sans-serif;
+          font-family: "Open Sans", helvetica, sans-serif;
           text-transform: capitalize; }
         .home-top div:last-of-type ul li h3, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .thumbnail h1, .thumbnail .home-top div:last-of-type ul li h1, .home-top div:last-of-type ul li .twentytwenty-before-label:before, .home-top div:last-of-type ul li .twentytwenty-after-label:before {
           margin: 0;
@@ -2000,7 +2000,7 @@ button.menu-toggle {
 
 .gform_confirmation_message {
   color: #ffffff;
-  font-family: "Lato", helvetica, sans-serif;
+  font-family: "Open Sans", helvetica, sans-serif;
   text-transform: initial;
   text-align: center; }
   .gform_confirmation_message:before {
