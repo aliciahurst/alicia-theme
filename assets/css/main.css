@@ -641,94 +641,92 @@ body {
   animation-name: fade-out; }
 
 html {
-  font-family: "Lato", helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 62.5%;
-  /* Sets up the Base 10 stuff */
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.5px; }
 
 body {
-  line-height: 1.2;
+  font-family: "Lato", helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  margin: 0 auto;
   color: #414141; }
 
-p, .validation_error, li {
-  font-size: 1.6rem;
-  color: #999999;
-  line-height: 1.6; }
+h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, h2 {
+  font-family: inherit;
+  font-weight: 700;
+  font-style: inherit;
+  font-size: 2.3125rem;
+  line-height: 3.125rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem; }
 
-p, .validation_error {
-  margin: 1rem 10% 2.08rem 10%; }
-
-a {
-  color: currentColor; }
-
-.normal, .outbound-link, .contact-content a {
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-  border-bottom: 1px solid;
-  background: transparent;
-  color: inherit; }
-  .normal:hover, .outbound-link:hover, .contact-content a:hover {
-    background: #ffffff;
-    border-bottom: 1px solid transparent; }
-
-p:last-of-type, .validation_error:last-of-type {
-  margin-bottom: 0; }
-
-h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, h2, h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, h4, .gform_confirmation_message {
-  margin: 2.26rem 0 1.8rem;
-  line-height: 1.2;
-  letter-spacing: 0px;
-  font-weight: 400;
-  color: #000000;
-  font-family: "Lato", helvetica, sans-serif;
-  -webkit-font-smoothing: auto; }
-  section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .outbound-link:first-of-type, .home-contact div .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h1:first-of-type, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .outbound-link:first-of-type, .home-contact div .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h1:first-of-type, section > h2:first-of-type, div > h2:first-of-type, section > h3:first-of-type, section > .outbound-link:first-of-type, .thumbnail section > h3:first-of-type, .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h3:first-of-type, div > h3:first-of-type, div > .outbound-link:first-of-type, .thumbnail div > h3:first-of-type, .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h3:first-of-type, section > h4:first-of-type, section > .gform_confirmation_message:first-of-type, div > h4:first-of-type, div > .gform_confirmation_message:first-of-type {
-    margin-top: 0; }
-  section > h1 + p, .home-contact div section > h3 + p, .home-contact div section > .outbound-link + p, .home-contact div .thumbnail section > h1 + p, .thumbnail .home-contact div section > h1 + p, section > h1 + .validation_error, .home-contact div section > h3 + .validation_error, .home-contact div section > .outbound-link + .validation_error, div > h1 + p, .home-contact div > h3 + p, .home-contact div > .outbound-link + p, .home-contact div .thumbnail div > h1 + p, .thumbnail .home-contact div > h1 + p, div > h1 + .validation_error, .home-contact div > h3 + .validation_error, .home-contact div > .outbound-link + .validation_error, .home-contact div .thumbnail div > h1 + .validation_error, section > h2 + p, section > h2 + .validation_error, div > h2 + p, div > h2 + .validation_error, section > h3 + p, section > .outbound-link + p, .thumbnail section > h3 + p, .thumbnail section > h1 + p, section > h3 + .validation_error, section > .outbound-link + .validation_error, .thumbnail section > h1 + .validation_error, div > h3 + p, div > .outbound-link + p, .thumbnail div > h3 + p, .thumbnail div > h1 + p, div > h3 + .validation_error, div > .outbound-link + .validation_error, .thumbnail div > h1 + .validation_error, .home-contact div .thumbnail div > h3 + .validation_error, section > h4 + p, section > .gform_confirmation_message + p, section > h4 + .validation_error, section > .gform_confirmation_message + .validation_error, div > h4 + p, div > .gform_confirmation_message + p, div > h4 + .validation_error, div > .gform_confirmation_message + .validation_error {
-    margin-top: 0; }
-  h1 a, .home-contact div h3 a, .home-contact div .outbound-link a, .home-contact div .thumbnail h1 a, .thumbnail .home-contact div h1 a, h2 a, h3 a, .outbound-link a, .thumbnail h3 a, .thumbnail h1 a, h4 a, .gform_confirmation_message a {
-    color: inherit; }
-  .wrapper + h1, .home-contact div .wrapper + h3, .home-contact div .wrapper + .outbound-link, .home-contact div .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h1, .wrapper + h2, .wrapper + h3, .wrapper + .outbound-link, .thumbnail .wrapper + h3, .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h3, .wrapper + h4, .wrapper + .gform_confirmation_message {
-    margin-top: 0; }
-
-h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
-  margin-top: 0;
-  font-size: 5rem;
-  line-height: 1;
-  font-family: "Lato", helvetica, sans-serif;
-  font-weight: bold; }
-
-h2 {
-  font-size: 3rem; }
-
-h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3 {
-  font-size: 2.25rem; }
+h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .normal, .outbound-link, .contact-content a {
+  font-family: inherit;
+  font-weight: 700;
+  font-style: inherit;
+  font-size: 1.4375rem;
+  line-height: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem; }
 
 h4, .gform_confirmation_message {
-  font-size: 1.8rem; }
+  font-family: inherit;
+  font-weight: 700;
+  font-style: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem; }
+
+h5 {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem; }
 
 small, .font_small, .work-role, .twentytwenty-before-label:before, .twentytwenty-after-label:before {
-  font-size: 1.13rem;
-  letter-spacing: 0.25px;
-  text-transform: uppercase;
-  font-weight: bold; }
+  font-family: inherit;
+  font-weight: 700;
+  font-style: inherit;
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  text-transform: uppercase; }
 
-a {
-  text-decoration: none;
-  font-size: inherit; }
-
-ul, ol {
-  margin: 0;
+p, .validation_error, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5625rem;
   list-style-type: none;
   padding: 0; }
-  ul ul, ul ol, ol ul, ol ol {
-    margin-top: 0;
-    margin-bottom: 0; }
 
-li {
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
   margin-bottom: 0; }
+
+hr {
+  border: 1px solid;
+  margin: -1px 0; }
+
+b, strong, em, small, code {
+  line-height: 1; }
+
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  font-size: inherit; }
 
 html, body {
   height: 100%; }
@@ -850,7 +848,7 @@ img {
     margin: 0 0.5rem; }
     .main-navigation ul li a {
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 1.4rem;
       letter-spacing: 1px;
       color: #ffffff;
@@ -916,7 +914,7 @@ button.menu-toggle {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
     letter-spacing: 1px; }
     .toggled ul li a {
       display: block;
@@ -1277,7 +1275,7 @@ button.menu-toggle {
 .home-title h2 {
   margin: 0;
   margin-top: -2rem !important;
-  font-weight: bold; }
+  font-weight: 900; }
 .home-title h3, .home-title .outbound-link, .home-title .thumbnail h1, .thumbnail .home-title h1, .home-title .thumbnail .home-contact div h3, .thumbnail .home-contact div .home-title h3, .home-title .home-contact div .thumbnail h3, .home-contact div .thumbnail .home-title h3 {
   margin-top: 3rem !important; }
 
@@ -1515,7 +1513,8 @@ button.menu-toggle {
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
-  font-weight: bold; }
+  font-weight: 700;
+  margin-left: 5px; }
 
 .ex {
   text-align: right; }
@@ -1829,7 +1828,7 @@ button.menu-toggle {
       font-size: 2.5rem;
       line-height: 1;
       padding: 0.5rem 1.5rem 1rem;
-      font-weight: bold;
+      font-weight: 900;
       top: -3rem;
       background: white;
       left: 50%;
@@ -1947,7 +1946,7 @@ button.menu-toggle {
   border-radius: 2px; }
   .gform_body .gfield label {
     display: block;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.6rem;
     color: #ffffff;
     padding: 2px 0 5px; }
@@ -2001,7 +2000,7 @@ button.menu-toggle {
 
 .validation_message {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #ff006f;
   padding-top: 5px; }
   .validation_message:before {

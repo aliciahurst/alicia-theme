@@ -15,7 +15,7 @@
 	<link rel="icon" type="image/x-icon" href="/wordpress/wp-content/themes/alicia-theme/assets/img/min/favicon.ico">
 	<script src="//use.typekit.net/nht0rlx.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	<link href='http://fonts.googleapis.com/css?family=Lato:400|500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 
