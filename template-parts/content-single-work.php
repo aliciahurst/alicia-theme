@@ -17,6 +17,9 @@
 <?php endif; ?>
 
 <div class="work-content">
+<div class="ex">
+<svg class="icon-close"><use xlink:href="#icon-close"></use></svg>
+</div>
 	<section class="work-intro">
 		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 		<?php if( have_rows('work_roles') ): //what I did ?>
