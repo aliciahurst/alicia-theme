@@ -9,6 +9,16 @@
 	display:none;
 }
 
+.home h3 {
+	a {
+		text-decoration: none;
+		background: $fd;
+		padding: 0 4px;
+		&:hover {
+			background: yellow;
+		}
+	}
+}
 .home .display_images {
 	float: left;
 	width: 46%;
@@ -39,6 +49,9 @@
 	a {
 		text-decoration: none;
 		display: block;
+		&:hover {
+			text-decoration: line-through;
+		}
 	}
 }
 

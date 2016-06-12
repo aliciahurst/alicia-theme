@@ -1053,6 +1053,13 @@ button.menu-toggle {
 .home-work, .work-navigation {
   display: none; }
 
+.home h3 a, .home .name-scroll a, .home .outbound-link a {
+  text-decoration: none;
+  background: #fdfdfd;
+  padding: 0 4px; }
+  .home h3 a:hover, .home .name-scroll a:hover, .home .outbound-link a:hover {
+    background: yellow; }
+
 .home .display_images {
   float: left;
   width: 46%;
@@ -1082,6 +1089,8 @@ button.menu-toggle {
   .home .display_images a {
     text-decoration: none;
     display: block; }
+    .home .display_images a:hover {
+      text-decoration: line-through; }
 
 .home .entry-header {
   display: none; }
