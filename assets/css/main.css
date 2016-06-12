@@ -108,7 +108,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before {
+h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -679,7 +679,7 @@ a {
 p:last-of-type, .validation_error:last-of-type {
   margin-bottom: 0; }
 
-h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before, h2, h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .twentytwenty-before-label:before, .twentytwenty-after-label:before, h4, .gform_confirmation_message {
+h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, h2, h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, h4, .gform_confirmation_message {
   margin: 2.26rem 0 1.8rem;
   line-height: 1.2;
   letter-spacing: 0px;
@@ -687,16 +687,16 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
   color: #000000;
   font-family: "Open Sans", helvetica, sans-serif;
   -webkit-font-smoothing: auto; }
-  section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .outbound-link:first-of-type, .home-contact div .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h1:first-of-type, .home-contact div section > .twentytwenty-before-label:first-of-type:before, .home-contact div section > .twentytwenty-after-label:first-of-type:before, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .outbound-link:first-of-type, .home-contact div .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h1:first-of-type, .home-contact div > .twentytwenty-before-label:first-of-type:before, .home-contact div > .twentytwenty-after-label:first-of-type:before, section > h2:first-of-type, div > h2:first-of-type, section > h3:first-of-type, section > .outbound-link:first-of-type, .thumbnail section > h3:first-of-type, .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h3:first-of-type, section > .twentytwenty-before-label:first-of-type:before, section > .twentytwenty-after-label:first-of-type:before, div > h3:first-of-type, div > .outbound-link:first-of-type, .thumbnail div > h3:first-of-type, .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h3:first-of-type, div > .twentytwenty-before-label:first-of-type:before, div > .twentytwenty-after-label:first-of-type:before, section > h4:first-of-type, section > .gform_confirmation_message:first-of-type, div > h4:first-of-type, div > .gform_confirmation_message:first-of-type {
+  section > h1:first-of-type, .home-contact div section > h3:first-of-type, .home-contact div section > .outbound-link:first-of-type, .home-contact div .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h1:first-of-type, div > h1:first-of-type, .home-contact div > h3:first-of-type, .home-contact div > .outbound-link:first-of-type, .home-contact div .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h1:first-of-type, section > h2:first-of-type, div > h2:first-of-type, section > h3:first-of-type, section > .outbound-link:first-of-type, .thumbnail section > h3:first-of-type, .thumbnail section > h1:first-of-type, .thumbnail .home-contact div section > h3:first-of-type, div > h3:first-of-type, div > .outbound-link:first-of-type, .thumbnail div > h3:first-of-type, .thumbnail div > h1:first-of-type, .thumbnail .home-contact div > h3:first-of-type, section > h4:first-of-type, section > .gform_confirmation_message:first-of-type, div > h4:first-of-type, div > .gform_confirmation_message:first-of-type {
     margin-top: 0; }
-  section > h1 + p, .home-contact div section > h3 + p, .home-contact div section > .outbound-link + p, .home-contact div .thumbnail section > h1 + p, .thumbnail .home-contact div section > h1 + p, .home-contact div section > .twentytwenty-before-label:before + p, .home-contact div section > .twentytwenty-after-label:before + p, section > h1 + .validation_error, .home-contact div section > h3 + .validation_error, .home-contact div section > .outbound-link + .validation_error, .home-contact div section > .twentytwenty-before-label:before + .validation_error, .home-contact div section > .twentytwenty-after-label:before + .validation_error, div > h1 + p, .home-contact div > h3 + p, .home-contact div > .outbound-link + p, .home-contact div .thumbnail div > h1 + p, .thumbnail .home-contact div > h1 + p, .home-contact div > .twentytwenty-before-label:before + p, .home-contact div > .twentytwenty-after-label:before + p, div > h1 + .validation_error, .home-contact div > h3 + .validation_error, .home-contact div > .outbound-link + .validation_error, .home-contact div .thumbnail div > h1 + .validation_error, .home-contact div > .twentytwenty-before-label:before + .validation_error, .home-contact div > .twentytwenty-after-label:before + .validation_error, section > h2 + p, section > h2 + .validation_error, div > h2 + p, div > h2 + .validation_error, section > h3 + p, section > .outbound-link + p, .thumbnail section > h3 + p, .thumbnail section > h1 + p, section > .twentytwenty-before-label:before + p, section > .twentytwenty-after-label:before + p, section > h3 + .validation_error, section > .outbound-link + .validation_error, .thumbnail section > h1 + .validation_error, section > .twentytwenty-before-label:before + .validation_error, section > .twentytwenty-after-label:before + .validation_error, div > h3 + p, div > .outbound-link + p, .thumbnail div > h3 + p, .thumbnail div > h1 + p, div > .twentytwenty-before-label:before + p, div > .twentytwenty-after-label:before + p, div > h3 + .validation_error, div > .outbound-link + .validation_error, .thumbnail div > h1 + .validation_error, .home-contact div .thumbnail div > h3 + .validation_error, div > .twentytwenty-before-label:before + .validation_error, div > .twentytwenty-after-label:before + .validation_error, section > h4 + p, section > .gform_confirmation_message + p, section > h4 + .validation_error, section > .gform_confirmation_message + .validation_error, div > h4 + p, div > .gform_confirmation_message + p, div > h4 + .validation_error, div > .gform_confirmation_message + .validation_error {
+  section > h1 + p, .home-contact div section > h3 + p, .home-contact div section > .outbound-link + p, .home-contact div .thumbnail section > h1 + p, .thumbnail .home-contact div section > h1 + p, section > h1 + .validation_error, .home-contact div section > h3 + .validation_error, .home-contact div section > .outbound-link + .validation_error, div > h1 + p, .home-contact div > h3 + p, .home-contact div > .outbound-link + p, .home-contact div .thumbnail div > h1 + p, .thumbnail .home-contact div > h1 + p, div > h1 + .validation_error, .home-contact div > h3 + .validation_error, .home-contact div > .outbound-link + .validation_error, .home-contact div .thumbnail div > h1 + .validation_error, section > h2 + p, section > h2 + .validation_error, div > h2 + p, div > h2 + .validation_error, section > h3 + p, section > .outbound-link + p, .thumbnail section > h3 + p, .thumbnail section > h1 + p, section > h3 + .validation_error, section > .outbound-link + .validation_error, .thumbnail section > h1 + .validation_error, div > h3 + p, div > .outbound-link + p, .thumbnail div > h3 + p, .thumbnail div > h1 + p, div > h3 + .validation_error, div > .outbound-link + .validation_error, .thumbnail div > h1 + .validation_error, .home-contact div .thumbnail div > h3 + .validation_error, section > h4 + p, section > .gform_confirmation_message + p, section > h4 + .validation_error, section > .gform_confirmation_message + .validation_error, div > h4 + p, div > .gform_confirmation_message + p, div > h4 + .validation_error, div > .gform_confirmation_message + .validation_error {
     margin-top: 0; }
-  h1 a, .home-contact div h3 a, .home-contact div .outbound-link a, .home-contact div .thumbnail h1 a, .thumbnail .home-contact div h1 a, .home-contact div .twentytwenty-before-label:before a, .home-contact div .twentytwenty-after-label:before a, h2 a, h3 a, .outbound-link a, .thumbnail h3 a, .thumbnail h1 a, .twentytwenty-before-label:before a, .twentytwenty-after-label:before a, h4 a, .gform_confirmation_message a {
+  h1 a, .home-contact div h3 a, .home-contact div .outbound-link a, .home-contact div .thumbnail h1 a, .thumbnail .home-contact div h1 a, h2 a, h3 a, .outbound-link a, .thumbnail h3 a, .thumbnail h1 a, h4 a, .gform_confirmation_message a {
     color: inherit; }
-  .wrapper + h1, .home-contact div .wrapper + h3, .home-contact div .wrapper + .outbound-link, .home-contact div .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h1, .home-contact div .wrapper + .twentytwenty-before-label:before, .home-contact div .wrapper + .twentytwenty-after-label:before, .wrapper + h2, .wrapper + h3, .wrapper + .outbound-link, .thumbnail .wrapper + h3, .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h3, .wrapper + .twentytwenty-before-label:before, .wrapper + .twentytwenty-after-label:before, .wrapper + h4, .wrapper + .gform_confirmation_message {
+  .wrapper + h1, .home-contact div .wrapper + h3, .home-contact div .wrapper + .outbound-link, .home-contact div .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h1, .wrapper + h2, .wrapper + h3, .wrapper + .outbound-link, .thumbnail .wrapper + h3, .thumbnail .wrapper + h1, .thumbnail .home-contact div .wrapper + h3, .wrapper + h4, .wrapper + .gform_confirmation_message {
     margin-top: 0; }
 
-h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, .home-contact div .twentytwenty-before-label:before, .home-contact div .twentytwenty-after-label:before {
+h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
   margin-top: 0;
   font-size: 5rem;
   line-height: 1;
@@ -706,14 +706,16 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
 h2 {
   font-size: 3rem; }
 
-h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .twentytwenty-before-label:before, .twentytwenty-after-label:before {
+h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3 {
   font-size: 2.25rem; }
 
 h4, .gform_confirmation_message {
   font-size: 1.8rem; }
 
-small, .font_small, .work-role {
-  font-size: 1.13rem; }
+small, .font_small, .work-role, .twentytwenty-before-label:before, .twentytwenty-after-label:before {
+  font-size: 1.13rem;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 a {
   text-decoration: none;
@@ -990,7 +992,7 @@ button.menu-toggle {
       -moz-flex: none;
       -ms-flex: none;
       flex: none; }
-      .site-footer .footer-container div h3, .site-footer .footer-container div .outbound-link, .site-footer .footer-container div .thumbnail h1, .thumbnail .site-footer .footer-container div h1, .site-footer .footer-container div .twentytwenty-before-label:before, .site-footer .footer-container div .twentytwenty-after-label:before, .site-footer .footer-container nav h3, .site-footer .footer-container nav .outbound-link, .site-footer .footer-container nav .thumbnail h1, .thumbnail .site-footer .footer-container nav h1, .site-footer .footer-container nav .twentytwenty-before-label:before, .site-footer .footer-container nav .twentytwenty-after-label:before {
+      .site-footer .footer-container div h3, .site-footer .footer-container div .outbound-link, .site-footer .footer-container div .thumbnail h1, .thumbnail .site-footer .footer-container div h1, .site-footer .footer-container nav h3, .site-footer .footer-container nav .outbound-link, .site-footer .footer-container nav .thumbnail h1, .thumbnail .site-footer .footer-container nav h1 {
         color: #ffffff;
         margin: 0 0 1.8rem 0; }
     .site-footer .footer-container .top {
@@ -1016,7 +1018,7 @@ button.menu-toggle {
 
 .footer-contact p, .footer-contact .validation_error {
   margin: 0 !important; }
-.footer-contact h3, .footer-contact .outbound-link, .footer-contact .thumbnail h1, .thumbnail .footer-contact h1, .footer-contact .thumbnail .home-contact div h3, .thumbnail .home-contact div .footer-contact h3, .footer-contact .home-contact div .thumbnail h3, .home-contact div .thumbnail .footer-contact h3, .footer-contact .twentytwenty-before-label:before, .footer-contact .twentytwenty-after-label:before {
+.footer-contact h3, .footer-contact .outbound-link, .footer-contact .thumbnail h1, .thumbnail .footer-contact h1, .footer-contact .thumbnail .home-contact div h3, .thumbnail .home-contact div .footer-contact h3, .footer-contact .home-contact div .thumbnail h3, .home-contact div .thumbnail .footer-contact h3 {
   padding-bottom: 13px; }
 
 .copyright {
@@ -1201,14 +1203,14 @@ button.menu-toggle {
     .main-navigation ul li a:hover:after, .main-navigation ul li a:focus:after {
       transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s; } }
 
-.work-navigation h3 span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span, .work-navigation .twentytwenty-before-label:before span, .work-navigation .twentytwenty-after-label:before span {
+.work-navigation h3 span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before, .thumbnail .twentytwenty-before-label:before, .thumbnail .twentytwenty-after-label:before {
+.thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1247,7 +1249,7 @@ button.menu-toggle {
         .home-top div:last-of-type ul li h4, .home-top div:last-of-type ul li .gform_confirmation_message {
           font-family: "Open Sans", helvetica, sans-serif;
           text-transform: capitalize; }
-        .home-top div:last-of-type ul li h3, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .thumbnail h1, .thumbnail .home-top div:last-of-type ul li h1, .home-top div:last-of-type ul li .twentytwenty-before-label:before, .home-top div:last-of-type ul li .twentytwenty-after-label:before {
+        .home-top div:last-of-type ul li h3, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .thumbnail h1, .thumbnail .home-top div:last-of-type ul li h1 {
           margin: 0;
           font-size: 3.2rem; }
   @media screen and (max-width: 65em) {
@@ -1278,7 +1280,7 @@ button.menu-toggle {
   margin: 0;
   margin-top: -2rem !important;
   font-weight: 700; }
-.home-title h3, .home-title .outbound-link, .home-title .thumbnail h1, .thumbnail .home-title h1, .home-title .thumbnail .home-contact div h3, .thumbnail .home-contact div .home-title h3, .home-title .home-contact div .thumbnail h3, .home-contact div .thumbnail .home-title h3, .home-title .twentytwenty-before-label:before, .home-title .twentytwenty-after-label:before {
+.home-title h3, .home-title .outbound-link, .home-title .thumbnail h1, .thumbnail .home-title h1, .home-title .thumbnail .home-contact div h3, .thumbnail .home-contact div .home-title h3, .home-title .home-contact div .thumbnail h3, .home-contact div .thumbnail .home-title h3 {
   margin-top: 3rem !important; }
 
 .home-services {
@@ -1295,7 +1297,7 @@ button.menu-toggle {
     text-align: center;
     border: 1px solid;
     margin: 2% 0; }
-    .home-services .services-div h3, .home-services .services-div .outbound-link, .home-services .services-div .thumbnail h1, .thumbnail .home-services .services-div h1, .home-services .services-div .twentytwenty-before-label:before, .home-services .services-div .twentytwenty-after-label:before {
+    .home-services .services-div h3, .home-services .services-div .outbound-link, .home-services .services-div .thumbnail h1, .thumbnail .home-services .services-div h1 {
       padding: 2rem 6%;
       line-height: 1.4;
       margin: 0;
@@ -1347,7 +1349,7 @@ button.menu-toggle {
     margin: 0; }
     .home-contact div:last-of-type {
       background: #c2c2c2; }
-      .home-contact div:last-of-type p, .home-contact div:last-of-type .validation_error, .home-contact div:last-of-type h3, .home-contact div:last-of-type .outbound-link, .home-contact div:last-of-type .thumbnail h1, .thumbnail .home-contact div:last-of-type h1, .home-contact div:last-of-type .twentytwenty-before-label:before, .home-contact div:last-of-type .twentytwenty-after-label:before {
+      .home-contact div:last-of-type p, .home-contact div:last-of-type .validation_error, .home-contact div:last-of-type h3, .home-contact div:last-of-type .outbound-link, .home-contact div:last-of-type .thumbnail h1, .thumbnail .home-contact div:last-of-type h1 {
         color: #ffffff; }
       .home-contact div:last-of-type a {
         border-bottom: 1px solid; }
@@ -1409,7 +1411,7 @@ button.menu-toggle {
     width: auto;
     margin-bottom: 40px;
     opacity: 0.8; }
-  .bio-text h3, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3, .bio-text .twentytwenty-before-label:before, .bio-text .twentytwenty-after-label:before {
+  .bio-text h3, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3 {
     margin: 30px 0; }
   .bio-text nav ul li {
     display: inline-block;
@@ -1474,7 +1476,7 @@ button.menu-toggle {
   margin-top: 0;
   margin-bottom: 6%; }
 
-.bio-text h3, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3, .bio-text .twentytwenty-before-label:before, .bio-text .twentytwenty-after-label:before {
+.bio-text h3, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3 {
   margin-bottom: 0; }
 .bio-text p, .bio-text .validation_error {
   margin-top: 10px;
@@ -1553,7 +1555,7 @@ button.menu-toggle {
 
 .contribution {
   padding: 6% 6% 0; }
-  .contribution h3, .contribution .outbound-link, .contribution .thumbnail h1, .thumbnail .contribution h1, .contribution .thumbnail .home-contact div h3, .thumbnail .home-contact div .contribution h3, .contribution .home-contact div .thumbnail h3, .home-contact div .thumbnail .contribution h3, .contribution .twentytwenty-before-label:before, .contribution .twentytwenty-after-label:before {
+  .contribution h3, .contribution .outbound-link, .contribution .thumbnail h1, .thumbnail .contribution h1, .contribution .thumbnail .home-contact div h3, .thumbnail .home-contact div .contribution h3, .contribution .home-contact div .thumbnail h3, .home-contact div .thumbnail .contribution h3 {
     text-align: center; }
   .contribution ul {
     text-align: center;
@@ -1648,7 +1650,7 @@ button.menu-toggle {
 
 .display_images .aside {
   padding: 6% 6%; }
-  .display_images .aside h3, .display_images .aside .outbound-link, .display_images .aside .thumbnail h1, .thumbnail .display_images .aside h1, .display_images .aside .twentytwenty-before-label:before, .display_images .aside .twentytwenty-after-label:before, .display_images .aside p, .display_images .aside .validation_error {
+  .display_images .aside h3, .display_images .aside .outbound-link, .display_images .aside .thumbnail h1, .thumbnail .display_images .aside h1, .display_images .aside p, .display_images .aside .validation_error {
     padding: 0 6%; }
 @media screen and (max-width: 65em) {
   .display_images:nth-of-type(2n-1) {
@@ -1710,15 +1712,15 @@ button.menu-toggle {
 
 .work-navigation {
   background: #f7f7f7; }
-  .work-navigation div:last-of-type h3:hover span:after, .work-navigation div:last-of-type .outbound-link:hover span:after, .work-navigation div:last-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:last-of-type h1:hover span:after, .work-navigation div:last-of-type .twentytwenty-before-label:hover:before span:after, .work-navigation div:last-of-type .twentytwenty-after-label:hover:before span:after {
+  .work-navigation div:last-of-type h3:hover span:after, .work-navigation div:last-of-type .outbound-link:hover span:after, .work-navigation div:last-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:last-of-type h1:hover span:after {
     content: "\2192"; }
-  .work-navigation div:first-of-type h3:hover span:after, .work-navigation div:first-of-type .outbound-link:hover span:after, .work-navigation div:first-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:first-of-type h1:hover span:after, .work-navigation div:first-of-type .twentytwenty-before-label:hover:before span:after, .work-navigation div:first-of-type .twentytwenty-after-label:hover:before span:after {
+  .work-navigation div:first-of-type h3:hover span:after, .work-navigation div:first-of-type .outbound-link:hover span:after, .work-navigation div:first-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:first-of-type h1:hover span:after {
     content: "\2190"; }
   .work-navigation a {
     position: relative; }
     .work-navigation a img {
       margin-bottom: -3px; }
-  .work-navigation h3, .work-navigation .outbound-link, .work-navigation .thumbnail h1, .thumbnail .work-navigation h1, .work-navigation .thumbnail .home-contact div h3, .thumbnail .home-contact div .work-navigation h3, .work-navigation .home-contact div .thumbnail h3, .home-contact div .thumbnail .work-navigation h3, .work-navigation .twentytwenty-before-label:before, .work-navigation .twentytwenty-after-label:before {
+  .work-navigation h3, .work-navigation .outbound-link, .work-navigation .thumbnail h1, .thumbnail .work-navigation h1, .work-navigation .thumbnail .home-contact div h3, .thumbnail .home-contact div .work-navigation h3, .work-navigation .home-contact div .thumbnail h3, .home-contact div .thumbnail .work-navigation h3 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1729,7 +1731,7 @@ button.menu-toggle {
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out; }
-    .work-navigation h3 span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span, .work-navigation .twentytwenty-before-label:before span, .work-navigation .twentytwenty-after-label:before span {
+    .work-navigation h3 span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span {
       position: absolute;
       color: #ffffff;
       top: 50%;
@@ -1739,11 +1741,11 @@ button.menu-toggle {
       -webkit-transition: all 0.35s ease-in-out;
       -moz-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out; }
-      .work-navigation h3 span:after, .work-navigation .outbound-link span:after, .work-navigation .thumbnail h1 span:after, .thumbnail .work-navigation h1 span:after, .work-navigation .twentytwenty-before-label:before span:after, .work-navigation .twentytwenty-after-label:before span:after {
+      .work-navigation h3 span:after, .work-navigation .outbound-link span:after, .work-navigation .thumbnail h1 span:after, .thumbnail .work-navigation h1 span:after {
         content: "\2015";
         text-align: center;
         display: block; }
-    .work-navigation h3:hover, .work-navigation .outbound-link:hover, .work-navigation .thumbnail h1:hover, .thumbnail .work-navigation h1:hover, .work-navigation .twentytwenty-before-label:hover:before, .work-navigation .twentytwenty-after-label:hover:before {
+    .work-navigation h3:hover, .work-navigation .outbound-link:hover, .work-navigation .thumbnail h1:hover, .thumbnail .work-navigation h1:hover {
       background: rgba(65, 65, 65, 0.5); }
 
 .postid-668 .contribution {
@@ -1777,7 +1779,7 @@ button.menu-toggle {
   .archive .work-item a {
     display: block;
     border: 0; }
-  .archive .work-item h1, .archive .work-item .home-contact div h3, .home-contact div .archive .work-item h3, .archive .work-item .home-contact div .outbound-link, .home-contact div .archive .work-item .outbound-link, .archive .work-item .home-contact div .twentytwenty-before-label:before, .home-contact div .archive .work-item .twentytwenty-before-label:before, .archive .work-item .home-contact div .twentytwenty-after-label:before, .home-contact div .archive .work-item .twentytwenty-after-label:before {
+  .archive .work-item h1, .archive .work-item .home-contact div h3, .home-contact div .archive .work-item h3, .archive .work-item .home-contact div .outbound-link, .home-contact div .archive .work-item .outbound-link {
     font-size: 3rem; }
 @media all and (max-width: 65em) {
   .archive .work-item {
@@ -1804,14 +1806,14 @@ button.menu-toggle {
   -webkit-transition: color 0.35s;
   -moz-transition: color 0.35s;
   transition: color 0.35s; }
-  .thumbnail .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail .twentytwenty-before-label:before, .thumbnail .twentytwenty-after-label:before, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail .home-contact div .outbound-link, .home-contact div .thumbnail .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, .thumbnail .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail .twentytwenty-before-label:before, .thumbnail .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail .twentytwenty-after-label:before {
+  .thumbnail .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail .home-contact div .outbound-link, .home-contact div .thumbnail .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
     text-align: center;
     margin: 0;
     background: #ffffff;
     padding: 0.75rem 0;
     position: relative;
     color: #818181; }
-    .thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before, .thumbnail .twentytwenty-before-label:before, .thumbnail .twentytwenty-after-label:before, .thumbnail h1:before, .thumbnail .home-contact div h3:before, .home-contact div .thumbnail h3:before, .thumbnail .home-contact div .outbound-link:before, .home-contact div .thumbnail .outbound-link:before, .thumbnail .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail .twentytwenty-before-label:before, .thumbnail .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail .twentytwenty-after-label:before {
+    .thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before, .thumbnail h1:before, .thumbnail .home-contact div h3:before, .home-contact div .thumbnail h3:before, .thumbnail .home-contact div .outbound-link:before, .home-contact div .thumbnail .outbound-link:before {
       content: "\002B";
       position: absolute;
       font-size: 2.5rem;
@@ -1838,14 +1840,14 @@ button.menu-toggle {
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
     transform: scale(1.25); }
-  .thumbnail:hover h1, .thumbnail:hover .home-contact div h3, .home-contact div .thumbnail:hover h3, .thumbnail:hover .home-contact div .outbound-link, .home-contact div .thumbnail:hover .outbound-link, .thumbnail:hover .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail:hover .twentytwenty-after-label:before, .thumbnail:hover .outbound-link, .thumbnail:hover h3, .thumbnail:hover h1, .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .twentytwenty-after-label:before {
+  .thumbnail:hover h1, .thumbnail:hover .home-contact div h3, .home-contact div .thumbnail:hover h3, .thumbnail:hover .home-contact div .outbound-link, .home-contact div .thumbnail:hover .outbound-link, .thumbnail:hover .outbound-link, .thumbnail:hover h3, .thumbnail:hover h1 {
     color: #414141; }
-    .thumbnail:hover h1:before, .thumbnail:hover .home-contact div h3:before, .home-contact div .thumbnail:hover h3:before, .thumbnail:hover .home-contact div .outbound-link:before, .home-contact div .thumbnail:hover .outbound-link:before, .thumbnail:hover .home-contact div .twentytwenty-before-label:before, .home-contact div .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .home-contact div .twentytwenty-after-label:before, .home-contact div .thumbnail:hover .twentytwenty-after-label:before, .thumbnail:hover .outbound-link:before, .thumbnail:hover h3:before, .thumbnail:hover h1:before, .thumbnail:hover .twentytwenty-before-label:before, .thumbnail:hover .twentytwenty-after-label:before {
+    .thumbnail:hover h1:before, .thumbnail:hover .home-contact div h3:before, .home-contact div .thumbnail:hover h3:before, .thumbnail:hover .home-contact div .outbound-link:before, .home-contact div .thumbnail:hover .outbound-link:before, .thumbnail:hover .outbound-link:before, .thumbnail:hover h3:before, .thumbnail:hover h1:before {
       content: "\00D7"; }
 
 .last {
   text-align: center; }
-  .last h1:before, .last .home-contact div h3:before, .home-contact div .last h3:before, .last .home-contact div .outbound-link:before, .home-contact div .last .outbound-link:before, .last .home-contact div .twentytwenty-before-label:before, .home-contact div .last .twentytwenty-before-label:before, .last .home-contact div .twentytwenty-after-label:before, .home-contact div .last .twentytwenty-after-label:before {
+  .last h1:before, .last .home-contact div h3:before, .home-contact div .last h3:before, .last .home-contact div .outbound-link:before, .home-contact div .last .outbound-link:before {
     display: none; }
   .last:hover img {
     -webkit-transform: none;
@@ -2219,16 +2221,16 @@ input.filled ~ .validation_message, textarea.filled ~ .validation_message {
   z-index: 30; }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after {
-  width: 5px;
+  width: 3px;
   height: 9999px;
   left: 50%;
-  margin-left: -2.5px; }
+  margin-left: -1.5px; }
 
 .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
   width: 9999px;
-  height: 5px;
+  height: 3px;
   top: 50%;
-  margin-top: -2.5px; }
+  margin-top: -1.5px; }
 
 .twentytwenty-before-label, .twentytwenty-after-label, .twentytwenty-overlay {
   position: absolute;
@@ -2343,11 +2345,11 @@ input.filled ~ .validation_message, textarea.filled ~ .validation_message {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -24px;
-  margin-top: -24px;
-  border: 5px solid #fff;
+  margin-left: -22px;
+  margin-top: -22px;
+  border: 3px solid #fff;
   border-radius: 1000px;
-  box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: none;
   background: rgba(0, 0, 0, 0.7);
   z-index: 40;
   cursor: pointer;
@@ -2359,17 +2361,17 @@ input.filled ~ .validation_message, textarea.filled ~ .validation_message {
 
 .twentytwenty-horizontal .twentytwenty-handle:before {
   bottom: 50%;
-  margin-bottom: 24px; }
+  margin-bottom: 22px; }
 .twentytwenty-horizontal .twentytwenty-handle:after {
   top: 50%;
-  margin-top: 24px; }
+  margin-top: 22px; }
 
 .twentytwenty-vertical .twentytwenty-handle:before {
   left: 50%;
-  margin-left: 24px; }
+  margin-left: 22px; }
 .twentytwenty-vertical .twentytwenty-handle:after {
   right: 50%;
-  margin-right: 24px; }
+  margin-right: 22px; }
 
 .twentytwenty-left-arrow {
   border-right: 6px solid #fff;
