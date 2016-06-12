@@ -20,7 +20,7 @@
 
 		<?php if( have_rows('social_media', 'option') ): ?>
 			<ul>
-				<li> <a href="mailto:hi@aliciahurst.com" class="animated"><svg class="icon-mail"><use xlink:href="#icon-mail"></use></svg></a> </li>
+				<li> <a href="mailto:aliciamhurst@gmail.com" class="animated"><svg class="icon-mail"><use xlink:href="#icon-mail"></use></svg></a> </li>
 				<?php while( have_rows('social_media', 'option') ): the_row(); 
 				$network = get_sub_field('social_media_network');
 				$account = get_sub_field('social_media_account');
@@ -34,10 +34,13 @@
 </section>
 
 <section class="layout-text">
-	<h3>Past Work</h3>
-	<p>Web Design & Front-End Development</p>
-	<?php $args = array( 'numberposts' => 7, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+	<!-- <h3>Past Work</h3>
+	<p>Product management, web design, front-en</p> -->
+	
 </section>
+
+<?php $args = array( 'numberposts' => 7, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+
 <section class="display_images">
 	<a href="<?php the_permalink(); ?>" class="ims">
 		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
