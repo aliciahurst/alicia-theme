@@ -8,6 +8,9 @@
 		height: 100%;
 		width: auto;
 	}
+	.home & {
+		width: 50%;
+	}
 }
 
 .name-scroll {
@@ -174,7 +177,14 @@
 			left: 2%;
 			z-index: -1;
 		}
+		a:hover {
+			svg {
+				background: yellow;
+				border-radius: 30%;
+			}
+		}
 	}
+
 	p {
 		margin-top:  1.5625rem;
 		margin-bottom: 1.5625rem * 2;

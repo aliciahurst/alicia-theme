@@ -1170,6 +1170,18 @@ button.menu-toggle {
   -o-transform: translateX(-50%);
   transform: translateX(-50%); }
 
+.home h1 img, .home .home-contact div h3 img, .home-contact div .home h3 img, .home .home-contact div .name-scroll img, .home-contact div .home .name-scroll img, .home .home-contact div .outbound-link img, .home-contact div .home .outbound-link img {
+  height: 80px;
+  width: auto; }
+
+.home .display_images {
+  float: left;
+  width: 46%;
+  margin: 2%; }
+  .home .display_images a {
+    text-decoration: none;
+    display: block; }
+
 .home .entry-header {
   display: none; }
 
@@ -1319,6 +1331,27 @@ button.menu-toggle {
 .no-line {
   border-bottom: 0 !important; }
 
+.home-content {
+  background: #f7f7f7;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  vertical-align: middle; }
+  .home-content div.bio-text {
+    display: table-cell;
+    width: 50%;
+    padding: 6%;
+    vertical-align: middle; }
+    .home-content div.bio-text h2 {
+      margin-top: 0; }
+    @media screen and (max-width: 48em) {
+      .home-content div.bio-text {
+        width: 100%;
+        padding: 12%; } }
+
 .home-about {
   background: #f7f7f7;
   height: 100%;
@@ -1450,6 +1483,8 @@ button.menu-toggle {
   .top_image img {
     height: 100%;
     width: auto; }
+  .home .top_image {
+    width: 50%; }
 
 .name-scroll {
   display: none;
@@ -1567,6 +1602,9 @@ button.menu-toggle {
       top: 25%;
       left: 2%;
       z-index: -1; }
+    .work-intro li a:hover svg {
+      background: yellow;
+      border-radius: 30%; }
   .work-intro p, .work-intro .validation_error {
     margin-top: 1.5625rem;
     margin-bottom: 3.125rem; }
