@@ -1352,6 +1352,9 @@ button.menu-toggle {
     .work-navigation h3:hover, .work-navigation .name-scroll:hover, .work-navigation .outbound-link:hover {
       background: rgba(65, 65, 65, 0.5); }
 
+.layout-lone-image img {
+  border-radius: 8px; }
+
 .postid-668 .contribution {
   display: none; }
 

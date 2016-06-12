@@ -13,6 +13,8 @@
 	}
 }
 
+
+
 .name-scroll {
 	@extend h3;
 	display: none;	
@@ -297,6 +299,12 @@
 		&:hover {
 			background: rgba($four, 0.5);
 		}
+	}
+}
+
+.layout-lone-image {
+	img {
+		border-radius: $radius;
 	}
 }
 
