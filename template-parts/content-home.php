@@ -15,7 +15,7 @@
 <div class="work-content">	
 
 	<section class="work-intro">
-		<h1><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/logoname.png"></h1>
+		<h1><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/logonamehome.png"></h1>
 		<h3>Product Manager at <a href="http://powertofly.com">PowerToFly</a></h3>
 
 		<?php if( have_rows('social_media', 'option') ): ?>
@@ -39,7 +39,7 @@
 	<?php $args = array( 'numberposts' => 7, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 </section>
 <section class="display_images">
-<a href="<?php the_permalink(); ?>" class="ims">
+	<a href="<?php the_permalink(); ?>" class="ims">
 		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
 	</a>
 

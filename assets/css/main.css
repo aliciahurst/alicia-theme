@@ -108,7 +108,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1, .home-contact div h3, .home-contact div .name-scroll, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
+h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -653,7 +653,7 @@ body {
   margin: 0 auto;
   color: #414141; }
 
-h1, .home-contact div h3, .home-contact div .name-scroll, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, h2 {
+h1, h2 {
   font-family: inherit;
   font-weight: 700;
   font-style: inherit;
@@ -662,7 +662,7 @@ h1, .home-contact div h3, .home-contact div .name-scroll, .home-contact div .out
   margin-top: 1.5625rem;
   margin-bottom: 1.5625rem; }
 
-h3, .name-scroll, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .normal, .outbound-link, .contact-content a {
+h3, .name-scroll, .outbound-link, .thumbnail h3, .thumbnail h1, .normal, .outbound-link, .contact-content a {
   font-family: inherit;
   font-weight: 700;
   font-style: inherit;
@@ -1021,14 +1021,14 @@ button.menu-toggle {
 
 .footer-contact p, .footer-contact .validation_error {
   margin: 0 !important; }
-.footer-contact h3, .footer-contact .name-scroll, .footer-contact .outbound-link, .footer-contact .thumbnail h1, .thumbnail .footer-contact h1, .footer-contact .thumbnail .home-contact div h3, .thumbnail .home-contact div .footer-contact h3, .footer-contact .home-contact div .thumbnail h3, .home-contact div .thumbnail .footer-contact h3 {
+.footer-contact h3, .footer-contact .name-scroll, .footer-contact .outbound-link, .footer-contact .thumbnail h1, .thumbnail .footer-contact h1 {
   padding-bottom: 13px; }
 
 .copyright {
   letter-spacing: 0.5px;
   font-size: 1.6rem; }
 
-.archive .site-main, .header-container, .footer-container, .toggled ul li, .home-top, .home-top div, .home-top div:last-of-type ul li, .home-services .services-container, .contribution ul, .contact .site-main, .contact section {
+.archive .site-main, .header-container, .footer-container, .toggled ul li, .contribution ul, .contact .site-main, .contact section {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -1037,7 +1037,7 @@ button.menu-toggle {
   display: -ms-flexbox;
   display: flex; }
 
-.home-top, .contact .site-main {
+.contact .site-main {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   box-orient: horizontal;
@@ -1049,7 +1049,7 @@ button.menu-toggle {
   flex-direction: row;
   -ms-flex-direction: row; }
 
-.home-top div, .home-top div:last-of-type ul li, .contact section {
+.contact section {
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   box-orient: vertical;
@@ -1061,7 +1061,7 @@ button.menu-toggle {
   flex-direction: column;
   -ms-flex-direction: column; }
 
-.home-top, .home-top div, .home-services .services-container, .contribution ul, .contact .site-main, .contact section {
+.contribution ul, .contact .site-main, .contact section {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   box-pack: center;
@@ -1072,7 +1072,7 @@ button.menu-toggle {
   justify-content: center;
   -ms-flex-pack: center; }
 
-.header-container, .footer-container, .home-top div:last-of-type ul li {
+.header-container, .footer-container {
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   box-pack: justify;
@@ -1083,7 +1083,7 @@ button.menu-toggle {
   justify-content: space-between;
   -ms-flex-pack: justify; }
 
-.home-top, .contact .site-main {
+.contact .site-main {
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
   box-align: stretch;
@@ -1094,7 +1094,7 @@ button.menu-toggle {
   align-items: stretch;
   -ms-flex-align: stretch; }
 
-.header-container, .footer-container, .home-top div {
+.header-container, .footer-container {
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
@@ -1105,7 +1105,7 @@ button.menu-toggle {
   align-items: center;
   -ms-flex-align: center; }
 
-.header-container > *, .footer-container > *, .toggled ul li a, .home-top div, .contact section {
+.header-container > *, .footer-container > *, .toggled ul li a, .contact section {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
@@ -1123,7 +1123,7 @@ button.menu-toggle {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.home-services .services-container::after, .home-contact::after, .home-work div:nth-of-type(2)::after, .work-navigation div:nth-of-type(2)::after, .single-work::after, .contribution ul::after, .display_slider::after, .work-navigation div:last-of-type::after, .work-navigation p::after, .work-navigation .validation_error::after {
+.single-work::after, .contribution ul::after, .display_slider::after, .work-navigation div:last-of-type::after, .work-navigation p::after, .work-navigation .validation_error::after {
   clear: both;
   content: "";
   display: table; }
@@ -1170,9 +1170,12 @@ button.menu-toggle {
   -o-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.home h1 img, .home .home-contact div h3 img, .home-contact div .home h3 img, .home .home-contact div .name-scroll img, .home-contact div .home .name-scroll img, .home .home-contact div .outbound-link img, .home-contact div .home .outbound-link img {
+.home h1 img {
   height: 80px;
   width: auto; }
+
+.home-work, .work-navigation {
+  display: none; }
 
 .home .display_images {
   float: left;
@@ -1209,170 +1212,6 @@ button.menu-toggle {
 
 #about {
   outline: none; }
-
-.home-top {
-  height: 100%;
-  min-height: 100vh; }
-  .home-top div {
-    padding: 6%;
-    text-align: center; }
-    .home-top div:last-of-type {
-      background: #303030;
-      background: url("../img/min/homebgbw.jpg");
-      background-size: cover;
-      background-position: center; }
-      .home-top div:last-of-type * {
-        color: #ffffff; }
-      .home-top div:last-of-type ul li {
-        padding: 6%;
-        text-align: center;
-        min-height: 550px; }
-        @media screen and (max-width: 48em) {
-          .home-top div:last-of-type ul li {
-            min-height: 650px; } }
-        .home-top div:last-of-type ul li h2 {
-          font-size: 5rem;
-          letter-spacing: 5px; }
-        .home-top div:last-of-type ul li h4, .home-top div:last-of-type ul li .gform_confirmation_message {
-          font-family: "Lato", helvetica, sans-serif;
-          text-transform: capitalize; }
-        .home-top div:last-of-type ul li h3, .home-top div:last-of-type ul li .name-scroll, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .thumbnail h1, .thumbnail .home-top div:last-of-type ul li h1 {
-          margin: 0;
-          font-size: 3.2rem; }
-  @media screen and (max-width: 65em) {
-    .home-top {
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      box-orient: vertical;
-      -webkit-box-direction: normal;
-      -moz-box-direction: normal;
-      box-direction: normal;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-direction: column; }
-      .home-top div {
-        width: 100%; } }
-
-.home-title img {
-  display: block;
-  margin: 0 auto; }
-  .home-title img:first-of-type {
-    width: 55%;
-    max-width: 405px; }
-  .home-title img:last-of-type {
-    width: 80%;
-    max-width: 654px; }
-.home-title h2 {
-  margin: 0;
-  margin-top: -2rem !important;
-  font-weight: 900; }
-.home-title h3, .home-title .name-scroll, .home-title .outbound-link, .home-title .thumbnail h1, .thumbnail .home-title h1, .home-title .thumbnail .home-contact div h3, .thumbnail .home-contact div .home-title h3, .home-title .home-contact div .thumbnail h3, .home-contact div .thumbnail .home-title h3 {
-  margin-top: 3rem !important; }
-
-.home-services {
-  padding: 6%; }
-  .home-services h2 {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 6%; }
-  .home-services .services-container {
-    text-align: center;
-    width: 100%; }
-  .home-services .services-div {
-    width: 25%;
-    text-align: center;
-    border: 1px solid;
-    margin: 2% 0; }
-    .home-services .services-div h3, .home-services .services-div .name-scroll, .home-services .services-div .outbound-link, .home-services .services-div .thumbnail h1, .thumbnail .home-services .services-div h1 {
-      padding: 2rem 6%;
-      line-height: 1.4;
-      margin: 0;
-      font-size: 2rem; }
-    .home-services .services-div svg {
-      display: inline-block;
-      margin-right: 1rem;
-      margin-top: -5px;
-      vertical-align: middle; }
-    .home-services .services-div ul {
-      border-top: 1px solid;
-      padding: 2rem 0; }
-      .home-services .services-div ul li {
-        padding: 6% 6%; }
-    .home-services .services-div:nth-of-type(2) {
-      margin: 0 6%; }
-  @media screen and (max-width: 65em) {
-    .home-services .services-container {
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      box-orient: vertical;
-      -webkit-box-direction: normal;
-      -moz-box-direction: normal;
-      box-direction: normal;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-direction: column; }
-    .home-services .services-div {
-      width: 50%;
-      margin: 0 auto 6%; }
-      .home-services .services-div:nth-of-type(2) {
-        margin: 0 auto 6%; }
-      .home-services .services-div:last-of-type {
-        margin-bottom: 0; } }
-  @media screen and (max-width: 48em) {
-    .home-services {
-      padding: 12% 6% 0; }
-      .home-services .services-div {
-        width: 85%; } }
-
-.home-contact {
-  padding: 0 12% 6%; }
-  .home-contact div {
-    float: left;
-    display: inline-block;
-    width: 50%;
-    padding: 5% 6% 7% 6%;
-    margin: 0; }
-    .home-contact div:last-of-type {
-      background: #c2c2c2; }
-      .home-contact div:last-of-type p, .home-contact div:last-of-type .validation_error, .home-contact div:last-of-type h3, .home-contact div:last-of-type .name-scroll, .home-contact div:last-of-type .outbound-link, .home-contact div:last-of-type .thumbnail h1, .thumbnail .home-contact div:last-of-type h1 {
-        color: #ffffff; }
-      .home-contact div:last-of-type a {
-        border-bottom: 1px solid; }
-  @media screen and (max-width: 65em) {
-    .home-contact div {
-      float: none;
-      width: 100%; } }
-  @media screen and (max-width: 48em) {
-    .home-contact {
-      padding: 0; }
-      .home-contact div {
-        padding: 12%; } }
-
-.no-line {
-  border-bottom: 0 !important; }
-
-.home-content {
-  background: #f7f7f7;
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-  vertical-align: middle; }
-  .home-content div.bio-text {
-    display: table-cell;
-    width: 50%;
-    padding: 6%;
-    vertical-align: middle; }
-    .home-content div.bio-text h2 {
-      margin-top: 0; }
-    @media screen and (max-width: 48em) {
-      .home-content div.bio-text {
-        width: 100%;
-        padding: 12%; } }
 
 .home-about {
   background: #f7f7f7;
@@ -1412,21 +1251,6 @@ button.menu-toggle {
       width: 50%;
       height: 100%; }
 
-.bio-text {
-  text-align: center; }
-  .bio-text img {
-    max-height: 120px;
-    width: auto;
-    margin-bottom: 40px;
-    opacity: 0.8; }
-  .bio-text h3, .bio-text .name-scroll, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3 {
-    margin: 30px 0; }
-  .bio-text nav ul li {
-    display: inline-block;
-    margin: 0; }
-    .bio-text nav ul li a:hover {
-      border-color: #c2c2c2; }
-
 @media screen and (max-width: 48em) {
   .home-about {
     display: block;
@@ -1442,59 +1266,6 @@ button.menu-toggle {
         float: left;
         width: 50%;
         height: 50vh; } }
-
-.home-work, .work-navigation {
-  padding: 6% 12%; }
-  .home-work h2, .work-navigation h2 {
-    text-align: center;
-    margin-bottom: 6%; }
-  .home-work div, .work-navigation div {
-    float: left;
-    display: inline-block;
-    width: 50%;
-    margin: 0;
-    text-align: left; }
-    .home-work div:nth-of-type(2), .work-navigation div:nth-of-type(2) {
-      float: none; }
-    .home-work div a, .work-navigation div a {
-      display: block;
-      border: 0; }
-  .home-work p, .work-navigation p, .home-work .validation_error, .work-navigation .validation_error {
-    text-align: center;
-    margin-top: 6%; }
-  @media screen and (max-width: 48em) {
-    .home-work, .work-navigation {
-      padding: 12%; }
-      .home-work div, .work-navigation div {
-        float: none;
-        width: 100%; } }
-
-.home .home-work div, .home .work-navigation div {
-  width: 33%;
-  margin: 5px auto; }
-  @media all and (max-width: 950px) {
-    .home .home-work div, .home .work-navigation div {
-      width: 50%; } }
-  @media screen and (max-width: 48em) {
-    .home .home-work div, .home .work-navigation div {
-      width: 100%; } }
-.home .home-work h2, .home .work-navigation h2 {
-  margin-bottom: 1.8rem; }
-.home .home-work p, .home .work-navigation p, .home .home-work .validation_error, .home .work-navigation .validation_error {
-  margin-top: 0;
-  margin-bottom: 6%; }
-
-.bio-text h3, .bio-text .name-scroll, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3 {
-  margin-bottom: 0; }
-.bio-text p, .bio-text .validation_error {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-size: 1.5rem; }
-
-.bottom-unavailable {
-  clear: left;
-  text-align: center;
-  padding: 3% 12%; }
 
 .top_image {
   position: fixed;
@@ -1575,7 +1346,7 @@ button.menu-toggle {
 
 .contribution {
   padding: 6% 6% 0; }
-  .contribution h3, .contribution .name-scroll, .contribution .outbound-link, .contribution .thumbnail h1, .thumbnail .contribution h1, .contribution .thumbnail .home-contact div h3, .thumbnail .home-contact div .contribution h3, .contribution .home-contact div .thumbnail h3, .home-contact div .thumbnail .contribution h3 {
+  .contribution h3, .contribution .name-scroll, .contribution .outbound-link, .contribution .thumbnail h1, .thumbnail .contribution h1 {
     text-align: center; }
   .contribution ul {
     text-align: center;
@@ -1644,7 +1415,7 @@ button.menu-toggle {
   .display_images img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px; }
-  .display_images h3, .display_images .name-scroll, .display_images .outbound-link, .display_images .thumbnail h1, .thumbnail .display_images h1, .display_images .thumbnail .home-contact div h3, .thumbnail .home-contact div .display_images h3, .display_images .home-contact div .thumbnail h3, .home-contact div .thumbnail .display_images h3 {
+  .display_images h3, .display_images .name-scroll, .display_images .outbound-link, .display_images .thumbnail h1, .thumbnail .display_images h1 {
     display: none; }
   .display_images p, .display_images .validation_error {
     padding: 14px 25px 0;
@@ -1669,7 +1440,7 @@ button.menu-toggle {
     position: relative; }
     .work-navigation a img {
       margin-bottom: -3px; }
-  .work-navigation h3, .work-navigation .name-scroll, .work-navigation .outbound-link, .work-navigation .thumbnail h1, .thumbnail .work-navigation h1, .work-navigation .thumbnail .home-contact div h3, .thumbnail .home-contact div .work-navigation h3, .work-navigation .home-contact div .thumbnail h3, .home-contact div .thumbnail .work-navigation h3 {
+  .work-navigation h3, .work-navigation .name-scroll, .work-navigation .outbound-link, .work-navigation .thumbnail h1, .thumbnail .work-navigation h1 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1727,7 +1498,7 @@ button.menu-toggle {
   .archive .work-item a {
     display: block;
     border: 0; }
-  .archive .work-item h1, .archive .work-item .home-contact div h3, .home-contact div .archive .work-item h3, .archive .work-item .home-contact div .name-scroll, .home-contact div .archive .work-item .name-scroll, .archive .work-item .home-contact div .outbound-link, .home-contact div .archive .work-item .outbound-link {
+  .archive .work-item h1 {
     font-size: 3rem; }
 @media all and (max-width: 65em) {
   .archive .work-item {
@@ -1754,14 +1525,14 @@ button.menu-toggle {
   -webkit-transition: color 0.35s;
   -moz-transition: color 0.35s;
   transition: color 0.35s; }
-  .thumbnail .name-scroll, .thumbnail .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail .home-contact div .name-scroll, .home-contact div .thumbnail .name-scroll, .thumbnail .home-contact div .outbound-link, .home-contact div .thumbnail .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
+  .thumbnail .name-scroll, .thumbnail .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail h1 {
     text-align: center;
     margin: 0;
     background: #ffffff;
     padding: 0.75rem 0;
     position: relative;
     color: #818181; }
-    .thumbnail .name-scroll:before, .thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before, .thumbnail h1:before, .thumbnail .home-contact div h3:before, .home-contact div .thumbnail h3:before, .thumbnail .home-contact div .name-scroll:before, .home-contact div .thumbnail .name-scroll:before, .thumbnail .home-contact div .outbound-link:before, .home-contact div .thumbnail .outbound-link:before {
+    .thumbnail .name-scroll:before, .thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before, .thumbnail h1:before {
       content: "\002B";
       position: absolute;
       font-size: 2.5rem;
@@ -1788,14 +1559,14 @@ button.menu-toggle {
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
     transform: scale(1.25); }
-  .thumbnail:hover h1, .thumbnail:hover .home-contact div h3, .home-contact div .thumbnail:hover h3, .thumbnail:hover .home-contact div .name-scroll, .home-contact div .thumbnail:hover .name-scroll, .thumbnail:hover .home-contact div .outbound-link, .home-contact div .thumbnail:hover .outbound-link, .thumbnail:hover .name-scroll, .thumbnail:hover .outbound-link, .thumbnail:hover h3, .thumbnail:hover h1 {
+  .thumbnail:hover h1, .thumbnail:hover .name-scroll, .thumbnail:hover .outbound-link, .thumbnail:hover h3, .thumbnail:hover h1 {
     color: #414141; }
-    .thumbnail:hover h1:before, .thumbnail:hover .home-contact div h3:before, .home-contact div .thumbnail:hover h3:before, .thumbnail:hover .home-contact div .name-scroll:before, .home-contact div .thumbnail:hover .name-scroll:before, .thumbnail:hover .home-contact div .outbound-link:before, .home-contact div .thumbnail:hover .outbound-link:before, .thumbnail:hover .name-scroll:before, .thumbnail:hover .outbound-link:before, .thumbnail:hover h3:before, .thumbnail:hover h1:before {
+    .thumbnail:hover h1:before, .thumbnail:hover .name-scroll:before, .thumbnail:hover .outbound-link:before, .thumbnail:hover h3:before, .thumbnail:hover h1:before {
       content: "\00D7"; }
 
 .last {
   text-align: center; }
-  .last h1:before, .last .home-contact div h3:before, .home-contact div .last h3:before, .last .home-contact div .name-scroll:before, .home-contact div .last .name-scroll:before, .last .home-contact div .outbound-link:before, .home-contact div .last .outbound-link:before {
+  .last h1:before {
     display: none; }
   .last:hover img {
     -webkit-transform: none;
