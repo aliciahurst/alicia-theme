@@ -48,15 +48,14 @@
 
    <?php else : //if it's display_images ?>
     <?php while( have_rows('image_urls') ): the_row(); $imageurl = get_sub_field('work_single-image'); ?>
-      <div class="work-images" style="background-image:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>')">
-      </div>
+      <img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $imageurl; ?>">
     <?php endwhile; ?>
 
   <?php endif; ?>
+  <div class="block_caption">
   <?php if( get_sub_field('block_caption') ): ?>
-   <div class="aside">
     <?php the_sub_field( 'block_caption' ); ?>
-  </div>
+    </div>
 <?php endif; ?>
 
 </section>

@@ -24,7 +24,7 @@
 	width: 50%;
 	z-index: 999;
 	background: white;
-	padding: 20px;
+	padding: 2rem;
 }
 
 .work-role {
@@ -78,25 +78,7 @@
 		height: 1.4rem;
 		width: auto;
 		vertical-align: middle;
-		margin-left: 1rem;
 		padding-right: 5px;
-	}
-}
-
-
-.down-arrow {
-	@extend %flex;
-	@extend %flex-align-center;
-	margin: 6% 0;
-	padding: 0 !important;
-	svg {
-		margin: 0 auto;
-		height: 50px;
-		width: auto;
-		color: $gray1;
-	}
-	@include media($med) {
-		margin-bottom: 0;
 	}
 }
 
@@ -118,7 +100,6 @@
 	li {
 		width: 30%;
 		text-align: center;
-		margin: 2% 0;
 		float: none;
 		display: inline-block;
 		text-transform: capitalize;
@@ -159,7 +140,7 @@
 
 .contribution {
 	+ .display_slider, + .layout-two, + .display_before {
-		margin-top: 6%;
+		
 	}
 }
 .layout-lone-image {
@@ -185,7 +166,7 @@
 
 .work-intro {
 	text-align: center;
-	margin: 6% 0;
+	
 	ul {
 		width: 80%;
 		margin: 0 auto;
@@ -230,29 +211,22 @@
 }
 
 .display_images {
-	@extend %fifty-fifty;
-	.aside {
-		@extend %flex-justify-center;
-		padding: 6% 6%;
-		h3, p {
-			padding: 0 6%;
-		}
+	border-radius: $radius;
+	border: 2px solid $color1;
+	width: 80%;
+	margin: 0 auto;
+	img {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 	}
-	&:nth-of-type(2n-1) {
-		@extend %flex-row-reverse;
-		@include media($med) {
-			@include flex-direction(column-reverse);
-		}
+	h3 {
+		display: none;
 	}
-	@include media($med) {
-		@include display(flex);
-		@include flex-direction(column);
-		
-	}
-	@include media($small) {
-		@include display(flex);
-		@include flex-direction(column-reverse);
-		
+	p {
+		padding: 14px 25px 0;
+		 font-size: 0.875rem;
+  		line-height: 1.5625rem;
+  		font-weight: $semi;
 	}
 }
 
@@ -316,7 +290,6 @@
 		top: 0;
 		left: 0;
 		background: rgba($four, 0.3);
-		margin: 0;
 		@include transition(all 0.35s ease-in-out);
 		span {
 			position: absolute;

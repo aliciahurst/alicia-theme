@@ -83,6 +83,7 @@ $twenty20-label-radius: 2px !default;
 
 %label-position-horizontal {
   top: 50%;
+  transform: translateY(-50%);
   margin-top: -($twenty20-overlay-label-height / 2);
 }
 
