@@ -46,7 +46,7 @@
 	<div class="block_caption">	
 		<p>
 			<a href="<?php the_permalink(); ?>">
-				<?php the_title(); ?></a>
+				<span><?php the_title(); ?></span></a>
 			</p>
 		</div>
 

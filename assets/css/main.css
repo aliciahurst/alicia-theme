@@ -1086,11 +1086,18 @@ button.menu-toggle {
       -webkit-transition: all 0.35s ease-in-out;
       -moz-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out; }
-  .home .display_images a {
+  .home .display_images p a {
     text-decoration: none;
     display: block; }
-    .home .display_images a:hover {
-      text-decoration: line-through; }
+    .home .display_images p a:hover span {
+      background: yellow;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out; }
+    .home .display_images p a span {
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out; }
 
 .home .entry-header {
   display: none; }

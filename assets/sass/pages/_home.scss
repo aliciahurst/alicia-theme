@@ -46,11 +46,19 @@
 			}
 		}
 	}
-	a {
-		text-decoration: none;
-		display: block;
-		&:hover {
-			text-decoration: line-through;
+	p {
+		a {
+			text-decoration: none;
+			display: block;
+			&:hover {
+				span {
+					background: yellow;
+					@include transition(all 0.35s ease-in-out);
+				}
+			}
+			span {
+				@include transition(all 0.35s ease-in-out);
+			}
 		}
 	}
 }
