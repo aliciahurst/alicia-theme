@@ -39,7 +39,7 @@
 	<?php $args = array( 'numberposts' => 7, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 </section>
 <section class="display_images">
-	<a href="<?php the_permalink(); ?>">
+<a href="<?php the_permalink(); ?>" class="ims">
 		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
 	</a>
 

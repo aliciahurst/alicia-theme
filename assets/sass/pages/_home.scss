@@ -9,6 +9,29 @@
 	float: left;
 	width: 46%;
 	margin: 2%;
+	.ims {
+		position: relative;
+		&:before {
+			background: $black;
+			content: "";
+			height: 97%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			opacity: 0.15;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+			@include transition(all 0.35s ease-in-out);
+		}
+		&:hover {
+			&:before {
+				opacity: 0;
+				@include transition(all 0.35s ease-in-out);
+			}
+		}
+	}
 	a {
 		text-decoration: none;
 		display: block;

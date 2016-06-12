@@ -1178,6 +1178,28 @@ button.menu-toggle {
   float: left;
   width: 46%;
   margin: 2%; }
+  .home .display_images .ims {
+    position: relative; }
+    .home .display_images .ims:before {
+      background: #000000;
+      content: "";
+      height: 97%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      opacity: 0.15;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out; }
+    .home .display_images .ims:hover:before {
+      opacity: 0;
+      -webkit-transition: all 0.35s ease-in-out;
+      -moz-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out; }
   .home .display_images a {
     text-decoration: none;
     display: block; }
