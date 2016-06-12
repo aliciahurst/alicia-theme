@@ -108,7 +108,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
+h1, .home-contact div h3, .home-contact div .name-scroll, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -653,7 +653,7 @@ body {
   margin: 0 auto;
   color: #414141; }
 
-h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, h2 {
+h1, .home-contact div h3, .home-contact div .name-scroll, .home-contact div .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1, h2 {
   font-family: inherit;
   font-weight: 700;
   font-style: inherit;
@@ -662,7 +662,7 @@ h1, .home-contact div h3, .home-contact div .outbound-link, .home-contact div .t
   margin-top: 1.5625rem;
   margin-bottom: 1.5625rem; }
 
-h3, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .normal, .outbound-link, .contact-content a {
+h3, .name-scroll, .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .normal, .outbound-link, .contact-content a {
   font-family: inherit;
   font-weight: 700;
   font-style: inherit;
@@ -725,8 +725,16 @@ sub {
 
 a {
   color: currentColor;
-  text-decoration: none;
   font-size: inherit; }
+
+a, svg {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out; }
+  a:hover, svg:hover {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out; }
 
 html, body {
   height: 100%; }
@@ -831,7 +839,6 @@ img {
     .site-name .site-title a img {
       height: 40px;
       width: auto;
-      opacity: 0.4;
       -webkit-transition: all 0.35s ease-in-out;
       -moz-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out; }
@@ -988,7 +995,7 @@ button.menu-toggle {
       -moz-flex: none;
       -ms-flex: none;
       flex: none; }
-      .site-footer .footer-container div h3, .site-footer .footer-container div .outbound-link, .site-footer .footer-container div .thumbnail h1, .thumbnail .site-footer .footer-container div h1, .site-footer .footer-container nav h3, .site-footer .footer-container nav .outbound-link, .site-footer .footer-container nav .thumbnail h1, .thumbnail .site-footer .footer-container nav h1 {
+      .site-footer .footer-container div h3, .site-footer .footer-container div .name-scroll, .site-footer .footer-container div .outbound-link, .site-footer .footer-container div .thumbnail h1, .thumbnail .site-footer .footer-container div h1, .site-footer .footer-container nav h3, .site-footer .footer-container nav .name-scroll, .site-footer .footer-container nav .outbound-link, .site-footer .footer-container nav .thumbnail h1, .thumbnail .site-footer .footer-container nav h1 {
         color: #ffffff;
         margin: 0 0 1.8rem 0; }
     .site-footer .footer-container .top {
@@ -1014,14 +1021,14 @@ button.menu-toggle {
 
 .footer-contact p, .footer-contact .validation_error {
   margin: 0 !important; }
-.footer-contact h3, .footer-contact .outbound-link, .footer-contact .thumbnail h1, .thumbnail .footer-contact h1, .footer-contact .thumbnail .home-contact div h3, .thumbnail .home-contact div .footer-contact h3, .footer-contact .home-contact div .thumbnail h3, .home-contact div .thumbnail .footer-contact h3 {
+.footer-contact h3, .footer-contact .name-scroll, .footer-contact .outbound-link, .footer-contact .thumbnail h1, .thumbnail .footer-contact h1, .footer-contact .thumbnail .home-contact div h3, .thumbnail .home-contact div .footer-contact h3, .footer-contact .home-contact div .thumbnail h3, .home-contact div .thumbnail .footer-contact h3 {
   padding-bottom: 13px; }
 
 .copyright {
   letter-spacing: 0.5px;
   font-size: 1.6rem; }
 
-.archive .site-main, .header-container, .footer-container, .toggled ul li, .layout-two, .layout-two div, .home-top, .home-top div, .home-top div:last-of-type ul li, .home-services .services-container, .contribution ul, .contact .site-main, .contact section {
+.archive .site-main, .header-container, .footer-container, .toggled ul li, .home-top, .home-top div, .home-top div:last-of-type ul li, .home-services .services-container, .contribution ul, .contact .site-main, .contact section {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -1030,7 +1037,7 @@ button.menu-toggle {
   display: -ms-flexbox;
   display: flex; }
 
-.layout-two, .home-top, .contact .site-main {
+.home-top, .contact .site-main {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   box-orient: horizontal;
@@ -1042,7 +1049,7 @@ button.menu-toggle {
   flex-direction: row;
   -ms-flex-direction: row; }
 
-.layout-two div, .home-top div, .home-top div:last-of-type ul li, .contact section {
+.home-top div, .home-top div:last-of-type ul li, .contact section {
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   box-orient: vertical;
@@ -1054,7 +1061,7 @@ button.menu-toggle {
   flex-direction: column;
   -ms-flex-direction: column; }
 
-.layout-two, .home-top, .home-top div, .home-services .services-container, .contribution ul, .contact .site-main, .contact section {
+.home-top, .home-top div, .home-services .services-container, .contribution ul, .contact .site-main, .contact section {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   box-pack: center;
@@ -1064,17 +1071,6 @@ button.menu-toggle {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center; }
-
-.layout-two div {
-  -webkit-box-pack: distribute;
-  -moz-box-pack: distribute;
-  box-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -ms-justify-content: space-around;
-  -o-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-pack: distribute; }
 
 .header-container, .footer-container, .home-top div:last-of-type ul li {
   -webkit-box-pack: justify;
@@ -1087,7 +1083,7 @@ button.menu-toggle {
   justify-content: space-between;
   -ms-flex-pack: justify; }
 
-.layout-two, .home-top, .contact .site-main {
+.home-top, .contact .site-main {
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
   box-align: stretch;
@@ -1098,7 +1094,7 @@ button.menu-toggle {
   align-items: stretch;
   -ms-flex-align: stretch; }
 
-.header-container, .footer-container, .layout-two div, .home-top div {
+.header-container, .footer-container, .home-top div {
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
@@ -1109,7 +1105,7 @@ button.menu-toggle {
   align-items: center;
   -ms-flex-align: center; }
 
-.header-container > *, .footer-container > *, .toggled ul li a, .layout-two div, .home-top div, .contact section {
+.header-container > *, .footer-container > *, .toggled ul li a, .home-top div, .contact section {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
@@ -1131,33 +1127,6 @@ button.menu-toggle {
   clear: both;
   content: "";
   display: table; }
-
-.layout-two {
-  height: 100%;
-  min-height: 100vh; }
-  .layout-two div {
-    padding: 6%;
-    text-align: center;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-    color: #ffffff; }
-  @media screen and (max-width: 65em) {
-    .layout-two {
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      box-orient: vertical;
-      -webkit-box-direction: normal;
-      -moz-box-direction: normal;
-      box-direction: normal;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-direction: column; }
-      .layout-two div {
-        width: 100%; }
-        .layout-two div.img-bg {
-          height: 90vh; } }
 
 @media screen and (min-width: 600px) {
   .main-navigation ul li a {
@@ -1187,14 +1156,14 @@ button.menu-toggle {
     .main-navigation ul li a:hover:after, .main-navigation ul li a:focus:after {
       transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s; } }
 
-.work-navigation h3 span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span {
+.work-navigation h3 span, .work-navigation .name-scroll span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before {
+.thumbnail .name-scroll:before, .thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1233,7 +1202,7 @@ button.menu-toggle {
         .home-top div:last-of-type ul li h4, .home-top div:last-of-type ul li .gform_confirmation_message {
           font-family: "Lato", helvetica, sans-serif;
           text-transform: capitalize; }
-        .home-top div:last-of-type ul li h3, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .thumbnail h1, .thumbnail .home-top div:last-of-type ul li h1 {
+        .home-top div:last-of-type ul li h3, .home-top div:last-of-type ul li .name-scroll, .home-top div:last-of-type ul li .outbound-link, .home-top div:last-of-type ul li .thumbnail h1, .thumbnail .home-top div:last-of-type ul li h1 {
           margin: 0;
           font-size: 3.2rem; }
   @media screen and (max-width: 65em) {
@@ -1264,7 +1233,7 @@ button.menu-toggle {
   margin: 0;
   margin-top: -2rem !important;
   font-weight: 900; }
-.home-title h3, .home-title .outbound-link, .home-title .thumbnail h1, .thumbnail .home-title h1, .home-title .thumbnail .home-contact div h3, .thumbnail .home-contact div .home-title h3, .home-title .home-contact div .thumbnail h3, .home-contact div .thumbnail .home-title h3 {
+.home-title h3, .home-title .name-scroll, .home-title .outbound-link, .home-title .thumbnail h1, .thumbnail .home-title h1, .home-title .thumbnail .home-contact div h3, .thumbnail .home-contact div .home-title h3, .home-title .home-contact div .thumbnail h3, .home-contact div .thumbnail .home-title h3 {
   margin-top: 3rem !important; }
 
 .home-services {
@@ -1281,7 +1250,7 @@ button.menu-toggle {
     text-align: center;
     border: 1px solid;
     margin: 2% 0; }
-    .home-services .services-div h3, .home-services .services-div .outbound-link, .home-services .services-div .thumbnail h1, .thumbnail .home-services .services-div h1 {
+    .home-services .services-div h3, .home-services .services-div .name-scroll, .home-services .services-div .outbound-link, .home-services .services-div .thumbnail h1, .thumbnail .home-services .services-div h1 {
       padding: 2rem 6%;
       line-height: 1.4;
       margin: 0;
@@ -1333,7 +1302,7 @@ button.menu-toggle {
     margin: 0; }
     .home-contact div:last-of-type {
       background: #c2c2c2; }
-      .home-contact div:last-of-type p, .home-contact div:last-of-type .validation_error, .home-contact div:last-of-type h3, .home-contact div:last-of-type .outbound-link, .home-contact div:last-of-type .thumbnail h1, .thumbnail .home-contact div:last-of-type h1 {
+      .home-contact div:last-of-type p, .home-contact div:last-of-type .validation_error, .home-contact div:last-of-type h3, .home-contact div:last-of-type .name-scroll, .home-contact div:last-of-type .outbound-link, .home-contact div:last-of-type .thumbnail h1, .thumbnail .home-contact div:last-of-type h1 {
         color: #ffffff; }
       .home-contact div:last-of-type a {
         border-bottom: 1px solid; }
@@ -1395,7 +1364,7 @@ button.menu-toggle {
     width: auto;
     margin-bottom: 40px;
     opacity: 0.8; }
-  .bio-text h3, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3 {
+  .bio-text h3, .bio-text .name-scroll, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3 {
     margin: 30px 0; }
   .bio-text nav ul li {
     display: inline-block;
@@ -1460,7 +1429,7 @@ button.menu-toggle {
   margin-top: 0;
   margin-bottom: 6%; }
 
-.bio-text h3, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3 {
+.bio-text h3, .bio-text .name-scroll, .bio-text .outbound-link, .bio-text .thumbnail h1, .thumbnail .bio-text h1, .bio-text .thumbnail .home-contact div h3, .thumbnail .home-contact div .bio-text h3, .bio-text .home-contact div .thumbnail h3, .home-contact div .thumbnail .bio-text h3 {
   margin-bottom: 0; }
 .bio-text p, .bio-text .validation_error {
   margin-top: 10px;
@@ -1483,10 +1452,14 @@ button.menu-toggle {
     width: auto; }
 
 .name-scroll {
+  display: none;
   position: fixed;
-  bottom: 0;
-  left: 20px;
-  opacity: 0.5; }
+  bottom: 1.5625rem;
+  left: 1.5625rem;
+  opacity: 0.9;
+  border-radius: 8px;
+  background: #fdfdfd;
+  padding: 0.78rem 3.125rem; }
 
 .work-content {
   position: absolute;
@@ -1496,6 +1469,8 @@ button.menu-toggle {
   z-index: 999;
   background: white;
   padding: 2rem; }
+  .work-content section {
+    margin: 1.5625rem 3.125rem; }
 
 .work-role {
   text-transform: uppercase;
@@ -1505,10 +1480,17 @@ button.menu-toggle {
   margin-left: 5px; }
 
 .ex {
-  text-align: right; }
-
-.icon-close {
-  height: 40px; }
+  text-align: right;
+  position: fixed;
+  right: 1.5625rem;
+  top: 1.5625rem; }
+  .ex svg {
+    background: #fdfdfd;
+    height: 40px;
+    width: 40px; }
+    .ex svg:hover {
+      color: #fdfdfd;
+      background: #333333; }
 
 .single-work p, .single-work .validation_error {
   color: gray;
@@ -1536,7 +1518,7 @@ button.menu-toggle {
 
 .contribution {
   padding: 6% 6% 0; }
-  .contribution h3, .contribution .outbound-link, .contribution .thumbnail h1, .thumbnail .contribution h1, .contribution .thumbnail .home-contact div h3, .thumbnail .home-contact div .contribution h3, .contribution .home-contact div .thumbnail h3, .home-contact div .thumbnail .contribution h3 {
+  .contribution h3, .contribution .name-scroll, .contribution .outbound-link, .contribution .thumbnail h1, .thumbnail .contribution h1, .contribution .thumbnail .home-contact div h3, .thumbnail .home-contact div .contribution h3, .contribution .home-contact div .thumbnail h3, .home-contact div .thumbnail .contribution h3 {
     text-align: center; }
   .contribution ul {
     text-align: center;
@@ -1557,42 +1539,18 @@ button.menu-toggle {
       width: auto; }
 
 .layout-text {
-  text-align: center; }
-  .layout-text div {
-    width: 50%;
-    display: inline-block;
-    margin: 0 auto;
-    float: none;
-    padding: 6%; }
-    @media screen and (max-width: 65em) {
-      .layout-text div {
-        width: 75%; } }
-    @media screen and (max-width: 48em) {
-      .layout-text div {
-        width: 100%; } }
+  margin-top: 3.125rem !important; }
 
-.intro-content p:first-of-type a, .intro-content .validation_error:first-of-type a, .layout-text a {
-  border-bottom: 1px dotted #c2c2c2; }
-  .intro-content p:first-of-type a:hover, .intro-content .validation_error:first-of-type a:hover, .layout-text a:hover {
-    color: #c2c2c2; }
+.layout-lone-image .wrapper {
+  margin: 0 auto;
+  padding: 0; }
 
-.layout-lone-image {
-  padding: 6%; }
-  .layout-lone-image .wrapper {
-    margin: 0 auto;
-    padding: 0; }
-
-.layout-two {
-  min-height: 90vh; }
-
-.layout-text ~ .display_slider, .layout-text ~ .layout-lone-image {
-  padding-top: 0;
-  padding-bottom: 6%; }
+.layout-two img {
+  border-radius: 8px; }
 
 .work-intro {
   text-align: center; }
   .work-intro ul {
-    width: 80%;
     margin: 0 auto; }
   .work-intro li {
     margin: 5px 10px;
@@ -1609,16 +1567,9 @@ button.menu-toggle {
       top: 25%;
       left: 2%;
       z-index: -1; }
-  .work-intro a {
-    border: 0;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.4rem; }
-    .work-intro a:after {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 1.4rem; }
+  .work-intro p, .work-intro .validation_error {
+    margin-top: 1.5625rem;
+    margin-bottom: 3.125rem; }
   .work-intro [class^="icon-"], .work-intro [class*=" icon-"] {
     height: 20px;
     width: auto;
@@ -1629,13 +1580,11 @@ button.menu-toggle {
 
 .display_images {
   border-radius: 8px;
-  border: 2px solid #f9f9f9;
-  width: 80%;
-  margin: 0 auto; }
+  border: 2px solid #f9f9f9; }
   .display_images img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px; }
-  .display_images h3, .display_images .outbound-link, .display_images .thumbnail h1, .thumbnail .display_images h1, .display_images .thumbnail .home-contact div h3, .thumbnail .home-contact div .display_images h3, .display_images .home-contact div .thumbnail h3, .home-contact div .thumbnail .display_images h3 {
+  .display_images h3, .display_images .name-scroll, .display_images .outbound-link, .display_images .thumbnail h1, .thumbnail .display_images h1, .display_images .thumbnail .home-contact div h3, .thumbnail .home-contact div .display_images h3, .display_images .home-contact div .thumbnail h3, .home-contact div .thumbnail .display_images h3 {
     display: none; }
   .display_images p, .display_images .validation_error {
     padding: 14px 25px 0;
@@ -1652,15 +1601,15 @@ button.menu-toggle {
 
 .work-navigation {
   background: #f7f7f7; }
-  .work-navigation div:last-of-type h3:hover span:after, .work-navigation div:last-of-type .outbound-link:hover span:after, .work-navigation div:last-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:last-of-type h1:hover span:after {
+  .work-navigation div:last-of-type h3:hover span:after, .work-navigation div:last-of-type .name-scroll:hover span:after, .work-navigation div:last-of-type .outbound-link:hover span:after, .work-navigation div:last-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:last-of-type h1:hover span:after {
     content: "\2192"; }
-  .work-navigation div:first-of-type h3:hover span:after, .work-navigation div:first-of-type .outbound-link:hover span:after, .work-navigation div:first-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:first-of-type h1:hover span:after {
+  .work-navigation div:first-of-type h3:hover span:after, .work-navigation div:first-of-type .name-scroll:hover span:after, .work-navigation div:first-of-type .outbound-link:hover span:after, .work-navigation div:first-of-type .thumbnail h1:hover span:after, .thumbnail .work-navigation div:first-of-type h1:hover span:after {
     content: "\2190"; }
   .work-navigation a {
     position: relative; }
     .work-navigation a img {
       margin-bottom: -3px; }
-  .work-navigation h3, .work-navigation .outbound-link, .work-navigation .thumbnail h1, .thumbnail .work-navigation h1, .work-navigation .thumbnail .home-contact div h3, .thumbnail .home-contact div .work-navigation h3, .work-navigation .home-contact div .thumbnail h3, .home-contact div .thumbnail .work-navigation h3 {
+  .work-navigation h3, .work-navigation .name-scroll, .work-navigation .outbound-link, .work-navigation .thumbnail h1, .thumbnail .work-navigation h1, .work-navigation .thumbnail .home-contact div h3, .thumbnail .home-contact div .work-navigation h3, .work-navigation .home-contact div .thumbnail h3, .home-contact div .thumbnail .work-navigation h3 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1670,7 +1619,7 @@ button.menu-toggle {
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out; }
-    .work-navigation h3 span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span {
+    .work-navigation h3 span, .work-navigation .name-scroll span, .work-navigation .outbound-link span, .work-navigation .thumbnail h1 span, .thumbnail .work-navigation h1 span {
       position: absolute;
       color: #ffffff;
       top: 50%;
@@ -1680,11 +1629,11 @@ button.menu-toggle {
       -webkit-transition: all 0.35s ease-in-out;
       -moz-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out; }
-      .work-navigation h3 span:after, .work-navigation .outbound-link span:after, .work-navigation .thumbnail h1 span:after, .thumbnail .work-navigation h1 span:after {
+      .work-navigation h3 span:after, .work-navigation .name-scroll span:after, .work-navigation .outbound-link span:after, .work-navigation .thumbnail h1 span:after, .thumbnail .work-navigation h1 span:after {
         content: "\2015";
         text-align: center;
         display: block; }
-    .work-navigation h3:hover, .work-navigation .outbound-link:hover, .work-navigation .thumbnail h1:hover, .thumbnail .work-navigation h1:hover {
+    .work-navigation h3:hover, .work-navigation .name-scroll:hover, .work-navigation .outbound-link:hover, .work-navigation .thumbnail h1:hover, .thumbnail .work-navigation h1:hover {
       background: rgba(65, 65, 65, 0.5); }
 
 .postid-668 .contribution {
@@ -1718,7 +1667,7 @@ button.menu-toggle {
   .archive .work-item a {
     display: block;
     border: 0; }
-  .archive .work-item h1, .archive .work-item .home-contact div h3, .home-contact div .archive .work-item h3, .archive .work-item .home-contact div .outbound-link, .home-contact div .archive .work-item .outbound-link {
+  .archive .work-item h1, .archive .work-item .home-contact div h3, .home-contact div .archive .work-item h3, .archive .work-item .home-contact div .name-scroll, .home-contact div .archive .work-item .name-scroll, .archive .work-item .home-contact div .outbound-link, .home-contact div .archive .work-item .outbound-link {
     font-size: 3rem; }
 @media all and (max-width: 65em) {
   .archive .work-item {
@@ -1745,14 +1694,14 @@ button.menu-toggle {
   -webkit-transition: color 0.35s;
   -moz-transition: color 0.35s;
   transition: color 0.35s; }
-  .thumbnail .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail .home-contact div .outbound-link, .home-contact div .thumbnail .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
+  .thumbnail .name-scroll, .thumbnail .outbound-link, .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail h1, .thumbnail .home-contact div h3, .home-contact div .thumbnail h3, .thumbnail .home-contact div .name-scroll, .home-contact div .thumbnail .name-scroll, .thumbnail .home-contact div .outbound-link, .home-contact div .thumbnail .outbound-link, .home-contact div .thumbnail h1, .thumbnail .home-contact div h1 {
     text-align: center;
     margin: 0;
     background: #ffffff;
     padding: 0.75rem 0;
     position: relative;
     color: #818181; }
-    .thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before, .thumbnail h1:before, .thumbnail .home-contact div h3:before, .home-contact div .thumbnail h3:before, .thumbnail .home-contact div .outbound-link:before, .home-contact div .thumbnail .outbound-link:before {
+    .thumbnail .name-scroll:before, .thumbnail .outbound-link:before, .thumbnail h3:before, .thumbnail h1:before, .thumbnail h1:before, .thumbnail .home-contact div h3:before, .home-contact div .thumbnail h3:before, .thumbnail .home-contact div .name-scroll:before, .home-contact div .thumbnail .name-scroll:before, .thumbnail .home-contact div .outbound-link:before, .home-contact div .thumbnail .outbound-link:before {
       content: "\002B";
       position: absolute;
       font-size: 2.5rem;
@@ -1779,14 +1728,14 @@ button.menu-toggle {
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
     transform: scale(1.25); }
-  .thumbnail:hover h1, .thumbnail:hover .home-contact div h3, .home-contact div .thumbnail:hover h3, .thumbnail:hover .home-contact div .outbound-link, .home-contact div .thumbnail:hover .outbound-link, .thumbnail:hover .outbound-link, .thumbnail:hover h3, .thumbnail:hover h1 {
+  .thumbnail:hover h1, .thumbnail:hover .home-contact div h3, .home-contact div .thumbnail:hover h3, .thumbnail:hover .home-contact div .name-scroll, .home-contact div .thumbnail:hover .name-scroll, .thumbnail:hover .home-contact div .outbound-link, .home-contact div .thumbnail:hover .outbound-link, .thumbnail:hover .name-scroll, .thumbnail:hover .outbound-link, .thumbnail:hover h3, .thumbnail:hover h1 {
     color: #414141; }
-    .thumbnail:hover h1:before, .thumbnail:hover .home-contact div h3:before, .home-contact div .thumbnail:hover h3:before, .thumbnail:hover .home-contact div .outbound-link:before, .home-contact div .thumbnail:hover .outbound-link:before, .thumbnail:hover .outbound-link:before, .thumbnail:hover h3:before, .thumbnail:hover h1:before {
+    .thumbnail:hover h1:before, .thumbnail:hover .home-contact div h3:before, .home-contact div .thumbnail:hover h3:before, .thumbnail:hover .home-contact div .name-scroll:before, .home-contact div .thumbnail:hover .name-scroll:before, .thumbnail:hover .home-contact div .outbound-link:before, .home-contact div .thumbnail:hover .outbound-link:before, .thumbnail:hover .name-scroll:before, .thumbnail:hover .outbound-link:before, .thumbnail:hover h3:before, .thumbnail:hover h1:before {
       content: "\00D7"; }
 
 .last {
   text-align: center; }
-  .last h1:before, .last .home-contact div h3:before, .home-contact div .last h3:before, .last .home-contact div .outbound-link:before, .home-contact div .last .outbound-link:before {
+  .last h1:before, .last .home-contact div h3:before, .home-contact div .last h3:before, .last .home-contact div .name-scroll:before, .home-contact div .last .name-scroll:before, .last .home-contact div .outbound-link:before, .home-contact div .last .outbound-link:before {
     display: none; }
   .last:hover img {
     -webkit-transform: none;
@@ -1989,8 +1938,7 @@ input.filled ~ .validation_message, textarea.filled ~ .validation_message {
   margin-bottom: 50px;
   position: relative;
   float: left;
-  width: 100%;
-  padding: 0 40px; }
+  width: 100%; }
   .home .rslides_container {
     margin-bottom: 0; }
 
@@ -2199,7 +2147,7 @@ input.filled ~ .validation_message, textarea.filled ~ .validation_message {
   position: absolute;
   opacity: 0.5;
   line-height: 38px;
-  padding: 0 20px; }
+  padding: 0 0; }
 
 .twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
   top: 50%;
@@ -2258,10 +2206,10 @@ input.filled ~ .validation_message, textarea.filled ~ .validation_message {
     content: "After"; }
 
 .twentytwenty-horizontal .twentytwenty-before-label:before {
-  left: 10px; }
+  left: 0; }
 
 .twentytwenty-horizontal .twentytwenty-after-label:before {
-  right: 10px; }
+  right: 0; }
 
 .twentytwenty-vertical .twentytwenty-before-label:before {
   top: 10px; }

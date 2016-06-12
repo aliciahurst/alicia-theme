@@ -42,7 +42,7 @@
 			img {
 				height: 40px;
 				width: auto;
-				opacity: 0.4;
+				//opacity: 0.4;
 				@include transition(all 0.35s ease-in-out);
 			}
 			&:hover {

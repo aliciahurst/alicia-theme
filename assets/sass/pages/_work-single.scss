@@ -11,10 +11,16 @@
 }
 
 .name-scroll {
+	@extend h3;
+	display: none;	
 	position: fixed;
-	bottom: 0;
-	left: 20px;
-	opacity: 0.5;
+	bottom: 1.5625rem;
+	left: 1.5625rem;
+	opacity: 0.9;
+	border-radius: $radius;
+	background: $fd;
+	//color: $white;
+	padding: 0.78rem 1.5625rem * 2;
 }
 
 .work-content {
@@ -25,6 +31,9 @@
 	z-index: 999;
 	background: white;
 	padding: 2rem;
+	section {
+		margin: 1.5625rem 1.5625rem * 2;
+	}
 }
 
 .work-role {
@@ -38,10 +47,18 @@
 
 .ex {
 	text-align: right;
-}
-
-.icon-close {
-	height: 40px;
+	position: fixed;
+	right: 1.5625rem;
+	top: 1.5625rem;
+	svg {
+		background: $fd;
+		height: 40px;
+		width: 40px;
+		&:hover {
+			color: $fd;
+			background: $three;
+		}
+	}
 }
 
 .single-work {
@@ -115,36 +132,10 @@
 
 
 .layout-text {
-	text-align: center;
-	div {
-		width: 50%;
-		display: inline-block;
-		margin: 0 auto;
-		float: none;
-		padding: 6%;
-		@include media($med) {
-			width: 75%
-		}
-		@include media($small) {
-			width: 100%;
-		}
-	}
+	margin-top: 1.5625rem * 2 !important;
 }
 
-.intro-content p:first-of-type a, .layout-text a {
-	border-bottom: 1px dotted $gray1;
-	&:hover {
-		color: $gray1;
-	}
-}
-
-.contribution {
-	+ .display_slider, + .layout-two, + .display_before {
-		
-	}
-}
 .layout-lone-image {
-	padding: 6%;
 	//max-height: 100vh;
 	.wrapper {
 		margin: 0 auto;
@@ -155,20 +146,16 @@
 
 
 .layout-two {
-	@extend %fifty-fifty;
-	min-height: 90vh;
+	img {
+		border-radius: $radius;
+	}
 }
 
-.layout-text ~ .display_slider, .layout-text ~ .layout-lone-image {
-	padding-top: 0;
-	padding-bottom: 6%;
-}
 
 .work-intro {
 	text-align: center;
 	
 	ul {
-		width: 80%;
 		margin: 0 auto;
 	}
 	li {
@@ -188,18 +175,11 @@
 			z-index: -1;
 		}
 	}
-	a {
-		border: 0;
-		display: block;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-size: 1.4rem;
-		&:after {
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			font-size: 1.4rem;
-		}
+	p {
+		margin-top:  1.5625rem;
+		margin-bottom: 1.5625rem * 2;
 	}
+
 	[class^="icon-"], [class*=" icon-"] {
 		height: 20px;
 		width: auto;
@@ -213,8 +193,6 @@
 .display_images {
 	border-radius: $radius;
 	border: 2px solid $color1;
-	width: 80%;
-	margin: 0 auto;
 	img {
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;

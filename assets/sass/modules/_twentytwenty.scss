@@ -24,7 +24,7 @@ $twenty20-overlay-label-color: #fff !default;
 $twenty20-overlay-label-bg: rgba(#fff, .2) !default;
 $twenty20-overlay-label-height: 38px !default;
 $twenty20-overlay-label-width: 90px !default;
-$twenty20-overlay-label-padding: 20px !default;
+$twenty20-overlay-label-padding: 0 !default;
 $twenty20-overlay-label-font-size: 13px !default;
 $twenty20-overlay-label-letter-spacing: 0.1em !default;
 $twenty20-label-radius: 2px !default;
@@ -170,7 +170,8 @@ $twenty20-label-radius: 2px !default;
 
   &:before {
      @extend %label-position-horizontal;
-     left: 10px;
+     //left: 10px;
+     left: 0;
   }
 }
 
@@ -178,7 +179,8 @@ $twenty20-label-radius: 2px !default;
 
   &:before {
      @extend %label-position-horizontal;
-     right: 10px;
+    // right: 10px;
+    right: 0;
   }
 }
 

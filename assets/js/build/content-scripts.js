@@ -1,3 +1,12 @@
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.name-scroll').fadeIn();
+  } else {
+    $('.name-scroll').fadeOut();
+  }
+});
+
   $(function() {
   $("#home-slider").responsiveSlides();
    $("#slider").responsiveSlides({
@@ -106,3 +115,4 @@ $(function($){
   });
  
 })(jQuery);
+

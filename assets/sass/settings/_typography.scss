@@ -103,10 +103,16 @@ sub {
 
 a {
 	color: currentColor;
-	text-decoration: none;
+	//text-decoration: none;
 	font-size: inherit;
 }
 
+a, svg {
+	@include transition(all 0.35s ease-in-out);
+	&:hover {
+		@include transition(all 0.35s ease-in-out);
+	}
+}
 
 // html {
 // 	font-family: $sans;
