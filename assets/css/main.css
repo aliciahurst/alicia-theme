@@ -1104,6 +1104,23 @@ button.menu-toggle {
       width: 50%;
       height: 100%; }
 
+@media screen and (max-width: 48em) {
+  .home-about {
+    display: block;
+    min-height: auto;
+    width: 100%; }
+    .home-about .bio-text {
+      padding: 12%;
+      text-align: center;
+      display: block !important; }
+    .home-about .bio-photos {
+      display: block;
+      height: 50vh; }
+      .home-about .bio-photos div {
+        float: left;
+        width: 50%;
+        height: 50vh; } }
+
 .top_image {
   position: fixed;
   height: 100vh;

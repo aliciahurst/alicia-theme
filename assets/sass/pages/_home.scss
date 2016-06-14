@@ -112,4 +112,25 @@
 	}
 }
 
+.home-about {
+	@include media($small) {
+		display: block;
+		min-height: auto;
+		width: 100%;
+		.bio-text {
+			padding: 12%;
+			text-align: center;
+			display: block!important;
+		}
+		.bio-photos {
+			display: block;
+			height: 50vh;
+			div {
+				float: left;
+				width: 50%;
+				height: 50vh;
+			}
+		}
+	}
+}
 
