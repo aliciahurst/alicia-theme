@@ -87,10 +87,6 @@
 			width: 50%;
 			padding: 6%;
 			vertical-align: middle;
-			@include media($small) {
-				width: 100%;
-				padding: 12%;
-			}
 		}
 	}
 	.bio-photos {
@@ -117,23 +113,3 @@
 }
 
 
-.home-about {
-	@include media($small) {
-		display: block;
-		min-height: auto;
-		.bio-text {
-			padding: 12%;
-			text-align: center;
-			display: block!important;
-		}
-		.bio-photos {
-			display: block;
-			height: 50vh;
-			div {
-				float: left;
-				width: 50%;
-				height: 50vh;
-			}
-		}
-	}
-}

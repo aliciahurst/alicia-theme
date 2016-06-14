@@ -11,12 +11,13 @@
 <?php if( have_rows('initial_images') ): ?>
 	<?php while( have_rows('initial_images') ): the_row(); 
 	$name = get_sub_field('opening_image'); ?>
-	<section style="background:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>'); background-size: contain;" class="top_image">
+	<!-- <section style="background:url('/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>'); background-size: contain;" class="top_image">
 	<?php the_title( '<h1 class="page-title name-scroll">', '</h1>' ); ?>
-	</section>
-	<!-- <section class="top_image">
-		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>">
 	</section> -->
+	<section class="top_image">
+		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $name; ?>">
+		<?php the_title( '<h1 class="page-title name-scroll">', '</h1>' ); ?>
+	</section>
 <?php endwhile; ?>
 <?php endif; ?>
 

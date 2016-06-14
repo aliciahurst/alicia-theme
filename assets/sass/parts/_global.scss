@@ -53,34 +53,6 @@ img {
 	padding: 8% 12% 1%;
 }
 
-@include media($med) {
-	#masthead {
-		height: 10vh;
-		.archive & {
-			background-color: $f7;
-		}
-	}
-	.site-main {
-		//padding-top: 10vh;
-		.archive & {
-			padding-top: 14vh;
-		}
-	}
-	.work-intro .aside {
-		min-height: 90vh;
-		.intro-content {
-			padding: 0 6%;
-		}
-	}
-}
-
-@include media($small) {
-	.site-main {
-		.archive & {
-			padding-bottom: 6%;
-		}
-	}
-}
 
 .error404 {
 	.rslides_container {

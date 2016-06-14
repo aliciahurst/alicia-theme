@@ -5,12 +5,6 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	@include media($med) {
-		position: relative;
-		display: block;
-		background: $white;
-		text-align: center;
-	}
 	.home & {
 		display: none;
 	}
@@ -80,9 +74,6 @@
 					color: inherit;
 				}
 				.archive & {
-					color: $four;
-				}
-				@include media($med) {
 					color: $four;
 				}
 			}

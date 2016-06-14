@@ -787,22 +787,6 @@ img {
   -ms-flex-line-pack: start;
   padding: 8% 12% 1%; }
 
-@media screen and (max-width: 65em) {
-  #masthead {
-    height: 10vh; }
-    .archive #masthead {
-      background-color: #f7f7f7; }
-
-  .archive .site-main {
-    padding-top: 14vh; }
-
-  .work-intro .aside {
-    min-height: 90vh; }
-    .work-intro .aside .intro-content {
-      padding: 0 6%; } }
-@media screen and (max-width: 48em) {
-  .archive .site-main {
-    padding-bottom: 6%; } }
 .error404 .rslides_container {
   margin-bottom: 0; }
 
@@ -813,12 +797,6 @@ img {
   top: 0;
   left: 0;
   width: 100%; }
-  @media screen and (max-width: 65em) {
-    #masthead {
-      position: relative;
-      display: block;
-      background: #ffffff;
-      text-align: center; } }
   .home #masthead {
     display: none; }
 
@@ -870,9 +848,6 @@ img {
         color: inherit; }
       .archive .main-navigation ul li a {
         color: #414141; }
-      @media screen and (max-width: 65em) {
-        .main-navigation ul li a {
-          color: #414141; } }
 
 /* Mobile Nav */
 button.menu-toggle {
@@ -1122,10 +1097,6 @@ button.menu-toggle {
     vertical-align: middle; }
     .home-about div.bio-text h2 {
       margin-top: 0; }
-    @media screen and (max-width: 48em) {
-      .home-about div.bio-text {
-        width: 100%;
-        padding: 12%; } }
   .home-about .bio-photos {
     display: table;
     height: 100%;
@@ -1143,22 +1114,6 @@ button.menu-toggle {
       display: table-cell;
       width: 50%;
       height: 100%; }
-
-@media screen and (max-width: 48em) {
-  .home-about {
-    display: block;
-    min-height: auto; }
-    .home-about .bio-text {
-      padding: 12%;
-      text-align: center;
-      display: block !important; }
-    .home-about .bio-photos {
-      display: block;
-      height: 50vh; }
-      .home-about .bio-photos div {
-        float: left;
-        width: 50%;
-        height: 50vh; } }
 
 .top_image {
   position: fixed;
@@ -1221,9 +1176,6 @@ button.menu-toggle {
   position: relative; }
   .work-intro .aside {
     background: #f7f7f7; }
-    @media screen and (max-width: 65em) {
-      .work-intro .aside p {
-        text-align: left; } }
 
 .outbound-link {
   text-align: center; }
@@ -1252,9 +1204,6 @@ button.menu-toggle {
     float: none;
     display: inline-block;
     text-transform: capitalize; }
-    @media screen and (max-width: 48em) {
-      .contribution li {
-        width: 50%; } }
     .contribution li svg {
       height: 40px;
       width: auto; }
@@ -1369,25 +1318,6 @@ button.menu-toggle {
 .twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
   margin-top: 0 !important; }
 
-@media screen and (max-width: 48em) {
-  .contribution {
-    padding: 12% 6% 6%; }
-
-  .layout-text {
-    padding-top: 6%;
-    padding-bottom: 3%; }
-
-  .display_before + .display_slider {
-    padding-top: 12%; }
-
-  .display_before + .layout_lone_image {
-    padding-top: 6%; }
-
-  .display_images {
-    min-height: auto; }
-
-  .work-images {
-    min-height: 90vh; } }
 .rslides {
   position: relative;
   list-style: none;

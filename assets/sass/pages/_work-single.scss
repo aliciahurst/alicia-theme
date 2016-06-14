@@ -78,11 +78,6 @@
 	position: relative;
 	.work-intro & {
 		background: $f7;
-		@include media($med) {
-			p {
-				text-align: left;
-			}
-		}
 	}
 }
 
@@ -125,9 +120,6 @@
 		float: none;
 		display: inline-block;
 		text-transform: capitalize;
-		@include media($small) {
-			width: 50%;
-		}
 		svg {
 			height: 40px;
 			width: auto;
@@ -316,30 +308,4 @@
 
 .twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
 		margin-top: 0 !important;
-}
-
-@include media($med) {
-
-}
-
-@include media($small) {
-	.contribution {
-		padding: 12% 6% 6%;
-	}
-	.layout-text {
-		padding-top: 6%;
-		padding-bottom: 3%;
-	}
-	.display_before + .display_slider {
-		padding-top: 12%;
-	}
-	.display_before + .layout_lone_image {
-		padding-top: 6%;
-	}
-	.display_images {
-		min-height: auto;
-	}
-	.work-images {
-		min-height: 90vh;
-	}
 }
