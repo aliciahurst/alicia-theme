@@ -10,6 +10,9 @@
 	}
 	.home & {
 		width: 50%;
+		@include media($small) {
+			width: 100%;
+		}
 	}
 	@include media($small) {
 		height: auto;
@@ -54,6 +57,9 @@
 		width: 92%;
 		margin: -10rem auto 0;
 		padding: 1rem 1rem;
+		.home & {
+			margin-top: 0;
+		}
 	}
 	
 }
@@ -189,6 +195,10 @@
 		@include media($small) {
 			display: block;
 			text-align: left;
+			.home & {
+				display: inline-block;
+				text-align: center;
+			}
 		}
 		&:before {
 			content: " ";
@@ -222,6 +232,12 @@
 		opacity: 1;
 		display: inline-block;
 		vertical-align: middle;
+		@include media($small) {
+			height: 25px;
+		}
+	}
+	@include media($small) {
+		padding: 0 2rem;
 	}
 }
 

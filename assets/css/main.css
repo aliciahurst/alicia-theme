@@ -787,7 +787,8 @@ img {
   @media screen and (max-width: 48em) {
     #masthead {
       position: absolute;
-      left: 1rem; } }
+      left: 1rem;
+      width: auto; } }
 
 .header-container, .footer-container {
   min-height: 90px;
@@ -1013,6 +1014,11 @@ button.menu-toggle {
 .home h1 img {
   height: 80px;
   width: auto; }
+  @media screen and (max-width: 48em) {
+    .home h1 img {
+      max-width: 100%;
+      height: auto;
+      max-height: 80px; } }
 
 .home-work, .work-navigation {
   display: none; }
@@ -1023,11 +1029,20 @@ button.menu-toggle {
   padding: 0 4px; }
   .home h3 a:hover, .home .name-scroll a:hover, .home .outbound-link a:hover {
     background: yellow; }
+  @media screen and (max-width: 48em) {
+    .home h3 a, .home .name-scroll a, .home .outbound-link a {
+      background: transparent; } }
 
 .home .display_images {
   float: left;
   width: 46%;
   margin: 2%; }
+  @media screen and (max-width: 69em) {
+    .home .display_images {
+      float: none;
+      width: 100%;
+      margin: 1.5625rem auto;
+      max-width: 400px; } }
   .home .display_images .ims {
     position: relative;
     display: block; }
@@ -1132,6 +1147,9 @@ button.menu-toggle {
     width: auto; }
   .home .top_image {
     width: 50%; }
+    @media screen and (max-width: 48em) {
+      .home .top_image {
+        width: 100%; } }
   @media screen and (max-width: 48em) {
     .top_image {
       height: auto;
@@ -1169,7 +1187,9 @@ button.menu-toggle {
       position: relative;
       width: 92%;
       margin: -10rem auto 0;
-      padding: 1rem 1rem; } }
+      padding: 1rem 1rem; }
+      .home .work-content {
+        margin-top: 0; } }
 
 .work-role {
   text-transform: uppercase;
@@ -1259,7 +1279,10 @@ button.menu-toggle {
     @media screen and (max-width: 48em) {
       .work-intro li {
         display: block;
-        text-align: left; } }
+        text-align: left; }
+        .home .work-intro li {
+          display: inline-block;
+          text-align: center; } }
     .work-intro li:before {
       content: " ";
       height: 10px;
@@ -1284,6 +1307,12 @@ button.menu-toggle {
     opacity: 1;
     display: inline-block;
     vertical-align: middle; }
+    @media screen and (max-width: 48em) {
+      .work-intro [class^="icon-"], .work-intro [class*=" icon-"] {
+        height: 25px; } }
+  @media screen and (max-width: 48em) {
+    .work-intro {
+      padding: 0 2rem; } }
 
 .display_images {
   border-radius: 8px;

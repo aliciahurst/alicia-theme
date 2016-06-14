@@ -2,6 +2,11 @@
 	img {
 		height: 80px;
 		width: auto;
+		@include media($small) {
+			max-width: 100%;
+			height: auto;
+			max-height: 80px;
+		}
 	}
 }
 
@@ -17,12 +22,21 @@
 		&:hover {
 			background: yellow;
 		}
+		@include media($small) {
+			background: transparent;
+		}
 	}
 }
 .home .display_images {
 	float: left;
 	width: 46%;
 	margin: 2%;
+	@include media($med) {
+		float: none;
+		width: 100%;
+		margin: 1.5625rem auto;
+		max-width: 400px;
+	}
 	.ims {
 		position: relative;
 		display: block;
@@ -133,4 +147,3 @@
 		}
 	}
 }
-
