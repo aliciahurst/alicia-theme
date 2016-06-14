@@ -58,4 +58,30 @@
 	<?php else: ?>
 	<?php endif; ?>
 
+	<nav class="another">
+	<?php
+			$pagelist = get_posts('sort_column=menu_order&sort_order=asc&post_type=work');
+			$pages = array();
+			foreach ($pagelist as $page) {
+				$pages[] += $page->ID;
+			}
+			$current = array_search(get_the_ID(), $pages);
+			$prevID = $pages[$current-1];
+			$nextID = $pages[$current+1];
+			$firstID = $pages[0];
+			$lastID = end($pages);
+			?>
+
+			<?php if (!empty($prevID)) { ?>
+		<a href="<?php echo get_permalink($prevID); ?>"
+			title="<?php echo get_the_title($prevID); ?>">
+		<?php }
+		if (empty($prevID)) { ?>
+		<a href="<?php echo get_permalink($lastID); ?>"
+			title="<?php echo get_the_title($lastID); ?>">
+			<?php } ?>
+		to the next project &rarr;</a>
+
+	</nav>
+
 </div>

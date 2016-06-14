@@ -1177,10 +1177,10 @@ button.menu-toggle {
   z-index: 999;
   background: white;
   padding: 2rem; }
-  .work-content section {
+  .work-content section, .work-content nav {
     margin: 1.5625rem 3.125rem; }
     @media screen and (max-width: 69em) {
-      .work-content section {
+      .work-content section, .work-content nav {
         margin: 1.5625rem 0; } }
   @media screen and (max-width: 48em) {
     .work-content {
@@ -1190,6 +1190,18 @@ button.menu-toggle {
       padding: 1rem 1rem; }
       .home .work-content {
         margin-top: 0; } }
+
+.another {
+  text-align: center; }
+  .another a {
+    text-decoration: none;
+    background: #fdfdfd;
+    padding: 0 4px; }
+    .another a:hover {
+      background: yellow; }
+    @media screen and (max-width: 48em) {
+      .another a {
+        background: transparent; } }
 
 .work-role {
   text-transform: uppercase;

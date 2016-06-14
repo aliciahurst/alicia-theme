@@ -46,7 +46,7 @@
 	z-index: 999;
 	background: white;
 	padding: 2rem;
-	section {
+	section, nav {
 		margin: 1.5625rem 1.5625rem * 2;
 		@include media($med) {
 			margin: 1.5625rem 0;
@@ -64,7 +64,20 @@
 	
 }
 
-
+.another {
+	text-align: center;
+	a {
+		text-decoration: none;
+		background: $fd;
+		padding: 0 4px;
+		&:hover {
+			background: yellow;
+		}
+		@include media($small) {
+			background: transparent;
+		}
+	}
+}
 
 .work-role {
 	@extend .font_small;
