@@ -1148,7 +1148,7 @@ button.menu-toggle {
       position: relative;
       width: 92%;
       margin: -10rem auto 0;
-      padding: 2rem 0; } }
+      padding: 1rem 1rem; } }
 
 .work-role {
   text-transform: uppercase;
@@ -1228,6 +1228,10 @@ button.menu-toggle {
     margin: 5px 10px;
     display: inline-block;
     position: relative; }
+    @media screen and (max-width: 48em) {
+      .work-intro li {
+        display: block;
+        text-align: left; } }
     .work-intro li:before {
       content: " ";
       height: 10px;

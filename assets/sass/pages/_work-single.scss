@@ -53,7 +53,7 @@
 		position: relative;
 		width: 92%;
 		margin: -10rem auto 0;
-		padding: 2rem 0;
+		padding: 1rem 1rem;
 	}
 	
 }
@@ -178,6 +178,10 @@
 		margin: 5px 10px;
 		display: inline-block; 
 		position: relative;
+		@include media($small) {
+			display: block;
+			text-align: left;
+		}
 		&:before {
 			content: " ";
 			height: 10px;
