@@ -13,8 +13,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="icon" type="image/x-icon" href="/wordpress/wp-content/themes/alicia-theme/assets/img/min/favicon.ico">
-	<script src="//use.typekit.net/nht0rlx.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
@@ -32,7 +30,7 @@
 					</div>
 					<!-- <nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php // wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav> -->
 				</div>
 	</header><!-- #masthead -->

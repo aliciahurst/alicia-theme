@@ -11,9 +11,16 @@
 	.home & {
 		width: 50%;
 	}
+	@include media($small) {
+		height: auto;
+		width: 100%;
+		position: relative;	
+		img {
+			width: 100%;
+			height: auto;
+		}	
+	}
 }
-
-
 
 .name-scroll {
 	@extend h3;
@@ -38,8 +45,20 @@
 	padding: 2rem;
 	section {
 		margin: 1.5625rem 1.5625rem * 2;
+		@include media($med) {
+			margin: 1.5625rem 0;
+		}
 	}
+	@include media($small) {
+		position: relative;
+		width: 92%;
+		margin: -10rem auto 0;
+		padding: 2rem 0;
+	}
+	
 }
+
+
 
 .work-role {
 	@extend .font_small;

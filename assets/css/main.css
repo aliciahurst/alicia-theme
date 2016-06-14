@@ -1111,6 +1111,14 @@ button.menu-toggle {
     width: auto; }
   .home .top_image {
     width: 50%; }
+  @media screen and (max-width: 48em) {
+    .top_image {
+      height: auto;
+      width: 100%;
+      position: relative; }
+      .top_image img {
+        width: 100%;
+        height: auto; } }
 
 .name-scroll {
   display: none;
@@ -1132,6 +1140,15 @@ button.menu-toggle {
   padding: 2rem; }
   .work-content section {
     margin: 1.5625rem 3.125rem; }
+    @media screen and (max-width: 69em) {
+      .work-content section {
+        margin: 1.5625rem 0; } }
+  @media screen and (max-width: 48em) {
+    .work-content {
+      position: relative;
+      width: 92%;
+      margin: -10rem auto 0;
+      padding: 2rem 0; } }
 
 .work-role {
   text-transform: uppercase;
