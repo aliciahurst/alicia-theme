@@ -8,6 +8,10 @@
 	.home & {
 		display: none;
 	}
+	@include media($small) {
+		position: absolute;
+		left: 1rem;
+	}
 }
 
 .header-container, .footer-container {

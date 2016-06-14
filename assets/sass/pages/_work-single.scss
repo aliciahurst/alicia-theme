@@ -83,6 +83,14 @@
 			background: $three;
 		}
 	}
+	@include media($small) {
+		right: 0;
+		top: 0;
+		svg {
+			background: $three;
+			color: $fd;
+		}
+	}
 }
 
 .single-work {
