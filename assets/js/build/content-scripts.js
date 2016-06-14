@@ -73,46 +73,46 @@ $(document).ready(function() {
   });
 });
 
-  jQuery(document).ready(function() {
-    var offset = 220;
-    var duration = 1000;
-    jQuery(window).scroll(function() {
-      if (jQuery(this).scrollTop() > offset) {
-        jQuery('.top').fadeIn(duration);
-      } else {
-        jQuery('.top').fadeOut(duration);
-      }
-    });
+  // jQuery(document).ready(function() {
+  //   var offset = 220;
+  //   var duration = 1000;
+  //   jQuery(window).scroll(function() {
+  //     if (jQuery(this).scrollTop() > offset) {
+  //       jQuery('.top').fadeIn(duration);
+  //     } else {
+  //       jQuery('.top').fadeOut(duration);
+  //     }
+  //   });
  
-    jQuery('.top').click(function(event) {
-      event.preventDefault();
-      jQuery('html, body').animate({scrollTop: 0}, duration);
-      return false;
-    })
-  });
+  //   jQuery('.top').click(function(event) {
+  //     event.preventDefault();
+  //     jQuery('html, body').animate({scrollTop: 0}, duration);
+  //     return false;
+  //   })
+  // });
 
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top +1
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+// $(function() {
+//   $('a[href*=#]:not([href=#])').click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html,body').animate({
+//           scrollTop: target.offset().top +1
+//         }, 1000);
+//         return false;
+//       }
+//     }
+//   });
+// });
 
-$(function($){
-  $(document).on("ready", function () {
-      var urlHash = window.location.href.split("#")[1];
-      $('html,body').animate({
-          scrollTop: $('.' + urlHash + ', #' + urlHash +',[name='+urlHash+']').first().offset().top -22
-      }, 2000);
-  });
+// $(function($){
+//   $(document).on("ready", function () {
+//       var urlHash = window.location.href.split("#")[1];
+//       $('html,body').animate({
+//           scrollTop: $('.' + urlHash + ', #' + urlHash +',[name='+urlHash+']').first().offset().top -22
+//       }, 2000);
+//   });
  
-})(jQuery);
+// })(jQuery);
 
