@@ -190,6 +190,7 @@
 	}
 	@include media($small) {
 			display: block;
+			padding: 8px 0px 12px 0px;
 			img {
 				opacity: 1;
 			}
