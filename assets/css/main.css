@@ -1154,7 +1154,7 @@ button.menu-toggle {
 
 .home-images {
   clear: both;
-  padding: 12px 8px 8px;
+  padding: 12px 8px 8px 12px;
   border-radius: 8px;
   overflow: auto;
   display: flex;
@@ -1179,7 +1179,7 @@ button.menu-toggle {
 .home-thumb {
   width: 25%; }
   .home-thumb img {
-    border-radius: 8px; }
+    border-radius: 6px; }
   @media screen and (max-width: 48em) {
     .home-thumb {
       width: 50%;
