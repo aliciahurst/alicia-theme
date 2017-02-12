@@ -5,14 +5,14 @@
  * @package alicia-theme
  */
 ?>
-<section class="top_image home-about">
+<!-- <section class="top_image home-about">
 	<div class="bio-photos">
 		<div class="bio-headshot"></div>
 		<div class="bio-setup"></div>
 	</div>
-</section>
+</section> -->
 
-<div class="work-content">	
+<div class="home-container">	
 
 	<section class="work-intro">
 		<h1><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/logonamehome.png"></h1>
