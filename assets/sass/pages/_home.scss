@@ -17,8 +17,8 @@
 .home h3 {
 	a {
 		text-decoration: none;
-		background: $fd;
-		padding: 0 4px;
+		font-size: 1.15rem;
+		margin: 0;
 		&:hover {
 			background: yellow;
 		}
@@ -30,12 +30,16 @@
 .home .display_images {
 	float: left;
 	width: 46%;
+	border: 0;
 	margin: 2%;
 	@include media($med) {
 		float: none;
 		width: 100%;
 		margin: 1.5625rem auto;
 		max-width: 400px;
+	}
+	img {
+		border-radius: 8px;
 	}
 	.ims {
 		position: relative;
@@ -50,8 +54,7 @@
 			left: 0;
 			z-index: 999;
 			opacity: 0.15;
-			border-top-left-radius: 8px;
-			border-top-right-radius: 8px;
+			border-radius: 8px;
 			@include transition(all 0.35s ease-in-out);
 		}
 		&:hover {
@@ -149,11 +152,81 @@
 }
 
 .home-container {
-	width: 50%;
-	margin: 20px auto;
+	width: 60%;
+	margin: 60px auto;
 	padding: 20px;
 	overflow: auto;
 	@include media($med) {
 		width: 100%;
+	}
+	h4 {
+		background: none;
+		font-size: 0.75rem;
+		a {
+			background: none;
+		}
+	}
+}
+
+.home-images {
+	clear: both;
+	padding: 12px 8px 8px;
+	border-radius: 8px;
+	overflow: auto;
+	display: flex;
+	align-items: center;
+	h4 {
+		margin-top: 0;
+	}
+	img {
+		opacity: 0.5;
+		@include transition(all 0.15s ease-in-out);
+	}
+	&:hover {
+		background: $f7;
+		img {
+			opacity: 1;
+		}
+	}
+	@include media($small) {
+			display: block;
+			img {
+				opacity: 1;
+			}
+		}
+}
+
+.home-thumb {
+	width: 25%;
+		img {
+			border-radius: 8px;
+		}
+		@include media($small) {
+			width: 50%;
+			margin: 10px auto;
+		}
+}
+
+.home-caption {
+	width: 75%;
+	padding-left: 25px;
+	margin-top: -5px;
+	h3 {
+		margin: 0;
+	}
+	@include media($small) {
+			width: 100%;
+			text-align: center;
+			padding-left: 0;
+		}
+}
+
+.home .work-role {
+	margin-left: 0;
+	opacity: 0.75;
+	font-weight: normal;
+	padding: 0 5px;
+	&:nth-of-type(1) {
+		padding-left: 0;
 	}
 }

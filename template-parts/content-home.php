@@ -39,15 +39,15 @@
 
 <?php $args = array( 'numberposts' => 7, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 
-<section class="display_images">
-	<a href="<?php the_permalink(); ?>" class="ims">
-		<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
-	</a>
-
-	<div class="block_caption">	
-		<p>
-			<a href="<?php the_permalink(); ?>">
-				<span><?php the_title(); ?></span></a>
+<section class="home-images">
+	<div class="home-thumb">
+		<a href="<?php the_permalink(); ?>" class="home-img">
+			<img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/<?php echo $post->post_name;?>-thumb.jpg">
+		</a>
+	</div>
+	<div class="home-caption">	
+			<h3><a href="<?php the_permalink(); ?>">
+				<span><?php the_title(); ?></span></a></h3>
 				<?php if( have_rows('work_roles') ): //what I did ?>
 					<?php while( have_rows('work_roles') ): the_row(); 
 					$role = get_sub_field('single_role');
@@ -55,7 +55,6 @@
 						<span class="work-role"><?php echo $role; ?></span>
 				<?php endwhile; ?>
 		<?php endif; ?>
-			</p>
 		</div>
 
 	</section>

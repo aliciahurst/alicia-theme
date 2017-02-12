@@ -1025,8 +1025,8 @@ button.menu-toggle {
 
 .home h3 a, .home .name-scroll a, .home .outbound-link a {
   text-decoration: none;
-  background: #fdfdfd;
-  padding: 0 4px; }
+  font-size: 1.15rem;
+  margin: 0; }
   .home h3 a:hover, .home .name-scroll a:hover, .home .outbound-link a:hover {
     background: yellow; }
   @media screen and (max-width: 48em) {
@@ -1036,6 +1036,7 @@ button.menu-toggle {
 .home .display_images {
   float: left;
   width: 46%;
+  border: 0;
   margin: 2%; }
   @media screen and (max-width: 69em) {
     .home .display_images {
@@ -1043,6 +1044,8 @@ button.menu-toggle {
       width: 100%;
       margin: 1.5625rem auto;
       max-width: 400px; } }
+  .home .display_images img {
+    border-radius: 8px; }
   .home .display_images .ims {
     position: relative;
     display: block; }
@@ -1056,8 +1059,7 @@ button.menu-toggle {
       left: 0;
       z-index: 999;
       opacity: 0.15;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
+      border-radius: 8px;
       -webkit-transition: all 0.35s ease-in-out;
       -moz-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out; }
@@ -1137,13 +1139,71 @@ button.menu-toggle {
         height: 50vh; } }
 
 .home-container {
-  width: 50%;
-  margin: 20px auto;
+  width: 60%;
+  margin: 60px auto;
   padding: 20px;
   overflow: auto; }
   @media screen and (max-width: 69em) {
     .home-container {
       width: 100%; } }
+  .home-container h4 {
+    background: none;
+    font-size: 0.75rem; }
+    .home-container h4 a {
+      background: none; }
+
+.home-images {
+  clear: both;
+  padding: 12px 8px 8px;
+  border-radius: 8px;
+  overflow: auto;
+  display: flex;
+  align-items: center; }
+  .home-images h4 {
+    margin-top: 0; }
+  .home-images img {
+    opacity: 0.5;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out; }
+  .home-images:hover {
+    background: #f7f7f7; }
+    .home-images:hover img {
+      opacity: 1; }
+  @media screen and (max-width: 48em) {
+    .home-images {
+      display: block; }
+      .home-images img {
+        opacity: 1; } }
+
+.home-thumb {
+  width: 25%; }
+  .home-thumb img {
+    border-radius: 8px; }
+  @media screen and (max-width: 48em) {
+    .home-thumb {
+      width: 50%;
+      margin: 10px auto; } }
+
+.home-caption {
+  width: 75%;
+  padding-left: 25px;
+  margin-top: -5px; }
+  .home-caption h3, .home-caption .name-scroll, .home-caption .outbound-link {
+    margin: 0; }
+  @media screen and (max-width: 48em) {
+    .home-caption {
+      width: 100%;
+      text-align: center;
+      padding-left: 0; } }
+
+.home .work-role {
+  margin-left: 0;
+  opacity: 0.75;
+  font-weight: normal;
+  padding: 0 5px; }
+  .home .work-role:nth-of-type(1) {
+    padding-left: 0; }
 
 .top_image {
   position: fixed;
