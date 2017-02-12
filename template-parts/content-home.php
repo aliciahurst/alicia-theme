@@ -48,6 +48,13 @@
 		<p>
 			<a href="<?php the_permalink(); ?>">
 				<span><?php the_title(); ?></span></a>
+				<?php if( have_rows('work_roles') ): //what I did ?>
+					<?php while( have_rows('work_roles') ): the_row(); 
+					$role = get_sub_field('single_role');
+							 ?>
+						<span class="work-role"><?php echo $role; ?></span>
+				<?php endwhile; ?>
+		<?php endif; ?>
 			</p>
 		</div>
 
