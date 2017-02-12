@@ -16,7 +16,7 @@
 
 	<section class="work-intro">
 		<h1><img src="/wordpress/wp-content/themes/alicia-theme/assets/img/min/logonamehome.png"></h1>
-		<h3>Product Manager at <a href="http://powertofly.com">PowerToFly</a></h3>
+		<h3>Product Manager</h3>
 
 		<?php if( have_rows('social_media', 'option') ): ?>
 			<ul>
@@ -29,8 +29,6 @@
 			<?php endwhile; ?>
 		</ul>
 	<?php endif; ?>	
-
-	<h5>currently <strong>unavailable</strong> for freelance projects</h5>
 </section>
 
 <section class="layout-text">
