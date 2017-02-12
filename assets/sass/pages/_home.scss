@@ -150,8 +150,9 @@
 
 .home-container {
 	width: 50%;
-	margin: 0 auto;
+	margin: 20px auto;
 	padding: 20px;
+	overflow: auto;
 	@include media($med) {
 		width: 100%;
 	}

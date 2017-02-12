@@ -1138,8 +1138,9 @@ button.menu-toggle {
 
 .home-container {
   width: 50%;
-  margin: 0 auto;
-  padding: 20px; }
+  margin: 20px auto;
+  padding: 20px;
+  overflow: auto; }
   @media screen and (max-width: 69em) {
     .home-container {
       width: 100%; } }
