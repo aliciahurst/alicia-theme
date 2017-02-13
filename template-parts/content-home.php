@@ -37,7 +37,7 @@
 	
 </section>
 
-<?php $args = array( 'numberposts' => 7, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
+<?php $args = array( 'numberposts' => 99, 'post_type' => 'work' ); $lastposts = get_posts( $args ); foreach($lastposts as $post) : setup_postdata($post); ?> 
 
 <section class="home-images">
 	<div class="home-thumb">

@@ -1408,7 +1408,7 @@ button.menu-toggle {
     padding: 14px 25px 0;
     font-size: 0.875rem;
     line-height: 1.5625rem;
-    font-weight: 700; }
+    letter-spacing: 0.25px; }
 
 .display_before div {
   margin: 0 auto; }
